@@ -92,3 +92,31 @@
   if (document.readyState !== "loading") boot();
   else document.addEventListener("DOMContentLoaded", boot);
 })();
+
+// 點主選單連結：先關選單，再導頁（避免被其它 listener 阻擋）
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('.main-nav a');
+  if (!link) return;
+
+  const href = link.getAttribute('href');
+  // 若是錨點連結(#...)，讓瀏覽器自己處理（或你用平滑滾動）
+  if (!href || href === '#') return;
+
+  // 關選單 + 解鎖滾動
+  try { closeMenu(); } catch (err) {}
+
+  // 讓關閉動畫/解鎖先生效，再導頁（避免 iOS/Chrome 有時取消跳轉）
+  setTimeout(() => {
+    window.location.href = href;
+  }, 0);
+});
+
+// iOS 某些機型對 touchstart 比較敏感，再補一份以防萬一
+document.addEventListener('touchstart', (e) => {
+  const link = e.target.closest('.main-nav a');
+  if (!link) return;
+  const href = link.getAttribute('href');
+  if (!href || href === '#') return;
+  try { closeMenu(); } catch (err) {}
+  setTimeout(() => { window.location.href = href; }, 0);
+}, { passive: true });

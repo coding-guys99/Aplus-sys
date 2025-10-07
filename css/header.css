@@ -1,0 +1,241 @@
+/* ==========================
+   APLUS Header — Final Version
+   ========================== */
+:root {
+  --primary: #d4af37;
+  --text: #f5f5f5;
+  --muted: #bfbfbf;
+  --bg: rgba(10,10,10,.85);
+  --panel: rgba(22,22,22,.97);
+  --border: rgba(255,255,255,.12);
+  --radius: 10px;
+}
+
+/* ===== 基本結構 ===== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(212,175,55,.25);
+  box-shadow: 0 2px 10px rgba(0,0,0,.45);
+  transition: background .3s ease;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* for mobile drawer positioning */
+}
+
+/* ===== 品牌 Logo ===== */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand-logo {
+  width: 30px; height: 30px;
+  object-fit: contain;
+}
+
+/* ===== 桌機版主選單 ===== */
+.main-nav { margin-left: auto; }
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0; padding: 0;
+}
+.nav-list a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color .2s;
+}
+.nav-list a:hover { color: var(--primary); }
+
+/* ===== Actions & 語言切換 ===== */
+.actions { display: flex; align-items: center; gap: 10px; }
+
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1300;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lang-icon {
+  padding: 20px;
+  width: 80px; height: 80px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: all .2s ease;
+}
+.lang-btn:hover .lang-icon {
+  filter: brightness(1.3);
+  transform: scale(1.05);
+}
+
+/* 語言下拉 */
+.lang-menu {
+  position: absolute;
+  top: 120%; right: 0;
+  min-width: 160px;
+  background: rgba(20,20,20,0.95);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+  display: none;
+  z-index: 1301;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+.lang-menu.show {
+  display: block;
+  animation: fadeIn 0.2s ease-out;
+}
+.lang-menu li {
+  padding: 8px 14px;
+  color: #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.lang-menu li:hover {
+  background: rgba(255,255,255,0.1);
+  color: var(--primary);
+}
+.lang-menu li.active { color: var(--primary); }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== 手機選單按鈕 ===== */
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  z-index: 1200;
+  transition: all .25s ease;
+}
+.nav-toggle:hover {
+  background: var(--primary);
+  color: #000;
+  box-shadow: 0 0 10px rgba(212,175,55,0.4);
+}
+
+/* ===== Overlay ===== */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 900;
+  display: none;
+}
+.nav-overlay.is-active { display: block; }
+
+/* ==========================
+   手機版設定
+   ========================== */
+@media (max-width: 1024px) {
+  /* 顯示漢堡按鈕 */
+  .nav-toggle { display: block; }
+
+  /* 抽屜主選單 */
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: var(--panel);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    display: none;
+    z-index: 950;
+  }
+  .main-nav.is-open { display: block !important; }
+
+  /* 主選單內容垂直排列 */
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+  }
+  .nav-list li { width: 100%; text-align: center; }
+  .nav-list a {
+    display: block;
+    padding: 14px 0;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .nav-list a:hover { color: var(--primary); }
+
+  /* 語言選單放在主選單中（方便手機切換） */
+  .lang-dropdown.lang-inmenu .lang-menu {
+    position: static;
+    margin-top: 6px;
+    background: rgba(30,30,30,.96);
+    border-radius: 8px;
+    box-shadow: none;
+  }
+  .lang-dropdown.lang-inmenu .lang-menu.show {
+    display: block;
+  }
+}
+
+/* ==========================
+   層級保護與間距
+   ========================== */
+body { padding-top: 70px; } /* 預留 header 高度 */
+.main-nav { z-index: 950; }
+.site-header { z-index: 1000; }
+.lang-dropdown { z-index: 1300; }
+.lang-menu { z-index: 1301; }
+.nav-overlay { z-index: 900; }
+.nav-toggle { z-index: 1200; }
+
+@media (max-width:1024px){
+  .nav-container { position: relative; }
+  .main-nav {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--panel);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    display: none;
+    z-index: 950;
+  }
+  .main-nav.is-open { display: block !important; }
+}
+.site-header { z-index: 1000; }
+.nav-toggle  { z-index: 1200; }
+.lang-dropdown { z-index: 1300; }
+.lang-menu { z-index: 1301; }
+.nav-overlay { z-index: 900; }

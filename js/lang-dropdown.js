@@ -140,3 +140,62 @@
   document.addEventListener('partials:loaded', init); // header 透過 include 載入時
   document.addEventListener('DOMContentLoaded', init);
 })();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const LANGS = [
+    { code: 'zh-TW', label: '繁' },
+    { code: 'zh-CN', label: '简' },
+    { code: 'en',    label: 'EN' },
+    { code: 'ms',    label: 'MS' },
+  ];
+
+  const current = localStorage.getItem('lang') || 'en';
+  const bar = document.querySelector('#mobile-menu .lang-bar');
+  if (!bar) return;
+
+  // 先清空
+  bar.innerHTML = '';
+
+  // 動態建立：繁｜简｜EN｜MS
+  LANGS.forEach((item, idx) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'lang-chip';
+    btn.textContent = item.label;
+    btn.dataset.setlang = item.code;
+    btn.setAttribute('aria-label', item.code);
+    if (item.code === current) btn.setAttribute('aria-current', 'true');
+    bar.appendChild(btn);
+
+    if (idx < LANGS.length - 1) {
+      const sep = document.createElement('i');
+      sep.className = 'lang-sep';
+      bar.appendChild(sep);
+    }
+  });
+
+  // 點擊行為：切語言但不關閉面板
+  bar.addEventListener('click', (e) => {
+    const chip = e.target.closest('.lang-chip');
+    if (!chip) return;
+    e.preventDefault();
+    e.stopPropagation(); // 不要傳到 menu.js 去關面板
+
+    const code = chip.dataset.setlang;
+    if (!code) return;
+
+    // 更新高亮
+    bar.querySelectorAll('.lang-chip').forEach(c => c.removeAttribute('aria-current'));
+    chip.setAttribute('aria-current', 'true');
+
+    // 寫入並套用
+    localStorage.setItem('lang', code);
+
+    // 若你的 lang.js 有公開 applyLanguage(code) 就用它，否則退而 reload
+    if (typeof window.applyLanguage === 'function') {
+      window.applyLanguage(code);         // 即時套用
+    } else {
+      location.reload();                  // 保險：重載頁面
+    }
+  });
+});

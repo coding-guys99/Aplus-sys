@@ -110,7 +110,7 @@
   .site-header .actions { 
     display: none !important;
   }
-  .action img{
+  .actions img{
     display:none!important;
   }
 }

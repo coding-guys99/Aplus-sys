@@ -1,29 +1,303 @@
 {
-  "brand": {
-    "name": "Aplus Systems",
-    "role": "廣播與虛擬攝影棚整合"
-  },
-
-  "header": {
-    "lang": {
-      "label": "語言",
-      "bar": "選擇語言"
+  "meta": {
+    "home": {
+      "title": "Aplus Systems — 虛擬攝影棚、廣播整合與數位人影片",
+      "desc": "面向虛擬攝影棚與廣播工作流程的系統整合：NDI/SDI/IP 路由、Unreal/OBS/vMix 流程，以及數位人影片自動化。"
     },
-    "menu": {
-      "open": "開啟選單",
-      "close": "關閉選單"
+    "about": {
+      "title": "關於 — Aplus Systems | 系統工程師與廣播顧問",
+      "desc": "專注於虛擬攝影棚與廣播整合的系統工程師。五年涵蓋規劃、整合到製作的端到端經驗。"
+    },
+    "services": {
+      "title": "服務 — Aplus Systems | 虛擬攝影棚與廣播整合",
+      "desc": "從需求探索到上線播出：虛擬攝影棚整合、電視與校園廣播建置，以及數位人影片流程。"
+    },
+    "demos": {
+      "title": "展示 — Aplus Systems | 範例與參考影片",
+      "desc": "精選示範影片，包含直式（9:16）與橫式（16:9）參考。"
+    },
+    "process": {
+      "title": "流程 — Aplus Systems | 從探索到播出",
+      "desc": "涵蓋探索、設計、整合、驗證、訓練與上線的清晰且可重複流程。"
+    },
+    "tech": {
+      "title": "技術 — Aplus Systems | 虛擬棚與廣播工具",
+      "desc": "探索支撐 Aplus Systems 工作流程的技術——NDI、SDI、Unreal Engine、OBS、vMix 與自動化工具。"
+    },
+    "contact": {
+      "title": "聯絡 — Aplus Systems | 取得報價或諮詢",
+      "desc": "透過 Email、WhatsApp 或 LINE 與我們聯繫，討論你的棚務或製作情境。"
     }
   },
 
-  "nav": {
-    "menu": "選單",
-    "about": "關於",
-    "services": "服務",
-    "demos": "展示",
-    "process": "流程",
-    "tech": "技術",
-    "technologies": "技術",
-    "contact": "聯絡"
+  "home_hero": {
+    "title": "虛擬攝影棚 × 廣播整合 × 數位人製作",
+    "subtitle": "Aplus Systems 提供端到端的廣播與虛擬棚解決方案——融合創意製作、技術精準與可靠的系統設計。",
+    "cta1": "聯絡我們",
+    "cta2": "查看服務"
+  },
+  "home_svc": {
+    "title": "核心服務",
+    "virtualstudio": {
+      "title": "虛擬攝影棚整合",
+      "desc": "面向即時虛擬製作的端到端系統設計——去背抠像、攝影機追蹤與多協定路由（NDI / SDI / IP）。可靠、可擴充、隨時可播。"
+    },
+    "broadcast": {
+      "title": "電視與校園廣播建置",
+      "desc": "面向學校與企業的一站式方案：需求、設備清單、佈線、試機交接與操作訓練——從規劃到首播。"
+    },
+    "digitalhuman": {
+      "title": "數位人影片製作",
+      "desc": "AI 語音、唇形同步與 3D 場景整合，用於自動化簡報與節目段落。流程可重用、品質一致。"
+    },
+    "green": {
+      "title": "綠幕棚（台灣）",
+      "desc": "小型棚內燈光與收音配置。適合課程錄製、解說影片與虛擬主持拍攝。可加購現場技術支援。"
+    }
+  },
+  "home_showcase": {
+    "title": "成果展示",
+    "desc": "精選示範影片與製作亮點",
+    "wuya": "來自 <strong>@WuYaTheWorld</strong> 的最新上傳",
+    "heho": "來自 <strong>@Heho</strong> 的最新上傳",
+    "verticalTitle": "短影音（9:16）",
+    "short1": "數位人——棚內旁白示範",
+    "short2": "AI 唇形同步——角色展示"
+  },
+  "home_about": {
+    "title": "關於 Aplus Systems",
+    "desc": "Aplus Systems 專注於<strong>虛擬攝影棚</strong>與<strong>廣播系統整合</strong>——自規劃、安裝到直播支援的端到端交付。團隊源自台灣技術背景，結合創意工程與可靠設計，為媒體、教育與企業打造現代製作環境。",
+    "item1": "5+ 年廣播與系統整合經驗",
+    "item2": "NDI / SDI / IP 混合工作流程設計",
+    "item3": "虛擬攝影棚、LED 牆與數位人製作"
+  },
+  "home_contact": {
+    "title": "聯絡 Aplus Systems",
+    "desc": "不論你在規劃新棚、尋求技術整合，或探索數位人製作——我們提供客製諮詢與端到端解決方案，涵蓋廣播與虛擬環境。",
+    "cta1": "預約諮詢",
+    "cta2": "WhatsApp 洽談"
+  },
+
+  "about_hero": {
+    "h1": "關於 Aplus Systems",
+    "lead": "面向<strong>虛擬攝影棚</strong>・<strong>廣播系統</strong>・<strong>數位人製作</strong>的整合方案<br/>為各產業打造可靠、富創意且互聯的影音環境。"
+  },
+  "about_intro": {
+    "title": "公司簡介",
+    "p1": "Aplus Systems 為台灣在地的技術整合團隊，專長於<strong>虛擬棚設計</strong>、<strong>廣播系統整合</strong>與<strong>端到端流程顧問</strong>，服務教育與企業客戶。使命是把創意願景與可靠廣播技術接軌。",
+    "p2": "自前期規劃到現場部署，涵蓋每個階段——需求分析、硬體選型、佈線安裝、軟體設定與操作訓練。我們交付的每套系統皆著重<strong>穩定、直覺與可擴充</strong>。",
+    "item1": "虛擬棚與攝影機追蹤整合",
+    "item2": "廣播與校園電視建置",
+    "item3": "AI 唇形同步與數位人製作",
+    "item4": "技術訓練與遠端支援"
+  },
+  "about_exp": {
+    "title": "公司里程碑",
+    "2025": "於多所大學與媒體機構導入多機虛擬棚方案，擴展 <strong>Aplus Systems</strong> 之營運版圖。",
+    "2024": "交付 <strong>iSmart 廣播整合專案</strong>，自攝取到播出導入自動化工作流程，邁向智慧廣播重要一步。",
+    "2022": "規劃建置<strong>校園電視與混合式直播教室</strong>，訓練超過 100 位教師與操作人員。",
+    "2020": "奠定<strong>廣播製作、剪輯與系統維護</strong>基礎，形成今日的一體化服務。"
+  },
+  "about_show": {
+    "title": "精選製作",
+    "wuya": "🦅《烏鴉笑傳》— 剪輯",
+    "cross": "🌏《兩岸觀點》— 製作",
+    "heho": "🎬《Heho》— 執行製作"
+  },
+  "about_cta": {
+    "h3": "一起打造你的下一座攝影棚",
+    "btn": "聯絡我"
+  },
+
+  "contact_hero": {
+    "h1": "聯絡 Aplus Systems",
+    "lead": "我們專精虛擬棚整合、數位人製作與廣播工作流程設計。告訴我們你的目標——我們將協助打造可靠且有創意的系統。"
+  },
+  "contact": {
+    "title": "聯絡管道",
+    "desc": "透過下列你偏好的方式聯繫——我們將於一個工作日內回覆。",
+    "cta1": "送出諮詢",
+    "cta2": "WhatsApp 洽談",
+    "cta3": "LINE 留言",
+    "channels": {
+      "email": "電子郵件",
+      "whatsapp": "WhatsApp",
+      "line": "LINE"
+    }
+  },
+  "form": {
+    "title": "送出專案簡述",
+    "desc": "告訴我們你的目標與限制。我們將在一個工作日內回覆。",
+    "name": { "label": "你的姓名" },
+    "email": { "label": "電子郵件" },
+    "company": { "label": "公司／學校（選填）" },
+    "subject": { "label": "主旨" },
+    "message": { "label": "專案細節" },
+    "service": {
+      "label": "服務類型",
+      "virtual": "虛擬攝影棚整合",
+      "broadcast": "電視與校園廣播",
+      "digital": "數位人製作",
+      "greenscreen": "綠幕棚",
+      "consult": "諮詢",
+      "other": "其他"
+    },
+    "budget": {
+      "label": "預算（選填）",
+      "unknown": "尚未確定",
+      "under": "新台幣 10 萬以下",
+      "b1": "新台幣 10–30 萬",
+      "b2": "新台幣 30–80 萬",
+      "b3": "新台幣 80 萬以上"
+    },
+    "submit": "以 Email 寄出",
+    "copy": "複製簡述",
+    "note": "此表單會開啟你的郵件 App 並預先填寫內容。或直接複製簡述寄至 <strong>aplusystem@gmail.com</strong>。",
+    "error": {
+      "name": "請輸入你的姓名。",
+      "email": "請輸入有效的 Email。",
+      "subject": "請輸入主旨。"
+    }
+  },
+  "company": {
+    "name": "Aplus Systems",
+    "tagline": "廣播整合 · 虛擬攝影棚 · 數位人解決方案",
+    "location": "台灣台北 — 服務範圍涵蓋亞洲各地"
+  },
+
+  "demos_hero": {
+    "h1": "示範集",
+    "lead": "精選<strong>虛擬棚整合</strong>、<strong>數位人</strong>製作與<strong>電視系統流程</strong>示例。"
+  },
+  "demos_section": {
+    "horizontal": "精選專案（16:9）",
+    "vertical": "短版格式（9:16）"
+  },
+  "demos_cards": {
+    "vs": {
+      "title": "虛擬棚建置",
+      "desc": "系統整合＋攝影機追蹤示範"
+    },
+    "short1": { "title": "短片示範——追蹤與構圖" },
+    "short2": { "title": "短片示範——數位人片段" },
+    "short3": { "title": "短片示範——流程亮點" }
+  },
+
+  "process_hero": {
+    "h1": "我們怎麼做",
+    "lead": "從探索到交付——我們的整合流程在每一步都確保清晰、高效與可靠。"
+  },
+  "process_main": {
+    "title": "工作流程",
+    "step1": {
+      "title": "探索與諮詢",
+      "desc": "理解你的目標、環境與挑戰，辨識系統真正所需。"
+    },
+    "step2": {
+      "title": "系統設計與規劃",
+      "desc": "繪製技術圖、選定相容軟硬體，並排定符合資源的時程。"
+    },
+    "step3": {
+      "title": "整合與安裝",
+      "desc": "現場佈線、設定與校正——確保 NDI、SDI 與 IP 元件無縫通訊。"
+    },
+    "step4": {
+      "title": "訓練與交接",
+      "desc": "提供操作訓練、流程文件與上線後遠端支援，確保長期穩定。"
+    }
+  },
+  "process_cta": {
+    "h3": "準備開始你的專案？",
+    "desc": "讓我們一起設計下一套虛擬棚或廣播流程。",
+    "btn": "聯絡 Aplus Systems"
+  },
+
+  "svc": {
+    "hero": {
+      "h1": "服務",
+      "lead": "結合創意與技術——為每個製作建立可靠流程。"
+    },
+    "shoot": {
+      "title": "棚務與製作服務",
+      "desc": "為創作者、學校與企業提供虛擬與實體棚支援。",
+      "item1": {
+        "title": "綠幕棚（台灣）",
+        "desc": "配置燈光與聲音，適合企業或教育錄製。"
+      },
+      "item2": {
+        "title": "虛擬棚拍攝",
+        "desc": "運用 Unreal Engine 與追蹤系統即時合成與直播。"
+      }
+    },
+    "system": {
+      "title": "系統整合與建置",
+      "desc": "面向虛擬製作與廣播系統的工程化方案。",
+      "item1": {
+        "title": "虛擬棚安裝",
+        "desc": "圍繞 NDI / SDI / IP 工作流程的規劃、佈線與測試。"
+      },
+      "item2": {
+        "title": "系統整合顧問",
+        "desc": "涵蓋擷取、切換、錄製與發佈的流程規劃。"
+      },
+      "item3": {
+        "title": "數位人唇形同步訓練",
+        "desc": "面向 AI 或虛擬主持的聲臉匹配。"
+      }
+    },
+    "collab": {
+      "title": "專案協作與創意支援",
+      "desc": "與信任的創作者與設計師協作完成整合專案。",
+      "item1": {
+        "title": "插畫與角色設計",
+        "desc": "與合作藝術家共製，支援數位或品牌敘事。"
+      },
+      "item2": {
+        "title": "影片剪輯與後期",
+        "desc": "由專業剪輯與動態設計交付高品質成品。"
+      },
+      "item3": {
+        "title": "網站與多媒體整合",
+        "desc": "支援品牌展示、教育平台與線上示範。"
+      }
+    },
+    "philosophy": {
+      "title": "我們的做法",
+      "desc": "Aplus Systems 橋接創意團隊與技術運營——讓每個專案高效且可靠地運轉。",
+      "cta": "討論你的專案"
+    }
+  },
+
+  "tech_hero": {
+    "h1": "技術與工具",
+    "lead": "以下品牌與技術是我在虛擬攝影棚與廣播環境中整合與設定的組成。標誌僅供識別用途。"
+  },
+  "tech_hw": {
+    "title": "硬體與設備",
+    "desc": "棚內建置與直播環境中常用的設備與品牌。",
+    "bmd": "導播切換台、棚內攝影機與 I/O",
+    "synco": "麥克風與現場收音",
+    "unileader": "廣播周邊與配件",
+    "obsbot": "PTZ / AI 追蹤攝影機",
+    "acemic": "棚內硬體與整合模組",
+    "yamaha": "調音台與音訊訊號路徑",
+    "mipro": "無線麥克風與接收器",
+    "mls": "LED 顯示系統與拼接牆"
+  },
+  "tech_sw": {
+    "title": "軟體與流程工具",
+    "desc": "用於打造現代虛擬攝影棚流程的軟體與協定。",
+    "obs": "直播製作與串流",
+    "unreal": "虛擬場景與即時算繪",
+    "ndi": "基於 IP 的影音傳輸",
+    "streamdeck": "巨集控制與操作體驗"
+  },
+  "tech_cta": {
+    "h3": "需要圍繞這些工具打造系統？",
+    "btn": "聯絡我"
+  },
+  "tech_note": {
+    "legal": "所有品牌名稱與標誌皆為其權利人所有，僅作參考展示之用。"
   },
 
   "footer": {
@@ -35,270 +309,8 @@
     "technologies": "技術",
     "contact": "聯絡"
   },
-
   "legal": {
     "disclaimer_title": "免責聲明：",
-    "disclaimer_body": "所有商標、標誌與品牌名稱之權利屬其各自所有人。此處僅為描述與參考之用，用以說明 Aplus Systems 在專業專案中曾使用或整合之相關技術。本網站與上述品牌無任何隸屬、背書或贊助關係。"
-  },
-
-  "meta": {
-    "home": {
-      "title": "Aplus Systems — 虛擬攝影棚、廣播整合與數位人影片",
-      "desc": "面向虛擬攝影棚與廣播工作流程的系統整合：NDI/SDI/IP 路由、Unreal/OBS/vMix 流程，以及數位人影片自動化。"
-    },
-    "about": {
-      "title": "關於 — Aplus Systems｜系統工程師與廣播顧問",
-      "desc": "專注於虛擬攝影棚與廣播整合的系統工程師。自需求探索到落地製作的五年端到端經驗。"
-    },
-    "services": {
-      "title": "服務 — Aplus Systems｜虛擬攝影棚與廣播整合",
-      "desc": "從需求探索到上架播出：虛擬攝影棚整合、電視與校園廣播建置，以及數位人影片流程。"
-    },
-    "demos": {
-      "title": "展示 — Aplus Systems｜案例與參考影片",
-      "desc": "精選參考 Demo，含直式（9:16）與橫式（16:9）。"
-    },
-    "process": {
-      "title": "流程 — Aplus Systems｜從探索到播出",
-      "desc": "涵蓋需求、設計、整合、驗證、訓練到上線的清晰可重複流程。"
-    },
-    "tech": {
-      "title": "技術 — Aplus Systems｜虛擬棚與廣播工具",
-      "desc": "探索 Aplus Systems 工作流程背後的技術——NDI、SDI、Unreal Engine、OBS、vMix 與自動化工具。"
-    },
-    "contact": {
-      "title": "聯絡 — Aplus Systems｜取得報價或諮詢",
-      "desc": "透過 Email、WhatsApp 或 LINE 與我們討論你的攝影棚或製作情境。"
-    }
-  },
-
-  "home_hero": {
-    "title": "虛擬攝影棚 × 廣播整合 × 數位人製作",
-    "subtitle": "Aplus Systems 提供端到端的廣播與虛擬攝影棚方案——結合創意製作、技術精準與可靠的系統設計。",
-    "cta1": "聯絡我們",
-    "cta2": "查看服務"
-  },
-
-  "svc": {
-    "hero": {
-      "h1": "服務",
-      "lead": "結合創意與技術——為每一次製作打造可靠流程。"
-    },
-    "shoot": {
-      "title": "棚內與製作服務",
-      "desc": "為創作者、學校與企業提供虛擬與實體棚支援。",
-      "item1": {
-        "title": "綠幕攝影棚（臺灣）",
-        "desc": "具備燈光與聲學設備，適合企業或教育錄製。"
-      },
-      "item2": {
-        "title": "虛擬棚拍攝",
-        "desc": "結合 Unreal 引擎與追蹤系統，實現即時合成與現場製作。"
-      }
-    },
-    "system": {
-      "title": "系統整合與建置",
-      "desc": "面向虛擬製片與廣播系統的工程化方案。",
-      "item1": {
-        "title": "虛擬攝影棚安裝",
-        "desc": "NDI / SDI / IP 流程的系統規劃、佈線與測試。"
-      },
-      "item2": {
-        "title": "系統整合顧問",
-        "desc": "涵蓋擷取、切換、錄製與發佈的工作流程規劃。"
-      },
-      "item3": {
-        "title": "數位人口型（Lip-sync）訓練",
-        "desc": "用於 AI 或虛擬主持的語音對嘴匹配。"
-      }
-    },
-    "collab": {
-      "title": "專案協作與創意支援",
-      "desc": "與可信的創作者與設計師合作，完成整合型專案。",
-      "item1": {
-        "title": "插畫與角色設計",
-        "desc": "與合作藝術家共同創作，支援數位或品牌敘事。"
-      },
-      "item2": {
-        "title": "影片剪輯與後製",
-        "desc": "由專業剪輯與動態設計團隊交付高品質成品。"
-      },
-      "item3": {
-        "title": "網站與多媒體整合",
-        "desc": "支援品牌展示、教育平台與線上 Demo 呈現。"
-      }
-    },
-    "philosophy": {
-      "title": "我們的理念",
-      "desc": "Aplus Systems 連結創意團隊與技術營運——確保每個專案高效且可靠地運行。",
-      "cta": "討論你的專案"
-    }
-  },
-
-  "about_hero": {
-    "h1": "關於 Aplus Systems",
-    "lead": "面向<strong>虛擬攝影棚</strong>、<strong>廣播系統</strong>與<strong>數位人製作</strong>的整合方案<br/>為各產業打造可靠、富有創意且互聯的影音環境。"
-  },
-  "about_intro": {
-    "title": "公司簡介",
-    "p1": "Aplus Systems 立足臺灣，專注於<strong>虛擬攝影棚設計</strong>、<strong>廣播系統整合</strong>與<strong>端到端流程顧問</strong>，服務教育與企業客戶。我們的使命是把創意願景與可靠的廣播技術連結起來。",
-    "p2": "自前期規劃到現場部署，我們處理每個階段——需求分析、硬體選型、佈線安裝、軟體設定與操作訓練。每套系統皆以<strong>穩定、直覺與可擴充</strong>為目標打造。",
-    "item1": "虛擬棚與攝影機追蹤整合",
-    "item2": "廣播與校園電視建置",
-    "item3": "AI 對嘴與數位人製作",
-    "item4": "技術訓練與遠端支援"
-  },
-  "about_exp": {
-    "title": "公司里程碑",
-    "2025": "在臺灣為多所大學與媒體機構部署多機位虛擬棚方案，擴展 <strong>Aplus Systems</strong> 業務。",
-    "2024": "交付 <strong>iSmart 廣播整合專案</strong>，自攝影到播出的自動化流程成為智慧廣播的重要一步。",
-    "2022": "設計並落地<strong>校園電視與混合教學教室</strong>，為超過 100 位師生與操作人員提供技術訓練。",
-    "2020": "奠定<strong>廣播製作、剪輯與系統維運</strong>基礎，形成今日 Aplus Systems 的整合式服務方法。"
-  },
-  "about_show": {
-    "title": "精選製作",
-    "wuya": "🦅「Wuya Laughs」— 剪輯",
-    "cross": "🌏「Cross-Strait Views」— 製作",
-    "heho": "🎬「Heho」— 執行製作"
-  },
-  "about_cta": {
-    "h3": "一起打造你的下一個攝影棚",
-    "btn": "聯絡我們"
-  },
-
-  "demos_hero": {
-    "h1": "Demo 展示",
-    "lead": "精選<strong>虛擬棚整合</strong>、<strong>數位人</strong>製作與<strong>電視系統流程</strong>的示例。"
-  },
-  "demos_section": {
-    "horizontal": "精選專案（16:9）",
-    "vertical": "短影音（9:16）"
-  },
-  "demos_cards": {
-    "vs": {
-      "title": "虛擬棚建置",
-      "desc": "系統整合＋攝影機追蹤示範"
-    },
-    "short1": { "title": "短片 Demo — 追蹤與取景" },
-    "short2": { "title": "短片 Demo — 數位人片段" },
-    "short3": { "title": "短片 Demo — 流程亮點" }
-  },
-
-  "process_hero": {
-    "h1": "我們如何合作",
-    "lead": "從探索到交付——整合流程在每一步都兼顧清晰、效率與可靠。"
-  },
-  "process_main": {
-    "title": "我們的流程",
-    "step1": {
-      "title": "需求探索與諮詢",
-      "desc": "先理解你的目標、環境與挑戰——找出系統真正需要的要件。"
-    },
-    "step2": {
-      "title": "系統設計與規劃",
-      "desc": "繪製技術圖、選擇相容軟硬體，並擬定與資源相符的時程。"
-    },
-    "step3": {
-      "title": "整合與建置",
-      "desc": "現場佈線、設定與校準——確保 NDI、SDI 與 IP 元件無縫溝通。"
-    },
-    "step4": {
-      "title": "訓練與交付",
-      "desc": "提供操作訓練、流程文件，以及上線後的遠端支援。"
-    }
-  },
-  "process_cta": {
-    "h3": "準備開始你的專案了嗎？",
-    "desc": "一起設計你的下一個虛擬攝影棚或廣播流程。",
-    "btn": "聯絡 Aplus Systems"
-  },
-
-  "contact_hero": {
-    "h1": "聯絡 Aplus Systems",
-    "lead": "我們專精於虛擬棚整合、數位人製作與廣播流程設計。告訴我們你的目標——我們協助你打造可靠又有創意的系統。"
-  },
-  "contact": {
-    "title": "聯絡管道",
-    "desc": "透過你偏好的方式與我們聯繫——團隊將於一個工作天內回覆。",
-    "cta1": "送出詢問",
-    "cta2": "WhatsApp 聊聊",
-    "cta3": "LINE 留言",
-    "channels": {
-      "email": "電子郵件",
-      "whatsapp": "WhatsApp",
-      "line": "LINE"
-    }
-  },
-  "form": {
-    "title": "送出專案簡述",
-    "desc": "告訴我們你的目標與限制。我們會在一個工作天內回覆。",
-    "name": { "label": "你的名字" },
-    "email": { "label": "電子郵件" },
-    "company": { "label": "公司／學校（選填）" },
-    "subject": { "label": "主旨" },
-    "message": { "label": "專案內容" },
-    "service": {
-      "label": "服務類型",
-      "virtual": "虛擬攝影棚整合",
-      "broadcast": "電視與校園廣播",
-      "digital": "數位人製作",
-      "greenscreen": "綠幕攝影棚",
-      "consult": "諮詢",
-      "other": "其他"
-    },
-    "budget": {
-      "label": "預算（選填）",
-      "unknown": "尚未確定",
-      "under": "低於新台幣 10 萬",
-      "b1": "新台幣 10–30 萬",
-      "b2": "新台幣 30–80 萬",
-      "b3": "新台幣 80 萬以上"
-    },
-    "submit": "透過 Email 傳送",
-    "copy": "複製簡述",
-    "note": "此表單會開啟你的郵件程式並預先填寫內容。或複製簡述寄至 <strong>aplusystem@gmail.com</strong>。",
-    "error": {
-      "name": "請輸入你的名字。",
-      "email": "請輸入有效的電子郵件。",
-      "subject": "請輸入主旨。"
-    }
-  },
-
-  "company": {
-    "name": "Aplus Systems",
-    "tagline": "廣播整合 · 虛擬攝影棚 · 數位人解決方案",
-    "location": "臺北，臺灣 — 服務亞洲各地客戶"
-  },
-
-  "tech_hero": {
-    "h1": "技術與工具",
-    "lead": "以下品牌與技術是我在虛擬棚與廣播環境中所整合與設定的一部分。標誌僅供識別之用。"
-  },
-  "tech_hw": {
-    "title": "硬體與設備",
-    "desc": "在棚內建置與直播環境中常用的設備與品牌。",
-    "bmd": "切換台、棚內攝影機與 I/O",
-    "synco": "麥克風與現場收音",
-    "unileader": "廣播周邊與配件",
-    "obsbot": "PTZ／AI 追蹤攝影機",
-    "acemic": "棚內硬體與整合模組",
-    "yamaha": "混音器與音訊訊號路徑",
-    "mipro": "無線麥克風與接收器",
-    "mls": "LED 顯示系統與拼接牆"
-  },
-  "tech_sw": {
-    "title": "軟體與流程工具",
-    "desc": "用於打造現代虛擬棚流程的軟體與協定。",
-    "obs": "現場製作與串流",
-    "unreal": "虛擬場景與即時算圖",
-    "ndi": "基於 IP 的視訊傳輸",
-    "streamdeck": "巨集控制與操作體驗"
-  },
-  "tech_cta": {
-    "h3": "需要以這些工具為核心的系統嗎？",
-    "btn": "聯絡我們"
-  },
-  "tech_note": {
-    "legal": "所有品牌名稱與標誌皆屬其權利人所有，僅供參考展示。"
+    "disclaimer_body": "所有商標、標誌與品牌名稱均屬其各自權利人所有。本網站僅為描述與參考目的展示這些標誌，用以說明 Aplus Systems 曾於專業專案中使用或整合之技術；本網站與所述品牌不存在隸屬、背書或贊助關係。"
   }
 }

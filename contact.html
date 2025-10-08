@@ -93,138 +93,150 @@
   <div id="include-header"></div>
 
   <main>
-    <!-- HERO -->
-    <section class="hero bright">
-      <div class="container">
-        <h1 data-i18n="contact_hero.h1">Get in Touch with Aplus Systems</h1>
-        <p class="lead" data-i18n="contact_hero.lead">
-          We specialize in virtual studio integration, digital human production, and broadcast workflow design.
-          Tell us your project goals — we’ll help you build a reliable, creative system.
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2 data-i18n="contact.title">Contact Channels</h2>
-        <p data-i18n="contact.desc">
-          Reach out through your preferred method below — our team will respond within one working day.
-        </p>
-
-        <div class="contact-grid">
-          <!-- Email -->
-          <article class="contact-card">
-            <div class="contact-icon">📧</div>
-            <h3>Email</h3>
-            <p><a href="mailto:aplusystem@gmail.com">aplusystem@gmail.com</a></p>
-          </article>
-
-          <!-- WhatsApp -->
-          <article class="contact-card">
-            <div class="contact-icon">💬</div>
-            <h3>WhatsApp</h3>
-            <p><a href="https://wa.me/60146672458" target="_blank">wa.me/60146672458</a></p>
-          </article>
-
-          <!-- LINE -->
-          <article class="contact-card">
-            <div class="contact-icon">🟩</div>
-            <h3>LINE</h3>
-            <p><a href="https://lin.ee/Wn6fRoT" target="_blank">lin.ee/Wn6fRoT</a></p>
-          </article>
-        </div>
-
-        <div class="cta-row" style="margin-top: 24px;">
-          <a class="btn primary" href="mailto:aplusystem@gmail.com" data-i18n="contact.cta1">Send Inquiry</a>
-          <a class="btn ghost" href="https://wa.me/60146672458" target="_blank" data-i18n="contact.cta2">Chat on WhatsApp</a>
-        </div>
-      </div>
-    </section>
-    
-    <!-- CONTACT FORM -->
-<section class="section" id="contact-form">
-  <div class="container">
-    <h2 data-i18n="form.title">Send a Project Brief</h2>
-    <p class="muted" data-i18n="form.desc">
-      Tell us your goals and constraints. We’ll get back within one working day.
-    </p>
-
-    <form id="aplus-form" novalidate>
-      <div class="form-grid">
-        <div class="form-field">
-          <label for="name" data-i18n="form.name.label">Your Name</label>
-          <input id="name" name="name" type="text" placeholder="e.g. Chen / Ms. Lee" required aria-required="true">
-          <small class="error" data-i18n="form.error.name">Please enter your name.</small>
-        </div>
-
-        <div class="form-field">
-          <label for="email" data-i18n="form.email.label">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true">
-          <small class="error" data-i18n="form.error.email">Please enter a valid email.</small>
-        </div>
-
-        <div class="form-field">
-          <label for="company" data-i18n="form.company.label">Company / School (optional)</label>
-          <input id="company" name="company" type="text" placeholder="Aplus Systems / Dept. of Media">
-        </div>
-
-        <div class="form-field">
-          <label for="subject" data-i18n="form.subject.label">Subject</label>
-          <input id="subject" name="subject" type="text" placeholder="Virtual studio setup / TV campus integration" required aria-required="true">
-          <small class="error" data-i18n="form.error.subject">Please enter a subject.</small>
-        </div>
-
-        <div class="form-field form-field--full">
-          <label for="message" data-i18n="form.message.label">Project Details</label>
-          <textarea id="message" name="message" rows="6" placeholder="Goals, timeline, budget range, current tools…"></textarea>
-        </div>
-
-        <div class="form-field form-field--half">
-          <label for="service" data-i18n="form.service.label">Service Type</label>
-          <select id="service" name="service">
-            <option value="virtual" data-i18n="form.service.virtual">Virtual Studio Integration</option>
-            <option value="broadcast" data-i18n="form.service.broadcast">TV & Campus Broadcast</option>
-            <option value="digital" data-i18n="form.service.digital">Digital Human Production</option>
-            <option value="greenscreen" data-i18n="form.service.greenscreen">Green Screen Studio</option>
-            <option value="consult" data-i18n="form.service.consult">Consultation</option>
-            <option value="other" data-i18n="form.service.other">Other</option>
-          </select>
-        </div>
-
-        <div class="form-field form-field--half">
-          <label for="budget" data-i18n="form.budget.label">Budget (optional)</label>
-          <select id="budget" name="budget">
-            <option value="" data-i18n="form.budget.unknown">Not sure yet</option>
-            <option value="under" data-i18n="form.budget.under">Under NTD 100k</option>
-            <option value="100-300" data-i18n="form.budget.b1">NTD 100k–300k</option>
-            <option value="300-800" data-i18n="form.budget.b2">NTD 300k–800k</option>
-            <option value="800plus" data-i18n="form.budget.b3">NTD 800k+</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="cta-row" style="margin-top: 14px;">
-        <button type="submit" class="btn primary" data-i18n="form.submit">Send via Email</button>
-        <button type="button" id="copy-brief" class="btn ghost" data-i18n="form.copy">Copy Brief</button>
-      </div>
-
-      <p class="form-note muted" data-i18n="form.note">
-        This form opens your email app with a pre-filled message. Or copy the brief and send it to <strong>aplusystem@gmail.com</strong>.
+  <!-- ===== HERO ===== -->
+  <section class="hero bright">
+    <div class="container">
+      <h1 data-i18n="contact_hero.h1">Get in Touch with Aplus Systems</h1>
+      <p class="lead" data-i18n="contact_hero.lead">
+        We specialize in virtual studio integration, digital human production, and broadcast workflow design.
+        Tell us your project goals — we’ll help you build a reliable, creative system.
       </p>
-    </form>
-  </div>
-</section>
+    </div>
+  </section>
 
-    <!-- Company Info -->
-    <section class="section company-info">
-      <div class="container">
-        <h3>Aplus Systems</h3>
-        <p>Broadcast Integration · Virtual Studio · Digital Human Solutions</p>
-        <p class="muted">Taipei, Taiwan — Serving clients across Asia</p>
+  <!-- ===== CONTACT CHANNELS ===== -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 data-i18n="contact.title">Contact Channels</h2>
+      <p data-i18n="contact.desc">
+        Reach out through your preferred method below — our team will respond within one working day.
+      </p>
+
+      <div class="contact-grid">
+        <!-- Email -->
+        <article class="contact-card">
+          <div class="contact-icon" aria-hidden="true">📧</div>
+          <h3 data-i18n="contact.channels.email">Email</h3>
+          <p>
+            <a href="mailto:aplusystem@gmail.com" aria-label="Send email to aplusystem@gmail.com">
+              aplusystem@gmail.com
+            </a>
+          </p>
+        </article>
+
+        <!-- WhatsApp -->
+        <article class="contact-card">
+          <div class="contact-icon" aria-hidden="true">💬</div>
+          <h3 data-i18n="contact.channels.whatsapp">WhatsApp</h3>
+          <p>
+            <a href="https://wa.me/60146672458" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+              wa.me/60146672458
+            </a>
+          </p>
+        </article>
+
+        <!-- LINE -->
+        <article class="contact-card">
+          <div class="contact-icon" aria-hidden="true">🟩</div>
+          <h3 data-i18n="contact.channels.line">LINE</h3>
+          <p>
+            <a href="https://lin.ee/Wn6fRoT" target="_blank" rel="noopener" aria-label="Message on LINE">
+              lin.ee/Wn6fRoT
+            </a>
+          </p>
+        </article>
       </div>
-    </section>
-  </main>
+
+      <div class="cta-row" style="margin-top: 24px;">
+        <a class="btn primary" href="mailto:aplusystem@gmail.com" data-i18n="contact.cta1">Send Inquiry</a>
+        <a class="btn ghost" href="https://wa.me/60146672458" target="_blank" rel="noopener" data-i18n="contact.cta2">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FORM (mailto brief) ===== -->
+  <section class="section" id="contact-form">
+    <div class="container">
+      <h2 data-i18n="form.title">Send a Project Brief</h2>
+      <p class="muted" data-i18n="form.desc">
+        Tell us your goals and constraints. We’ll get back within one working day.
+      </p>
+
+      <form id="aplus-form" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="name" data-i18n="form.name.label">Your Name</label>
+            <input id="name" name="name" type="text" placeholder="e.g. Chen / Ms. Lee" required aria-required="true">
+            <small class="error" data-i18n="form.error.name">Please enter your name.</small>
+          </div>
+
+          <div class="form-field">
+            <label for="email" data-i18n="form.email.label">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true">
+            <small class="error" data-i18n="form.error.email">Please enter a valid email.</small>
+          </div>
+
+          <div class="form-field">
+            <label for="company" data-i18n="form.company.label">Company / School (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Aplus Systems / Dept. of Media">
+          </div>
+
+          <div class="form-field">
+            <label for="subject" data-i18n="form.subject.label">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Virtual studio setup / TV campus integration" required aria-required="true">
+            <small class="error" data-i18n="form.error.subject">Please enter a subject.</small>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="message" data-i18n="form.message.label">Project Details</label>
+            <textarea id="message" name="message" rows="6" placeholder="Goals, timeline, budget range, current tools…"></textarea>
+          </div>
+
+          <div class="form-field form-field--half">
+            <label for="service" data-i18n="form.service.label">Service Type</label>
+            <select id="service" name="service">
+              <option value="virtual" data-i18n="form.service.virtual">Virtual Studio Integration</option>
+              <option value="broadcast" data-i18n="form.service.broadcast">TV & Campus Broadcast</option>
+              <option value="digital" data-i18n="form.service.digital">Digital Human Production</option>
+              <option value="greenscreen" data-i18n="form.service.greenscreen">Green Screen Studio</option>
+              <option value="consult" data-i18n="form.service.consult">Consultation</option>
+              <option value="other" data-i18n="form.service.other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field form-field--half">
+            <label for="budget" data-i18n="form.budget.label">Budget (optional)</label>
+            <select id="budget" name="budget">
+              <option value="" data-i18n="form.budget.unknown">Not sure yet</option>
+              <option value="under" data-i18n="form.budget.under">Under NTD 100k</option>
+              <option value="100-300" data-i18n="form.budget.b1">NTD 100k–300k</option>
+              <option value="300-800" data-i18n="form.budget.b2">NTD 300k–800k</option>
+              <option value="800plus" data-i18n="form.budget.b3">NTD 800k+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cta-row" style="margin-top: 14px;">
+          <button type="submit" class="btn primary" data-i18n="form.submit">Send via Email</button>
+          <button type="button" id="copy-brief" class="btn ghost" data-i18n="form.copy">Copy Brief</button>
+        </div>
+
+        <p class="form-note muted" data-i18n="form.note">
+          This form opens your email app with a pre-filled message. Or copy the brief and send it to <strong>aplusystem@gmail.com</strong>.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== COMPANY INFO ===== -->
+  <section class="section company-info">
+    <div class="container">
+      <h3 data-i18n="company.name">Aplus Systems</h3>
+      <p data-i18n="company.tagline">Broadcast Integration · Virtual Studio · Digital Human Solutions</p>
+      <p class="muted" data-i18n="company.location">Taipei, Taiwan — Serving clients across Asia</p>
+    </div>
+  </section>
+</main>
 
   <!-- Footer -->
   <div id="include-footer"></div>

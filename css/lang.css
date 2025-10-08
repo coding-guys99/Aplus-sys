@@ -73,3 +73,7 @@
 /* 手機面板內語言清單：預設收起，.show 強制顯示 */
 .lang-menu.in-panel { display: none; }
 .lang-menu.in-panel.show { display: block !important; }
+
+.mobile-card--lang img{
+  color:var(--primary, #d4af37);
+}

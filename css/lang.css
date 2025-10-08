@@ -74,7 +74,7 @@
 .lang-menu.in-panel { display: none; }
 .lang-menu.in-panel.show { display: block !important; }
 
-button img{
+#lang-fab img{
   display:block;
   width:20%;
   height:20%;

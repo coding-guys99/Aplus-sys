@@ -1,95 +1,99 @@
-/* lang-dropdown.js
-   - Renders desktop dropdown (#lang-dropdown + #lang-btn)
-   - Renders a separate list inside mobile panel (#mobile-lang)
-   - Persists selection to localStorage('lang'), then reloads
+/* lang-dropdown.js — desktop globe dropdown + mobile in-panel list
+   - waits for header include (partials:loaded) and retries mounting
+   - persists language to localStorage('lang') then reloads
 */
-
-document.addEventListener('DOMContentLoaded', () => {
-  const LANGUAGES = [
+(function(){
+  const LANGS = [
     { code: 'en',    label: 'English' },
     { code: 'ms',    label: 'Bahasa Melayu' },
     { code: 'zh-CN', label: '简体中文' },
     { code: 'zh-TW', label: '繁體中文' },
   ];
 
-  // 目前語言：localStorage 優先，其次用瀏覽器語言推斷
-  let current = localStorage.getItem('lang');
-  if (!current) {
-    const bl = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-    if (bl.startsWith('zh-tw')) current = 'zh-TW';
-    else if (bl.startsWith('zh')) current = 'zh-CN';
-    else if (bl.startsWith('ms')) current = 'ms';
-    else current = 'en';
+  function detectLang(){
+    const saved = localStorage.getItem('lang');
+    if (saved) return saved;
+    const bl = (navigator.language || 'en').toLowerCase();
+    if (bl.startsWith('zh-tw')) return 'zh-TW';
+    if (bl.startsWith('zh'))    return 'zh-CN';
+    if (bl.startsWith('ms'))    return 'ms';
+    return 'en';
   }
 
-  // 建立語言 <li> 清單
-  function buildList(onPick) {
+  function buildList(current, onPick){
     const ul = document.createElement('ul');
-    LANGUAGES.forEach(l => {
+    LANGS.forEach(l=>{
       const li = document.createElement('li');
       li.textContent = l.label;
       li.dataset.setlang = l.code;
       if (l.code === current) li.classList.add('active');
-      li.addEventListener('click', () => onPick(l.code));
+      li.addEventListener('click', ()=>{
+        localStorage.setItem('lang', l.code);
+        onPick(l.code);
+      });
       ul.appendChild(li);
     });
     return ul;
   }
 
-  // 通用切換邏輯
-  function applyLang(code) {
-    localStorage.setItem('lang', code);
-    // 可在此呼叫你的即時套用邏輯；若沒有就 reload：
-    location.reload();
+  function mountOnce(){
+    const current = detectLang();
+
+    // ===== 桌機：地球按鈕 + 下拉容器 =====
+    const host   = document.getElementById('lang-dropdown'); // 放下拉的容器
+    const btn    = document.getElementById('lang-btn');      // 地球 icon 按鈕
+    if (host && btn && !host.dataset.mounted){
+      host.classList.add('lang-dropdown');
+      const menu = document.createElement('ul');
+      menu.className = 'lang-menu';
+      menu.appendChild(buildList(current, () => location.reload()));
+      host.appendChild(menu);
+      host.dataset.mounted = '1';
+
+      // 點地球 -> 顯示/隱藏
+      btn.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        const show = !menu.classList.contains('show');
+        menu.classList.toggle('show', show);
+        btn.setAttribute('aria-expanded', show ? 'true' : 'false');
+      });
+      // 點外面 -> 關閉
+      document.addEventListener('click', (e)=>{
+        if (!host.contains(e.target) && !btn.contains(e.target)){
+          menu.classList.remove('show');
+          btn.setAttribute('aria-expanded','false');
+        }
+      });
+    }
+
+    // ===== 手機：面板內清單 =====
+    const mobileList = document.getElementById('mobile-lang');         // <ul id="mobile-lang" class="lang-menu in-panel" hidden>
+    const mobileBtn  = document.querySelector('[data-open-lang]');     // 「Language」卡片
+    if (mobileList && mobileBtn && !mobileList.dataset.mounted){
+      mobileList.innerHTML = '';
+      mobileList.appendChild(buildList(current, () => location.reload()));
+      mobileList.dataset.mounted = '1';
+
+      mobileBtn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        mobileList.hidden = !mobileList.hidden;
+      });
+    }
+
+    // 回傳是否都找到至少一個位置（避免死等）
+    return !!((host && btn) || (mobileList && mobileBtn));
   }
 
-  /* ===== 桌機 dropdown：#lang-btn + #lang-dropdown ===== */
-  const desktopHost = document.getElementById('lang-dropdown'); // 容器
-  const desktopBtn  = document.getElementById('lang-btn');       // 地球按鈕
-
-  if (desktopHost && desktopBtn) {
-    desktopHost.classList.add('lang-dropdown');
-    const menu = document.createElement('ul');
-    menu.className = 'lang-menu';
-    menu.appendChild(buildList(applyLang));
-    desktopHost.appendChild(menu);
-
-    // 切換開合
-    desktopBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      menu.classList.toggle('show');
-      desktopBtn.setAttribute('aria-expanded', menu.classList.contains('show') ? 'true' : 'false');
-    });
-
-    // 點外面收合
-    document.addEventListener('click', (e) => {
-      if (!desktopHost.contains(e.target) && !desktopBtn.contains(e.target)) {
-        menu.classList.remove('show');
-        desktopBtn.setAttribute('aria-expanded', 'false');
+  // ===== 初始化：等 DOM、等 partials，再重試幾次（應付延遲載入）=====
+  function bootWithRetry(){
+    let tries = 0, maxTries = 10;
+    const timer = setInterval(()=>{
+      if (mountOnce() || ++tries >= maxTries){
+        clearInterval(timer);
       }
-    });
+    }, 150);
   }
 
-  /* ===== 手機面板語言清單：#mobile-lang + [data-open-lang] ===== */
-  const mobileList = document.getElementById('mobile-lang');     // <ul id="mobile-lang" class="lang-menu in-panel" hidden>
-  const mobileBtn  = document.querySelector('[data-open-lang]'); // 「Language」卡片按鈕
-
-  if (mobileList && mobileBtn) {
-    mobileList.innerHTML = '';
-    mobileList.appendChild(buildList((code) => {
-      // 切換語言前先收起 mobile menu（視覺較乾淨）
-      const mm = document.getElementById('mobile-menu');
-      const ov = document.querySelector('.nav-overlay');
-      mm?.classList.remove('is-open');
-      mm?.setAttribute('aria-hidden', 'true');
-      ov?.classList.remove('is-active');
-      applyLang(code);
-    }));
-
-    // 展開 / 收起清單（不離開面板）
-    mobileBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      mobileList.hidden = !mobileList.hidden;
-    });
-  }
-});
+  document.addEventListener('DOMContentLoaded', bootWithRetry);
+  document.addEventListener('partials:loaded', bootWithRetry);
+})();

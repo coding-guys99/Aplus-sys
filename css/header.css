@@ -133,3 +133,10 @@
 }
 .lang-menu.in-panel[hidden] { display: none; }
 .lang-menu.in-panel li { padding: 10px 14px; }
+
+/* 只要 aria-hidden=false，也視為開啟 */
+.mobile-menu-panel[aria-hidden="false"]{
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -154,3 +154,61 @@
 @media (min-width:1025px){
   .nav-overlay { pointer-events: none; } /* 桌機下拉不需要 overlay 攔截點擊 */
 }
+
+/* === 手機版主選單底部的語言按鈕 === */
+.mobile-lang-trigger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.menu-card--lang {
+  width: auto;
+  min-width: 160px;
+  padding: 10px 18px;
+  border-radius: 24px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+.menu-card--lang:hover {
+  background: rgba(255,255,255,.15);
+  color: var(--primary,#d4af37);
+  transform: translateY(-2px);
+}
+.menu-card--lang img {
+  width: 22px; height: 22px;
+  filter: brightness(.95);
+}
+
+/* 語言清單（手機展開後） */
+.lang-menu.in-panel {
+  position: static;
+  display: none;
+  margin-top: 6px;
+  background: rgba(28,28,28,.98);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.45);
+}
+.lang-menu.in-panel.show {
+  display: block;
+}
+.lang-menu.in-panel li {
+  padding: 10px 14px;
+  color: #ddd;
+  cursor: pointer;
+  transition: background .2s,color .2s;
+}
+.lang-menu.in-panel li:hover {
+  background: rgba(255,255,255,.08);
+  color: var(--primary,#d4af37);
+}

@@ -106,3 +106,16 @@
     if (y) y.textContent = new Date().getFullYear();
   });
 })();
+
+// === 手機語言按鈕控制 ===
+document.addEventListener('DOMContentLoaded', () => {
+  const langBtn = document.querySelector('#lang-fab');
+  const langPanel = document.querySelector('#mobile-lang');
+  if (!langBtn || !langPanel) return;
+
+  langBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const isOpen = langPanel.classList.toggle('show');
+    langBtn.setAttribute('aria-expanded', isOpen);
+  });
+});

@@ -74,12 +74,5 @@
 .lang-menu.in-panel { display: none; }
 .lang-menu.in-panel.show { display: block !important; }
 
-/* 語言按鈕在面板底部的樣式（如果還沒加） */
-.mobile-lang-trigger {
-  display: flex; flex-direction: column; align-items: center; gap: 10px;
-  margin-top: 12px;
-}
-
-
-.menu-card--lang img { width: 22px; height: 22px; filter: brightness(.95); }
-.menu-card--lang img:hover { background: rgba(255,255,255,.15); color: var(--primary,#d4af37); transform: translateY(-2px); }
+.menu-card--lang img { width: 20%; height: 20%; filter: brightness(.95); }
+.menu-card--lang img:hover { color: var(--primary,#d4af37); transform: translateY(-2px); }

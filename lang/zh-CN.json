@@ -31,13 +31,11 @@
   },
   
   "nav": {
-  "menu": "菜单",
   "about": "关于我们",
   "services": "服务",
   "demos": "演示",
   "process": "流程",
   "tech": "技术",
-  "technologies": "技术",
   "contact": "联系"
 },
 

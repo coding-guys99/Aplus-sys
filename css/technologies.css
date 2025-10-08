@@ -73,14 +73,6 @@
   opacity: 1;
 }
 
-/* 特殊比例微調 */
-.brand-card.is-wide .brand-logo-box {
-  --logo-h: clamp(60px, 8vw, 100px);
-}
-.brand-card.is-square .brand-logo-box {
-  --logo-h: clamp(100px, 14vw, 160px);
-}
-
 .brand-name { color: var(--text); font-weight: 700; margin-top: 10px; }
 .brand-desc { color: var(--muted); font-size: .9rem; margin-top: 4px; }
 

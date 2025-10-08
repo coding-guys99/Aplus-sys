@@ -52,12 +52,13 @@
   </nav>
 
   <div class="mobile-menu-footer">
-  <div class="mobile-lang-wrap">
-    <button type="button" class="menu-card menu-card--lang" data-open-lang>
+  <!-- 其他 footer 元素可保留 -->
+  <div class="mobile-lang-trigger">
+    <button id="lang-fab" class="menu-card menu-card--lang" aria-expanded="false">
       <img src="./assets/icon/lang.png" alt="">
       <span>Language</span>
     </button>
-    <!-- ✅ 手機語言清單放這裡 -->
+    <!-- 手機語言清單 -->
     <ul id="mobile-lang" class="lang-menu in-panel" hidden></ul>
   </div>
 </div>

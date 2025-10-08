@@ -29,6 +29,44 @@
   </div>
 </header>
 
+<!-- Mobile full-screen menu panel (only shows ≤1024px) -->
+<div id="mobile-menu" class="mobile-menu-panel" aria-hidden="true">
+  <div class="mobile-menu-header">
+    <a class="brand" href="index.html" aria-label="Aplus Systems home">
+      <img src="./assets/logo.svg" alt="Aplus Systems logo" class="brand-logo" />
+      <span class="brand-name">Aplus Systems</span>
+    </a>
+    <button class="menu-close" aria-label="Close menu">✕</button>
+  </div>
+
+  <nav class="mobile-menu-grid" aria-label="Mobile navigation">
+    <a href="about.html" class="menu-card">
+      <img src="./assets/icon/about.svg" alt="" loading="lazy"><span data-i18n="nav.about">About</span>
+    </a>
+    <a href="services.html" class="menu-card">
+      <img src="./assets/icon/services.svg" alt="" loading="lazy"><span data-i18n="nav.services">Services</span>
+    </a>
+    <a href="demos.html" class="menu-card">
+      <img src="./assets/icon/demo.svg" alt="" loading="lazy"><span data-i18n="nav.demos">Demos</span>
+    </a>
+    <a href="process.html" class="menu-card">
+      <img src="./assets/icon/process.svg" alt="" loading="lazy"><span data-i18n="nav.process">Process</span>
+    </a>
+    <a href="technologies.html" class="menu-card">
+      <img src="./assets/icon/tech.svg" alt="" loading="lazy"><span data-i18n="nav.tech">Technologies</span>
+    </a>
+    <!-- 語言卡片：點擊等同打開地球下拉（行動版） -->
+    <button type="button" class="menu-card menu-card--lang" data-open-lang>
+      <img src="./assets/icon/lang.png" alt=""><span data-i18n="nav.lang">Language</span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu-footer">
+    <a class="btn ghost" href="contact.html" data-i18n="nav.contact">Contact</a>
+  </div>
+</div>
+
+<!-- 背景遮罩（共用） -->
 <div class="nav-overlay"></div>
 
 <link rel="stylesheet" href="./css/header.css" />

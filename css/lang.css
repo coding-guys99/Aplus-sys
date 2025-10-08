@@ -5,23 +5,6 @@
   z-index: 2100; /* 蓋過 header */
 }
 
-.lang-btn {
-  background: transparent;
-  border: 0;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: filter .2s ease, transform .12s ease;
-}
-.lang-btn:hover .lang-icon { filter: drop-shadow(0 0 6px rgba(212,175,55,.55)); }
-.lang-btn:active { transform: scale(.96); }
-.lang-btn:focus { outline: none; }
-.lang-btn:focus-visible .lang-icon { filter: drop-shadow(0 0 8px rgba(212,175,55,.8)); }
 
 .lang-icon {
   width: 18px;

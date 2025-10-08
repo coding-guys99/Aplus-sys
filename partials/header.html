@@ -19,10 +19,11 @@
       </ul>
     </nav>
 
-    <!-- 語言切換（桌機） -->
+    <!-- 桌機語言 -->
     <div class="actions">
-      <button id="lang-btn" class="lang-btn" aria-haspopup="true" aria-expanded="false">
-        <img src="./assets/icon/lang.png" alt="Language" width="20" height="20">
+      <button id="lang-btn" class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
+        <img src="./assets/icon/lang.png" alt="" width="20" height="20">
+        <span class="sr-only">Language</span>
       </button>
       <div id="lang-dropdown" class="lang-dropdown" aria-label="Language selector"></div>
     </div>
@@ -43,21 +44,18 @@
   </div>
 
   <nav class="mobile-menu-grid" aria-label="Mobile navigation">
-    <a href="about.html" class="menu-card"><img src="./assets/icon/about.svg"   alt=""><span>About</span></a>
+    <a href="about.html" class="menu-card"><img src="./assets/icon/about.svg" alt=""><span>About</span></a>
     <a href="services.html" class="menu-card"><img src="./assets/icon/services.svg" alt=""><span>Services</span></a>
-    <a href="demos.html" class="menu-card"><img src="./assets/icon/demo.svg"    alt=""><span>Demos</span></a>
+    <a href="demos.html" class="menu-card"><img src="./assets/icon/demo.svg" alt=""><span>Demos</span></a>
     <a href="process.html" class="menu-card"><img src="./assets/icon/process.svg" alt=""><span>Process</span></a>
     <a href="technologies.html" class="menu-card"><img src="./assets/icon/tech.svg" alt=""><span>Technologies</span></a>
     <a href="contact.html" class="menu-card"><img src="./assets/icon/contact.svg" alt=""><span>Contact</span></a>
   </nav>
 
-  <!-- ✅ 把語言按鈕與清單放在面板內部 -->
+  <!-- 手機語言：底部語言列 -->
   <div class="mobile-menu-footer">
-  <nav class="lang-bar" aria-label="Language">
-    <!-- JS 會自動注入按鈕 -->
-  </nav>
-</div>
+    <nav class="lang-bar" aria-label="Language"></nav>
+  </div>
 </div>
 
-<!-- overlay 仍在最外層 -->
 <div class="nav-overlay"></div>

@@ -1,0 +1,253 @@
+{
+  "brand": {
+    "name": "Aplus Systems",
+    "role": "虚拟演播室与广播集成"
+  },
+
+  "nav": {
+    "menu": "菜单",
+    "about": "关于",
+    "services": "服务",
+    "demos": "演示",
+    "process": "流程",
+    "tech": "技术",
+    "technologies": "技术",
+    "contact": "联系"
+  },
+
+  "footer": {
+    "rights": "版权所有。",
+    "about": "关于",
+    "services": "服务",
+    "demos": "演示",
+    "process": "流程",
+    "technologies": "技术",
+    "contact": "联系"
+  },
+
+  "legal": {
+    "disclaimer_title": "免责声明：",
+    "disclaimer_body": "所有商标、标识和品牌名称均归其各自所有者所有。此处仅为说明与参考之用，用以展示 Aplus Systems 在专业项目中曾使用或集成的技术。本网站与所提及任何品牌无从属、背书或赞助关系。"
+  },
+
+  "meta": {
+    "home": {
+      "title": "Aplus Systems — 虚拟演播室、广播集成与数字人视频",
+      "desc": "虚拟演播室与广播工作流系统集成：NDI/SDI/IP 路由、Unreal/OBS/vMix 流水线，以及数字人视频自动化。"
+    },
+    "about": {
+      "title": "关于 — Aplus Systems | 系统工程师与广播顾问",
+      "desc": "专注于虚拟演播室与广播集成的系统工程团队。拥有五年覆盖规划、集成与制作的端到端经验。"
+    },
+    "services": {
+      "title": "服务 — Aplus Systems | 虚拟演播室与广播集成",
+      "desc": "从需求洞察到播出交付：虚拟演播室集成、电视与校园广播搭建、数字人视频流程。"
+    },
+    "demos": {
+      "title": "演示 — Aplus Systems | 展示与参考视频",
+      "desc": "精选演示视频，包含竖屏（9:16）与横屏（16:9）示例。"
+    },
+    "process": {
+      "title": "流程 — Aplus Systems | 从需求到上架播出",
+      "desc": "清晰、可复用的流程，涵盖需求、设计、集成、验证、培训与上线。"
+    },
+    "tech": {
+      "title": "技术 — Aplus Systems | 虚拟演播室与广播工具",
+      "desc": "探索支撑 Aplus Systems 工作流的技术——NDI、SDI、Unreal Engine、OBS、vMix 与自动化工具。"
+    },
+    "contact": {
+      "title": "联系 — Aplus Systems | 获取报价或咨询",
+      "desc": "通过 Email、WhatsApp 或 LINE 与我们联系，讨论你的演播室或制作方案。"
+    }
+  },
+
+  "hero": {
+    "title": "虚拟演播室 × 广播集成 × 数字人视频",
+    "subtitle": "拥有五年以上广播系统经验，我们为真实制作场景设计与集成可靠且富创意的视频方案——从规划到播出交付。",
+    "cta1": "联系我",
+    "cta2": "查看服务"
+  },
+
+  "svc": {
+    "title": "核心服务",
+    "virtualstudio": {
+      "title": "虚拟演播室集成",
+      "desc": "端到端搭建：抠像、摄像机追踪与多协议路由（NDI / SDI / IP）。"
+    },
+    "broadcast": {
+      "title": "电视与校园广播搭建",
+      "desc": "面向教育或企业演播室的一站式系统：从规划与清单到集成与培训。"
+    },
+    "digitalhuman": {
+      "title": "数字人视频制作",
+      "desc": "AI 语音合成、唇形同步与 3D 虚拟场景，构建高效的自动化视频制作。"
+    }
+  },
+
+  "svc_hero": {
+    "h1": "我们能为你做什么",
+    "p": "从需求洞察到播出交付——为真实生产打造稳定、可维护的系统。",
+    "cta": "获取报价"
+  },
+  "svc_core": {
+    "title": "核心服务"
+  },
+  "svc_vs": {
+    "title": "虚拟演播室集成",
+    "desc": "抠像、摄像机追踪、NDI/SDI/IP 路由与控制面板配置。",
+    "item1": "信号流设计（NDI / SDI / SRT）",
+    "item2": "vMix / OBS / Unreal 工作流",
+    "item3": "操作 SOP 与快速上手"
+  },
+  "svc_tv": {
+    "title": "电视与校园广播",
+    "desc": "内部演播室一站式搭建：规划、设备清单、集成与培训。",
+    "item1": "需求与拓扑",
+    "item2": "采购指导",
+    "item3": "调试与交接"
+  },
+  "svc_dh": {
+    "title": "数字人视频",
+    "desc": "AI 语音、唇形同步与 3D 场景集成，用于长时自动化展示。",
+    "item1": "语音模型与时序",
+    "item2": "唇形同步流程",
+    "item3": "播放与排程"
+  },
+  "svc_tiers": {
+    "title": "套餐与起始价格",
+    "cta": "告诉我你的使用场景"
+  },
+  "tier": {
+    "basic": "入门版",
+    "basic.desc": "单房间 / 单工作流",
+    "basic.price": "新台币 ** 起（需求沟通后给出区间）",
+    "pro": "专业版",
+    "pro.desc": "多设备集成 / 含培训",
+    "pro.price": "新台币 ** 起",
+    "custom": "定制版",
+    "custom.desc": "大型 / 端到端交付",
+    "custom.price": "按需报价"
+  },
+  "svc_tech": {
+    "title": "支持的技术"
+  },
+  "svc_faq": {
+    "title": "常见问题"
+  },
+  "faq": {
+    "time.q": "多久可以上线？",
+    "time.a": "通常 2–8 周，取决于范围与采购进度。",
+    "cost.q": "如何定价？",
+    "cost.a": "在简短需求沟通后，我们会提供价格区间与时间规划。"
+  },
+  "svc_final": {
+    "h3": "准备规划你的演播室或节目了吗？",
+    "cta": "联系我"
+  },
+
+  "about_hero": {
+    "h1": "关于 Aplus Systems",
+    "lead": "专注于虚拟演播室与广播集成的独立系统工程团队——连接技术与制作。"
+  },
+  "about": {
+    "title": "关于 Aplus",
+    "desc": "我们设计可靠的虚拟演播室与广播系统，结合务实工程与可落地的制作流程。"
+  },
+  "about_intro": {
+    "title": "专业简介",
+    "p1": "Aplus Systems 为教育与企业团队提供虚拟演播室设计、广播集成与工作流咨询。",
+    "p2": "覆盖全流程：需求分析、硬件选型、布线安装、软件配置与操作培训——确保系统稳定、直观且可扩展。",
+    "item1": "虚拟演播室与摄像机追踪集成",
+    "item2": "广播与校园电视搭建",
+    "item3": "AI 唇形同步与数字人制作",
+    "item4": "技术培训与远程支持"
+  },
+  "about_exp": {
+    "title": "公司历程",
+    "y2025": "主导多机位虚拟演播室系统设计，部署于多所高校。",
+    "y2024": "执行 iSmart 广播集成项目，实现直播工作流自动化。",
+    "y2022": "集成校园电视系统并培训教职与学生开展日常操作。",
+    "y2020": "参与广播制作与后期剪辑——从内容到成片。"
+  },
+
+  "contact_hero": {
+    "h1": "让我们合作",
+    "lead": "需要系统集成、制作或咨询？发消息给我们——通常一个工作日内回复。"
+  },
+  "contact": {
+    "title": "取得联系",
+    "desc": "分享你的场景（演播室大小、信号源、期望输出），我们将给出可执行的方案与时间表。",
+    "cta1": "发邮件",
+    "cta2": "WhatsApp 聊天",
+    "cta3": "LINE 留言",
+    "channels": {
+      "email": "电子邮件",
+      "whatsapp": "WhatsApp",
+      "line": "LINE"
+    }
+  },
+
+  "demos_hero": {
+    "h1": "演示展示",
+    "lead": "用于快速参考的精选演示——竖屏（9:16）与横屏（16:9）。"
+  },
+  "demos": {
+    "shorts.title": "竖屏短片（9:16）",
+    "landscape.title": "横屏（16:9）",
+    "caption.generic": "参考演示视频"
+  },
+
+  "proc_hero": {
+    "h1": "我们的工作方式",
+    "lead": "用于构建可靠、可维护生产系统的务实可复用流程。"
+  },
+  "process": {
+    "steps": {
+      "discovery.title": "1）需求洞察",
+      "discovery.desc": "场景、约束、预算与时间——对齐范围与输出。",
+      "design.title": "2）系统设计",
+      "design.desc": "信号流、设备清单、网络与控制面板，并附清晰图示。",
+      "integration.title": "3）系统集成",
+      "integration.desc": "硬件安装、布线、软件配置与工作流模板。",
+      "validation.title": "4）验证",
+      "validation.desc": "测试场景、压力与故障切换，确保稳定表现。",
+      "training.title": "5）培训",
+      "training.desc": "操作 SOP、快速上手清单与远程支持配置。",
+      "golive.title": "6）上线",
+      "golive.desc": "交接、文档与后续优化。"
+    },
+    "cta": "与我们沟通"
+  },
+
+  "tech_hero": {
+    "h1": "技术与工具",
+    "lead": "以下品牌与技术是我们在虚拟演播室与广播环境中集成与配置的一部分。标识仅用于识别。"
+  },
+  "tech_hw": {
+    "title": "硬件与设备",
+    "desc": "演播室搭建与直播环境中常用的设备与品牌。",
+    "bmd": "切换台、演播室摄像机与 I/O",
+    "synco": "话筒与片场音频",
+    "unileader": "广播周边与配件",
+    "obsbot": "PTZ / AI 追踪摄像机",
+    "acemic": "无线麦克风系统与配件",
+    "yamaha": "调音台与音频信号路径",
+    "mipro": "无线麦克风与接收机",
+    "mls": "LED 显示系统与拼墙"
+  },
+  "tech_sw": {
+    "title": "软件与工作流工具",
+    "desc": "用于构建现代虚拟演播室流水线的软件与协议。",
+    "obs": "直播制作与推流",
+    "unreal": "虚拟场景与实时渲染",
+    "ndi": "基于 IP 的视频传输",
+    "streamdeck": "宏控制与操作体验"
+  },
+  "tech_cta": {
+    "h3": "需要围绕这些工具搭建系统？",
+    "btn": "联系我"
+  },
+  "tech_note": {
+    "legal": "所有品牌名称与标识均归其各自所有者所有，仅供参考。"
+  }
+}

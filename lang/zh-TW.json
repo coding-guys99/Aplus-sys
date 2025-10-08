@@ -29,6 +29,15 @@
       "desc": "透過 Email、WhatsApp 或 LINE 與我們聯繫，討論你的棚務或製作情境。"
     }
   },
+  
+  "nav": {
+  "about": "關於我們",
+  "services": "服務項目",
+  "demos": "示範案例",
+  "process": "流程",
+  "technologies": "技術",
+  "contact": "聯絡我們"
+},
 
   "home_hero": {
     "title": "虛擬攝影棚 × 廣播整合 × 數位人製作",

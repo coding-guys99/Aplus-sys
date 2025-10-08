@@ -74,7 +74,7 @@
 .lang-menu.in-panel { display: none; }
 .lang-menu.in-panel.show { display: block !important; }
 
-.mobile-card--lang img{
+.menu-card--lang img{
   width:20%;
   height:20%;
   color:green;

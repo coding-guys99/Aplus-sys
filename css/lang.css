@@ -79,3 +79,20 @@
   height:20%;
   padding-top:30px;
 }
+
+/* 讓語言按鈕懸浮在行動面板內右下角（選用） */
+#mobile-menu .mobile-lang-wrap {
+  position: fixed;
+  right: 16px; bottom: 16px;
+  z-index: 1300;
+}
+#mobile-menu .menu-card--lang {
+  padding: 10px 12px;
+  border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+#mobile-menu #mobile-lang {
+  position: fixed;
+  right: 16px; bottom: 72px;    /* 按鈕上方展開 */
+  width: 220px;
+}

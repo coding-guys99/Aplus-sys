@@ -1,168 +1,253 @@
 {
-  "meta.title": "Andy — Virtual Studio & Broadcast Integration",
-  "brand.name": "Andy",
-  "brand.role": "System Engineer",
-  "nav.menu": "Menu",
-  "nav.about": "About",
-  "nav.services": "Services",
-  "nav.demos": "Demos",
-  "nav.process": "Process",
-  "nav.contact": "Contact",
-  "hero.title": "Virtual Studio x Broadcast Integration x Digital Human Videos",
-  "hero.subtitle": "With over five years of experience in broadcast system integration, I design reliable and creative video solutions — from planning to on-air delivery.",
-  "hero.cta1": "Get in Touch",
-  "hero.cta2": "View Services",
-  "svc.title": "Core Services",
-  "svc.virtualstudio.title": "Virtual Studio Integration",
-  "svc.virtualstudio.desc": "Complete setup with chroma keying, camera tracking, and multi-protocol routing (NDI / SDI / IP).",
-  "svc.broadcast.title": "TV & Campus Broadcast Setup",
-  "svc.broadcast.desc": "One-stop solution for internal broadcast centers — from system planning to on-site training.",
-  "svc.digitalhuman.title": "Digital Human Video Production",
-  "svc.digitalhuman.desc": "AI voice + lip-sync + 3D virtual scene integration for modern automated video presentation.",
-  "showcase.title": "Showcase",
-  "showcase.desc": "Selected demo videos and project highlights",
-  "showcase.demo1": "Program Editing — “Wuya Laughs”",
-  "showcase.demo2": "Production — “Cross-Strait Views”",
-  "showcase.demo3": "Execution — “Heho” Project",
-  "about.title": "About Andy",
-  "about.desc": "I'm a system engineer at Lide Digital Technology (Taiwan Branch), specializing in virtual studio and broadcast system integration.",
-  "about.item1": "5+ years of industry experience",
-  "about.item2": "Hands-on integration of NDI / SDI / IP workflows",
-  "about.item3": "Video editing, directing & digital human production",
-  "contact.title": "Let's Collaborate",
-  "contact.desc": "Looking for system integration, video production, or consultation? Send me a message — I'll respond within one working day.",
-  "contact.cta1": "Email Me",
-  "contact.cta2": "Chat on WhatsApp",
-  "footer.copy": "Andy — Virtual Studio & Broadcast Integration",
+  "brand": {
+    "name": "Aplus Systems",
+    "role": "Virtual Studio & Broadcast Integration"
+  },
 
-  "svc_page.title": "Services — Virtual Studio & Broadcast Integration",
-  "svc_hero.h1": "What I Can Do For You",
-  "svc_hero.p": "From requirement discovery to on-air delivery — reliable, maintainable systems built for real production.",
-  "svc_hero.cta": "Get a Quote",
+  "nav": {
+    "menu": "Menu",
+    "about": "About",
+    "services": "Services",
+    "demos": "Demos",
+    "process": "Process",
+    "tech": "Technologies",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  },
 
-  "svc_core.title": "Core Services",
+  "footer": {
+    "rights": "All rights reserved.",
+    "about": "About",
+    "services": "Services",
+    "demos": "Demos",
+    "process": "Process",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  },
 
-  "svc_vs.title": "Virtual Studio Integration",
-  "svc_vs.desc": "Chroma keying, camera tracking, NDI/SDI/IP routing, and control surface setup.",
-  "svc_vs.item1": "Signal flow design (NDI / SDI / SRT)",
-  "svc_vs.item2": "vMix / OBS / Unreal workflows",
-  "svc_vs.item3": "Operator SOP & quick-start",
+  "legal": {
+    "disclaimer_title": "Disclaimer:",
+    "disclaimer_body": "All trademarks, logos, and brand names are the property of their respective owners. They are used solely for descriptive and reference purposes to illustrate technologies that Aplus Systems has worked with or integrated in professional projects. This site is not affiliated with, endorsed by, or sponsored by any of the mentioned brands."
+  },
 
-  "svc_tv.title": "TV & Campus Broadcast",
-  "svc_tv.desc": "One-stop setup for internal studios: planning, equipment list, integration, training.",
-  "svc_tv.item1": "Requirements & topology",
-  "svc_tv.item2": "Procurement guidance",
-  "svc_tv.item3": "Commissioning & handover",
+  "meta": {
+    "home": {
+      "title": "Aplus Systems — Virtual Studio, Broadcast Integration & Digital Human Video",
+      "desc": "System integration for virtual studios and broadcast workflows: NDI/SDI/IP routing, Unreal/OBS/vMix pipelines, and digital human video automation."
+    },
+    "about": {
+      "title": "About — Aplus Systems | System Engineer & Broadcast Consultant",
+      "desc": "System engineer focused on virtual studio and broadcast integration. Five years of end-to-end experience across planning, integration, and production."
+    },
+    "services": {
+      "title": "Services — Aplus Systems | Virtual Studio & Broadcast Integration",
+      "desc": "From requirement discovery to on-air delivery: virtual studio integration, TV & campus broadcast setup, and digital human video pipelines."
+    },
+    "demos": {
+      "title": "Demos — Aplus Systems | Showcase & Reference Videos",
+      "desc": "Selected demo videos including shorts (9:16) and landscape (16:9) for reference."
+    },
+    "process": {
+      "title": "Process — Aplus Systems | From Discovery to On-Air",
+      "desc": "A clear, repeatable process covering discovery, design, integration, validation, training and go-live."
+    },
+    "tech": {
+      "title": "Technologies — Aplus Systems | Virtual Studio & Broadcast Tools",
+      "desc": "Explore the technologies behind Aplus Systems’ workflows — NDI, SDI, Unreal Engine, OBS, vMix, and automation tools."
+    },
+    "contact": {
+      "title": "Contact — Aplus Systems | Get a Quote or Consultation",
+      "desc": "Reach out via email, WhatsApp, or LINE to discuss your studio or production scenario."
+    }
+  },
 
-  "svc_dh.title": "Digital Human Videos",
-  "svc_dh.desc": "AI voice, lip-sync, and 3D scene integration for long-form automated presentation.",
-  "svc_dh.item1": "Voice model & timing",
-  "svc_dh.item2": "Lip-sync pipeline",
-  "svc_dh.item3": "Playback & scheduling",
+  "hero": {
+    "title": "Virtual Studio × Broadcast Integration × Digital Human Videos",
+    "subtitle": "With over five years of broadcast system experience, I design and integrate reliable, creative video solutions — from planning to on-air delivery.",
+    "cta1": "Get in Touch",
+    "cta2": "View Services"
+  },
 
-  "svc_tiers.title": "Packages & Starting Prices",
-  "tier.basic": "Starter",
-  "tier.basic.desc": "Single-room / single workflow",
-  "tier.basic.price": "From NTD ** (estimate range after discovery)",
-  "tier.pro": "Professional",
-  "tier.pro.desc": "Multi-device integration / training included",
-  "tier.pro.price": "From NTD **",
-  "tier.custom": "Custom",
-  "tier.custom.desc": "Large-scale / end-to-end delivery",
-  "tier.custom.price": "By requirement",
-  "svc_tiers.cta": "Tell me your scenario",
+  "svc": {
+    "title": "Core Services",
+    "virtualstudio": {
+      "title": "Virtual Studio Integration",
+      "desc": "End-to-end setup with chroma keying, camera tracking, and multi-protocol routing (NDI / SDI / IP)."
+    },
+    "broadcast": {
+      "title": "TV & Campus Broadcast Setup",
+      "desc": "One-stop system for educational or corporate studios — from planning and equipment selection to integration and training."
+    },
+    "digitalhuman": {
+      "title": "Digital Human Video Production",
+      "desc": "AI voice synthesis, lip-sync, and 3D virtual scenes for efficient automated video production."
+    }
+  },
 
-  "svc_tech.title": "Supported Technologies",
+  "svc_hero": {
+    "h1": "What I Can Do For You",
+    "p": "From requirement discovery to on-air delivery — reliable, maintainable systems built for real production.",
+    "cta": "Get a Quote"
+  },
+  "svc_core": {
+    "title": "Core Services"
+  },
+  "svc_vs": {
+    "title": "Virtual Studio Integration",
+    "desc": "Chroma keying, camera tracking, NDI/SDI/IP routing, and control surface setup.",
+    "item1": "Signal flow design (NDI / SDI / SRT)",
+    "item2": "vMix / OBS / Unreal workflows",
+    "item3": "Operator SOP & quick-start"
+  },
+  "svc_tv": {
+    "title": "TV & Campus Broadcast",
+    "desc": "One-stop setup for internal studios: planning, equipment list, integration, training.",
+    "item1": "Requirements & topology",
+    "item2": "Procurement guidance",
+    "item3": "Commissioning & handover"
+  },
+  "svc_dh": {
+    "title": "Digital Human Videos",
+    "desc": "AI voice, lip-sync, and 3D scene integration for long-form automated presentation.",
+    "item1": "Voice model & timing",
+    "item2": "Lip-sync pipeline",
+    "item3": "Playback & scheduling"
+  },
+  "svc_tiers": {
+    "title": "Packages & Starting Prices",
+    "cta": "Tell me your scenario"
+  },
+  "tier": {
+    "basic": "Starter",
+    "basic.desc": "Single-room / single workflow",
+    "basic.price": "From NTD ** (estimate range after discovery)",
+    "pro": "Professional",
+    "pro.desc": "Multi-device integration / training included",
+    "pro.price": "From NTD **",
+    "custom": "Custom",
+    "custom.desc": "Large-scale / end-to-end delivery",
+    "custom.price": "By requirement"
+  },
+  "svc_tech": {
+    "title": "Supported Technologies"
+  },
+  "svc_faq": {
+    "title": "FAQ"
+  },
+  "faq": {
+    "time.q": "How long does it take to go live?",
+    "time.a": "Typically 2–8 weeks, depending on scope and procurement.",
+    "cost.q": "How do you price?",
+    "cost.a": "After a short discovery call, I provide a range and timeline plan."
+  },
+  "svc_final": {
+    "h3": "Ready to plan your studio or program?",
+    "cta": "Contact Me"
+  },
 
-  "svc_faq.title": "FAQ",
-  "faq.time.q": "How long does it take to go live?",
-  "faq.time.a": "Typically 2-8 weeks, depending on scope and procurement.",
-  "faq.cost.q": "How do you price?",
-  "faq.cost.a": "After a short discovery call, I provide a range and timeline plan.",
+  "about_hero": {
+    "h1": "About Aplus Systems",
+    "lead": "Independent system engineering studio focusing on virtual studio and broadcast integration — bridging technology and production."
+  },
+  "about": {
+    "title": "About Aplus",
+    "desc": "We design reliable virtual studio and broadcast systems, combining practical engineering with production-ready workflows."
+  },
+  "about_intro": {
+    "title": "Professional Profile",
+    "p1": "Aplus Systems provides virtual studio design, broadcast integration, and workflow consulting for educational and corporate teams.",
+    "p2": "We cover the full cycle: requirement analysis, hardware selection, wiring and setup, software configuration, and operator training — ensuring every system is stable, intuitive, and scalable.",
+    "item1": "Virtual Studio & Camera Tracking Integration",
+    "item2": "Broadcast & Campus TV Setup",
+    "item3": "AI Lip-sync + Digital Human Production",
+    "item4": "Technical Training & Remote Support"
+  },
+  "about_exp": {
+    "title": "Company Track",
+    "y2025": "Lead system design for multi-camera virtual studio deployments across universities.",
+    "y2024": "Executed iSmart broadcast integration project, delivering live workflow automation.",
+    "y2022": "Integrated campus TV systems and trained staff and students for daily operation.",
+    "y2020": "Broadcast production & post-editing experience — from content to final cut."
+  },
 
-  "svc_final.h3": "Ready to plan your studio or program?",
-  "svc_final.cta": "Contact Me",
+  "contact_hero": {
+    "h1": "Let’s Collaborate",
+    "lead": "Looking for system integration, production, or consultation? Send a message — typically respond within one working day."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "desc": "Share your scenario (studio size, sources, expected outputs). We’ll suggest a practical plan and timeline.",
+    "cta1": "Email Me",
+    "cta2": "Chat on WhatsApp",
+    "cta3": "Message on LINE",
+    "channels": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "line": "LINE"
+    }
+  },
 
-  "about_page.title": "About — Andy | System Engineer & Broadcast Consultant",
-  "about_hero.h1": "About Andy",
-  "about_hero.lead": "System Engineer · Virtual Studio & Broadcast Integration · 5+ years of hands-on experience bridging technology and creativity.",
-  "about_intro.title": "Professional Profile",
-  "about_intro.p1": "I'm Andy, System Engineer at Lide Digital Technology (Taiwan branch) — the only full-time engineer in the division. I specialize in virtual studio design, broadcast system integration, and end-to-end workflow consulting for both educational and corporate clients.",
-  "about_intro.p2": "My work covers the entire cycle: requirement analysis, hardware selection, wiring and setup, software configuration, and operator training. I ensure every system is stable, intuitive, and scalable.",
-  "about_intro.item1": "Virtual Studio & Camera Tracking Integration",
-  "about_intro.item2": "Broadcast & Campus TV Setup",
-  "about_intro.item3": "AI Lip-sync + Digital Human Production",
-  "about_intro.item4": "Technical Training & Remote Support",
-  "about_exp.title": "Career Highlights",
-  "about_exp.2025": "Lead system design for multi-camera virtual studio deployments across universities.",
-  "about_exp.2024": "Executed iSmart broadcast integration project, delivering live workflow automation.",
-  "about_exp.2022": "Integrated campus TV systems and trained over 100 students and teachers.",
-  "about_exp.2020": "Broadcast production & post-editing experience — from content to final cut.",
-  "about_show.title": "Featured Productions",
-  "about_show.wuya": "🦅 “Wuya Laughs” — Editing",
-  "about_show.cross": "🌏 “Cross-Strait Views” — Production",
-  "about_show.heho": "🎬 “Heho” — Executive Production",
-  "about_cta.h3": "Let's build your next studio together",
-  "about_cta.btn": "Contact Me",
+  "demos_hero": {
+    "h1": "Demo Showcase",
+    "lead": "Selected demos for quick reference — shorts (9:16) and landscape (16:9)."
+  },
+  "demos": {
+    "shorts.title": "Shorts (9:16)",
+    "landscape.title": "Landscape (16:9)",
+    "caption.generic": "Reference demo video"
+  },
 
-  "contact_page.title": "Contact — Andy | Virtual Studio & Broadcast Integration",
-  "contact_hero.h1": "Get in Touch",
-  "contact_hero.lead": "Whether it's a studio consultation, a system build, or a digital human demo — I'd love to hear from you.",
-  "contact_methods.title": "Contact Methods",
-  "contact_methods.email": "yourname@email.com",
-  "contact_methods.whatsapp": "Chat directly via WhatsApp",
-  "contact_methods.line": "Connect through LINE official account",
-  "contact_form.title": "Send a Message",
-  "contact_form.desc": "Fill out this form and I'll reply within one working day.",
-  "contact_form.loading": "Loading form…",
-  "contact_cta.h3": "Prefer a call or live demo?",
-  "contact_cta.btn": "Book a Call",
+  "proc_hero": {
+    "h1": "How We Work",
+    "lead": "A practical, repeatable process for building reliable, maintainable production systems."
+  },
+  "process": {
+    "steps": {
+      "discovery.title": "1) Discovery",
+      "discovery.desc": "Scenario, constraints, budget and timeline — we align on scope and outputs.",
+      "design.title": "2) System Design",
+      "design.desc": "Signal flow, device list, networking and control surfaces with clear diagrams.",
+      "integration.title": "3) Integration",
+      "integration.desc": "Hardware setup, wiring, software configuration and workflow templates.",
+      "validation.title": "4) Validation",
+      "validation.desc": "Test scenes, stress tests and failover — ensure stable performance.",
+      "training.title": "5) Training",
+      "training.desc": "Operator SOP, quick-start checklists and remote support setup.",
+      "golive.title": "6) Go-Live",
+      "golive.desc": "Handover, documentation and follow-up optimization."
+    },
+    "cta": "Talk to us"
+  },
 
-  "demos_page.title": "Demos — Andy | Virtual Studio & Digital Human Works",
-  "demos_hero.h1": "Demo Showcase",
-  "demos_hero.lead": "Selected demos featuring virtual studio integration, digital human production, and TV system workflow.",
-  "demos_section.horizontal": "Featured Projects (16:9)",
-  "demos_section.vertical": "Short Format (9:16)",
-
-  "process_page.title": "Process — Andy | Project Workflow & Integration Steps",
-  "process_hero.h1": "My Working Process",
-  "process_hero.lead": "Every project follows a clear, structured path — from your first idea to a fully operational virtual studio or broadcast system.",
-  "process.step1.title": "1. Consultation",
-  "process.step1.desc": "Initial meeting to understand your vision, technical needs, and site conditions.",
-  "process.step2.title": "2. Planning",
-  "process.step2.desc": "System design, equipment selection, and proposal preparation based on your budget and goals.",
-  "process.step3.title": "3. Integration",
-  "process.step3.desc": "Hardware setup, software configuration, and workflow testing at your site.",
-  "process.step4.title": "4. Delivery & Training",
-  "process.step4.desc": "Handover of system documents and hands-on training for your team.",
-  "process.step5.title": "5. Support & Upgrade",
-  "process.step5.desc": "Ongoing maintenance, remote support, and optional yearly upgrade service.",
-  "process_cta.h3": "Ready to discuss your next project?",
-  "process_cta.btn": "Contact Me",
-
-  "tech_page.title": "Technologies & Tools — Andy | Broadcast & Virtual Studio",
-  "tech_hero.h1": "Technologies & Tools",
-  "tech_hero.lead": "The following brands and technologies are part of the systems I've integrated and configured for virtual studio and broadcast environments.Logos are used here for identification purposes only.",
-  "tech_hw.title": "Hardware & Equipment",
-  "tech_hw.desc": "Frequently used devices and brands in studio builds and live environments.",
-  "tech_hw.bmd": "Switchers, studio cameras & I/O",
-  "tech_hw.synco": "Microphones & on-set audio",
-  "tech_hw.unileader": "Broadcast peripherals & accessories",
-  "tech_hw.obsbot": "PTZ / AI tracking cameras",
-  "tech_hw.achemic": "Studio hardware & integration modules",
-  "tech_hw.yamaha": "Mixers & audio signal paths",
-  "tech_hw.mipro": "Wireless mics & receivers",
-  "tech_sw.title": "Software & Workflow Tools",
-  "tech_sw.desc": "Software and protocols I use to build modern virtual studio pipelines.",
-  "tech_sw.obs": "Live production & streaming",
-  "tech_sw.unreal": "Virtual sets & real-time rendering",
-  "tech_sw.ndi": "IP-based video transport",
-  "tech_sw.streamdeck": "Macro control & operator UX",
-  "tech_note.legal": "All brand names and logos are property of their respective owners and are shown for reference only.",
-  "tech_cta.h3": "Need a system built around these tools?",
-  "tech_cta.btn": "Contact Me"
-
-
-
-
+  "tech_hero": {
+    "h1": "Technologies & Tools",
+    "lead": "The following brands and technologies are part of the systems we’ve integrated and configured for virtual studio and broadcast environments. Logos are used for identification purposes only."
+  },
+  "tech_hw": {
+    "title": "Hardware & Equipment",
+    "desc": "Frequently used devices and brands in studio builds and live environments.",
+    "bmd": "Switchers, studio cameras & I/O",
+    "synco": "Microphones & on-set audio",
+    "unileader": "Broadcast peripherals & accessories",
+    "obsbot": "PTZ / AI tracking cameras",
+    "acemic": "Wireless microphone systems & accessories",
+    "yamaha": "Mixers & audio signal paths",
+    "mipro": "Wireless mics & receivers",
+    "mls": "LED display systems and wall panels"
+  },
+  "tech_sw": {
+    "title": "Software & Workflow Tools",
+    "desc": "Software and protocols used to build modern virtual studio pipelines.",
+    "obs": "Live production & streaming",
+    "unreal": "Virtual sets & real-time rendering",
+    "ndi": "IP-based video transport",
+    "streamdeck": "Macro control & operator UX"
+  },
+  "tech_cta": {
+    "h3": "Need a system built around these tools?",
+    "btn": "Contact Me"
+  },
+  "tech_note": {
+    "legal": "All brand names and logos are property of their respective owners and are shown for reference only."
+  }
 }

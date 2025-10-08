@@ -140,3 +140,17 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* 強化顯示規則，避免被較晚的 .lang-menu { display:none } 蓋掉 */
+.lang-dropdown .lang-menu { display: none; position: absolute; right: 0; top: 120%; }
+.lang-dropdown .lang-menu.show { display: block !important; }
+
+/* 確保永遠在 header/overlay 上方可點擊 */
+.site-header { z-index: 1000; }
+.lang-dropdown { position: relative; z-index: 2100; }
+.lang-dropdown .lang-menu { z-index: 2101; }
+
+/* 萬一有 overlay 蓋住（手機打開面板時），仍然能在桌機顯示 */
+@media (min-width:1025px){
+  .nav-overlay { pointer-events: none; } /* 桌機下拉不需要 overlay 攔截點擊 */
+}

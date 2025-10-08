@@ -1,35 +1,4 @@
 {
-  "brand": {
-    "name": "Aplus Systems",
-    "role": "Virtual Studio & Broadcast Integration"
-  },
-
-  "nav": {
-    "menu": "Menu",
-    "about": "About",
-    "services": "Services",
-    "demos": "Demos",
-    "process": "Process",
-    "tech": "Technologies",
-    "technologies": "Technologies",
-    "contact": "Contact"
-  },
-
-  "footer": {
-    "rights": "All rights reserved.",
-    "about": "About",
-    "services": "Services",
-    "demos": "Demos",
-    "process": "Process",
-    "technologies": "Technologies",
-    "contact": "Contact"
-  },
-
-  "legal": {
-    "disclaimer_title": "Disclaimer:",
-    "disclaimer_body": "All trademarks, logos, and brand names are the property of their respective owners. They are used solely for descriptive and reference purposes to illustrate technologies that Aplus Systems has worked with or integrated in professional projects. This site is not affiliated with, endorsed by, or sponsored by any of the mentioned brands."
-  },
-
   "meta": {
     "home": {
       "title": "Aplus Systems — Virtual Studio, Broadcast Integration & Digital Human Video",
@@ -61,123 +30,93 @@
     }
   },
 
-  "hero": {
-    "title": "Virtual Studio × Broadcast Integration × Digital Human Videos",
-    "subtitle": "With over five years of broadcast system experience, I design and integrate reliable, creative video solutions — from planning to on-air delivery.",
+  "home_hero": {
+    "title": "Virtual Studio × Broadcast Integration × Digital Human Production",
+    "subtitle": "Aplus Systems delivers end-to-end broadcast and virtual studio solutions — combining creative production, technical precision, and reliable system design.",
     "cta1": "Get in Touch",
     "cta2": "View Services"
   },
-
-  "svc": {
+  "home_svc": {
     "title": "Core Services",
     "virtualstudio": {
       "title": "Virtual Studio Integration",
-      "desc": "End-to-end setup with chroma keying, camera tracking, and multi-protocol routing (NDI / SDI / IP)."
+      "desc": "End-to-end system design for real-time virtual production — chroma keying, camera tracking, and multi-protocol routing (NDI / SDI / IP). Reliable, scalable, on-air ready."
     },
     "broadcast": {
       "title": "TV & Campus Broadcast Setup",
-      "desc": "One-stop system for educational or corporate studios — from planning and equipment selection to integration and training."
+      "desc": "One-stop solution for schools and enterprises: requirements, equipment list, wiring, commissioning, and operator training — from planning to first broadcast."
     },
     "digitalhuman": {
       "title": "Digital Human Video Production",
-      "desc": "AI voice synthesis, lip-sync, and 3D virtual scenes for efficient automated video production."
+      "desc": "AI voice, lip-sync, and 3D scene integration for automated presentation and program segments. Consistent quality with repeatable pipelines."
+    },
+    "green": {
+      "title": "Green Screen Studio (Taiwan)",
+      "desc": "Compact studio with lighting and audio setup. Ideal for course recording, explainers, and virtual presenter shoots. Optional on-site technical support."
     }
   },
-
-  "svc_hero": {
-    "h1": "What I Can Do For You",
-    "p": "From requirement discovery to on-air delivery — reliable, maintainable systems built for real production.",
-    "cta": "Get a Quote"
+  "home_showcase": {
+    "title": "Showcase",
+    "desc": "Selected demo videos and production highlights",
+    "wuya": "Latest uploads from <strong>@WuYaTheWorld</strong>",
+    "heho": "Latest uploads from <strong>@Heho</strong>",
+    "verticalTitle": "Short-form Videos (9:16)",
+    "short1": "Digital Human — Studio Narration Demo",
+    "short2": "AI Lip-sync — Character Presentation"
   },
-  "svc_core": {
-    "title": "Core Services"
+  "home_about": {
+    "title": "About Aplus Systems",
+    "desc": "Aplus Systems specializes in <strong>virtual studio</strong> and <strong>broadcast system integration</strong> — delivering end-to-end solutions from planning and installation to live production support. Originating from technical expertise in Taiwan, our team combines creative engineering and reliable design to build modern production environments for media, education, and enterprise clients.",
+    "item1": "5+ years of broadcast & system integration experience",
+    "item2": "NDI / SDI / IP hybrid workflow design",
+    "item3": "Virtual studio, LED wall & digital human production"
   },
-  "svc_vs": {
-    "title": "Virtual Studio Integration",
-    "desc": "Chroma keying, camera tracking, NDI/SDI/IP routing, and control surface setup.",
-    "item1": "Signal flow design (NDI / SDI / SRT)",
-    "item2": "vMix / OBS / Unreal workflows",
-    "item3": "Operator SOP & quick-start"
-  },
-  "svc_tv": {
-    "title": "TV & Campus Broadcast",
-    "desc": "One-stop setup for internal studios: planning, equipment list, integration, training.",
-    "item1": "Requirements & topology",
-    "item2": "Procurement guidance",
-    "item3": "Commissioning & handover"
-  },
-  "svc_dh": {
-    "title": "Digital Human Videos",
-    "desc": "AI voice, lip-sync, and 3D scene integration for long-form automated presentation.",
-    "item1": "Voice model & timing",
-    "item2": "Lip-sync pipeline",
-    "item3": "Playback & scheduling"
-  },
-  "svc_tiers": {
-    "title": "Packages & Starting Prices",
-    "cta": "Tell me your scenario"
-  },
-  "tier": {
-    "basic": "Starter",
-    "basic.desc": "Single-room / single workflow",
-    "basic.price": "From NTD ** (estimate range after discovery)",
-    "pro": "Professional",
-    "pro.desc": "Multi-device integration / training included",
-    "pro.price": "From NTD **",
-    "custom": "Custom",
-    "custom.desc": "Large-scale / end-to-end delivery",
-    "custom.price": "By requirement"
-  },
-  "svc_tech": {
-    "title": "Supported Technologies"
-  },
-  "svc_faq": {
-    "title": "FAQ"
-  },
-  "faq": {
-    "time.q": "How long does it take to go live?",
-    "time.a": "Typically 2–8 weeks, depending on scope and procurement.",
-    "cost.q": "How do you price?",
-    "cost.a": "After a short discovery call, I provide a range and timeline plan."
-  },
-  "svc_final": {
-    "h3": "Ready to plan your studio or program?",
-    "cta": "Contact Me"
+  "home_contact": {
+    "title": "Get in Touch with Aplus Systems",
+    "desc": "Whether you’re planning a new studio, looking for technical integration, or exploring digital human production — our team provides tailored consultation and end-to-end solutions across broadcast and virtual environments.",
+    "cta1": "Request a Consultation",
+    "cta2": "Chat on WhatsApp"
   },
 
   "about_hero": {
     "h1": "About Aplus Systems",
-    "lead": "Independent system engineering studio focusing on virtual studio and broadcast integration — bridging technology and production."
-  },
-  "about": {
-    "title": "About Aplus",
-    "desc": "We design reliable virtual studio and broadcast systems, combining practical engineering with production-ready workflows."
+    "lead": "Integrated solutions for <strong>Virtual Studio</strong> · <strong>Broadcast Systems</strong> · <strong>Digital Human Production</strong><br/>Building reliable, creative, and connected video environments across industries."
   },
   "about_intro": {
-    "title": "Professional Profile",
-    "p1": "Aplus Systems provides virtual studio design, broadcast integration, and workflow consulting for educational and corporate teams.",
-    "p2": "We cover the full cycle: requirement analysis, hardware selection, wiring and setup, software configuration, and operator training — ensuring every system is stable, intuitive, and scalable.",
+    "title": "Company Profile",
+    "p1": "Aplus Systems is a Taiwan-based technical integrator specializing in <strong>virtual studio design</strong>, <strong>broadcast system integration</strong>, and <strong>end-to-end workflow consulting</strong> for both educational and corporate sectors. Our mission is to connect creative vision with reliable broadcast technology.",
+    "p2": "From initial planning to on-site deployment, we handle every stage — requirement analysis, hardware selection, wiring and setup, software configuration, and operator training. Each system we deliver is designed to be <strong>stable, intuitive, and scalable</strong>.",
     "item1": "Virtual Studio & Camera Tracking Integration",
     "item2": "Broadcast & Campus TV Setup",
-    "item3": "AI Lip-sync + Digital Human Production",
+    "item3": "AI Lip-sync & Digital Human Production",
     "item4": "Technical Training & Remote Support"
   },
   "about_exp": {
-    "title": "Company Track",
-    "y2025": "Lead system design for multi-camera virtual studio deployments across universities.",
-    "y2024": "Executed iSmart broadcast integration project, delivering live workflow automation.",
-    "y2022": "Integrated campus TV systems and trained staff and students for daily operation.",
-    "y2020": "Broadcast production & post-editing experience — from content to final cut."
+    "title": "Company Milestones",
+    "2025": "Expanded <strong>Aplus Systems</strong> operations with multi-camera virtual studio solutions for leading universities and media institutions in Taiwan.",
+    "2024": "Delivered the <strong>iSmart Broadcast Integration Project</strong>, establishing an automated workflow from camera capture to on-air delivery — marking a major step in smart broadcast systems.",
+    "2022": "Designed and implemented <strong>campus TV and hybrid broadcast classrooms</strong>, providing technical training for over 100 educators and operators.",
+    "2020": "Built a foundation in <strong>broadcast production, editing, and system maintenance</strong>, shaping the integrated service approach that defines Aplus Systems today."
+  },
+  "about_show": {
+    "title": "Featured Productions",
+    "wuya": "🦅 “Wuya Laughs” — Editing",
+    "cross": "🌏 “Cross-Strait Views” — Production",
+    "heho": "🎬 “Heho” — Executive Production"
+  },
+  "about_cta": {
+    "h3": "Let’s build your next studio together",
+    "btn": "Contact Me"
   },
 
   "contact_hero": {
-    "h1": "Let’s Collaborate",
-    "lead": "Looking for system integration, production, or consultation? Send a message — typically respond within one working day."
+    "h1": "Get in Touch with Aplus Systems",
+    "lead": "We specialize in virtual studio integration, digital human production, and broadcast workflow design. Tell us your project goals — we’ll help you build a reliable, creative system."
   },
   "contact": {
-    "title": "Get in Touch",
-    "desc": "Share your scenario (studio size, sources, expected outputs). We’ll suggest a practical plan and timeline.",
-    "cta1": "Email Me",
+    "title": "Contact Channels",
+    "desc": "Reach out through your preferred method below — our team will respond within one working day.",
+    "cta1": "Send Inquiry",
     "cta2": "Chat on WhatsApp",
     "cta3": "Message on LINE",
     "channels": {
@@ -186,42 +125,152 @@
       "line": "LINE"
     }
   },
+  "form": {
+    "title": "Send a Project Brief",
+    "desc": "Tell us your goals and constraints. We’ll get back within one working day.",
+    "name": { "label": "Your Name" },
+    "email": { "label": "Email" },
+    "company": { "label": "Company / School (optional)" },
+    "subject": { "label": "Subject" },
+    "message": { "label": "Project Details" },
+    "service": {
+      "label": "Service Type",
+      "virtual": "Virtual Studio Integration",
+      "broadcast": "TV & Campus Broadcast",
+      "digital": "Digital Human Production",
+      "greenscreen": "Green Screen Studio",
+      "consult": "Consultation",
+      "other": "Other"
+    },
+    "budget": {
+      "label": "Budget (optional)",
+      "unknown": "Not sure yet",
+      "under": "Under NTD 100k",
+      "b1": "NTD 100k–300k",
+      "b2": "NTD 300k–800k",
+      "b3": "NTD 800k+"
+    },
+    "submit": "Send via Email",
+    "copy": "Copy Brief",
+    "note": "This form opens your email app with a pre-filled message. Or copy the brief and send it to <strong>aplusystem@gmail.com</strong>.",
+    "error": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email.",
+      "subject": "Please enter a subject."
+    }
+  },
+  "company": {
+    "name": "Aplus Systems",
+    "tagline": "Broadcast Integration · Virtual Studio · Digital Human Solutions",
+    "location": "Taipei, Taiwan — Serving clients across Asia"
+  },
 
   "demos_hero": {
     "h1": "Demo Showcase",
-    "lead": "Selected demos for quick reference — shorts (9:16) and landscape (16:9)."
+    "lead": "Selected demos featuring <strong>virtual studio integration</strong>, <strong>digital human</strong> production, and <strong>TV system workflow</strong>."
   },
-  "demos": {
-    "shorts.title": "Shorts (9:16)",
-    "landscape.title": "Landscape (16:9)",
-    "caption.generic": "Reference demo video"
+  "demos_section": {
+    "horizontal": "Featured Projects (16:9)",
+    "vertical": "Short Format (9:16)"
+  },
+  "demos_cards": {
+    "vs": {
+      "title": "Virtual Studio Build",
+      "desc": "System integration + camera tracking demo"
+    },
+    "short1": { "title": "Short Demo — Tracking & Framing" },
+    "short2": { "title": "Short Demo — Digital Human Snippet" },
+    "short3": { "title": "Short Demo — Workflow Highlight" }
   },
 
-  "proc_hero": {
+  "process_hero": {
     "h1": "How We Work",
-    "lead": "A practical, repeatable process for building reliable, maintainable production systems."
+    "lead": "From discovery to delivery — our integration process is built to ensure clarity, efficiency, and reliability at every step."
   },
-  "process": {
-    "steps": {
-      "discovery.title": "1) Discovery",
-      "discovery.desc": "Scenario, constraints, budget and timeline — we align on scope and outputs.",
-      "design.title": "2) System Design",
-      "design.desc": "Signal flow, device list, networking and control surfaces with clear diagrams.",
-      "integration.title": "3) Integration",
-      "integration.desc": "Hardware setup, wiring, software configuration and workflow templates.",
-      "validation.title": "4) Validation",
-      "validation.desc": "Test scenes, stress tests and failover — ensure stable performance.",
-      "training.title": "5) Training",
-      "training.desc": "Operator SOP, quick-start checklists and remote support setup.",
-      "golive.title": "6) Go-Live",
-      "golive.desc": "Handover, documentation and follow-up optimization."
+  "process_main": {
+    "title": "Our Workflow",
+    "step1": {
+      "title": "Discovery & Consultation",
+      "desc": "We begin by understanding your goals, environment, and challenges — identifying what your studio or system truly needs."
     },
-    "cta": "Talk to us"
+    "step2": {
+      "title": "System Design & Planning",
+      "desc": "We draft technical diagrams, select compatible hardware and software, and prepare a timeline that aligns with your resources."
+    },
+    "step3": {
+      "title": "Integration & Setup",
+      "desc": "On-site wiring, configuration, and calibration — ensuring seamless communication between NDI, SDI, and IP-based components."
+    },
+    "step4": {
+      "title": "Training & Handover",
+      "desc": "We provide operator training, workflow documentation, and post-deployment remote support for long-term reliability."
+    }
+  },
+  "process_cta": {
+    "h3": "Ready to start your project?",
+    "desc": "Let’s design your next virtual studio or broadcast workflow together.",
+    "btn": "Contact Aplus Systems"
+  },
+
+  "svc": {
+    "hero": {
+      "h1": "Services",
+      "lead": "Integrating creativity and technology — building reliable workflows for every production."
+    },
+    "shoot": {
+      "title": "Studio & Production Services",
+      "desc": "Virtual and physical studio support for creators, schools, and enterprises.",
+      "item1": {
+        "title": "Green Screen Studio (Taiwan)",
+        "desc": "Equipped with lighting and sound, suitable for corporate or educational recording."
+      },
+      "item2": {
+        "title": "Virtual Studio Filming",
+        "desc": "Using Unreal Engine and tracking systems for real-time compositing and live production."
+      }
+    },
+    "system": {
+      "title": "System Integration & Setup",
+      "desc": "Engineering-based solutions for virtual production and broadcast systems.",
+      "item1": {
+        "title": "Virtual Studio Installation",
+        "desc": "Full system planning, wiring, and testing for NDI / SDI / IP workflows."
+      },
+      "item2": {
+        "title": "System Integration Consulting",
+        "desc": "Workflow planning across capture, switching, recording, and delivery."
+      },
+      "item3": {
+        "title": "Digital Human Lip-Sync Training",
+        "desc": "Voice-to-face matching for AI or virtual presenter applications."
+      }
+    },
+    "collab": {
+      "title": "Project Collaboration & Creative Support",
+      "desc": "Partnering with trusted creators and designers to complete integrated projects.",
+      "item1": {
+        "title": "Illustration & Character Design",
+        "desc": "Created in collaboration with partner artists to support digital or brand storytelling."
+      },
+      "item2": {
+        "title": "Video Editing & Post-production",
+        "desc": "Delivered with professional editors and motion designers for high-quality output."
+      },
+      "item3": {
+        "title": "Web & Multimedia Integration",
+        "desc": "Support for brand showcase, educational platforms, and online demo presentation."
+      }
+    },
+    "philosophy": {
+      "title": "Our Approach",
+      "desc": "Aplus Systems bridges creative teams and technical operations — ensuring every project runs efficiently and reliably.",
+      "cta": "Discuss Your Project"
+    }
   },
 
   "tech_hero": {
     "h1": "Technologies & Tools",
-    "lead": "The following brands and technologies are part of the systems we’ve integrated and configured for virtual studio and broadcast environments. Logos are used for identification purposes only."
+    "lead": "The following brands and technologies are part of the systems I’ve integrated and configured for virtual studio and broadcast environments. Logos are used here for identification purposes only."
   },
   "tech_hw": {
     "title": "Hardware & Equipment",
@@ -230,14 +279,14 @@
     "synco": "Microphones & on-set audio",
     "unileader": "Broadcast peripherals & accessories",
     "obsbot": "PTZ / AI tracking cameras",
-    "acemic": "Wireless microphone systems & accessories",
+    "acemic": "Studio hardware & integration modules",
     "yamaha": "Mixers & audio signal paths",
     "mipro": "Wireless mics & receivers",
     "mls": "LED display systems and wall panels"
   },
   "tech_sw": {
     "title": "Software & Workflow Tools",
-    "desc": "Software and protocols used to build modern virtual studio pipelines.",
+    "desc": "Software and protocols I use to build modern virtual studio pipelines.",
     "obs": "Live production & streaming",
     "unreal": "Virtual sets & real-time rendering",
     "ndi": "IP-based video transport",
@@ -249,5 +298,19 @@
   },
   "tech_note": {
     "legal": "All brand names and logos are property of their respective owners and are shown for reference only."
+  },
+
+  "footer": {
+    "rights": "All rights reserved.",
+    "about": "About",
+    "services": "Services",
+    "demos": "Demos",
+    "process": "Process",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  },
+  "legal": {
+    "disclaimer_title": "Disclaimer:",
+    "disclaimer_body": "All trademarks, logos, and brand names are the property of their respective owners. They are used solely for descriptive and reference purposes to illustrate technologies that Aplus Systems has worked with or integrated in professional projects. This site is not affiliated with, endorsed by, or sponsored by any of the mentioned brands."
   }
 }

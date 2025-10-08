@@ -1,183 +1,122 @@
 {
-  "brand": {
-    "name": "Aplus Systems",
-    "role": "Integrasi Studio Maya & Siaran"
-  },
-
-  "nav": {
-    "menu": "Menu",
-    "about": "Tentang",
-    "services": "Perkhidmatan",
-    "demos": "Demo",
-    "process": "Proses",
-    "tech": "Teknologi",
-    "technologies": "Teknologi",
-    "contact": "Hubungi"
-  },
-
-  "footer": {
-    "rights": "Semua hak cipta terpelihara.",
-    "about": "Tentang",
-    "services": "Perkhidmatan",
-    "demos": "Demo",
-    "process": "Proses",
-    "technologies": "Teknologi",
-    "contact": "Hubungi"
-  },
-
-  "legal": {
-    "disclaimer_title": "Penafian:",
-    "disclaimer_body": "Semua tanda dagang, logo dan nama jenama adalah hak milik pemilik masing-masing. Ia digunakan semata-mata untuk tujuan penerangan dan rujukan bagi menggambarkan teknologi yang telah Aplus Systems gunakan atau integrasikan dalam projek profesional. Laman ini tidak mempunyai pertalian, pengesahan atau tajaan oleh mana-mana jenama yang disebut."
-  },
-
   "meta": {
     "home": {
       "title": "Aplus Systems — Studio Maya, Integrasi Siaran & Video Manusia Digital",
-      "desc": "Integrasi sistem untuk studio maya dan aliran kerja siaran: penghalaan NDI/SDI/IP, paip kerja Unreal/OBS/vMix, serta automasi video manusia digital."
+      "desc": "Integrasi sistem untuk studio maya dan aliran kerja siaran: penghalaan NDI/SDI/IP, aliran Unreal/OBS/vMix, dan automasi video manusia digital."
     },
     "about": {
       "title": "Tentang — Aplus Systems | Jurutera Sistem & Konsultan Siaran",
-      "desc": "Jurutera sistem yang memfokuskan integrasi studio maya dan siaran. Lima tahun pengalaman hujung ke hujung merangkumi perancangan, integrasi dan produksi."
+      "desc": "Jurutera sistem fokus pada integrasi studio maya dan siaran. Lima tahun pengalaman hujung-ke-hujung merangkumi perancangan, integrasi dan produksi."
     },
     "services": {
-      "title": "Perkhidmatan — Aplus Systems | Integrasi Studio Maya & Siaran",
-      "desc": "Daripada penemuan keperluan hingga siaran langsung: integrasi studio maya, set-up TV & siaran kampus, dan paip kerja video manusia digital."
+      "title": "Perkhidmatan — Aplus Systems | Studio Maya & Integrasi Siaran",
+      "desc": "Daripada penemuan ke siaran udara: integrasi studio maya, setup TV & siaran kampus, dan aliran kerja video manusia digital."
     },
     "demos": {
       "title": "Demo — Aplus Systems | Paparan & Video Rujukan",
-      "desc": "Video demo terpilih termasuk format pendek (9:16) dan mendatar (16:9) untuk rujukan."
+      "desc": "Video demo terpilih termasuk format menegak (9:16) dan mendatar (16:9) untuk rujukan."
     },
     "process": {
       "title": "Proses — Aplus Systems | Dari Penemuan ke Siaran",
-      "desc": "Proses yang jelas dan boleh diulang meliputi penemuan, reka bentuk, integrasi, pengesahan, latihan dan go-live."
+      "desc": "Proses jelas dan boleh diulang meliputi penemuan, reka bentuk, integrasi, validasi, latihan dan go-live."
     },
     "tech": {
       "title": "Teknologi — Aplus Systems | Alat Studio Maya & Siaran",
-      "desc": "Terokai teknologi yang menyokong aliran kerja Aplus Systems — NDI, SDI, Unreal Engine, OBS, vMix dan alat automasi."
+      "desc": "Terokai teknologi di sebalik aliran kerja Aplus Systems — NDI, SDI, Unreal Engine, OBS, vMix dan alat automasi."
     },
     "contact": {
       "title": "Hubungi — Aplus Systems | Dapatkan Sebut Harga atau Konsultasi",
-      "desc": "Hubungi melalui e-mel, WhatsApp atau LINE untuk bincang senario studio atau produksi anda."
+      "desc": "Hubungi melalui e-mel, WhatsApp atau LINE untuk berbincang tentang studio atau senario produksi anda."
     }
   },
 
-  "hero": {
-    "title": "Studio Maya × Integrasi Siaran × Video Manusia Digital",
-    "subtitle": "Dengan lebih lima tahun pengalaman sistem siaran, kami mereka bentuk dan mengintegrasi penyelesaian video yang boleh dipercayai serta kreatif — daripada perancangan hingga penyiaran.",
+  "home_hero": {
+    "title": "Studio Maya × Integrasi Siaran × Produksi Manusia Digital",
+    "subtitle": "Aplus Systems menyampaikan solusi hujung-ke-hujung untuk siaran dan studio maya — menggabungkan kreativiti, ketepatan teknikal dan reka bentuk sistem yang boleh dipercayai.",
     "cta1": "Hubungi Kami",
     "cta2": "Lihat Perkhidmatan"
   },
-
-  "svc": {
+  "home_svc": {
     "title": "Perkhidmatan Teras",
     "virtualstudio": {
       "title": "Integrasi Studio Maya",
-      "desc": "Set-up hujung ke hujung dengan chroma key, penjejakan kamera dan penghalaan berbilang protokol (NDI / SDI / IP)."
+      "desc": "Reka bentuk sistem hujung-ke-hujung untuk produksi maya masa nyata — chroma key, penjejakan kamera dan penghalaan berbilang protokol (NDI / SDI / IP). Boleh dipercayai, boleh skala, sedia siaran."
     },
     "broadcast": {
-      "title": "Set-up Siaran TV & Kampus",
-      "desc": "Sistem sehenti untuk studio pendidikan atau korporat — daripada perancangan dan pemilihan peralatan hingga integrasi dan latihan."
+      "title": "Penyiapan TV & Siaran Kampus",
+      "desc": "Solusi sehenti untuk sekolah dan perusahaan: keperluan, senarai peralatan, pendawaian, pentauliahan dan latihan operator — dari perancangan hingga siaran pertama."
     },
     "digitalhuman": {
-      "title": "Penghasilan Video Manusia Digital",
-      "desc": "Sintesis suara AI, penyegerakan bibir dan adegan maya 3D untuk produksi video automatik yang efisien."
+      "title": "Produksi Video Manusia Digital",
+      "desc": "Suara AI, penyegerakan bibir dan integrasi adegan 3D untuk pembentangan automatik dan segmen program. Kualiti konsisten dengan aliran kerja boleh diulang."
+    },
+    "green": {
+      "title": "Studio Layar Hijau (Taiwan)",
+      "desc": "Studio kompak dengan setup lampu dan audio. Sesuai untuk rakaman kursus, video penerangan dan penggambaran penyampai maya. Sokongan teknikal di lokasi sebagai pilihan."
     }
   },
-
-  "svc_hero": {
-    "h1": "Apa Yang Kami Boleh Bantu",
-    "p": "Daripada penemuan keperluan hingga siaran — sistem yang boleh dipercayai dan mudah diselenggara untuk produksi sebenar.",
-    "cta": "Dapatkan Sebut Harga"
+  "home_showcase": {
+    "title": "Paparan Hasil",
+    "desc": "Video demo terpilih dan sorotan produksi",
+    "wuya": "Muat naik terkini dari <strong>@WuYaTheWorld</strong>",
+    "heho": "Muat naik terkini dari <strong>@Heho</strong>",
+    "verticalTitle": "Video Format Pendek (9:16)",
+    "short1": "Manusia Digital — Demo Narasi Studio",
+    "short2": "AI Lip-sync — Persembahan Watak"
   },
-  "svc_core": {
-    "title": "Perkhidmatan Teras"
+  "home_about": {
+    "title": "Tentang Aplus Systems",
+    "desc": "Aplus Systems mengkhusus dalam <strong>studio maya</strong> dan <strong>integrasi sistem siaran</strong> — menyampaikan solusi hujung-ke-hujung dari perancangan dan pemasangan hingga sokongan siaran langsung. Berpunca dari kepakaran teknikal di Taiwan, pasukan kami memadukan kejuruteraan kreatif dan reka bentuk boleh dipercayai untuk membina persekitaran produksi moden bagi media, pendidikan dan perusahaan.",
+    "item1": "5+ tahun pengalaman siaran & integrasi sistem",
+    "item2": "Reka bentuk aliran kerja hibrid NDI / SDI / IP",
+    "item3": "Studio maya, dinding LED & produksi manusia digital"
   },
-  "svc_vs": {
-    "title": "Integrasi Studio Maya",
-    "desc": "Chroma key, penjejakan kamera, penghalaan NDI/SDI/IP dan set-up permukaan kawalan.",
-    "item1": "Reka bentuk aliran isyarat (NDI / SDI / SRT)",
-    "item2": "Aliran kerja vMix / OBS / Unreal",
-    "item3": "SOP operator & panduan mula cepat"
-  },
-  "svc_tv": {
-    "title": "Siaran TV & Kampus",
-    "desc": "Set-up sehenti untuk studio dalaman: perancangan, senarai peralatan, integrasi, latihan.",
-    "item1": "Keperluan & topologi",
-    "item2": "Panduan perolehan",
-    "item3": "Pentauliahan & serahan"
-  },
-  "svc_dh": {
-    "title": "Video Manusia Digital",
-    "desc": "Suara AI, lip-sync dan integrasi adegan 3D untuk persembahan automatik bentuk panjang.",
-    "item1": "Model suara & pemasaan",
-    "item2": "Paip kerja lip-sync",
-    "item3": "Main balik & penjadualan"
-  },
-  "svc_tiers": {
-    "title": "Pakej & Harga Permulaan",
-    "cta": "Ceritakan senario anda"
-  },
-  "tier": {
-    "basic": "Permulaan",
-    "basic.desc": "Satu bilik / satu aliran kerja",
-    "basic.price": "Dari NTD ** (anggaran selepas penemuan)",
-    "pro": "Profesional",
-    "pro.desc": "Integrasi berbilang peranti / termasuk latihan",
-    "pro.price": "Dari NTD **",
-    "custom": "Tersuai",
-    "custom.desc": "Skala besar / penghantaran hujung ke hujung",
-    "custom.price": "Mengikut keperluan"
-  },
-  "svc_tech": {
-    "title": "Teknologi Disokong"
-  },
-  "svc_faq": {
-    "title": "Soalan Lazim"
-  },
-  "faq": {
-    "time.q": "Berapa lama untuk go-live?",
-    "time.a": "Kebiasaannya 2–8 minggu, bergantung pada skop dan perolehan.",
-    "cost.q": "Bagaimana kaedah harga?",
-    "cost.a": "Selepas panggilan penemuan ringkas, kami berikan julat harga dan pelan masa."
-  },
-  "svc_final": {
-    "h3": "Sedia rancang studio atau program anda?",
-    "cta": "Hubungi Saya"
+  "home_contact": {
+    "title": "Hubungi Aplus Systems",
+    "desc": "Sama ada merancang studio baharu, perlukan integrasi teknikal, atau meneroka produksi manusia digital — kami sedia memberi konsultasi tersuai dan solusi hujung-ke-hujung merentas persekitaran siaran dan maya.",
+    "cta1": "Minta Konsultasi",
+    "cta2": "Sembang di WhatsApp"
   },
 
   "about_hero": {
     "h1": "Tentang Aplus Systems",
-    "lead": "Studio kejuruteraan sistem bebas yang memfokuskan integrasi studio maya dan siaran — menghubungkan teknologi dengan produksi."
-  },
-  "about": {
-    "title": "Tentang Aplus",
-    "desc": "Kami mereka bentuk sistem studio maya dan siaran yang boleh dipercayai, menggabungkan kejuruteraan praktikal dengan aliran kerja siap produksi."
+    "lead": "Solusi bersepadu untuk <strong>Studio Maya</strong> · <strong>Sistem Siaran</strong> · <strong>Produksi Manusia Digital</strong><br/>Membina persekitaran video yang boleh dipercayai, kreatif dan saling terhubung merentas industri."
   },
   "about_intro": {
-    "title": "Profil Profesional",
-    "p1": "Aplus Systems menyediakan reka bentuk studio maya, integrasi siaran dan konsultasi aliran kerja untuk pasukan pendidikan dan korporat.",
-    "p2": "Kami meliputi kitaran penuh: analisis keperluan, pemilihan perkakasan, pendawaian dan set-up, konfigurasi perisian serta latihan operator — memastikan sistem stabil, intuitif dan boleh skala.",
+    "title": "Profil Syarikat",
+    "p1": "Aplus Systems ialah integrator teknikal berpangkalan di Taiwan yang mengkhusus dalam <strong>reka bentuk studio maya</strong>, <strong>integrasi sistem siaran</strong>, dan <strong>konsultasi aliran kerja hujung-ke-hujung</strong> untuk sektor pendidikan dan korporat. Misi kami ialah menghubungkan visi kreatif dengan teknologi siaran yang kukuh.",
+    "p2": "Daripada perancangan awal ke pelaksanaan di lokasi, kami mengendalikan setiap tahap — analisis keperluan, pemilihan perkakasan, pendawaian & pemasangan, tetapan perisian dan latihan operator. Setiap sistem direka agar <strong>stabil, intuitif dan boleh skala</strong>.",
     "item1": "Integrasi Studio Maya & Penjejakan Kamera",
-    "item2": "Set-up Siaran & TV Kampus",
-    "item3": "AI Lip-sync + Penghasilan Manusia Digital",
+    "item2": "Penyiapan TV & Siaran Kampus",
+    "item3": "AI Lip-sync & Produksi Manusia Digital",
     "item4": "Latihan Teknikal & Sokongan Jauh"
   },
   "about_exp": {
-    "title": "Jejak Syarikat",
-    "y2025": "Menerajui reka bentuk sistem studio maya berbilang kamera di universiti.",
-    "y2024": "Melaksanakan projek integrasi siaran iSmart, menyampaikan automasi aliran kerja siaran langsung.",
-    "y2022": "Mengintegrasi sistem TV kampus serta melatih kakitangan dan pelajar untuk operasi harian.",
-    "y2020": "Pengalaman produksi siaran & suntingan pasca — dari kandungan ke potongan akhir."
+    "title": "Pencapaian Syarikat",
+    "2025": "Memperkasa operasi <strong>Aplus Systems</strong> dengan solusi studio maya multi-kamera untuk universiti dan institusi media terkemuka di Taiwan.",
+    "2024": "Menyiapkan <strong>Projek Integrasi Siaran iSmart</strong>, mewujudkan aliran automasi daripada tangkapan kamera ke siaran — langkah besar ke arah siaran pintar.",
+    "2022": "Mereka bentuk dan melaksana <strong>TV kampus dan bilik kuliah hibrid</strong>, melatih lebih 100 pendidik dan operator.",
+    "2020": "Membina asas dalam <strong>produksi siaran, penyuntingan dan penyelenggaraan sistem</strong>, membentuk pendekatan perkhidmatan bersepadu Aplus Systems."
+  },
+  "about_show": {
+    "title": "Produksi Pilihan",
+    "wuya": "🦅 “Wuya Laughs” — Penyuntingan",
+    "cross": "🌏 “Cross-Strait Views” — Produksi",
+    "heho": "🎬 “Heho” — Produksi Eksekutif"
+  },
+  "about_cta": {
+    "h3": "Jom bina studio seterusnya bersama",
+    "btn": "Hubungi Saya"
   },
 
   "contact_hero": {
-    "h1": "Mari Bekerjasama",
-    "lead": "Perlukan integrasi sistem, produksi atau konsultasi? Hantar mesej — lazimnya kami balas dalam satu hari bekerja."
+    "h1": "Hubungi Aplus Systems",
+    "lead": "Kami pakar dalam integrasi studio maya, produksi manusia digital dan reka bentuk aliran kerja siaran. Nyatakan matlamat projek anda — kami bantu bina sistem yang boleh dipercayai dan kreatif."
   },
   "contact": {
-    "title": "Hubungi Kami",
-    "desc": "Kongsi senario anda (saiz studio, sumber isyarat, keluaran yang diharapkan). Kami cadangkan pelan praktikal dan garis masa.",
-    "cta1": "E-mel Saya",
+    "title": "Saluran Hubungan",
+    "desc": "Pilih kaedah di bawah — pasukan kami akan membalas dalam satu hari bekerja.",
+    "cta1": "Hantar Pertanyaan",
     "cta2": "Sembang di WhatsApp",
     "cta3": "Mesej di LINE",
     "channels": {
@@ -186,62 +125,172 @@
       "line": "LINE"
     }
   },
+  "form": {
+    "title": "Hantar Ringkasan Projek",
+    "desc": "Beritahu matlamat dan kekangan anda. Kami akan membalas dalam satu hari bekerja.",
+    "name": { "label": "Nama Anda" },
+    "email": { "label": "E-mel" },
+    "company": { "label": "Syarikat / Sekolah (pilihan)" },
+    "subject": { "label": "Subjek" },
+    "message": { "label": "Butiran Projek" },
+    "service": {
+      "label": "Jenis Perkhidmatan",
+      "virtual": "Integrasi Studio Maya",
+      "broadcast": "TV & Siaran Kampus",
+      "digital": "Produksi Manusia Digital",
+      "greenscreen": "Studio Layar Hijau",
+      "consult": "Konsultasi",
+      "other": "Lain-lain"
+    },
+    "budget": {
+      "label": "Bajet (pilihan)",
+      "unknown": "Belum pasti",
+      "under": "Di bawah NTD 100k",
+      "b1": "NTD 100k–300k",
+      "b2": "NTD 300k–800k",
+      "b3": "NTD 800k+"
+    },
+    "submit": "Hantar melalui E-mel",
+    "copy": "Salin Ringkasan",
+    "note": "Borang ini akan membuka aplikasi e-mel anda dengan mesej pra-isi. Atau salin ringkasan dan hantar ke <strong>aplusystem@gmail.com</strong>.",
+    "error": {
+      "name": "Sila masukkan nama anda.",
+      "email": "Sila masukkan e-mel yang sah.",
+      "subject": "Sila masukkan subjek."
+    }
+  },
+  "company": {
+    "name": "Aplus Systems",
+    "tagline": "Integrasi Siaran · Studio Maya · Solusi Manusia Digital",
+    "location": "Taipei, Taiwan — Berkhidmat untuk klien di seluruh Asia"
+  },
 
   "demos_hero": {
     "h1": "Paparan Demo",
-    "lead": "Demo terpilih untuk rujukan pantas — format pendek (9:16) dan mendatar (16:9)."
+    "lead": "Demo terpilih menampilkan <strong>integrasi studio maya</strong>, produksi <strong>manusia digital</strong>, dan <strong>aliran kerja sistem TV</strong>."
   },
-  "demos": {
-    "shorts.title": "Format Pendek (9:16)",
-    "landscape.title": "Mendatar (16:9)",
-    "caption.generic": "Video demo rujukan"
+  "demos_section": {
+    "horizontal": "Projek Pilihan (16:9)",
+    "vertical": "Format Pendek (9:16)"
+  },
+  "demos_cards": {
+    "vs": {
+      "title": "Binaan Studio Maya",
+      "desc": "Integrasi sistem + demo penjejakan kamera"
+    },
+    "short1": { "title": "Demo Pendek — Penjejakan & Pembingkaian" },
+    "short2": { "title": "Demo Pendek — Petikan Manusia Digital" },
+    "short3": { "title": "Demo Pendek — Sorotan Aliran Kerja" }
   },
 
-  "proc_hero": {
+  "process_hero": {
     "h1": "Cara Kami Bekerja",
-    "lead": "Proses praktikal dan boleh diulang untuk membina sistem produksi yang boleh dipercayai serta mudah diselenggara."
+    "lead": "Daripada penemuan ke penyerahan — proses integrasi kami memastikan kejelasan, kecekapan dan kebolehpercayaan di setiap langkah."
+  },
+  "process_main": {
+    "title": "Aliran Kerja Kami",
+    "step1": {
+      "title": "Penemuan & Konsultasi",
+      "desc": "Kami memahami matlamat, persekitaran dan cabaran anda — mengenal pasti keperluan sebenar studio atau sistem."
     },
-  "process": {
-    "steps": {
-      "discovery.title": "1) Penemuan",
-      "discovery.desc": "Senario, kekangan, bajet dan garis masa — kami sejajarkan skop dan output.",
-      "design.title": "2) Reka Bentuk Sistem",
-      "design.desc": "Aliran isyarat, senarai peranti, rangkaian dan permukaan kawalan dengan rajah yang jelas.",
-      "integration.title": "3) Integrasi",
-      "integration.desc": "Set-up perkakasan, pendawaian, konfigurasi perisian dan templat aliran kerja.",
-      "validation.title": "4) Pengesahan",
-      "validation.desc": "Adegan ujian, ujian tekanan dan failover — pastikan prestasi stabil.",
-      "training.title": "5) Latihan",
-      "training.desc": "SOP operator, senarai semak mula cepat dan set-up sokongan jauh.",
-      "golive.title": "6) Go-Live",
-      "golive.desc": "Serahan, dokumentasi dan pengoptimuman susulan."
+    "step2": {
+      "title": "Reka Bentuk & Perancangan Sistem",
+      "desc": "Kami lukis diagram teknikal, pilih perkakasan/perisian serasi, dan sediakan garis masa yang sejajar dengan sumber anda."
     },
-    "cta": "Bercakap dengan kami"
+    "step3": {
+      "title": "Integrasi & Persediaan",
+      "desc": "Pendawaian di lokasi, konfigurasi dan penentukuran — memastikan komunikasi lancar antara komponen berasaskan NDI, SDI dan IP."
+    },
+    "step4": {
+      "title": "Latihan & Penyerahan",
+      "desc": "Latihan operator, dokumentasi aliran kerja dan sokongan jauh pasca pelaksanaan untuk kebolehpercayaan jangka panjang."
+    }
+  },
+  "process_cta": {
+    "h3": "Sedia mulakan projek anda?",
+    "desc": "Mari mereka bentuk studio maya atau aliran kerja siaran seterusnya bersama.",
+    "btn": "Hubungi Aplus Systems"
+  },
+
+  "svc": {
+    "hero": {
+      "h1": "Perkhidmatan",
+      "lead": "Menggabungkan kreativiti dan teknologi — membina aliran kerja yang boleh dipercayai untuk setiap produksi."
+    },
+    "shoot": {
+      "title": "Perkhidmatan Studio & Produksi",
+      "desc": "Sokongan studio maya dan fizikal untuk kreator, sekolah dan perusahaan.",
+      "item1": {
+        "title": "Studio Layar Hijau (Taiwan)",
+        "desc": "Dilengkapi lampu dan audio, sesuai untuk rakaman korporat atau pendidikan."
+      },
+      "item2": {
+        "title": "Penggambaran Studio Maya",
+        "desc": "Menggunakan Unreal Engine dan sistem penjejakan untuk komposit masa nyata dan produksi langsung."
+      }
+    },
+    "system": {
+      "title": "Integrasi & Penyiapan Sistem",
+      "desc": "Solusi berasaskan kejuruteraan untuk produksi maya dan sistem siaran.",
+      "item1": {
+        "title": "Pemasangan Studio Maya",
+        "desc": "Perancangan, pendawaian dan pengujian penuh untuk aliran kerja NDI / SDI / IP."
+      },
+      "item2": {
+        "title": "Konsultasi Integrasi Sistem",
+        "desc": "Perancangan aliran kerja merentas tangkapan, pertukaran, rakaman dan penghantaran."
+      },
+      "item3": {
+        "title": "Latihan Lip-sync Manusia Digital",
+        "desc": "Padanan suara-ke-muka untuk aplikasi AI atau penyampai maya."
+      }
+    },
+    "collab": {
+      "title": "Kolaborasi Projek & Sokongan Kreatif",
+      "desc": "Bekerjasama dengan kreator dan pereka yang dipercayai untuk menyiapkan projek bersepadu.",
+      "item1": {
+        "title": "Ilustrasi & Rekaan Watak",
+        "desc": "Dihasilkan bersama artis rakan kongsi untuk menyokong naratif digital atau jenama."
+      },
+      "item2": {
+        "title": "Suntingan Video & Pascaproduksi",
+        "desc": "Dihantar bersama penyunting profesional dan pereka gerak untuk hasil berkualiti."
+      },
+      "item3": {
+        "title": "Integrasi Web & Multimedia",
+        "desc": "Sokong paparan jenama, platform pendidikan dan demonstrasi dalam talian."
+      }
+    },
+    "philosophy": {
+      "title": "Pendekatan Kami",
+      "desc": "Aplus Systems menjembatani pasukan kreatif dan operasi teknikal — memastikan setiap projek berjalan cekap dan boleh dipercayai.",
+      "cta": "Bincang Projek Anda"
+    }
   },
 
   "tech_hero": {
     "h1": "Teknologi & Alat",
-    "lead": "Jenama dan teknologi berikut adalah sebahagian daripada sistem yang telah kami integrasi dan konfigurasikan untuk persekitaran studio maya dan siaran. Logo digunakan untuk tujuan pengenalpastian sahaja."
+    "lead": "Jenama dan teknologi berikut adalah sebahagian daripada sistem yang telah saya integrasi dan tetapkan untuk persekitaran studio maya dan siaran. Logo digunakan untuk tujuan pengenalan sahaja."
   },
   "tech_hw": {
     "title": "Perkakasan & Peralatan",
-    "desc": "Peranti dan jenama yang kerap digunakan dalam pembinaan studio dan persekitaran siaran langsung.",
+    "desc": "Peranti dan jenama yang kerap digunakan dalam binaan studio dan persekitaran siaran langsung.",
     "bmd": "Switcher, kamera studio & I/O",
     "synco": "Mikrofon & audio di set",
     "unileader": "Periferal & aksesori siaran",
-    "obsbot": "Kamera PTZ / penjejakan AI",
-    "acemic": "Sistem mikrofon tanpa wayar & aksesori",
-    "yamaha": "Pengadun & laluan isyarat audio",
+    "obsbot": "Kamera penjejakan PTZ / AI",
+    "acemic": "Perkakasan studio & modul integrasi",
+    "yamaha": "Mixer & laluan isyarat audio",
     "mipro": "Mikrofon tanpa wayar & penerima",
     "mls": "Sistem paparan LED dan panel dinding"
   },
   "tech_sw": {
     "title": "Perisian & Alat Aliran Kerja",
-    "desc": "Perisian dan protokol yang digunakan untuk membina paip kerja studio maya moden.",
+    "desc": "Perisian dan protokol yang digunakan untuk membina paip studio maya moden.",
     "obs": "Produksi langsung & penstriman",
-    "unreal": "Set maya & pemaparan masa nyata",
+    "unreal": "Set maya & render masa nyata",
     "ndi": "Penghantaran video berasaskan IP",
-    "streamdeck": "Kawalan makro & pengalaman operator"
+    "streamdeck": "Kawalan makro & UX operator"
   },
   "tech_cta": {
     "h3": "Perlukan sistem dibina sekitar alat ini?",
@@ -249,5 +298,19 @@
   },
   "tech_note": {
     "legal": "Semua nama jenama dan logo adalah milik pemilik masing-masing dan dipaparkan untuk rujukan sahaja."
+  },
+
+  "footer": {
+    "rights": "Hak cipta terpelihara.",
+    "about": "Tentang",
+    "services": "Perkhidmatan",
+    "demos": "Demo",
+    "process": "Proses",
+    "technologies": "Teknologi",
+    "contact": "Hubungi"
+  },
+  "legal": {
+    "disclaimer_title": "Penafian:",
+    "disclaimer_body": "Semua tanda dagang, logo dan nama jenama adalah milik pemilik masing-masing. Logo dipaparkan hanya untuk tujuan deskriptif dan rujukan bagi menggambarkan teknologi yang telah Aplus Systems gunakan atau integrasikan dalam projek profesional. Laman ini tidak berafiliasi, tidak diendors atau ditaja oleh mana-mana jenama yang disebut."
   }
 }

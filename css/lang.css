@@ -1,218 +1,75 @@
-/* === 語言切換區 === */
+/* === 通用設定 === */
 .lang-dropdown {
   position: relative;
   display: inline-block;
+  z-index: 2100; /* 蓋過 header */
 }
 
 .lang-btn {
-  background: none;
-  border: 1px solid rgba(255,255,255,.2);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  display: flex;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all .25s ease;
+  cursor: pointer;
+  transition: filter .2s ease, transform .12s ease;
 }
-.lang-btn:hover {
-  box-shadow: 0 0 8px rgba(212,175,55,0.4);
-}
+.lang-btn:hover .lang-icon { filter: drop-shadow(0 0 6px rgba(212,175,55,.55)); }
+.lang-btn:active { transform: scale(.96); }
+.lang-btn:focus { outline: none; }
+.lang-btn:focus-visible .lang-icon { filter: drop-shadow(0 0 8px rgba(212,175,55,.8)); }
 
 .lang-icon {
   width: 18px;
   height: 18px;
   object-fit: contain;
+  display: block;
 }
 
-/* === 下拉選單 === */
+/* === 桌機版：右上角下拉 === */
 .lang-menu {
   position: absolute;
   right: 0;
   top: 120%;
   background: rgba(20,20,20,.95);
   border: 1px solid rgba(255,255,255,.08);
-  border-radius: 8px;
-  padding: 6px 0;
+  border-radius: 10px;
+  min-width: 180px;
+  padding: 8px 0;
   list-style: none;
   margin: 0;
-  min-width: 160px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  box-shadow: 0 12px 24px rgba(0,0,0,.35);
   backdrop-filter: blur(12px);
   display: none;
+  z-index: 2101;
 }
-.lang-menu.show { display: block; animation: fadeIn .15s ease; }
-
+.lang-menu.show {
+  display: block !important;
+  animation: fadeIn .16s ease;
+}
 .lang-menu li {
-  padding: 8px 14px;
+  padding: 10px 14px;
   color: #ddd;
   cursor: pointer;
-  transition: background .2s;
+  transition: background .2s, color .2s;
 }
 .lang-menu li:hover {
-  background: rgba(255,255,255,.1);
+  background: rgba(255,255,255,.08);
   color: var(--primary, #d4af37);
 }
 .lang-menu li.active {
   color: var(--primary, #d4af37);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* 只顯示 icon，移除按鈕外框與底色 */
-.lang-btn {
-  background: transparent;
-  border: none;            /* ← 移除框線 */
-  padding: 0;              /* 視覺零邊距 */
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  /* 仍提供足夠的可點擊面積（看不到，但可點） */
-  width: 40px;             /* 44px 更佳，可自行調整 */
-  height: 40px;
-  border-radius: 50%;      /* 看不見，但提供圓形點擊區 */
-  transition: filter .2s ease, transform .12s ease;
-}
-
-/* icon 圖本體 */
-.lang-icon {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-  display: block;
-  filter: brightness(1) contrast(1.05);
-}
-
-/* hover 只做微光，不出現外框 */
-.lang-btn:hover .lang-icon {
-  filter: drop-shadow(0 0 6px rgba(212,175,55,.55));
-}
-.lang-btn:active {
-  transform: scale(.96);
-}
-
-/* 無障礙：鍵盤 focus 可見但無框，改用柔光指示 */
-.lang-btn:focus { outline: none; }
-.lang-btn:focus-visible .lang-icon {
-  filter: drop-shadow(0 0 8px rgba(212,175,55,.8));
-}
-
-/* 下拉選單維持原樣，不受影響 */
-.lang-menu {
-  position: absolute;
-  right: 0;
-  top: 120%;
-  background: rgba(20,20,20,.95);
-  border: 1px solid rgba(255,255,255,.08);
-  border-radius: 8px;
-  padding: 6px 0;
-  list-style: none;
-  margin: 0;
-  min-width: 160px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.35);
-  backdrop-filter: blur(12px);
-  display: none;
-  z-index: 2000;
-}
-.lang-menu.show { display: block; animation: fadeIn .15s ease; }
-
-/* =========== Trigger（只顯示地球，無外框） =========== */
-.lang-dropdown { position: relative; display: inline-block; }
-
-.lang-btn {
-  background: transparent; border: 0; padding: 0;
-  width: 40px; height: 40px; border-radius: 50%;
-  display: inline-flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: filter .2s ease, transform .12s ease;
-}
-.lang-btn:active { transform: scale(.96); }
-.lang-btn:focus { outline: none; }
-.lang-btn:focus-visible img { filter: drop-shadow(0 0 8px rgba(212,175,55,.8)); }
-
-.lang-icon { width: 18px; height: 18px; object-fit: contain; display: block; }
-.lang-btn:hover .lang-icon { filter: drop-shadow(0 0 6px rgba(212,175,55,.55)); }
-
-/* =========== 桌機：右上角下拉 =========== */
-.lang-menu {
-  position: absolute; right: 0; top: 120%;
-  background: rgba(20,20,20,.95);
-  border: 1px solid rgba(255,255,255,.08);
-  border-radius: 10px; min-width: 200px; padding: 8px 0;
-  list-style: none; margin: 0; box-shadow: 0 12px 24px rgba(0,0,0,.35);
-  backdrop-filter: blur(12px);
-  display: none; z-index: 2000;
-}
-.lang-menu.show { display: block; animation: fadeIn .16s ease; }
-.lang-menu .menu-header { padding:10px 14px; font-size:.85rem; color:#bbb; border-bottom:1px solid rgba(255,255,255,.08); }
-.lang-menu li { padding:10px 14px; color:#ddd; cursor:pointer; transition: background .2s,color .2s; }
-.lang-menu li:hover { background: rgba(255,255,255,.08); color: var(--primary,#d4af37); }
-.lang-menu li.active { color: var(--primary,#d4af37); }
-
-/* =========== 手機：底部抽屜（像 OBSBOT 風格） =========== */
-@media (max-width: 1024px){
-  .lang-menu {                 /* 轉為抽屜 */
-    position: fixed; left: 0; right: 0; bottom: 0; top: auto;
-    border-radius: 14px 14px 0 0; min-width: unset; width: 100%;
-    transform: translateY(105%); display:block; opacity: 0; z-index: 1100;
-    border: 1px solid rgba(255,255,255,.08);
-    box-shadow: 0 -16px 36px rgba(0,0,0,.5);
-  }
-  .lang-menu.show { transform: translateY(0%); opacity: 1; transition: transform .22s ease, opacity .22s ease; }
-  .lang-menu .dragbar { width: 44px; height: 4px; border-radius: 2px; background: rgba(255,255,255,.25); margin: 8px auto 6px; }
-  .lang-menu .menu-header { text-align: center; border-bottom: 1px solid rgba(255,255,255,.08); }
-}
-
-/* 淡入 */
-@keyframes fadeIn { from{opacity:0; transform: translateY(-4px);} to{opacity:1; transform:none;} }
-
-.lang-dropdown, .lang-btn, .lang-icon {
-  z-index: 999;
-  position: relative;
-}
-
-
-/* === 基本外觀：只有 icon，無邊框 === */
-.lang-dropdown { position: relative; display: inline-block; }
-.lang-btn {
-  background: transparent; border: 0; padding: 0;
-  width: 40px; height: 40px; border-radius: 50%;
-  display: inline-flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: filter .2s ease, transform .12s ease;
-  position: relative; z-index: 2100; /* 蓋過 header 背景 */
-}
-.lang-btn:active { transform: scale(.96); }
-.lang-btn:focus { outline: none; }
-.lang-btn:focus-visible .lang-icon { filter: drop-shadow(0 0 8px rgba(212,175,55,.8)); }
-.lang-icon { width: 18px; height: 18px; object-fit: contain; display: block; }
-.lang-btn:hover .lang-icon { filter: drop-shadow(0 0 6px rgba(212,175,55,.55)); }
-
-/* === 桌機：右上角下拉 === */
-.lang-menu {
-  position: absolute; right: 0; top: 120%;
-  background: rgba(20,20,20,.95);
-  border: 1px solid rgba(255,255,255,.08);
-  border-radius: 10px; min-width: 200px; padding: 8px 0;
-  list-style: none; margin: 0; box-shadow: 0 12px 24px rgba(0,0,0,.35);
-  backdrop-filter: blur(12px);
-  display: none; z-index: 2000;
-}
-.lang-menu.show { display: block; animation: fadeIn .16s ease; }
-.lang-menu li { padding:10px 14px; color:#ddd; cursor:pointer; transition: background .2s,color .2s; }
-.lang-menu li:hover { background: rgba(255,255,255,.08); color: var(--primary,#d4af37); }
-.lang-menu li.active { color: var(--primary,#d4af37); }
-
-/* === 手機：搬到主選單裡 → 變成子選單樣式（非浮動） === */
-@media (max-width:1024px){
-  /* 當語言切換器被放進 .nav-list 時，標記了 .lang-dropdown--inmenu */
+/* === 手機版：主選單內子清單 === */
+@media (max-width: 1024px) {
   .lang-dropdown.lang-dropdown--inmenu .lang-menu {
-    position: static;           /* 不再絕對定位，跟著 <li> 排版 */
-    display: none;              /* 預設收起 */
+    position: static;
+    display: none;
     margin-top: 6px;
     background: rgba(28,28,28,.98);
     border: 1px solid rgba(255,255,255,.08);
@@ -220,11 +77,7 @@
     box-shadow: 0 10px 24px rgba(0,0,0,.45);
   }
   .lang-dropdown.lang-dropdown--inmenu .lang-menu.show {
-    display: block;             /* 點按鈕才展開 */
-  }
-  .nav-lang-item { padding: 6px 0; }
-  .nav-lang-item .lang-btn {
-    width: 44px; height: 44px;  /* 提升可點區 */
+    display: block;
   }
 }
 
@@ -233,6 +86,3 @@
   from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-.lang-dropdown { position: relative; z-index: 3000; }
-.lang-menu { z-index: 999; }

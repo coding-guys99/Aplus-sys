@@ -239,3 +239,82 @@ body { padding-top: 70px; } /* 預留 header 高度 */
 .lang-dropdown { z-index: 1300; }
 .lang-menu { z-index: 1301; }
 .nav-overlay { z-index: 900; }
+
+/* ========== Mobile full-screen drawer for long menus ========== */
+@media (max-width:1024px){
+  :root { --header-h: 64px; } /* 依你的 header 高度調整 */
+
+  /* 把主選單改成全螢幕抽屜 */
+  .main-nav{
+    position: fixed;
+    top: var(--header-h);
+    left: 0; right: 0; bottom: 0;
+    background: rgba(20,20,20,.97);
+    border-top: 1px solid rgba(212,175,55,.18);
+    transform: translateY(-8px) scale(.98);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .25s ease, opacity .25s ease;
+    /* 讓底部有一層柔和陰影/漸層，提高質感 */
+  }
+  .main-nav::after{
+    content:"";
+    position: absolute; left:0; right:0; bottom:0; height:48px;
+    background: linear-gradient(transparent, rgba(0,0,0,.35));
+    pointer-events: none;
+  }
+  .main-nav.is-open{
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* 讓清單本身成為可捲動區域，不會撐太長 */
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 16px 28px;
+    margin: 0 auto;
+    width: min(680px, 100%);
+    height: calc(100dvh - var(--header-h));
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 連結改成「卡片式」大按鈕，手感更好 */
+  .nav-list a{
+    display: block;
+    padding: 14px 14px;
+    color: #f5f5f5;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+    transition: border-color .2s ease, background .2s ease, transform .15s ease;
+  }
+  .nav-list a:hover{ border-color: var(--primary); }
+  .nav-list a:active{ transform: translateY(1px); background: rgba(255,255,255,.06); }
+
+  /* 把語言選單固定放在最下面，與主要連結視覺分隔 */
+  .nav-list .nav-lang-item{
+    margin-top: auto; /* 推到最底 */
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .lang-dropdown.lang-inmenu .lang-menu{
+    position: static;
+    display: block; /* 在抽屜內直接展開成列表（不再另開浮層） */
+    background: rgba(28,28,28,.98);
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+
+  /* 如果你的內容很多，6.1吋以上手機可以做成兩欄 */
+  @media (min-width:480px) and (max-width:1024px){
+    .nav-list{ column-count: 2; column-gap: 12px; }
+    .nav-list li{ break-inside: avoid; }
+    /* 語言選單仍保持單欄置底 */
+    .nav-list .nav-lang-item{ column-span: all; }
+  }
+}

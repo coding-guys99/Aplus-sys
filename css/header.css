@@ -89,12 +89,6 @@
   color: var(--primary,#d4af37);
 }
 
-.mobile-menu-footer {
-  padding: 14px 18px;
-  border-top: 1px solid rgba(255,255,255,.08);
-  text-align: center;
-}
-
 .nav-overlay {
   position: fixed; inset: 0;
   background: rgba(0,0,0,.55);
@@ -112,11 +106,6 @@
   .actions img{
     display:none!important;
   }
-}
-
-.mobile-menu-footer img{
-  width:20%;
-  height:20%;
 }
 
 /* 手機面板內的語言清單（沿用 lang-menu 風格，但改成就地排版） */

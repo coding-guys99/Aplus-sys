@@ -1,16 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title data-i18n="demos_page.title">Demos — Aplus Systems | Virtual Studio & Digital Human Works</title>
-  <meta name="description" content="Explore Andy’s professional demos including virtual studio builds, digital human videos, and broadcast integration showcases."/>
-  <link rel="icon" href="./assets/favicon.png">
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/theme.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)">
-  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:1024px)">
+  <!-- ========================================= -->
+  <!-- 🌐 Aplus Systems — Demos / Showcase Meta -->
+  <!-- ========================================= -->
+
+  <!-- 共用設定 -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="./assets/favicon.png" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- 共用 OG / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Aplus Systems" />
+  <meta property="og:image" content="https://your-domain.com/assets/og/og-demos.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://your-domain.com/assets/og/og-demos.jpg" />
+
+  <!-- 結構化資料：Organization（全站共用） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Aplus Systems",
+    "url": "https://your-domain.com/",
+    "logo": "https://your-domain.com/assets/logo.svg",
+    "sameAs": [
+      "https://www.youtube.com/@wuyatheworld",
+      "https://www.youtube.com/@heho"
+    ]
+  }
+  </script>
+
+  <!-- 結構化資料：VideoObject（展示影片） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Virtual Studio Demo — Aplus Systems",
+    "description": "Showcase of Aplus Systems’ virtual studio integration, AI tracking cameras, and digital human production.",
+    "thumbnailUrl": "https://your-domain.com/assets/og/og-demos.jpg",
+    "uploadDate": "2025-01-10",
+    "embedUrl": "https://www.youtube.com/embed/iR4t_6PuiZI",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Aplus Systems",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://your-domain.com/assets/logo.svg"
+      }
+    }
+  }
+  </script>
+
+  <!-- =============================== -->
+  <!-- ✅ Demos 頁專屬 SEO -->
+  <!-- =============================== -->
+  <title data-i18n="meta.demos.title">Demo Showcase — Aplus Systems | Virtual Studio & Broadcast Integration</title>
+  <meta name="description" data-i18n="meta.demos.desc"
+        content="Watch Aplus Systems’ demo videos — from virtual studio production to digital human workflows and KeySearch software showcases." />
+  <meta property="og:title" content="Demo Showcase — Aplus Systems" />
+  <meta property="og:description"
+        content="Explore real demos from Aplus Systems, including virtual studio integration, system setup, and broadcast workflow previews." />
+  <meta property="og:url" content="https://your-domain.com/demos.html" />
+  <link rel="canonical" href="https://your-domain.com/demos.html" />
+
+  <!-- =============================== -->
+  <!-- ✅ 樣式載入 -->
+  <!-- =============================== -->
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/theme.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)" />
+  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:1024px)" />
+  <link rel="stylesheet" href="./css/lang.css" />
 </head>
 
 <body>

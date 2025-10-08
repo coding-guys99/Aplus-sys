@@ -1,6 +1,6 @@
 /* lang-dropdown.js — desktop globe dropdown + mobile in-panel list
    - waits for header include (partials:loaded) and retries mounting
-   - persists language to localStorage('lang') then reloads
+   - persists language to localStorage('lang'), then reloads
 */
 (function(){
   const LANGS = [
@@ -66,25 +66,35 @@
       });
     }
 
-    // ===== 手機：面板內清單 =====
+    // ===== 手機：面板內清單（在 mobile menu 底部） =====
     const mobileList = document.getElementById('mobile-lang');         // <ul id="mobile-lang" class="lang-menu in-panel" hidden>
     const mobileBtn  = document.querySelector('[data-open-lang]');     // 「Language」卡片
     if (mobileList && mobileBtn && !mobileList.dataset.mounted){
       mobileList.innerHTML = '';
-      mobileList.appendChild(buildList(current, () => location.reload()));
+      mobileList.appendChild(buildList(current, (code) => {
+        // 使用者選了語言 → 關面板 + reload
+        const mm = document.getElementById('mobile-menu');
+        const ov = document.querySelector('.nav-overlay');
+        mm?.classList.remove('is-open');
+        mm?.setAttribute('aria-hidden', 'true');
+        ov?.classList.remove('is-active');
+        localStorage.setItem('lang', code);
+        location.reload();
+      }));
       mobileList.dataset.mounted = '1';
 
+      // 切換語言清單顯示（僅展開，不關主選單；真正關閉交給 menu.js）
       mobileBtn.addEventListener('click', (e)=>{
         e.preventDefault();
+        e.stopPropagation();
         mobileList.hidden = !mobileList.hidden;
       });
     }
 
-    // 回傳是否都找到至少一個位置（避免死等）
     return !!((host && btn) || (mobileList && mobileBtn));
   }
 
-  // ===== 初始化：等 DOM、等 partials，再重試幾次（應付延遲載入）=====
+  // 初始化：等 DOM、等 partials，再重試幾次（應付延遲載入）
   function bootWithRetry(){
     let tries = 0, maxTries = 10;
     const timer = setInterval(()=>{

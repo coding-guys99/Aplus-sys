@@ -104,3 +104,7 @@
 }
 .menu-card--lang:hover { background: rgba(255,255,255,.15); color: var(--primary,#d4af37); transform: translateY(-2px); }
 .menu-card--lang img { width: 22px; height: 22px; filter: brightness(.95); }
+
+.mobile-lang-trigger img{
+  display:flex;
+}

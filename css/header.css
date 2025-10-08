@@ -119,3 +119,17 @@
   width:40%;
   height:40%;
 }
+
+/* 手機面板內的語言清單（沿用 lang-menu 風格，但改成就地排版） */
+.lang-menu.in-panel {
+  position: static;
+  display: block;
+  margin-top: 10px;
+  padding: 6px 0;
+  background: rgba(25,25,25,.96);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 10px;
+  box-shadow: none;
+}
+.lang-menu.in-panel[hidden] { display: none; }
+.lang-menu.in-panel li { padding: 10px 14px; }

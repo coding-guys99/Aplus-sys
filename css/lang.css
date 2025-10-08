@@ -73,6 +73,3 @@
 /* 手機面板內語言清單：預設收起，.show 強制顯示 */
 .lang-menu.in-panel { display: none; }
 .lang-menu.in-panel.show { display: block !important; }
-
-.menu-card--lang img { width: 20%; height: 20%; filter: brightness(.95); }
-.menu-card--lang img:hover { color: var(--primary,#d4af37); transform: translateY(-2px); }

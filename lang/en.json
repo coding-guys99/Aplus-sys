@@ -321,5 +321,145 @@
   "legal": {
     "disclaimer_title": "Disclaimer:",
     "disclaimer_body": "All trademarks, logos, and brand names are the property of their respective owners. They are used solely for descriptive and reference purposes to illustrate technologies that Aplus Systems has worked with or integrated in professional projects. This site is not affiliated with, endorsed by, or sponsored by any of the mentioned brands."
+  },
+  
+  //品牌詳情
+  "brands": {
+    "blackmagic": {
+      "name": "Blackmagic Design",
+      "desc": "Blackmagic Design delivers production-proven tools across switching, cameras, capture/IO and post. Typical builds include ATEM switchers for live production, URSA/Studio cameras over SDI/NDI, DeckLink for ingest/playout, and HyperDeck recorders, with DaVinci Resolve for color and finishing. Ideal for studio, campus TV and hybrid events.",
+      "gallery": {
+        "atem_mini":  { "caption": "ATEM Mini Extreme ISO — live switcher core" },
+        "studio_cam": { "caption": "Studio Camera 4K Pro G2" },
+        "ursa_bcast": { "caption": "URSA Broadcast G2" },
+        "decklink":   { "caption": "DeckLink 8K Pro — capture/output" },
+        "hyperdeck":  { "caption": "HyperDeck Studio HD — recording/playout" },
+        "resolve":    { "caption": "DaVinci Resolve — color & finishing" }
+      }
+    },
+
+    "synco": {
+      "name": "SYNCO",
+      "desc": "Compact on-camera and studio microphones for reliable on-set capture. Common use: wireless lav kits for interviews, and shotgun mics for dialogue/VO.",
+      "gallery": {
+        "g2a2":        { "caption": "G2 A2 dual-channel wireless lav kit" },
+        "d2_shotgun":  { "caption": "MIC-D2 XLR shotgun mic" },
+        "d30":         { "caption": "D30 on-camera shotgun" },
+        "accessories": { "caption": "Windshields, cold shoes, cables" }
+      }
+    },
+
+    "unileader": {
+      "name": "Uni-Leader",
+      "desc": "Uni-Leader provides integrated broadcast and virtual studio solutions — hardware + software — from camera switching (U-Caster 4K), compositing & CG (U-CG), to studio control (U-Studio 4K) and real-time remote learning (U-Mooc).",
+      "gallery": {
+        "u_caster_4k": { "caption": "U-Caster 4K — live switcher" },
+        "u_studio_4k": { "caption": "U-Studio 4K — studio control" },
+        "u_cg":        { "caption": "U-CG — compositing & graphics" },
+        "u_meta_v":    { "caption": "U-Meta V — virtual studio" },
+        "u_mooc":      { "caption": "U-Mooc — e-learning module" }
+      }
+    },
+
+    "obsbot": {
+      "name": "OBSBOT",
+      "desc": "OBSBOT focuses on AI-powered PTZ and tracking cameras, offering smart framing, gesture control, and multi-mode tracking for studio, live streaming, and content creation.",
+      "gallery": {
+        "tiny_4k":  { "caption": "OBSBOT Tiny 4K — AI PTZ webcam" },
+        "tiny_2":   { "caption": "OBSBOT Tiny 2 — multi-mode tracking" },
+        "tail_air": { "caption": "OBSBOT Tail Air — streaming PTZ" },
+        "tiny_se":  { "caption": "OBSBOT Tiny SE — 1080p tracking webcam" }
+      }
+    },
+
+    "acemic": {
+      "name": "Acemic",
+      "desc": "Acemic (Honbo Audio) specialises in wireless microphone systems, in-ear monitor systems, and related audio transmission modules. Products are widely used in stage, education, broadcast, performance, and recording setups for stable, interference-resistant audio pipelines.",
+      "gallery": {
+        "wireless_8ch": { "caption": "8-channel wireless microphone system" },
+        "iem_4ch":      { "caption": "4-channel in-ear monitoring system" },
+        "ad900":        { "caption": "AD-900 antenna distribution" },
+        "ad600":        { "caption": "AD-600 antenna/IEM distribution" },
+        "g4":           { "caption": "G4 series wireless microphone" },
+        "em_d01":       { "caption": "EM-D01 single-channel IEM" }
+      }
+    },
+
+    "yamaha": {
+      "name": "Yamaha Mixer",
+      "desc": "Yamaha offers a full line of professional analog and digital mixers tailored for studio, live, and broadcast environments. Popular lines include the TF, DM, CL/QL, M7CL, and RIVAGE series for mixing, routing, effects, and recall workflows.",
+      "gallery": {
+        "tf5":  { "caption": "TF5 digital mixer" },
+        "dm3s": { "caption": "DM3S ultra-compact digital mixer" },
+        "m7cl": { "caption": "M7CL digital mixing console" },
+        "ql5":  { "caption": "QL5 digital mixer" }
+      }
+    },
+
+    "mipro": {
+      "name": "MIPRO",
+      "desc": "MIPRO is a Taiwanese pioneer in wireless microphone, portable PA, and in-ear monitoring systems. Their patented ACT (Automatic Channel Targeting) enables fast syncing between transmitters and receivers.",
+      "gallery": {
+        "act32h": { "caption": "ACT-32H handheld wireless mic" },
+        "act312": { "caption": "ACT-312 dual-channel receiver" },
+        "mi58":   { "caption": "MI-58 digital IEM system" },
+        "ad900":  { "caption": "AD-900 antenna distribution module" }
+      }
+    },
+
+    "mls": {
+      "name": "MLS LED (木林森)",
+      "desc": "MLS (木林森) specializes in high-quality LED display modules used for broadcast video walls, stage walls, and virtual set backdrops. Their modules support high refresh rates and fine pixel pitch for crisp video output.",
+      "gallery": {
+        "p1_92": { "caption": "1.92 mm LED module" },
+        "p2_5":  { "caption": "2.5 mm LED module" },
+        "wall":  { "caption": "LED wall assembly" },
+        "ctrl":  { "caption": "LED controller/interface" }
+      }
+    },
+
+    "obs": {
+      "name": "OBS",
+      "desc": "OBS Studio is a free, open-source software suite for video recording and live streaming. It supports multiple video sources, compositing, plugins, virtual cameras, and real-time scene switching.",
+      "gallery": {
+        "ui":      { "caption": "OBS Studio — main interface" },
+        "plugin":  { "caption": "OBS plugin / hotkey demo" },
+        "output":  { "caption": "Streaming/recording output" },
+        "multisc": { "caption": "Multi-scene switching" }
+      }
+    },
+
+    "unreal": {
+      "name": "Unreal Engine",
+      "desc": "Unreal Engine is a real-time 3D creation tool used for games, virtual studios, and broadcast graphics. It powers virtual sets, real-time rendering, and interactive visuals.",
+      "gallery": {
+        "vsnap":   { "caption": "Virtual set screenshot" },
+        "viz":     { "caption": "Real-time rendering visual" },
+        "graph":   { "caption": "Material/graph editor" },
+        "liveset": { "caption": "Live virtual scene setup" }
+      }
+    },
+
+    "ndi": {
+      "name": "NDI",
+      "desc": "NDI (Network Device Interface) is a low-latency IP video protocol that enables video sources, audio, and metadata to be shared across networks. It powers many modern video workflows in broadcast and content production.",
+      "gallery": {
+        "logo":    { "caption": "NDI logo" },
+        "diagram": { "caption": "NDI signal flow diagram" },
+        "mixer":   { "caption": "NDI integration with switchers" },
+        "capture": { "caption": "NDI capture/output hardware" }
+      }
+    },
+
+    "streamdeck": {
+      "name": "StreamDeck",
+      "desc": "StreamDeck is a hardware macro controller that lets operators map buttons to actions, shortcuts, or scene changes — greatly enhancing live workflow efficiency.",
+      "gallery": {
+        "sd_32": { "caption": "StreamDeck 32-key" },
+        "sd_xl": { "caption": "StreamDeck XL" },
+        "sd_mob":{ "caption": "StreamDeck Mobile app" },
+        "sd_pro":{ "caption": "StreamDeck Pro" }
+      }
+    }
   }
 }

@@ -110,6 +110,9 @@
   .site-header .actions { 
     display: none !important;
   }
+  .action img{
+    display:none;
+  }
 }
 
 .mobile-menu.footer img{

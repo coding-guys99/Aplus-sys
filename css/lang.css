@@ -75,5 +75,7 @@
 .lang-menu.in-panel.show { display: block !important; }
 
 .mobile-card--lang img{
+  width:20%;
+  height:20%;
   color:var(--primary, #d4af37);
 }

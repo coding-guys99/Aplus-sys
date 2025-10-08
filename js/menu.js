@@ -74,23 +74,29 @@
     }
 
     const menu = getMobileMenu();
-    if (menu && menu.contains(e.target)){
-      // ✅ 語言卡片：只切換語言清單，不關面板
-      if (e.target.closest('[data-open-lang]')){
-        e.preventDefault();
-        e.stopPropagation();
-        const list = document.getElementById('mobile-lang');
-        if (list) list.hidden = !list.hidden;
-        return;
-      }
-      // ✅ 點語言清單本身：不關
-      if (e.target.closest('#mobile-lang')) {
-        return;
-      }
-      // 其它正常連結/卡片 → 關閉面板
-      const isLink = e.target.closest('a, .menu-card');
-      if (isLink) closeMobile();
+if (menu && menu.contains(e.target)) {
+  // ✅ 語言卡片：只切換語言清單，不關面板
+  if (e.target.closest('[data-open-lang], .menu-card--lang')) {
+    e.preventDefault();
+    e.stopPropagation();
+    const list = document.getElementById('mobile-lang');
+    if (list) {
+      const open = list.classList.toggle('show'); // 配合 CSS 顯示
+      list.hidden = !open;                        // 兼容 hidden 屬性
     }
+    return;
+  }
+
+  // ✅ 點語言清單本身：不關面板（阻止冒泡）
+  if (e.target.closest('#mobile-lang')) {
+    e.stopPropagation();
+    return;
+  }
+
+  // 其它正常連結/卡片 → 關閉面板
+  const isLink = e.target.closest('a, .menu-card');
+  if (isLink) closeMobile();
+}
   });
 
   // ESC 關閉

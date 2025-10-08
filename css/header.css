@@ -104,3 +104,10 @@
   display: none;
 }
 .nav-overlay.is-active { display: block; }
+
+/* 手機隱藏 header 上的語言按鈕（保留桌機） */
+@media (max-width: 1024px) {
+  .site-header .actions { 
+    display: none !important;
+  }
+}

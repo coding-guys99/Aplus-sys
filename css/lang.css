@@ -74,13 +74,7 @@
 .lang-menu.in-panel { display: none; }
 .lang-menu.in-panel.show { display: block !important; }
 
-.mobile-menu-footer{
-  display:none;
-}
-
-.
-
-.menu-card--lang img{
+button img{
   display:block;
   width:20%;
   height:20%;

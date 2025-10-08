@@ -3,167 +3,103 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title data-i18n="svc_page.title">Services — Virtual Studio & Broadcast Integration</title>
-  <meta name="description" content="Virtual studio integration, TV & campus broadcast setup, and digital human video production. Clear deliverables, timeline, and pricing tiers."/>
-  <link rel="icon" href="./assets/favicon.png">
-  <!-- CSS 分檔：基礎 / 主題 / 桌機 / 手機 / 語言 -->
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/theme.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)">
-  <link rel="stylesheet" href="./css/mobile.css"  media="screen and (max-width:1024px)">
-  <link rel="stylesheet" href="./css/lang.css">
-  <link rel="stylesheet" href="./css/services.css">
+  <title data-i18n="svc.meta.title">Services — Aplus Systems</title>
+  <meta name="description" content="Aplus Systems provides studio production, virtual system integration, and collaborative creative support for education and broadcast clients."/>
+  <link rel="icon" href="./assets/favicon.png"/>
+  <link rel="stylesheet" href="./css/base.css"/>
+  <link rel="stylesheet" href="./css/theme.css"/>
+  <link rel="stylesheet" href="./css/header.css"/>
+  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)"/>
+  <link rel="stylesheet" href="./css/mobile.css"  media="screen and (max-width:1024px)"/>
 </head>
+
 <body>
-  <!-- 共用 Header -->
+  <!-- Header -->
   <div id="include-header"></div>
 
   <main>
-    <!-- HERO -->
+    <!-- Hero -->
     <section class="hero bright">
       <div class="container">
-        <h1 data-i18n="svc_hero.h1">What I Can Do For You</h1>
-        <p class="lead" data-i18n="svc_hero.p">
-          From requirement discovery to on-air delivery — reliable, maintainable systems built for real production.
+        <h1 data-i18n="svc.hero.h1">Services</h1>
+        <p class="lead" data-i18n="svc.hero.lead">
+          Integrating creativity and technology — building reliable workflows for every production.
         </p>
-        <div class="cta-row">
-          <a class="btn primary" href="contact.html" data-i18n="svc_hero.cta">Get a Quote</a>
-        </div>
       </div>
     </section>
 
-    <!-- 三大服務 -->
+    <!-- ① 拍攝與場地服務 -->
     <section class="section">
       <div class="container">
-        <h2 data-i18n="svc_core.title">Core Services</h2>
-        <div class="feature-grid">
-          <article class="feature">
-            <h3 data-i18n="svc_vs.title">Virtual Studio Integration</h3>
-            <p data-i18n="svc_vs.desc">Chroma keying, camera tracking, NDI/SDI/IP routing, and control surface setup.</p>
-            <ul class="checklist">
-              <li data-i18n="svc_vs.item1">Signal flow design (NDI / SDI / SRT)</li>
-              <li data-i18n="svc_vs.item2">vMix / OBS / Unreal workflows</li>
-              <li data-i18n="svc_vs.item3">Operator SOP & quick-start</li>
-            </ul>
-          </article>
+        <header>
+          <h2 data-i18n="svc.shoot.title">Studio & Production Services</h2>
+          <p data-i18n="svc.shoot.desc">
+            Virtual and physical studio support for creators, schools, and enterprises.
+          </p>
+        </header>
 
-          <article class="feature">
-            <h3 data-i18n="svc_tv.title">TV & Campus Broadcast</h3>
-            <p data-i18n="svc_tv.desc">One-stop setup for internal studios: planning, equipment list, integration, training.</p>
-            <ul class="checklist">
-              <li data-i18n="svc_tv.item1">Requirements & topology</li>
-              <li data-i18n="svc_tv.item2">Procurement guidance</li>
-              <li data-i18n="svc_tv.item3">Commissioning & handover</li>
-            </ul>
-          </article>
-
-          <article class="feature">
-            <h3 data-i18n="svc_dh.title">Digital Human Videos</h3>
-            <p data-i18n="svc_dh.desc">AI voice, lip-sync, and 3D scene integration for long-form automated presentation.</p>
-            <ul class="checklist">
-              <li data-i18n="svc_dh.item1">Voice model & timing</li>
-              <li data-i18n="svc_dh.item2">Lip-sync pipeline</li>
-              <li data-i18n="svc_dh.item3">Playback & scheduling</li>
-            </ul>
-          </article>
-        </div>
+        <ul class="about-list">
+          <li data-i18n="svc.shoot.item1"><strong>Green Screen Studio (Taiwan)</strong> — equipped with lighting and sound, suitable for corporate or educational recording.</li>
+          <li data-i18n="svc.shoot.item2"><strong>Virtual Studio Filming</strong> — using Unreal Engine and tracking systems for real-time compositing.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- 方案與起價 -->
-    <section class="section alt">
-  <div class="container">
-    <h2 data-i18n="svc_tiers.title">Integration Packages</h2>
-    <p class="lead" data-i18n="svc_tiers.lead">
-      Every project is unique — pricing depends on the size, equipment, and workflow complexity.  
-      The following tiers illustrate the typical scale of Aplus Systems projects.
-    </p>
-
-    <div class="tier-grid">
-      <article class="tier">
-        <h3 data-i18n="tier.basic">Starter</h3>
-        <p class="muted" data-i18n="tier.basic.desc">
-          Ideal for small studios or classrooms.  
-          Includes basic camera setup, signal routing, and system calibration.
-        </p>
-        <p class="price" data-i18n="tier.basic.price">From NTD 80,000–150,000 (depending on equipment)</p>
-      </article>
-
-      <article class="tier">
-        <h3 data-i18n="tier.pro">Professional</h3>
-        <p class="muted" data-i18n="tier.pro.desc">
-          For multi-camera or hybrid broadcast environments.  
-          Includes workflow design, device sync, and on-site operator training.
-        </p>
-        <p class="price" data-i18n="tier.pro.price">From NTD 250,000+</p>
-      </article>
-
-      <article class="tier">
-        <h3 data-i18n="tier.custom">Enterprise / Custom</h3>
-        <p class="muted" data-i18n="tier.custom.desc">
-          Large-scale installations with automation, AI production, or integration across multiple rooms.  
-          Tailored design, deployment, and maintenance contracts.
-        </p>
-        <p class="price" data-i18n="tier.custom.price">By requirement</p>
-      </article>
-    </div>
-
-    <div class="cta-row" style="margin-top:16px">
-      <a class="btn primary" href="contact.html" data-i18n="svc_tiers.cta">Discuss your project</a>
-    </div>
-  </div>
-</section>
-
-    <!-- 相容技術（黑白 Logo 跑馬燈） -->
-    <section id="tech-stack" class="section">
-      <div class="container">
-        <h2 class="tech-title" data-i18n="svc_tech.title">Supported Technologies</h2>
-        <div class="tech-slider">
-          <div class="tech-track">
-            <img src="./assets/brands/NDI.svg" alt="NDI">
-            <img src="./assets/brands/sdi.svg" alt="SDI">
-            <img src="./assets/brands/vmix.svg" alt="vMix">
-            <img src="./assets/brands/OBS.svg" alt="OBS">
-            <img src="./assets/brands/UNREALENGINE.svg" alt="Unreal Engine">
-            <img src="./assets/brands/ai.svg" alt="AI Tools">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
+    <!-- ② 系統建置與整合 -->
     <section class="section alt">
       <div class="container">
-        <h2 data-i18n="svc_faq.title">FAQ</h2>
-        <details>
-          <summary data-i18n="faq.time.q">How long does it take to go live?</summary>
-          <div class="muted" data-i18n="faq.time.a">Typically 2–8 weeks, depending on scope and procurement.</div>
-        </details>
-        <details>
-          <summary data-i18n="faq.cost.q">How do you price?</summary>
-          <div class="muted" data-i18n="faq.cost.a">After a short discovery call, I provide a range and timeline plan.</div>
-        </details>
+        <header>
+          <h2 data-i18n="svc.system.title">System Integration & Setup</h2>
+          <p data-i18n="svc.system.desc">
+            Engineering-based solutions for virtual production and broadcast systems.
+          </p>
+        </header>
+
+        <ul class="about-list">
+          <li data-i18n="svc.system.item1"><strong>Virtual Studio Installation</strong> — full system planning, wiring, and testing for NDI / SDI / IP workflows.</li>
+          <li data-i18n="svc.system.item2"><strong>System Integration Consulting</strong> — workflow planning across capture, switching, recording, and delivery.</li>
+          <li data-i18n="svc.system.item3"><strong>Digital Human Lip-Sync Training</strong> — voice-to-face matching for AI or virtual presenter applications.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- 最後 CTA -->
+    <!-- ③ 專案協作與內容支援 -->
     <section class="section">
+      <div class="container">
+        <header>
+          <h2 data-i18n="svc.collab.title">Project Collaboration & Creative Support</h2>
+          <p data-i18n="svc.collab.desc">
+            Partnering with trusted creators and designers to complete integrated projects.
+          </p>
+        </header>
+
+        <ul class="about-list">
+          <li data-i18n="svc.collab.item1"><strong>Illustration & Character Design</strong> — created in collaboration with partner artists.</li>
+          <li data-i18n="svc.collab.item2"><strong>Video Editing & Post-production</strong> — delivered with professional editors for smooth workflow handoff.</li>
+          <li data-i18n="svc.collab.item3"><strong>Web & Multimedia Integration</strong> — support for brand showcase and educational content platforms.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ④ 公司理念 -->
+    <section class="section alt">
       <div class="container cta-center">
-        <h3 data-i18n="svc_final.h3">Ready to plan your studio or program?</h3>
-        <a class="btn primary" href="contact.html" data-i18n="svc_final.cta">Contact Me</a>
+        <h2 data-i18n="svc.philosophy.title">Our Approach</h2>
+        <p data-i18n="svc.philosophy.desc">
+          Aplus Systems bridges creative teams and technical operations — ensuring every project runs efficiently and reliably.
+        </p>
+        <a href="contact.html" class="btn primary" data-i18n="svc.philosophy.cta">Discuss Your Project</a>
       </div>
     </section>
   </main>
 
-  <!-- 共用 Footer -->
+  <!-- Footer -->
   <div id="include-footer"></div>
 
   <!-- Scripts -->
-  <script src="./js/services-marquee.js"></script>
   <script src="./js/include.js"></script>
   <script src="./js/lang.js"></script>
-  <script src="./js/lang-dropdown.js"></script>
   <script src="./js/menu.js"></script>
+  <script src="./js/lang-dropdown.js"></script>
 </body>
 </html>

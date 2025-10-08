@@ -1,325 +1,307 @@
 /* =========================================================
-   brand-modal.js
-   - 點擊 .brand-card（需有 data-brand）開啟品牌介紹
-   - 手機：Bottom Sheet；桌機：Center Modal（CSS 已處理）
-   - 關閉方式：背景點擊 / ESC / 關閉鈕 / 手機下滑手勢
+   brand-modal.js (i18n 版)
+   - 卡片 .brand-card[data-brand] 開啟品牌介紹
+   - 文案來自 lang/*.json → brands.{key}.*
+   - JS 只維護「不變的資源」：logo 路徑、產品圖片清單
+   - 語言切換時（i18n:changed）若面板開啟，會即時重繪
    ========================================================= */
 
-document.addEventListener('DOMContentLoaded', () => {
-  // ---------- 元素 ----------
-  const sheet    = document.getElementById('brand-sheet');
-  const content  = sheet?.querySelector('.sheet-content');
-  const titleEl  = document.getElementById('sheet-title');
-  const descEl   = document.getElementById('sheet-desc');
-  const logoEl   = document.getElementById('sheet-logo');
-  const gallery  = document.getElementById('sheet-gallery');
+(function () {
+  // ---------- 工具：安全取字 t() ----------
+  function resolvePath(obj, path) {
+    return path.split('.').reduce((acc, k) => (acc && acc[k] != null ? acc[k] : null), obj);
+  }
+  function t(key, fallback = '') {
+    // 優先用全域 window.t（若你的 lang.js 有提供）
+    if (typeof window.t === 'function') {
+      const v = window.t(key);
+      return v != null ? v : fallback;
+    }
+    // 退回讀 i18nDict
+    const dict = window.i18nDict || {};
+    const v = resolvePath(dict, key);
+    return v != null ? v : fallback;
+  }
 
+  // ---------- DOM ----------
+  const sheet   = document.getElementById('brand-sheet');
+  const content = sheet?.querySelector('.sheet-content');
+  const titleEl = document.getElementById('sheet-title');
+  const descEl  = document.getElementById('sheet-desc');
+  const logoEl  = document.getElementById('sheet-logo');
+  const gallery = document.getElementById('sheet-gallery');
   if (!sheet || !content || !titleEl || !descEl || !logoEl || !gallery) return;
 
-  // ---------- 品牌資料（只含 Logo / 名稱 / 介紹；產品圖可選） ----------
+  // ---------- 媒體資料（固定資源；文案由 JSON 提供） ----------
+  // 建議：每張產品圖有一個 id，對應 JSON 的 brands.{key}.gallery.{id}.caption
   const BRANDS = {
     blackmagic: {
-  name: "Blackmagic Design",
-  logo: "./assets/brands/Blackmagicdesign.png",
-  desc:
-    "Blackmagic Design delivers production-proven tools across switching, cameras, capture/IO and post. " +
-    "Typical builds include ATEM switchers for live production, URSA/Studio cameras over SDI/NDI, DeckLink for ingest/playout, " +
-    "and HyperDeck recorders, with DaVinci Resolve for color and finishing. Ideal for studio, campus TV and hybrid events.",
-
-  // 只放「代表性、辨識度高」的型號；避免放太雜。
-  products: [
-    "./assets/products/bmd-atem-mini-extreme-iso.jpg",   // ATEM（你的導播核心）
-    "./assets/products/bmd-studio-camera-4k-pro-g2.jpg", // Studio Camera（校園/內錄棚）
-    "./assets/products/bmd-ursa-broadcast-g2.jpg",       // URSA（廣播級/大型棚）
-    "./assets/products/bmd-decklink-8k-pro.jpg",         // DeckLink（擷取/輸出）
-    "./assets/products/bmd-hyperdeck-studio-hd.jpg",     // HyperDeck（錄播/回放）
-    "./assets/products/bmd-davinci-resolve.jpg"          // DaVinci Resolve（後期）
-  ]
-},
+      logo: "./assets/brands/Blackmagicdesign.png",
+      products: [
+        { id: "atem_mini",    src: "./assets/products/bmd-atem-mini-extreme-iso.jpg" },
+        { id: "studio_cam",   src: "./assets/products/bmd-studio-camera-4k-pro-g2.jpg" },
+        { id: "ursa_bcast",   src: "./assets/products/bmd-ursa-broadcast-g2.jpg" },
+        { id: "decklink",     src: "./assets/products/bmd-decklink-8k-pro.jpg" },
+        { id: "hyperdeck",    src: "./assets/products/bmd-hyperdeck-studio-hd.jpg" },
+        { id: "resolve",      src: "./assets/products/bmd-davinci-resolve.jpg" }
+      ]
+    },
     synco: {
-  name: "SYNCO",
-  logo: "./assets/brands/SYNCO.svg",
-  desc:
-    "Compact on-camera and studio microphones for reliable on-set capture. " +
-    "Common use: wireless lav kits for interviews, and shotgun mics for dialogue/VO.",
-
-  // 精選 4 張，型號代表性高、構圖乾淨
-  products: [
-    "./assets/products/synco-g2-a2-kit.jpg",     // Wireless lav kit（雙通道）
-    "./assets/products/synco-mic-d2-shotgun.jpg",// XLR shotgun（對白/棚錄）
-    "./assets/products/synco-d30-oncamera.jpg",  // On-camera shotgun（機頂）
-    "./assets/products/synco-accessories.jpg"    // 必備配件：防風毛套/冷靴/線材
-  ]
-},
+      logo: "./assets/brands/SYNCO.svg",
+      products: [
+        { id: "g2a2",       src: "./assets/products/synco-g2-a2-kit.jpg" },
+        { id: "d2_shotgun", src: "./assets/products/synco-mic-d2-shotgun.jpg" },
+        { id: "d30",        src: "./assets/products/synco-d30-oncamera.jpg" },
+        { id: "accessories",src: "./assets/products/synco-accessories.jpg" }
+      ]
+    },
     unileader: {
-  name: "Uni-Leader",
-  logo: "./assets/brands/UNI-LEADER.svg",
-  desc:
-    "Uni-Leader provides integrated broadcast and virtual studio solutions— hardware + software — " +
-    "from camera switching (U-Caster 4K), compositing & CG (U-CG), to studio control (U-Studio 4K) and real-time remote learning (U-Mooc).",
-  products: [
-    "./assets/products/unileader-u-caster-4k.jpg",    // U-Caster 4K 切換器
-    "./assets/products/unileader-u-studio-4k.jpg",    // U-Studio 4K 控制臺 / 應用軟體
-    "./assets/products/unileader-u-cg.jpg",           // U-CG 視覺合成 / graphic
-    "./assets/products/unileader-u-meta-v.jpg",       // U-Meta V 虛擬棚系統
-    "./assets/products/unileader-u-mooc.jpg"          // U-Mooc 線上教學系統模組
-  ]
-},
+      logo: "./assets/brands/UNI-LEADER.svg",
+      products: [
+        { id: "u_caster_4k", src: "./assets/products/unileader-u-caster-4k.jpg" },
+        { id: "u_studio_4k", src: "./assets/products/unileader-u-studio-4k.jpg" },
+        { id: "u_cg",        src: "./assets/products/unileader-u-cg.jpg" },
+        { id: "u_meta_v",    src: "./assets/products/unileader-u-meta-v.jpg" },
+        { id: "u_mooc",      src: "./assets/products/unileader-u-mooc.jpg" }
+      ]
+    },
     obsbot: {
-  name: "OBSBOT",
-  logo: "./assets/brands/OBSBOT.svg",
-  desc:
-    "OBSBOT focuses on AI-powered PTZ and tracking cameras, offering smart framing, gesture control, and multi-mode tracking for studio, live streaming, and content creation.",
-  products: [
-    "./assets/products/obsbot-tiny-4k.jpg",       // Tiny 4K PTZ WebCam  [oai_citation:0‡Obsbots](https://www.obsbot.com/obsbot-tiny-4k-webcam?srsltid=AfmBOor5b4H7ONrGsdPkT3NBeun306NyOYmZ6AdpQ8JKdU7Aamd04J-R&utm_source=chatgpt.com)
-    "./assets/products/obsbot-tiny-2.jpg",        // Tiny 2 (Multi-mode AI tracking)  [oai_citation:1‡Obsbots](https://www.obsbot.com/store/products/tiny-2?srsltid=AfmBOopPRCAUVv5Aghj3jTeggjAH3SJH7wAF1FIgBpab0S-2lFt1g88Q&utm_source=chatgpt.com)
-    "./assets/products/obsbot-tail-air.jpg",      // Tail Air streaming PTZ camera  [oai_citation:2‡Obsbots](https://www.obsbot.com/obsbot-tail-air-streaming-camera?srsltid=AfmBOoraYPYiScqVKEaQboYZuDdVBmruS07y6DnhpAf6P4nx3rHTTpPW&utm_source=chatgpt.com)
-    "./assets/products/obsbot-tiny-se.jpg"        // Tiny SE (1080p tracking webcam)  [oai_citation:3‡The Verge](https://www.theverge.com/2025/1/15/24344635/obsbot-tiny-se-webcam-pan-tilt-zoom-1080p?utm_source=chatgpt.com)
-  ]
-},
+      logo: "./assets/brands/OBSBOT.svg",
+      products: [
+        { id: "tiny_4k",  src: "./assets/products/obsbot-tiny-4k.jpg" },
+        { id: "tiny_2",   src: "./assets/products/obsbot-tiny-2.jpg" },
+        { id: "tail_air", src: "./assets/products/obsbot-tail-air.jpg" },
+        { id: "tiny_se",  src: "./assets/products/obsbot-tiny-se.jpg" }
+      ]
+    },
     acemic: {
-  name: "Acemic",
-  logo: "./assets/brands/ACEMIC.svg",
-  desc:
-    "Acemic (Honbo Audio) specialises in wireless microphone systems, in-ear monitor systems, and related audio transmission modules. " +
-    "Products are widely used in stage, education, broadcast, performance, and recording setups for stable, interference-resistant audio pipelines.",
-  products: [
-    "./assets/products/acemic-micpack-8ch-wireless.jpg",     // 無線麥克風系統 8 通道
-    "./assets/products/acemic-iempack-4ch.jpg",              // 四通道 in-ear 監聽系統
-    "./assets/products/acemic-ad-900-antenna-dist.jpg",      // AD-900 天線分配器
-    "./assets/products/acemic-ad-600-antenna-iem.jpg",       // AD-600 天線 IEM 分配模組
-    "./assets/products/acemic-g4-wireless.jpg",              // G4 無線麥克風系統
-    "./assets/products/acemic-em-d01-ear-monitor.jpg"        // EM-D01 in-ear 單通道監聽器
-  ]
-},
+      logo: "./assets/brands/ACEMIC.svg",
+      products: [
+        { id: "wireless_8ch", src: "./assets/products/acemic-micpack-8ch-wireless.jpg" },
+        { id: "iem_4ch",      src: "./assets/products/acemic-iempack-4ch.jpg" },
+        { id: "ad900",        src: "./assets/products/acemic-ad-900-antenna-dist.jpg" },
+        { id: "ad600",        src: "./assets/products/acemic-ad-600-antenna-iem.jpg" },
+        { id: "g4",           src: "./assets/products/acemic-g4-wireless.jpg" },
+        { id: "em_d01",       src: "./assets/products/acemic-em-d01-ear-monitor.jpg" }
+      ]
+    },
     yamaha: {
-  name: "Yamaha Mixer",
-  logo: "./assets/brands/YAMAHA.svg",
-  desc:
-    "Yamaha offers a full line of professional analog and digital mixers tailored for studio, live, and broadcast environments. " +
-    "Popular lines include the TF, DM, CL/QL, M7CL, and RIVAGE series for mixing, routing, effects, and recall workflows.  [oai_citation:0‡Yamaha USA](https://usa.yamaha.com/products/proaudio/mixers/index.html?utm_source=chatgpt.com)",
-  products: [
-    "./assets/products/yamaha-tf5.jpg",     // TF5 數位混音器
-    "./assets/products/yamaha-dm3s.jpg",    // DM3S 便攜型數位混音器  [oai_citation:1‡ProAudio](https://proaudio.com/yamaha-dm3s-professional-22-ch-ultracompact-digital-mixer/?srsltid=AfmBOorEPJDUo2rIS351Zmf430RWflkt9oAJN8KSAVZ0LR_zr7P9tTgQ&utm_source=chatgpt.com)
-    "./assets/products/yamaha-m7cl.jpg",    // M7CL 數位混音器  [oai_citation:2‡Wikipedia](https://en.wikipedia.org/wiki/Yamaha_M7CL?utm_source=chatgpt.com)
-    "./assets/products/yamaha-ql5.jpg"      // QL5 系列之一（假圖示）
-  ]
-},
+      logo: "./assets/brands/YAMAHA.svg",
+      products: [
+        { id: "tf5",  src: "./assets/products/yamaha-tf5.jpg" },
+        { id: "dm3s", src: "./assets/products/yamaha-dm3s.jpg" },
+        { id: "m7cl", src: "./assets/products/yamaha-m7cl.jpg" },
+        { id: "ql5",  src: "./assets/products/yamaha-ql5.jpg" }
+      ]
+    },
     mipro: {
-  name: "MIPRO",
-  logo: "./assets/brands/MIPRO.svg",
-  desc:
-    "MIPRO is a Taiwanese pioneer in wireless microphone, portable PA, and in-ear monitoring systems. Their patented ACT (Automatic Channel Targeting) technology enables fast syncing between transmitters and receivers.  [oai_citation:3‡MIPRO](https://www.mipro.com.tw/en?utm_source=chatgpt.com)",
-  products: [
-    "./assets/products/mipro-act32h.jpg",   // ACT-32H 無線麥克風系統
-    "./assets/products/mipro-act312.jpg",   // ACT-312 雙通道收發器  [oai_citation:4‡Touchboards](https://www.touchboards.com/MIPRO-ACT-312/ACT-32T2/?srsltid=AfmBOoofrbfSfJTy5p167xUxRt5pwzyuIAcBs9YBHtc4s0WZEKVyastd&utm_source=chatgpt.com)
-    "./assets/products/mipro-mi58-iem.jpg", // MI-58 In-Ear 監聽系統
-    "./assets/products/mipro-ad900.jpg"     // AD-900 天線分配器模組
-  ]
-},
+      logo: "./assets/brands/MIPRO.svg",
+      products: [
+        { id: "act32h",  src: "./assets/products/mipro-act32h.jpg" },
+        { id: "act312",  src: "./assets/products/mipro-act312.jpg" },
+        { id: "mi58",    src: "./assets/products/mipro-mi58-iem.jpg" },
+        { id: "ad900",   src: "./assets/products/mipro-ad900.jpg" }
+      ]
+    },
     mls: {
-  name: "MLS LED (木林森)",
-  logo: "./assets/brands/MLS.svg",
-  desc:
-    "MLS (木林森) specializes in high-quality LED display modules used for broadcast video walls, stage walls, and virtual set backdrops. Their modules support high refresh rates and fine pixel pitch for crisp video output.",
-  products: [
-    "./assets/products/mls-module-1_92.jpg",   // 1.92mm 點間隔 LED 模組
-    "./assets/products/mls-module-2_5.jpg",    // 2.5mm 模組
-    "./assets/products/mls-wall.jpg",          // 組成屏幕牆的展示
-    "./assets/products/mls-controller.jpg"     // LED 控制器 / 接口模組
-  ]
-},
+      logo: "./assets/brands/MLS.svg",
+      products: [
+        { id: "p1_92",   src: "./assets/products/mls-module-1_92.jpg" },
+        { id: "p2_5",    src: "./assets/products/mls-module-2_5.jpg" },
+        { id: "wall",    src: "./assets/products/mls-wall.jpg" },
+        { id: "ctrl",    src: "./assets/products/mls-controller.jpg" }
+      ]
+    },
     obs: {
-  name: "OBS",
-  logo: "./assets/brands/OBS.svg",
-  desc:
-    "OBS Studio is a free, open-source software suite for video recording and live streaming. It supports multiple video sources, compositing, plugins, virtual cameras, and real-time scene switching.",
-  products: [
-    "./assets/products/obs-ui-screenshot.jpg",   // OBS 使用者界面截圖
-    "./assets/products/obs-plugin-keystroke.jpg",// 插件或插件功能展示
-    "./assets/products/obs-output-stream.jpg",   // 輸出串流示意
-    "./assets/products/obs-multi-scene.jpg"      // 多場景切換示意
-  ]
-},
+      logo: "./assets/brands/OBS.svg",
+      products: [
+        { id: "ui",       src: "./assets/products/obs-ui-screenshot.jpg" },
+        { id: "plugin",   src: "./assets/products/obs-plugin-keystroke.jpg" },
+        { id: "output",   src: "./assets/products/obs-output-stream.jpg" },
+        { id: "multisc",  src: "./assets/products/obs-multi-scene.jpg" }
+      ]
+    },
     unreal: {
-  name: "Unreal Engine",
-  logo: "./assets/brands/UNREALENGINE.svg",
-  desc:
-    "Unreal Engine is a real-time 3D creation tool used for games, virtual studios, and broadcast graphics. It powers virtual sets, real-time rendering, and interactive visuals.",
-  products: [
-    "./assets/products/unreal-vscreenshot.jpg",  // 虛擬棚截圖
-    "./assets/products/unreal-uviz.jpg",         // 實時渲染視覺
-    "./assets/products/unreal-graph-editor.jpg", // 材質 / 节点编辑器
-    "./assets/products/unreal-live-set.jpg"      // 虛擬場景搭建範例
-  ]
-},
+      logo: "./assets/brands/UNREALENGINE.svg",
+      products: [
+        { id: "vsnap",    src: "./assets/products/unreal-vscreenshot.jpg" },
+        { id: "viz",      src: "./assets/products/unreal-uviz.jpg" },
+        { id: "graph",    src: "./assets/products/unreal-graph-editor.jpg" },
+        { id: "liveset",  src: "./assets/products/unreal-live-set.jpg" }
+      ]
+    },
     ndi: {
-  name: "NDI",
-  logo: "./assets/brands/NDI.svg",
-  desc:
-    "NDI (Network Device Interface) is a low-latency IP video protocol that enables video sources, audio, and metadata to be shared across networks. It powers many modern video workflows in broadcast and content production.",
-  products: [
-    "./assets/products/ndi-logo.jpg",           // NDI 標誌圖示
-    "./assets/products/ndi-flow-diagram.jpg",   // NDI 流程圖
-    "./assets/products/ndi-mixer-integration.jpg",// NDI 混合器整合
-    "./assets/products/ndi-capture-card.jpg"     // NDI 擷取卡示例
-  ]
-},
+      logo: "./assets/brands/NDI.svg",
+      products: [
+        { id: "logo",     src: "./assets/products/ndi-logo.jpg" },
+        { id: "diagram",  src: "./assets/products/ndi-flow-diagram.jpg" },
+        { id: "mixer",    src: "./assets/products/ndi-mixer-integration.jpg" },
+        { id: "capture",  src: "./assets/products/ndi-capture-card.jpg" }
+      ]
+    },
     streamdeck: {
-  name: "StreamDeck",
-  logo: "./assets/brands/STREAMDECK.svg",
-  desc:
-    "StreamDeck is a hardware macro controller that lets operators map buttons to actions, shortcuts, or scene changes—greatly enhancing live workflow efficiency.",
-  products: [
-    "./assets/products/streamdeck-32.jpg",        // StreamDeck 32 按鍵版本
-    "./assets/products/streamdeck-xl.jpg",        // StreamDeck XL
-    "./assets/products/streamdeck-mobile.jpg",    // StreamDeck Mobile app 界面
-    "./assets/products/streamdeck-pro.jpg"        // StreamDeck Pro 進階版本
-  ]
-}
+      logo: "./assets/brands/STREAMDECK.svg",
+      products: [
+        { id: "sd_32",  src: "./assets/products/streamdeck-32.jpg" },
+        { id: "sd_xl",  src: "./assets/products/streamdeck-xl.jpg" },
+        { id: "sd_mob", src: "./assets/products/streamdeck-mobile.jpg" },
+        { id: "sd_pro", src: "./assets/products/streamdeck-pro.jpg" }
+      ]
+    }
   };
 
-  // ---------- 開關控制 ----------
+  // ---------- 狀態 ----------
+  let activeKey = null;
   let lastActiveTrigger = null;
   let isOpen = false;
 
-  function populate(data) {
-  titleEl.textContent = data.name || '';
-  descEl.textContent  = data.desc || '';
-  logoEl.src = data.logo || '';
-  logoEl.alt = data.name ? `${data.name} logo` : 'Brand logo';
+  // ---------- 渲染 ----------
+  function renderBrandSheet(key) {
+    const media = BRANDS[key];
+    if (!media) return;
 
-  // 產品圖（可選）
-  gallery.innerHTML = '';
-  if (Array.isArray(data.products) && data.products.length) {
-    gallery.style.display = 'grid';
-    data.products.forEach(src => {
-      const tile = document.createElement('div');
-      tile.className = 'tile';                    // 先用預設 4:3
+    // 名稱 / 敘述（來自 i18n）
+    const name = t(`brands.${key}.name`, key);
+    const desc = t(`brands.${key}.desc`, '');
 
-      const img = document.createElement('img');
-      img.loading = 'lazy';
-      img.decoding = 'async';
-      img.src = src;
-      img.alt = `${data.name} product`;
+    titleEl.textContent = name || '';
+    // desc 允許 <strong><br> 這類簡單標籤（字串由你自己的 JSON 提供）
+    if (desc && /<\/?[a-z][\s\S]*>/i.test(desc)) {
+      descEl.innerHTML = desc;
+    } else {
+      descEl.textContent = desc || '';
+    }
 
-      img.addEventListener('load', () => {
-        const r = img.naturalWidth / img.naturalHeight;
-        // 自動判斷比例並套用最適合的容器比例（可依需要調整門檻）
-        tile.classList.remove('ar-16x9', 'ar-4x3', 'ar-1x1');
-        if (r >= 1.55)      tile.classList.add('ar-16x9'); // 很寬 → 16:9
-        else if (r <= 1.1)  tile.classList.add('ar-1x1');  // 接近方形 → 1:1
-        else                tile.classList.add('ar-4x3');  // 其他 → 4:3
-      }, { once: true });
+    // Logo（固定資源）
+    logoEl.src = media.logo || '';
+    logoEl.alt = name ? `${name} logo` : 'Brand logo';
 
-      tile.appendChild(img);
-      gallery.appendChild(tile);
-    });
-  } else {
-    gallery.style.display = 'none';
+    // Gallery
+    gallery.innerHTML = '';
+    const list = Array.isArray(media.products) ? media.products : [];
+    if (list.length) {
+      gallery.style.display = 'grid';
+      list.forEach(item => {
+        const id  = typeof item === 'string' ? null : item.id;
+        const src = typeof item === 'string' ? item    : item.src;
+
+        const wrap = document.createElement('figure');
+        wrap.className = 'tile';
+
+        const img = document.createElement('img');
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.src = src;
+        const captionTxt = id ? t(`brands.${key}.gallery.${id}.caption`, name) : name;
+        img.alt = captionTxt || name || 'Product image';
+
+        img.addEventListener('load', () => {
+          const r = img.naturalWidth / img.naturalHeight;
+          wrap.classList.remove('ar-16x9', 'ar-4x3', 'ar-1x1');
+          if (r >= 1.55)      wrap.classList.add('ar-16x9'); // 寬圖
+          else if (r <= 1.1)  wrap.classList.add('ar-1x1');  // 方圖
+          else                wrap.classList.add('ar-4x3');  // 其他
+        }, { once: true });
+
+        wrap.appendChild(img);
+
+        // 有 caption 就加
+        if (captionTxt) {
+          const fc = document.createElement('figcaption');
+          fc.textContent = captionTxt;
+          wrap.appendChild(fc);
+        }
+
+        gallery.appendChild(wrap);
+      });
+    } else {
+      gallery.style.display = 'none';
+    }
   }
-}
 
-  // 開啟
-function openSheet(key, triggerEl = null) {
-  const data = BRANDS[key];
-  if (!data) return;
-  lastActiveTrigger = triggerEl || null;
-  populate(data);
+  // ---------- 開關 ----------
+  function openSheet(key, triggerEl = null) {
+    activeKey = key;
+    lastActiveTrigger = triggerEl || null;
 
-  // 先移除關閉狀態，再加開啟動畫
-  sheet.classList.remove('hidden', 'is-closing');
-  // 觸發 reflow 以重置動畫（少數瀏覽器需要）
-  void sheet.offsetWidth;
-  sheet.classList.add('is-opening');
+    renderBrandSheet(key);
 
-  document.body.style.overflow = 'hidden';
-  isOpen = true;
+    sheet.classList.remove('hidden', 'is-closing');
+    void sheet.offsetWidth; // reflow 以重置動畫
+    sheet.classList.add('is-opening');
 
-  setTimeout(() => { titleEl.setAttribute('tabindex', '-1'); titleEl.focus({ preventScroll: true }); }, 10);
-}
+    document.body.style.overflow = 'hidden';
+    isOpen = true;
 
-// 收回
-function closeSheet() {
-  if (!isOpen) return;
-  sheet.classList.remove('is-opening');
-  sheet.classList.add('is-closing');
+    setTimeout(() => {
+      titleEl.setAttribute('tabindex', '-1');
+      titleEl.focus({ preventScroll: true });
+    }, 10);
+  }
 
-  // 等待動畫結束再真正隱藏
-  const handleEnd = (e) => {
-    if (e.target !== content) return; // 只聽內容面板的動畫
-    sheet.classList.add('hidden');
-    sheet.classList.remove('is-closing');
-    content.removeEventListener('animationend', handleEnd);
-  };
-  content.addEventListener('animationend', handleEnd);
+  function closeSheet() {
+    if (!isOpen) return;
+    sheet.classList.remove('is-opening');
+    sheet.classList.add('is-closing');
 
-  document.body.style.overflow = '';
-  isOpen = false;
+    const onAnimEnd = (e) => {
+      if (e.target !== content) return;
+      sheet.classList.add('hidden');
+      sheet.classList.remove('is-closing');
+      content.removeEventListener('animationend', onAnimEnd);
+    };
+    content.addEventListener('animationend', onAnimEnd);
 
-  if (lastActiveTrigger) { lastActiveTrigger.focus(); lastActiveTrigger = null; }
-}
+    document.body.style.overflow = '';
+    isOpen = false;
 
-  // ---------- 綁定卡片（點擊 / 鍵盤） ----------
+    if (lastActiveTrigger) {
+      lastActiveTrigger.focus();
+      lastActiveTrigger = null;
+    }
+  }
+
+  // ---------- 綁定卡片 ----------
   document.querySelectorAll('.brand-card').forEach(card => {
     const key = card.dataset.brand;
     if (!key) return;
-
-    // 讓卡片可鍵盤啟動
     card.setAttribute('tabindex', '0');
     card.addEventListener('click', () => openSheet(key, card));
     card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        openSheet(key, card);
-      }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSheet(key, card); }
     });
   });
 
   // ---------- 關閉行為 ----------
-  // 點背景關閉（只在點到 sheet 背景時）
-  sheet.addEventListener('click', (e) => {
-    if (e.target === sheet) closeSheet();
-  });
+  sheet.addEventListener('click', (e) => { if (e.target === sheet) closeSheet(); });
+  document.addEventListener('keydown', (e) => { if (isOpen && e.key === 'Escape') closeSheet(); });
 
-  // ESC 關閉
-  document.addEventListener('keydown', (e) => {
-    if (isOpen && e.key === 'Escape') closeSheet();
-  });
-
-  // 手機：下滑手勢關閉
-  let touchStartY = null;
-  let dragging = false;
-
+  // 手機：下滑關閉
+  let touchStartY = null, dragging = false;
   content.addEventListener('touchstart', (e) => {
     if (e.touches.length !== 1) return;
-    touchStartY = e.touches[0].clientY;
-    dragging = true;
+    touchStartY = e.touches[0].clientY; dragging = true;
   }, { passive: true });
-
   content.addEventListener('touchmove', (e) => {
-    if (!dragging || touchStartY === null) return;
+    if (!dragging || touchStartY == null) return;
     const delta = e.touches[0].clientY - touchStartY;
-
-    // 只在向下滑且內容已在最頂（避免與滾動衝突）時才跟隨
     const atTop = content.scrollTop <= 0;
     if (delta > 0 && atTop) {
-      e.preventDefault(); // 阻止整頁滾動
-      content.style.transform = `translateY(${delta * 0.5}px)`; // 阻尼
+      e.preventDefault();
+      content.style.transform = `translateY(${delta * 0.5}px)`;
     }
   }, { passive: false });
-
   content.addEventListener('touchend', (e) => {
     if (!dragging) return;
     const endY = (e.changedTouches && e.changedTouches[0].clientY) || 0;
     const delta = endY - (touchStartY || 0);
-    content.style.transform = ''; // 還原
-
-    // 超過臨界值則關閉
+    content.style.transform = '';
     if (delta > 80) closeSheet();
-
-    dragging = false;
-    touchStartY = null;
+    dragging = false; touchStartY = null;
   });
 
-});
+  // ---------- 語言切換後即時更新 ----------
+  document.addEventListener('i18n:changed', () => {
+    if (isOpen && activeKey) renderBrandSheet(activeKey);
+  });
+})();

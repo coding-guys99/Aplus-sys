@@ -86,3 +86,21 @@
   from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* 手機面板內語言清單：預設收起，.show 強制顯示 */
+.lang-menu.in-panel { display: none; }
+.lang-menu.in-panel.show { display: block !important; }
+
+/* 語言按鈕在面板底部的樣式（如果還沒加） */
+.mobile-lang-trigger {
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  margin-top: 12px;
+}
+.menu-card--lang {
+  width: auto; min-width: 160px; padding: 10px 18px; border-radius: 24px;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12);
+  color: #eee; display: flex; align-items: center; gap: 8px;
+  transition: all .25s ease;
+}
+.menu-card--lang:hover { background: rgba(255,255,255,.15); color: var(--primary,#d4af37); transform: translateY(-2px); }
+.menu-card--lang img { width: 22px; height: 22px; filter: brightness(.95); }

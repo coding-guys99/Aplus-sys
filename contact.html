@@ -67,6 +67,80 @@
         </div>
       </div>
     </section>
+    
+    <!-- CONTACT FORM -->
+<section class="section" id="contact-form">
+  <div class="container">
+    <h2 data-i18n="form.title">Send a Project Brief</h2>
+    <p class="muted" data-i18n="form.desc">
+      Tell us your goals and constraints. We’ll get back within one working day.
+    </p>
+
+    <form id="aplus-form" novalidate>
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="name" data-i18n="form.name.label">Your Name</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Chen / Ms. Lee" required aria-required="true">
+          <small class="error" data-i18n="form.error.name">Please enter your name.</small>
+        </div>
+
+        <div class="form-field">
+          <label for="email" data-i18n="form.email.label">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true">
+          <small class="error" data-i18n="form.error.email">Please enter a valid email.</small>
+        </div>
+
+        <div class="form-field">
+          <label for="company" data-i18n="form.company.label">Company / School (optional)</label>
+          <input id="company" name="company" type="text" placeholder="Aplus Systems / Dept. of Media">
+        </div>
+
+        <div class="form-field">
+          <label for="subject" data-i18n="form.subject.label">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Virtual studio setup / TV campus integration" required aria-required="true">
+          <small class="error" data-i18n="form.error.subject">Please enter a subject.</small>
+        </div>
+
+        <div class="form-field form-field--full">
+          <label for="message" data-i18n="form.message.label">Project Details</label>
+          <textarea id="message" name="message" rows="6" placeholder="Goals, timeline, budget range, current tools…"></textarea>
+        </div>
+
+        <div class="form-field form-field--half">
+          <label for="service" data-i18n="form.service.label">Service Type</label>
+          <select id="service" name="service">
+            <option value="virtual" data-i18n="form.service.virtual">Virtual Studio Integration</option>
+            <option value="broadcast" data-i18n="form.service.broadcast">TV & Campus Broadcast</option>
+            <option value="digital" data-i18n="form.service.digital">Digital Human Production</option>
+            <option value="greenscreen" data-i18n="form.service.greenscreen">Green Screen Studio</option>
+            <option value="consult" data-i18n="form.service.consult">Consultation</option>
+            <option value="other" data-i18n="form.service.other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-field form-field--half">
+          <label for="budget" data-i18n="form.budget.label">Budget (optional)</label>
+          <select id="budget" name="budget">
+            <option value="" data-i18n="form.budget.unknown">Not sure yet</option>
+            <option value="under" data-i18n="form.budget.under">Under NTD 100k</option>
+            <option value="100-300" data-i18n="form.budget.b1">NTD 100k–300k</option>
+            <option value="300-800" data-i18n="form.budget.b2">NTD 300k–800k</option>
+            <option value="800plus" data-i18n="form.budget.b3">NTD 800k+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cta-row" style="margin-top: 14px;">
+        <button type="submit" class="btn primary" data-i18n="form.submit">Send via Email</button>
+        <button type="button" id="copy-brief" class="btn ghost" data-i18n="form.copy">Copy Brief</button>
+      </div>
+
+      <p class="form-note muted" data-i18n="form.note">
+        This form opens your email app with a pre-filled message. Or copy the brief and send it to <strong>aplusystem@gmail.com</strong>.
+      </p>
+    </form>
+  </div>
+</section>
 
     <!-- Company Info -->
     <section class="section company-info">

@@ -1,29 +1,303 @@
 {
-  "brand": {
-    "name": "Aplus Systems",
-    "role": "广播与虚拟演播室集成"
-  },
-
-  "header": {
-    "lang": {
-      "label": "语言",
-      "bar": "选择语言"
+  "meta": {
+    "home": {
+      "title": "Aplus Systems — 虚拟演播室、广播集成与数字人视频",
+      "desc": "面向虚拟演播室与广播工作流的系统集成：NDI/SDI/IP 路由，Unreal/OBS/vMix 流程，以及数字人视频自动化。"
     },
-    "menu": {
-      "open": "打开菜单",
-      "close": "关闭菜单"
+    "about": {
+      "title": "关于 — Aplus Systems | 系统工程师与广播顾问",
+      "desc": "专注于虚拟演播室与广播系统集成的系统工程师。拥有五年覆盖规划、集成与制作的端到端经验。"
+    },
+    "services": {
+      "title": "服务 — Aplus Systems | 虚拟演播室与广播集成",
+      "desc": "从需求发现到上架播出：虚拟演播室集成、电视与校园广播搭建，以及数字人视频流程。"
+    },
+    "demos": {
+      "title": "演示 — Aplus Systems | 案例展示与参考视频",
+      "desc": "精选演示视频，包含竖屏（9:16）与横屏（16:9）参考。"
+    },
+    "process": {
+      "title": "流程 — Aplus Systems | 从需求到播出",
+      "desc": "覆盖需求、设计、集成、验证、培训与上线的清晰可复用流程。"
+    },
+    "tech": {
+      "title": "技术 — Aplus Systems | 虚拟演播室与广播工具",
+      "desc": "探索支撑 Aplus Systems 工作流的技术——NDI、SDI、Unreal Engine、OBS、vMix 与自动化工具。"
+    },
+    "contact": {
+      "title": "联系 — Aplus Systems | 索取报价或咨询",
+      "desc": "通过邮箱、WhatsApp 或 LINE 联系我们，讨论你的演播室或制作场景。"
     }
   },
 
-  "nav": {
-    "menu": "菜单",
-    "about": "关于",
-    "services": "服务",
-    "demos": "演示",
-    "process": "流程",
-    "tech": "技术",
-    "technologies": "技术",
-    "contact": "联系"
+  "home_hero": {
+    "title": "虚拟演播室 × 广播集成 × 数字人制作",
+    "subtitle": "Aplus Systems 提供端到端的广播与虚拟演播室解决方案——融合创意制作、技术精度与可靠系统设计。",
+    "cta1": "联系我",
+    "cta2": "查看服务"
+  },
+  "home_svc": {
+    "title": "核心服务",
+    "virtualstudio": {
+      "title": "虚拟演播室集成",
+      "desc": "面向实时虚拟制作的端到端系统设计——抠像、摄像机追踪、多协议路由（NDI / SDI / IP）。可靠、可扩展、随时可播。"
+    },
+    "broadcast": {
+      "title": "电视与校园广播搭建",
+      "desc": "面向学校与企业的一站式方案：需求、设备清单、布线、联调与操作培训——从规划到首播。"
+    },
+    "digitalhuman": {
+      "title": "数字人视频制作",
+      "desc": "AI 配音、唇形同步与 3D 场景整合，用于自动化讲解与节目片段。可复用流程，质量一致。"
+    },
+    "green": {
+      "title": "绿幕摄影棚（台湾）",
+      "desc": "紧凑型棚内灯光与收音配置。适合课程录制、说明影片与虚拟主持拍摄。可选现场技术支持。"
+    }
+  },
+  "home_showcase": {
+    "title": "作品展示",
+    "desc": "精选演示视频与制作亮点",
+    "wuya": "来自 <strong>@WuYaTheWorld</strong> 的最新上传",
+    "heho": "来自 <strong>@Heho</strong> 的最新上传",
+    "verticalTitle": "短视频（9:16）",
+    "short1": "数字人——棚内解说演示",
+    "short2": "AI 唇形同步——角色展示"
+  },
+  "home_about": {
+    "title": "关于 Aplus Systems",
+    "desc": "Aplus Systems 专注于<strong>虚拟演播室</strong>与<strong>广播系统集成</strong>——从规划、安装到直播支持的端到端交付。团队源自台湾技术背景，将创意工程与可靠设计结合，为媒体、教育与企业搭建现代化制作环境。",
+    "item1": "5+ 年广播与系统集成经验",
+    "item2": "NDI / SDI / IP 混合工作流设计",
+    "item3": "虚拟演播室、LED 墙与数字人制作"
+  },
+  "home_contact": {
+    "title": "联系 Aplus Systems",
+    "desc": "无论你在规划新棚、寻求技术集成，或探索数字人制作——我们提供定制咨询与端到端解决方案，覆盖广播与虚拟环境。",
+    "cta1": "预约咨询",
+    "cta2": "WhatsApp 联系"
+  },
+
+  "about_hero": {
+    "h1": "关于 Aplus Systems",
+    "lead": "面向<strong>虚拟演播室</strong> · <strong>广播系统</strong> · <strong>数字人制作</strong>的整合方案<br/>为各行业打造可靠、富有创意且互联的视频环境。"
+  },
+  "about_intro": {
+    "title": "公司简介",
+    "p1": "Aplus Systems 是一家总部位于台湾的技术集成团队，专注于<strong>虚拟演播室设计</strong>、<strong>广播系统集成</strong>与<strong>端到端工作流咨询</strong>，服务教育与企业客户。我们的使命是把创意愿景与可靠的广播技术相连接。",
+    "p2": "从前期规划到现场部署，我们覆盖每个环节——需求分析、硬件选型、布线安装、软件配置与操作培训。每个交付的系统都追求<strong>稳定、直观、可扩展</strong>。",
+    "item1": "虚拟演播室与摄像机追踪集成",
+    "item2": "广播与校园电视搭建",
+    "item3": "AI 唇形同步与数字人制作",
+    "item4": "技术培训与远程支持"
+  },
+  "about_exp": {
+    "title": "发展里程碑",
+    "2025": "在台湾多所高校与媒体机构部署多机位虚拟演播室方案，扩展 <strong>Aplus Systems</strong> 业务版图。",
+    "2024": "交付 <strong>iSmart 广播集成项目</strong>，从采集到播出实现自动化流程，标志着智能广播的重要进展。",
+    "2022": "规划实施<strong>校园电视与混合教学直播教室</strong>，为逾 100 名教师与学生提供技术培训。",
+    "2020": "夯实<strong>广播制作、剪辑与系统维护</strong>基础，形成今日的综合服务路径。"
+  },
+  "about_show": {
+    "title": "精选作品",
+    "wuya": "🦅《乌鸦笑传》— 剪辑",
+    "cross": "🌏《两岸观点》— 制作",
+    "heho": "🎬《Heho》— 执行制作"
+  },
+  "about_cta": {
+    "h3": "一起打造你的下一间演播室",
+    "btn": "联系我"
+  },
+
+  "contact_hero": {
+    "h1": "联系 Aplus Systems",
+    "lead": "我们专注虚拟演播室集成、数字人制作与广播工作流设计。告诉我们你的目标——我们将帮助你搭建可靠又有创意的系统。"
+  },
+  "contact": {
+    "title": "联系方式",
+    "desc": "通过下列你偏好的方式联系——我们将在一个工作日内回复。",
+    "cta1": "发送咨询",
+    "cta2": "WhatsApp 联系",
+    "cta3": "LINE 留言",
+    "channels": {
+      "email": "邮箱",
+      "whatsapp": "WhatsApp",
+      "line": "LINE"
+    }
+  },
+  "form": {
+    "title": "提交项目概要",
+    "desc": "告诉我们你的目标与限制，我们将在一个工作日内回复。",
+    "name": { "label": "你的姓名" },
+    "email": { "label": "邮箱" },
+    "company": { "label": "公司 / 学校（可选）" },
+    "subject": { "label": "主题" },
+    "message": { "label": "项目详情" },
+    "service": {
+      "label": "服务类型",
+      "virtual": "虚拟演播室集成",
+      "broadcast": "电视与校园广播",
+      "digital": "数字人制作",
+      "greenscreen": "绿幕摄影棚",
+      "consult": "咨询",
+      "other": "其他"
+    },
+    "budget": {
+      "label": "预算（可选）",
+      "unknown": "暂不确定",
+      "under": "10 万新台币以下",
+      "b1": "10–30 万新台币",
+      "b2": "30–80 万新台币",
+      "b3": "80 万新台币以上"
+    },
+    "submit": "通过邮箱发送",
+    "copy": "复制概要",
+    "note": "此表单会打开你的邮件应用并预填内容。也可复制概要发送至 <strong>aplusystem@gmail.com</strong>。",
+    "error": {
+      "name": "请输入你的姓名。",
+      "email": "请输入有效邮箱。",
+      "subject": "请输入主题。"
+    }
+  },
+  "company": {
+    "name": "Aplus Systems",
+    "tagline": "广播集成 · 虚拟演播室 · 数字人方案",
+    "location": "中国台北，服务覆盖亚洲各地"
+  },
+
+  "demos_hero": {
+    "h1": "演示展示",
+    "lead": "精选<strong>虚拟演播室集成</strong>、<strong>数字人</strong>制作与<strong>电视系统工作流</strong>示例。"
+  },
+  "demos_section": {
+    "horizontal": "精选项目（16:9）",
+    "vertical": "短格式（9:16）"
+  },
+  "demos_cards": {
+    "vs": {
+      "title": "虚拟演播室搭建",
+      "desc": "系统集成 + 摄像机追踪演示"
+    },
+    "short1": { "title": "短片演示——跟踪与构图" },
+    "short2": { "title": "短片演示——数字人片段" },
+    "short3": { "title": "短片演示——工作流亮点" }
+  },
+
+  "process_hero": {
+    "h1": "我们的工作方式",
+    "lead": "从需求到交付——我们的集成流程在每一步都确保清晰、高效与可靠。"
+  },
+  "process_main": {
+    "title": "工作流程",
+    "step1": {
+      "title": "需求与咨询",
+      "desc": "理解你的目标、环境与挑战，明确系统真正需要的能力。"
+    },
+    "step2": {
+      "title": "系统设计与规划",
+      "desc": "绘制技术图、选型软硬件，制定与你资源匹配的时间表。"
+    },
+    "step3": {
+      "title": "集成与部署",
+      "desc": "现场布线、配置与校准——确保 NDI、SDI 与基于 IP 的组件无缝通信。"
+    },
+    "step4": {
+      "title": "培训与交接",
+      "desc": "提供操作培训、流程文档与上线后的远程支持，保障长期稳定。"
+    }
+  },
+  "process_cta": {
+    "h3": "准备启动你的项目？",
+    "desc": "一起规划你的下一套虚拟演播室或广播工作流。",
+    "btn": "联系 Aplus Systems"
+  },
+
+  "svc": {
+    "hero": {
+      "h1": "服务",
+      "lead": "融合创意与技术——为每个制作建立可靠工作流。"
+    },
+    "shoot": {
+      "title": "棚内拍摄与制作服务",
+      "desc": "为创作者、学校与企业提供虚拟与实体棚支持。",
+      "item1": {
+        "title": "绿幕摄影棚（台湾）",
+        "desc": "配备灯光与音频，适合企业或教育录制。"
+      },
+      "item2": {
+        "title": "虚拟演播室拍摄",
+        "desc": "基于 Unreal Engine 与追踪系统的实时合成与直播。"
+      }
+    },
+    "system": {
+      "title": "系统集成与搭建",
+      "desc": "面向虚拟制作与广播系统的工程化方案。",
+      "item1": {
+        "title": "虚拟演播室安装",
+        "desc": "围绕 NDI / SDI / IP 工作流的规划、布线与测试。"
+      },
+      "item2": {
+        "title": "系统集成咨询",
+        "desc": "在采集、切换、录制与分发各环节进行流程规划。"
+      },
+      "item3": {
+        "title": "数字人唇形同步训练",
+        "desc": "面向 AI 或虚拟主持的声脸匹配。"
+      }
+    },
+    "collab": {
+      "title": "项目协作与创意支持",
+      "desc": "与可信的创作者与设计师合作完成整合项目。",
+      "item1": {
+        "title": "插画与角色设计",
+        "desc": "与合作艺术家共创，支持数字或品牌叙事。"
+      },
+      "item2": {
+        "title": "视频剪辑与后期",
+        "desc": "由专业剪辑与动效团队交付高质量成片。"
+      },
+      "item3": {
+        "title": "网站与多媒体整合",
+        "desc": "支持品牌展示、教育平台与在线演示。"
+      }
+    },
+    "philosophy": {
+      "title": "我们的方法",
+      "desc": "Aplus Systems 连接创意团队与技术运营——确保每个项目高效且可靠地运行。",
+      "cta": "讨论你的项目"
+    }
+  },
+
+  "tech_hero": {
+    "h1": "技术与工具",
+    "lead": "以下品牌与技术是我在虚拟演播室与广播环境中集成与配置的组成部分。标识仅用于识别说明。"
+  },
+  "tech_hw": {
+    "title": "硬件与设备",
+    "desc": "在棚内搭建与直播环境中常用的设备与品牌。",
+    "bmd": "切换台、演播室摄影机与 I/O",
+    "synco": "麦克风与现场音频",
+    "unileader": "广播周边与配件",
+    "obsbot": "PTZ / AI 追踪摄像机",
+    "acemic": "演播室硬件与集成模块",
+    "yamaha": "调音台与音频信号路径",
+    "mipro": "无线麦克风与接收机",
+    "mls": "LED 显示系统与拼墙"
+  },
+  "tech_sw": {
+    "title": "软件与工作流工具",
+    "desc": "用于构建现代虚拟演播室流程的软件与协议。",
+    "obs": "直播制作与推流",
+    "unreal": "虚拟场景与实时渲染",
+    "ndi": "基于 IP 的视频传输",
+    "streamdeck": "宏控制与操作体验"
+  },
+  "tech_cta": {
+    "h3": "需要围绕这些工具构建系统？",
+    "btn": "联系我"
+  },
+  "tech_note": {
+    "legal": "所有品牌名称与标识均为其各自所有者的财产，仅作参考展示之用。"
   },
 
   "footer": {
@@ -35,270 +309,8 @@
     "technologies": "技术",
     "contact": "联系"
   },
-
   "legal": {
     "disclaimer_title": "免责声明：",
-    "disclaimer_body": "所有商标、标识与品牌名称均归其各自所有者所有。本文仅为描述与参考之用，用于展示 Aplus Systems 在专业项目中曾使用或集成的技术。本网站与上述品牌无任何隶属、背书或赞助关系。"
-  },
-
-  "meta": {
-    "home": {
-      "title": "Aplus Systems — 虚拟演播室、广播集成与数字人视频",
-      "desc": "面向虚拟演播室与广播流程的系统集成：NDI/SDI/IP 路由，Unreal/OBS/vMix 流水线，以及数字人视频自动化。"
-    },
-    "about": {
-      "title": "关于 — Aplus Systems｜系统工程师与广播顾问",
-      "desc": "专注于虚拟演播室与广播集成的系统工程师。自发现需求到集成落地与制作的五年端到端经验。"
-    },
-    "services": {
-      "title": "服务 — Aplus Systems｜虚拟演播室与广播集成",
-      "desc": "从需求发现到播出交付：虚拟演播室集成、电视与校园广播搭建、数字人视频流程。"
-    },
-    "demos": {
-      "title": "演示 — Aplus Systems｜案例与参考视频",
-      "desc": "精选参考演示视频，包含竖屏（9:16）与横屏（16:9）。"
-    },
-    "process": {
-      "title": "流程 — Aplus Systems｜从发现到播出",
-      "desc": "覆盖需求、设计、集成、验证、培训与上线的清晰可复用流程。"
-    },
-    "tech": {
-      "title": "技术 — Aplus Systems｜虚拟演播室与广播工具",
-      "desc": "探索 Aplus Systems 工作流程所用技术——NDI、SDI、Unreal Engine、OBS、vMix 与自动化工具。"
-    },
-    "contact": {
-      "title": "联系 — Aplus Systems｜获取报价或咨询",
-      "desc": "通过邮箱、WhatsApp 或 LINE 与我们讨论你的演播室或制作场景。"
-    }
-  },
-
-  "home_hero": {
-    "title": "虚拟演播室 × 广播集成 × 数字人制作",
-    "subtitle": "Aplus Systems 提供端到端的广播与虚拟演播室方案——融合创意制作、技术精度与可靠的系统设计。",
-    "cta1": "联系我",
-    "cta2": "查看服务"
-  },
-
-  "svc": {
-    "hero": {
-      "h1": "服务",
-      "lead": "融合创意与技术——为每一次制作打造可靠流程。"
-    },
-    "shoot": {
-      "title": "演播室与制作服务",
-      "desc": "为创作者、学校与企业提供虚拟与实体演播室支持。",
-      "item1": {
-        "title": "绿幕演播室（台湾）",
-        "desc": "配备灯光与声学系统，适合企业或教育录制。"
-      },
-      "item2": {
-        "title": "虚拟演播室拍摄",
-        "desc": "结合 Unreal 引擎与追踪系统，实现实时合成与直播制作。"
-      }
-    },
-    "system": {
-      "title": "系统集成与搭建",
-      "desc": "面向虚拟制片与广播系统的工程化方案。",
-      "item1": {
-        "title": "虚拟演播室安装",
-        "desc": "面向 NDI / SDI / IP 的系统规划、布线与测试。"
-      },
-      "item2": {
-        "title": "系统集成咨询",
-        "desc": "覆盖采集、切换、录制与分发的流程规划。"
-      },
-      "item3": {
-        "title": "数字人唇形同步训练",
-        "desc": "面向 AI 或虚拟主持的语音驱动口型匹配。"
-      }
-    },
-    "collab": {
-      "title": "项目协作与创意支持",
-      "desc": "与可信的创作者与设计师合作完成整合型项目。",
-      "item1": {
-        "title": "插画与角色设计",
-        "desc": "与合作艺术家共同创作，支持数字或品牌叙事。"
-      },
-      "item2": {
-        "title": "视频剪辑与后期",
-        "desc": "由专业剪辑与动效团队交付高质量成片。"
-      },
-      "item3": {
-        "title": "网页与多媒体整合",
-        "desc": "支持品牌展示、教育平台与在线演示呈现。"
-      }
-    },
-    "philosophy": {
-      "title": "我们的方法",
-      "desc": "Aplus Systems 连接创意团队与技术运营——确保每个项目高效且可靠地运行。",
-      "cta": "讨论你的项目"
-    }
-  },
-
-  "about_hero": {
-    "h1": "关于 Aplus Systems",
-    "lead": "面向<strong>虚拟演播室</strong>、<strong>广播系统</strong>与<strong>数字人制作</strong>的整合方案<br/>为各行业打造可靠、富有创意且互联的视频环境。"
-  },
-  "about_intro": {
-    "title": "公司简介",
-    "p1": "Aplus Systems 总部位于台湾，专注于<strong>虚拟演播室设计</strong>、<strong>广播系统集成</strong>与<strong>端到端流程咨询</strong>，服务教育与企业客户。我们的使命是将创意愿景与可靠的广播技术相结合。",
-    "p2": "从前期规划到现场部署，我们负责每个阶段——需求分析、硬件选型、布线安装、软件配置与操作培训。每一套系统都被设计为<strong>稳定、直观且可扩展</strong>。",
-    "item1": "虚拟演播室与摄像机追踪集成",
-    "item2": "广播与校园电视搭建",
-    "item3": "AI 唇形同步与数字人制作",
-    "item4": "技术培训与远程支持"
-  },
-  "about_exp": {
-    "title": "公司里程碑",
-    "2025": "在台湾为多所大学与媒体机构部署多机位虚拟演播室方案，扩展 <strong>Aplus Systems</strong> 业务。",
-    "2024": "交付 <strong>iSmart 广播集成项目</strong>，自采集到播出的自动化流程成为智能广播的重要一步。",
-    "2022": "设计并落地<strong>校园电视与混合教学演播室</strong>，为 100+ 名教师与操作员提供技术培训。",
-    "2020": "夯实<strong>广播制作、剪辑与系统维护</strong>基础，形成 Aplus Systems 的一体化服务方法。"
-  },
-  "about_show": {
-    "title": "精选作品",
-    "wuya": "🦅《Wuya Laughs》— 剪辑",
-    "cross": "🌏《Cross-Strait Views》— 制作",
-    "heho": "🎬《Heho》— 执行制作"
-  },
-  "about_cta": {
-    "h3": "一起打造你的下一个演播室",
-    "btn": "联系我"
-  },
-
-  "demos_hero": {
-    "h1": "演示展示",
-    "lead": "精选<strong>虚拟演播室集成</strong>、<strong>数字人</strong>制作与<strong>电视系统流程</strong>的演示。"
-  },
-  "demos_section": {
-    "horizontal": "横屏项目（16:9）",
-    "vertical": "竖屏短片（9:16）"
-  },
-  "demos_cards": {
-    "vs": {
-      "title": "虚拟演播室搭建",
-      "desc": "系统集成 + 摄像机追踪演示"
-    },
-    "short1": { "title": "短片演示 — 追踪与取景" },
-    "short2": { "title": "短片演示 — 数字人片段" },
-    "short3": { "title": "短片演示 — 流程亮点" }
-  },
-
-  "process_hero": {
-    "h1": "我们的工作方式",
-    "lead": "从发现到交付——我们的集成流程在每一步都保证清晰、高效与可靠。"
-  },
-  "process_main": {
-    "title": "我们的流程",
-    "step1": {
-      "title": "需求发现与咨询",
-      "desc": "了解你的目标、环境与挑战——明确系统真正需要什么。"
-    },
-    "step2": {
-      "title": "系统设计与规划",
-      "desc": "绘制技术图、选择兼容软硬件，并拟定与资源匹配的时间表。"
-    },
-    "step3": {
-      "title": "集成与搭建",
-      "desc": "现场布线、配置与校准——确保 NDI、SDI 与基于 IP 的组件无缝协同。"
-    },
-    "step4": {
-      "title": "培训与交接",
-      "desc": "提供操作培训、流程文档，以及上线后的远程支持。"
-    }
-  },
-  "process_cta": {
-    "h3": "准备启动你的项目了吗？",
-    "desc": "让我们一起设计下一个虚拟演播室或广播流程。",
-    "btn": "联系 Aplus Systems"
-  },
-
-  "contact_hero": {
-    "h1": "联系 Aplus Systems",
-    "lead": "我们专注虚拟演播室集成、数字人制作与广播流程设计。告诉我们你的目标——我们将帮助你构建可靠且富有创意的系统。"
-  },
-  "contact": {
-    "title": "联系渠道",
-    "desc": "通过你偏好的方式与我们联系——团队将在一个工作日内回复。",
-    "cta1": "发送咨询",
-    "cta2": "WhatsApp 聊天",
-    "cta3": "LINE 留言",
-    "channels": {
-      "email": "邮箱",
-      "whatsapp": "WhatsApp",
-      "line": "LINE"
-    }
-  },
-  "form": {
-    "title": "发送项目简述",
-    "desc": "告诉我们你的目标与限制。我们将在一个工作日内回复。",
-    "name": { "label": "你的姓名" },
-    "email": { "label": "邮箱" },
-    "company": { "label": "公司 / 学校（可选）" },
-    "subject": { "label": "主题" },
-    "message": { "label": "项目详情" },
-    "service": {
-      "label": "服务类型",
-      "virtual": "虚拟演播室集成",
-      "broadcast": "电视与校园广播",
-      "digital": "数字人制作",
-      "greenscreen": "绿幕演播室",
-      "consult": "咨询",
-      "other": "其他"
-    },
-    "budget": {
-      "label": "预算（可选）",
-      "unknown": "暂不确定",
-      "under": "低于新台币 10 万",
-      "b1": "新台币 10–30 万",
-      "b2": "新台币 30–80 万",
-      "b3": "新台币 80 万以上"
-    },
-    "submit": "通过邮件发送",
-    "copy": "复制简述",
-    "note": "此表单会打开你的邮件应用并预填信息。也可复制简述发送至 <strong>aplusystem@gmail.com</strong>。",
-    "error": {
-      "name": "请输入姓名。",
-      "email": "请输入有效的邮箱。",
-      "subject": "请输入主题。"
-    }
-  },
-
-  "company": {
-    "name": "Aplus Systems",
-    "tagline": "广播集成 · 虚拟演播室 · 数字人解决方案",
-    "location": "台北，台湾 — 服务亚洲各地客户"
-  },
-
-  "tech_hero": {
-    "h1": "技术与工具",
-    "lead": "以下品牌与技术是我在虚拟演播室与广播环境中集成与配置的一部分。标识仅用于识别用途。"
-  },
-  "tech_hw": {
-    "title": "硬件与设备",
-    "desc": "在演播室搭建与直播环境中常用的设备与品牌。",
-    "bmd": "切换台、演播室摄影机与 I/O",
-    "synco": "麦克风与现场收音",
-    "unileader": "广播周边与配件",
-    "obsbot": "PTZ / AI 追踪摄像机",
-    "acemic": "演播室硬件与集成模块",
-    "yamaha": "调音台与音频信号路径",
-    "mipro": "无线麦克风与接收机",
-    "mls": "LED 显示系统与拼接屏"
-  },
-  "tech_sw": {
-    "title": "软件与流程工具",
-    "desc": "用于构建现代虚拟演播室流水线的软件与协议。",
-    "obs": "直播制作与推流",
-    "unreal": "虚拟场景与实时渲染",
-    "ndi": "基于 IP 的视频传输",
-    "streamdeck": "宏控制与操作体验"
-  },
-  "tech_cta": {
-    "h3": "需要基于这些工具的系统吗？",
-    "btn": "联系我"
-  },
-  "tech_note": {
-    "legal": "所有品牌名称与标识均归其所有者所有，仅作参考展示。"
+    "disclaimer_body": "所有商标、标识与品牌名称均归其各自所有者所有。本网站仅为描述与参考目的展示这些标识，用以说明 Aplus Systems 曾在专业项目中使用或集成的技术；本网站与所述品牌无隶属、无背书、无赞助关系。"
   }
 }

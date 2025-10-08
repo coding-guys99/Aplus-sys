@@ -1,0 +1,253 @@
+{
+  "brand": {
+    "name": "Aplus Systems",
+    "role": "Integrasi Studio Maya & Siaran"
+  },
+
+  "nav": {
+    "menu": "Menu",
+    "about": "Tentang",
+    "services": "Perkhidmatan",
+    "demos": "Demo",
+    "process": "Proses",
+    "tech": "Teknologi",
+    "technologies": "Teknologi",
+    "contact": "Hubungi"
+  },
+
+  "footer": {
+    "rights": "Semua hak cipta terpelihara.",
+    "about": "Tentang",
+    "services": "Perkhidmatan",
+    "demos": "Demo",
+    "process": "Proses",
+    "technologies": "Teknologi",
+    "contact": "Hubungi"
+  },
+
+  "legal": {
+    "disclaimer_title": "Penafian:",
+    "disclaimer_body": "Semua tanda dagang, logo dan nama jenama adalah hak milik pemilik masing-masing. Ia digunakan semata-mata untuk tujuan penerangan dan rujukan bagi menggambarkan teknologi yang telah Aplus Systems gunakan atau integrasikan dalam projek profesional. Laman ini tidak mempunyai pertalian, pengesahan atau tajaan oleh mana-mana jenama yang disebut."
+  },
+
+  "meta": {
+    "home": {
+      "title": "Aplus Systems — Studio Maya, Integrasi Siaran & Video Manusia Digital",
+      "desc": "Integrasi sistem untuk studio maya dan aliran kerja siaran: penghalaan NDI/SDI/IP, paip kerja Unreal/OBS/vMix, serta automasi video manusia digital."
+    },
+    "about": {
+      "title": "Tentang — Aplus Systems | Jurutera Sistem & Konsultan Siaran",
+      "desc": "Jurutera sistem yang memfokuskan integrasi studio maya dan siaran. Lima tahun pengalaman hujung ke hujung merangkumi perancangan, integrasi dan produksi."
+    },
+    "services": {
+      "title": "Perkhidmatan — Aplus Systems | Integrasi Studio Maya & Siaran",
+      "desc": "Daripada penemuan keperluan hingga siaran langsung: integrasi studio maya, set-up TV & siaran kampus, dan paip kerja video manusia digital."
+    },
+    "demos": {
+      "title": "Demo — Aplus Systems | Paparan & Video Rujukan",
+      "desc": "Video demo terpilih termasuk format pendek (9:16) dan mendatar (16:9) untuk rujukan."
+    },
+    "process": {
+      "title": "Proses — Aplus Systems | Dari Penemuan ke Siaran",
+      "desc": "Proses yang jelas dan boleh diulang meliputi penemuan, reka bentuk, integrasi, pengesahan, latihan dan go-live."
+    },
+    "tech": {
+      "title": "Teknologi — Aplus Systems | Alat Studio Maya & Siaran",
+      "desc": "Terokai teknologi yang menyokong aliran kerja Aplus Systems — NDI, SDI, Unreal Engine, OBS, vMix dan alat automasi."
+    },
+    "contact": {
+      "title": "Hubungi — Aplus Systems | Dapatkan Sebut Harga atau Konsultasi",
+      "desc": "Hubungi melalui e-mel, WhatsApp atau LINE untuk bincang senario studio atau produksi anda."
+    }
+  },
+
+  "hero": {
+    "title": "Studio Maya × Integrasi Siaran × Video Manusia Digital",
+    "subtitle": "Dengan lebih lima tahun pengalaman sistem siaran, kami mereka bentuk dan mengintegrasi penyelesaian video yang boleh dipercayai serta kreatif — daripada perancangan hingga penyiaran.",
+    "cta1": "Hubungi Kami",
+    "cta2": "Lihat Perkhidmatan"
+  },
+
+  "svc": {
+    "title": "Perkhidmatan Teras",
+    "virtualstudio": {
+      "title": "Integrasi Studio Maya",
+      "desc": "Set-up hujung ke hujung dengan chroma key, penjejakan kamera dan penghalaan berbilang protokol (NDI / SDI / IP)."
+    },
+    "broadcast": {
+      "title": "Set-up Siaran TV & Kampus",
+      "desc": "Sistem sehenti untuk studio pendidikan atau korporat — daripada perancangan dan pemilihan peralatan hingga integrasi dan latihan."
+    },
+    "digitalhuman": {
+      "title": "Penghasilan Video Manusia Digital",
+      "desc": "Sintesis suara AI, penyegerakan bibir dan adegan maya 3D untuk produksi video automatik yang efisien."
+    }
+  },
+
+  "svc_hero": {
+    "h1": "Apa Yang Kami Boleh Bantu",
+    "p": "Daripada penemuan keperluan hingga siaran — sistem yang boleh dipercayai dan mudah diselenggara untuk produksi sebenar.",
+    "cta": "Dapatkan Sebut Harga"
+  },
+  "svc_core": {
+    "title": "Perkhidmatan Teras"
+  },
+  "svc_vs": {
+    "title": "Integrasi Studio Maya",
+    "desc": "Chroma key, penjejakan kamera, penghalaan NDI/SDI/IP dan set-up permukaan kawalan.",
+    "item1": "Reka bentuk aliran isyarat (NDI / SDI / SRT)",
+    "item2": "Aliran kerja vMix / OBS / Unreal",
+    "item3": "SOP operator & panduan mula cepat"
+  },
+  "svc_tv": {
+    "title": "Siaran TV & Kampus",
+    "desc": "Set-up sehenti untuk studio dalaman: perancangan, senarai peralatan, integrasi, latihan.",
+    "item1": "Keperluan & topologi",
+    "item2": "Panduan perolehan",
+    "item3": "Pentauliahan & serahan"
+  },
+  "svc_dh": {
+    "title": "Video Manusia Digital",
+    "desc": "Suara AI, lip-sync dan integrasi adegan 3D untuk persembahan automatik bentuk panjang.",
+    "item1": "Model suara & pemasaan",
+    "item2": "Paip kerja lip-sync",
+    "item3": "Main balik & penjadualan"
+  },
+  "svc_tiers": {
+    "title": "Pakej & Harga Permulaan",
+    "cta": "Ceritakan senario anda"
+  },
+  "tier": {
+    "basic": "Permulaan",
+    "basic.desc": "Satu bilik / satu aliran kerja",
+    "basic.price": "Dari NTD ** (anggaran selepas penemuan)",
+    "pro": "Profesional",
+    "pro.desc": "Integrasi berbilang peranti / termasuk latihan",
+    "pro.price": "Dari NTD **",
+    "custom": "Tersuai",
+    "custom.desc": "Skala besar / penghantaran hujung ke hujung",
+    "custom.price": "Mengikut keperluan"
+  },
+  "svc_tech": {
+    "title": "Teknologi Disokong"
+  },
+  "svc_faq": {
+    "title": "Soalan Lazim"
+  },
+  "faq": {
+    "time.q": "Berapa lama untuk go-live?",
+    "time.a": "Kebiasaannya 2–8 minggu, bergantung pada skop dan perolehan.",
+    "cost.q": "Bagaimana kaedah harga?",
+    "cost.a": "Selepas panggilan penemuan ringkas, kami berikan julat harga dan pelan masa."
+  },
+  "svc_final": {
+    "h3": "Sedia rancang studio atau program anda?",
+    "cta": "Hubungi Saya"
+  },
+
+  "about_hero": {
+    "h1": "Tentang Aplus Systems",
+    "lead": "Studio kejuruteraan sistem bebas yang memfokuskan integrasi studio maya dan siaran — menghubungkan teknologi dengan produksi."
+  },
+  "about": {
+    "title": "Tentang Aplus",
+    "desc": "Kami mereka bentuk sistem studio maya dan siaran yang boleh dipercayai, menggabungkan kejuruteraan praktikal dengan aliran kerja siap produksi."
+  },
+  "about_intro": {
+    "title": "Profil Profesional",
+    "p1": "Aplus Systems menyediakan reka bentuk studio maya, integrasi siaran dan konsultasi aliran kerja untuk pasukan pendidikan dan korporat.",
+    "p2": "Kami meliputi kitaran penuh: analisis keperluan, pemilihan perkakasan, pendawaian dan set-up, konfigurasi perisian serta latihan operator — memastikan sistem stabil, intuitif dan boleh skala.",
+    "item1": "Integrasi Studio Maya & Penjejakan Kamera",
+    "item2": "Set-up Siaran & TV Kampus",
+    "item3": "AI Lip-sync + Penghasilan Manusia Digital",
+    "item4": "Latihan Teknikal & Sokongan Jauh"
+  },
+  "about_exp": {
+    "title": "Jejak Syarikat",
+    "y2025": "Menerajui reka bentuk sistem studio maya berbilang kamera di universiti.",
+    "y2024": "Melaksanakan projek integrasi siaran iSmart, menyampaikan automasi aliran kerja siaran langsung.",
+    "y2022": "Mengintegrasi sistem TV kampus serta melatih kakitangan dan pelajar untuk operasi harian.",
+    "y2020": "Pengalaman produksi siaran & suntingan pasca — dari kandungan ke potongan akhir."
+  },
+
+  "contact_hero": {
+    "h1": "Mari Bekerjasama",
+    "lead": "Perlukan integrasi sistem, produksi atau konsultasi? Hantar mesej — lazimnya kami balas dalam satu hari bekerja."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "desc": "Kongsi senario anda (saiz studio, sumber isyarat, keluaran yang diharapkan). Kami cadangkan pelan praktikal dan garis masa.",
+    "cta1": "E-mel Saya",
+    "cta2": "Sembang di WhatsApp",
+    "cta3": "Mesej di LINE",
+    "channels": {
+      "email": "E-mel",
+      "whatsapp": "WhatsApp",
+      "line": "LINE"
+    }
+  },
+
+  "demos_hero": {
+    "h1": "Paparan Demo",
+    "lead": "Demo terpilih untuk rujukan pantas — format pendek (9:16) dan mendatar (16:9)."
+  },
+  "demos": {
+    "shorts.title": "Format Pendek (9:16)",
+    "landscape.title": "Mendatar (16:9)",
+    "caption.generic": "Video demo rujukan"
+  },
+
+  "proc_hero": {
+    "h1": "Cara Kami Bekerja",
+    "lead": "Proses praktikal dan boleh diulang untuk membina sistem produksi yang boleh dipercayai serta mudah diselenggara."
+    },
+  "process": {
+    "steps": {
+      "discovery.title": "1) Penemuan",
+      "discovery.desc": "Senario, kekangan, bajet dan garis masa — kami sejajarkan skop dan output.",
+      "design.title": "2) Reka Bentuk Sistem",
+      "design.desc": "Aliran isyarat, senarai peranti, rangkaian dan permukaan kawalan dengan rajah yang jelas.",
+      "integration.title": "3) Integrasi",
+      "integration.desc": "Set-up perkakasan, pendawaian, konfigurasi perisian dan templat aliran kerja.",
+      "validation.title": "4) Pengesahan",
+      "validation.desc": "Adegan ujian, ujian tekanan dan failover — pastikan prestasi stabil.",
+      "training.title": "5) Latihan",
+      "training.desc": "SOP operator, senarai semak mula cepat dan set-up sokongan jauh.",
+      "golive.title": "6) Go-Live",
+      "golive.desc": "Serahan, dokumentasi dan pengoptimuman susulan."
+    },
+    "cta": "Bercakap dengan kami"
+  },
+
+  "tech_hero": {
+    "h1": "Teknologi & Alat",
+    "lead": "Jenama dan teknologi berikut adalah sebahagian daripada sistem yang telah kami integrasi dan konfigurasikan untuk persekitaran studio maya dan siaran. Logo digunakan untuk tujuan pengenalpastian sahaja."
+  },
+  "tech_hw": {
+    "title": "Perkakasan & Peralatan",
+    "desc": "Peranti dan jenama yang kerap digunakan dalam pembinaan studio dan persekitaran siaran langsung.",
+    "bmd": "Switcher, kamera studio & I/O",
+    "synco": "Mikrofon & audio di set",
+    "unileader": "Periferal & aksesori siaran",
+    "obsbot": "Kamera PTZ / penjejakan AI",
+    "acemic": "Sistem mikrofon tanpa wayar & aksesori",
+    "yamaha": "Pengadun & laluan isyarat audio",
+    "mipro": "Mikrofon tanpa wayar & penerima",
+    "mls": "Sistem paparan LED dan panel dinding"
+  },
+  "tech_sw": {
+    "title": "Perisian & Alat Aliran Kerja",
+    "desc": "Perisian dan protokol yang digunakan untuk membina paip kerja studio maya moden.",
+    "obs": "Produksi langsung & penstriman",
+    "unreal": "Set maya & pemaparan masa nyata",
+    "ndi": "Penghantaran video berasaskan IP",
+    "streamdeck": "Kawalan makro & pengalaman operator"
+  },
+  "tech_cta": {
+    "h3": "Perlukan sistem dibina sekitar alat ini?",
+    "btn": "Hubungi Saya"
+  },
+  "tech_note": {
+    "legal": "Semua nama jenama dan logo adalah milik pemilik masing-masing dan dipaparkan untuk rujukan sahaja."
+  }
+}

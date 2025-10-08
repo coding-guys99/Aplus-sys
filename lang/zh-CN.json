@@ -29,6 +29,17 @@
       "desc": "通过邮箱、WhatsApp 或 LINE 联系我们，讨论你的演播室或制作场景。"
     }
   },
+  
+  "nav": {
+  "menu": "菜单",
+  "about": "关于我们",
+  "services": "服务",
+  "demos": "演示",
+  "process": "流程",
+  "tech": "技术",
+  "technologies": "技术",
+  "contact": "联系"
+},
 
   "home_hero": {
     "title": "虚拟演播室 × 广播集成 × 数字人制作",

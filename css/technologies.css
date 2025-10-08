@@ -53,8 +53,6 @@
 
 /* Logo Box — 保持比例並自適應 */
 .brand-logo-box {
-  width: var(--logo-w);
-  height: var(--logo-h);
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -86,13 +84,7 @@
 .brand-name { color: var(--text); font-weight: 700; margin-top: 10px; }
 .brand-desc { color: var(--muted); font-size: .9rem; margin-top: 4px; }
 
-/* 手機：略縮 logo 尺寸 */
-@media (max-width: 640px){
-  :root {
-    --logo-w: clamp(180px, 58vw, 260px);
-    --logo-h: clamp(70px, 14vw, 110px);
-  }
-}
+
 
 /* ---------- Section Headings ---------- */
 .section header h2 {

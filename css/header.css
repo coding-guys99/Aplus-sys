@@ -207,6 +207,7 @@
   color: #ddd;
   cursor: pointer;
   transition: background .2s,color .2s;
+  text-decoration:none;
 }
 .lang-menu.in-panel li:hover {
   background: rgba(255,255,255,.08);

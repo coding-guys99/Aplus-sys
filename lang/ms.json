@@ -321,5 +321,136 @@
   "legal": {
     "disclaimer_title": "Penafian:",
     "disclaimer_body": "Semua tanda dagang, logo dan nama jenama adalah milik pemilik masing-masing. Logo digunakan semata-mata untuk tujuan keterangan dan rujukan bagi menggambarkan teknologi yang telah digunakan atau diintegrasikan oleh Aplus Systems dalam projek profesional. Laman ini tidak mempunyai sebarang hubungan gabungan, pengesahan atau tajaan daripada mana-mana jenama yang disebut."
+  },
+  
+  
+  "brands": {
+    "blackmagic": {
+      "name": "Blackmagic Design",
+      "desc": "Blackmagic Design menyediakan peralatan profesional yang dipercayai untuk produksi siaran — meliputi penukar, kamera, penangkap/IO dan pasca-produksi. Konfigurasi biasa termasuk penukar ATEM untuk siaran langsung, kamera URSA/Studio melalui SDI/NDI, kad DeckLink untuk input/output, dan perakam HyperDeck, dengan DaVinci Resolve untuk pewarnaan dan penyuntingan akhir. Sesuai untuk studio, TV kampus dan acara hibrid.",
+      "gallery": {
+        "atem_mini": { "caption": "ATEM Mini Extreme ISO — live switcher core" },
+        "studio_cam": { "caption": "Studio Camera 4K Pro G2" },
+        "ursa_bcast": { "caption": "URSA Broadcast G2" },
+        "decklink": { "caption": "DeckLink 8K Pro — capture/output" },
+        "hyperdeck": { "caption": "HyperDeck Studio HD — recording/playout" },
+        "resolve": { "caption": "DaVinci Resolve — color & finishing" }
+      }
+    },
+    "synco": {
+      "name": "SYNCO",
+      "desc": "SYNCO menawarkan mikrofon padat untuk kamera dan studio, direka untuk rakaman di lokasi yang stabil dan jelas. Digunakan secara meluas untuk set lavalier tanpa wayar bagi wawancara dan mikrofon senapang untuk rakaman dialog atau suara latar.",
+      "gallery": {
+        "g2a2": { "caption": "G2 A2 dual-channel wireless lav kit" },
+        "d2_shotgun": { "caption": "MIC-D2 XLR shotgun mic" },
+        "d30": { "caption": "D30 on-camera shotgun" },
+        "accessories": { "caption": "Windshields, cold shoes, cables" }
+      }
+    },
+    "unileader": {
+      "name": "Uni-Leader",
+      "desc": "Uni-Leader menyediakan penyelesaian integrasi siaran dan studio maya yang lengkap — menggabungkan perkakasan dan perisian daripada penukar kamera (U-Caster 4K), komposit dan grafik (U-CG), kawalan studio (U-Studio 4K) hingga pembelajaran jarak jauh masa nyata (U-Mooc).",
+      "gallery": {
+        "u_caster_4k": { "caption": "U-Caster 4K — live switcher" },
+        "u_studio_4k": { "caption": "U-Studio 4K — studio control" },
+        "u_cg": { "caption": "U-CG — compositing & graphics" },
+        "u_meta_v": { "caption": "U-Meta V — virtual studio" },
+        "u_mooc": { "caption": "U-Mooc — e-learning module" }
+      }
+    },
+    "obsbot": {
+      "name": "OBSBOT",
+      "desc": "OBSBOT memfokuskan kepada kamera PTZ dan penjejakan berkuasa AI dengan fungsi pembingkaian pintar, kawalan isyarat tangan, dan mod penjejakan pelbagai untuk kegunaan studio, penstriman langsung, dan penciptaan kandungan.",
+      "gallery": {
+        "tiny_4k": { "caption": "OBSBOT Tiny 4K — AI PTZ webcam" },
+        "tiny_2": { "caption": "OBSBOT Tiny 2 — multi-mode tracking" },
+        "tail_air": { "caption": "OBSBOT Tail Air — streaming PTZ" },
+        "tiny_se": { "caption": "OBSBOT Tiny SE — 1080p tracking webcam" }
+      }
+    },
+    "acemic": {
+      "name": "Acemic",
+      "desc": "Acemic (Honbo Audio) mengkhusus dalam sistem mikrofon tanpa wayar, sistem pemantauan dalam telinga (IEM), dan modul penghantaran audio. Produk digunakan secara meluas dalam pentas, pendidikan, siaran dan rakaman untuk audio yang stabil dan bebas gangguan.",
+      "gallery": {
+        "wireless_8ch": { "caption": "8-channel wireless microphone system" },
+        "iem_4ch": { "caption": "4-channel in-ear monitoring system" },
+        "ad900": { "caption": "AD-900 antenna distribution" },
+        "ad600": { "caption": "AD-600 antenna/IEM distribution" },
+        "g4": { "caption": "G4 series wireless microphone" },
+        "em_d01": { "caption": "EM-D01 single-channel IEM" }
+      }
+    },
+    "yamaha": {
+      "name": "Yamaha Mixer",
+      "desc": "Yamaha menawarkan rangkaian penuh pengadun analog dan digital profesional untuk studio, acara langsung dan persekitaran penyiaran. Siri popular termasuk TF, DM, CL/QL, M7CL dan RIVAGE untuk pengadunan, laluan isyarat, kesan dan pengingatan semula.",
+      "gallery": {
+        "tf5": { "caption": "TF5 digital mixer" },
+        "dm3s": { "caption": "DM3S ultra-compact digital mixer" },
+        "m7cl": { "caption": "M7CL digital mixing console" },
+        "ql5": { "caption": "QL5 digital mixer" }
+      }
+    },
+    "mipro": {
+      "name": "MIPRO",
+      "desc": "MIPRO ialah jenama Taiwan terkemuka dalam mikrofon tanpa wayar, sistem PA mudah alih dan sistem pemantauan dalam telinga. Teknologi ACT (Automatic Channel Targeting) yang dipatenkan membolehkan penyegerakan pantas antara pemancar dan penerima.",
+      "gallery": {
+        "act32h": { "caption": "ACT-32H handheld wireless mic" },
+        "act312": { "caption": "ACT-312 dual-channel receiver" },
+        "mi58": { "caption": "MI-58 digital IEM system" },
+        "ad900": { "caption": "AD-900 antenna distribution module" }
+      }
+    },
+    "mls": {
+      "name": "MLS LED (木林森)",
+      "desc": "MLS (Mulinsen) mengkhusus dalam modul paparan LED berkualiti tinggi yang digunakan untuk dinding video siaran, dinding pentas dan latar belakang set maya. Modul menyokong kadar segar semula tinggi dan jarak piksel halus untuk kualiti visual yang jelas dan lancar.",
+      "gallery": {
+        "p1_92": { "caption": "1.92 mm LED module" },
+        "p2_5": { "caption": "2.5 mm LED module" },
+        "wall": { "caption": "LED wall assembly" },
+        "ctrl": { "caption": "LED controller/interface" }
+      }
+    },
+    "obs": {
+      "name": "OBS",
+      "desc": "OBS Studio ialah perisian sumber terbuka percuma untuk rakaman dan penstriman video secara langsung. Ia menyokong pelbagai sumber video, komposisi, pemalam, kamera maya dan pertukaran adegan masa nyata.",
+      "gallery": {
+        "ui": { "caption": "OBS Studio — main interface" },
+        "plugin": { "caption": "OBS plugin / hotkey demo" },
+        "output": { "caption": "Streaming/recording output" },
+        "multisc": { "caption": "Multi-scene switching" }
+      }
+    },
+    "unreal": {
+      "name": "Unreal Engine",
+      "desc": "Unreal Engine ialah alat penciptaan 3D masa nyata yang digunakan untuk permainan, studio maya dan grafik siaran. Ia menyokong set maya, rendering masa nyata dan visual interaktif.",
+      "gallery": {
+        "vsnap": { "caption": "Virtual set screenshot" },
+        "viz": { "caption": "Real-time rendering visual" },
+        "graph": { "caption": "Material/graph editor" },
+        "liveset": { "caption": "Live virtual scene setup" }
+      }
+    },
+    "ndi": {
+      "name": "NDI",
+      "desc": "NDI (Network Device Interface) ialah protokol video IP latensi rendah yang membolehkan perkongsian video, audio dan metadata melalui rangkaian. Ia menjadi tulang belakang utama aliran kerja video moden dalam penyiaran dan produksi kandungan.",
+      "gallery": {
+        "logo": { "caption": "NDI logo" },
+        "diagram": { "caption": "NDI signal flow diagram" },
+        "mixer": { "caption": "NDI integration with switchers" },
+        "capture": { "caption": "NDI capture/output hardware" }
+      }
+    },
+    "streamdeck": {
+      "name": "StreamDeck",
+      "desc": "StreamDeck ialah pengawal makro berasaskan perkakasan yang membolehkan pengguna menetapkan butang kepada tindakan, pintasan atau pertukaran adegan — meningkatkan kecekapan kerja langsung dengan ketara.",
+      "gallery": {
+        "sd_32": { "caption": "StreamDeck 32-key" },
+        "sd_xl": { "caption": "StreamDeck XL" },
+        "sd_mob": { "caption": "StreamDeck Mobile app" },
+        "sd_pro": { "caption": "StreamDeck Pro" }
+      }
+    }
   }
+  
+  
 }

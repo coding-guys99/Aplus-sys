@@ -1,18 +1,25 @@
-
-/* menu.js — Desktop (inline nav) + Mobile (full-screen grid) */
+/* menu.js — Desktop (inline nav) + Mobile (full-screen grid)
+   - toggles overlay
+   - locks body scroll
+   - fixes aria-hidden for accessibility
+   - closes on link click / overlay / ESC
+   - keeps menu open when opening language list
+*/
 (function () {
   const $  = (s, r = document) => r.querySelector(s);
-  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 
-  // 動態抓元素（避免一開始是 null）
+  // 動態抓元素（header 可能是 include 後才注入）
   const getMobileMenu = () => $('#mobile-menu');
   const getToggleBtn  = () => $('.nav-toggle');
-  const getOverlay    = () => $('.nav-overlay') || (()=>{
-    const ov = document.createElement('div');
-    ov.className = 'nav-overlay';
-    document.body.appendChild(ov);
+  const getOverlay    = () => {
+    let ov = $('.nav-overlay');
+    if (!ov) {
+      ov = document.createElement('div');
+      ov.className = 'nav-overlay';
+      document.body.appendChild(ov);
+    }
     return ov;
-  })();
+  };
 
   let scrollLocked = false;
   function lockScroll(lock){
@@ -47,29 +54,46 @@
     lockScroll(false);
   }
 
-  // 事件委派（不用在載入時就抓到元素）
+  // 事件委派
   document.addEventListener('click', (e)=>{
     const isMobile = window.matchMedia('(max-width:1024px)').matches;
 
+    // 開關按鈕（☰）
     if (e.target.closest('.nav-toggle')){
       e.preventDefault();
-      if (!isMobile) return; // 桌機不開全螢幕
+      if (!isMobile) return; // 桌機不使用全螢幕面板
       const menu = getMobileMenu();
       menu?.classList.contains('is-open') ? closeMobile() : openMobile();
       return;
     }
 
+    // 關閉按鈕 / overlay
     if (e.target.closest('.menu-close') || e.target.classList.contains('nav-overlay')){
-      closeMobile(); return;
+      closeMobile(); 
+      return;
     }
 
     const menu = getMobileMenu();
     if (menu && menu.contains(e.target)){
-      const link = e.target.closest('a, .menu-card');
-      if (link) closeMobile();
+      // ✅ 語言卡片：只切換語言清單，不關面板
+      if (e.target.closest('[data-open-lang]')){
+        e.preventDefault();
+        e.stopPropagation();
+        const list = document.getElementById('mobile-lang');
+        if (list) list.hidden = !list.hidden;
+        return;
+      }
+      // ✅ 點語言清單本身：不關
+      if (e.target.closest('#mobile-lang')) {
+        return;
+      }
+      // 其它正常連結/卡片 → 關閉面板
+      const isLink = e.target.closest('a, .menu-card');
+      if (isLink) closeMobile();
     }
   });
 
+  // ESC 關閉
   document.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') closeMobile(); });
 
   // 動態 include 完成後，確保 overlay 存在
@@ -78,6 +102,7 @@
   // footer 年份
   document.addEventListener('DOMContentLoaded', ()=>{
     getOverlay();
-    const y = $('#year'); if (y) y.textContent = new Date().getFullYear();
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
   });
 })();

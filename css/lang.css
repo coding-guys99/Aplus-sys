@@ -75,10 +75,7 @@
 .lang-menu.in-panel.show { display: block !important; }
 
 #lang-fab img{
-  display:block;
   width:20%;
   height:20%;
-  color:green;
-  background:transparent;
   padding-top:30px;
 }

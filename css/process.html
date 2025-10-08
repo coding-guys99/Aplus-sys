@@ -1,0 +1,59 @@
+/* ========== PROCESS PAGE ========== */
+
+.step-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 32px;
+}
+
+.step {
+  background: var(--bg-alt, #111214);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  padding: 24px 20px 28px;
+  text-align: center;
+  transition: border-color .25s ease, transform .25s ease;
+}
+
+.step:hover {
+  border-color: var(--primary, #d4af37);
+  transform: translateY(-4px);
+}
+
+.step-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary, #d4af37);
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  color: var(--text, #fff);
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.step p {
+  color: var(--muted, #b9bdc6);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cta-center {
+  text-align: center;
+}
+.cta-center h3 {
+  color: var(--primary, #d4af37);
+  margin-bottom: 8px;
+}
+.cta-center p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* Small screens */
+@media (max-width: 640px){
+  .step-grid { gap: 20px; }
+  .step { padding: 20px 16px; }
+}

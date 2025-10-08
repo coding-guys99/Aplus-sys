@@ -91,3 +91,54 @@
   right: 16px; bottom: 72px;    /* 按鈕上方展開 */
   width: 220px;
 }
+
+/* ===== 手機面板：底部語言列 ===== */
+.lang-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;                    /* 用分隔線，不用 gap */
+  background: rgba(18,18,18,.96);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 8px 10px;
+  width: 100%;
+  max-width: 520px;
+  margin: 10px auto 4px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.35);
+}
+
+/* 語言「籤」 */
+.lang-chip {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: #ddd;
+  padding: 10px 14px;
+  font-size: .95rem;
+  letter-spacing: .2px;
+  cursor: pointer;
+  min-width: 54px;           /* 提升可點面積 */
+  text-align: center;
+  transition: color .2s ease, background .2s ease;
+}
+
+.lang-chip:hover { color: var(--primary, #d4af37); }
+
+/* 分隔線 */
+.lang-sep {
+  width: 1px; height: 18px;
+  background: rgba(255,255,255,.14);
+  margin: 0 2px;
+}
+
+/* 當前語言高亮 */
+.lang-chip[aria-current="true"] {
+  color: var(--primary, #d4af37);
+  font-weight: 600;
+}
+
+/* 只在手機面板使用；桌機隱藏（桌機用右上角地球） */
+@media (min-width: 1025px) {
+  .mobile-menu-footer .lang-bar { display: none; }
+}

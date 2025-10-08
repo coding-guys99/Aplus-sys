@@ -29,6 +29,15 @@
       "desc": "Reach out via email, WhatsApp, or LINE to discuss your studio or production scenario."
     }
   },
+  
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "demos": "Demos",
+    "process": "Process",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  },
 
   "home_hero": {
     "title": "Virtual Studio × Broadcast Integration × Digital Human Production",

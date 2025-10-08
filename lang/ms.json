@@ -29,6 +29,15 @@
       "desc": "Hubungi melalui e-mel, WhatsApp atau LINE untuk berbincang tentang studio atau senario produksi anda."
     }
   },
+  
+  "nav": {
+  "about": "Tentang Kami",
+  "services": "Perkhidmatan",
+  "demos": "Demo",
+  "process": "Proses",
+  "technologies": "Teknologi",
+  "contact": "Hubungi Kami"
+},
 
   "home_hero": {
     "title": "Studio Maya × Integrasi Siaran × Produksi Manusia Digital",

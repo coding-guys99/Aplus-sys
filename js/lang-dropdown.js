@@ -107,3 +107,36 @@
   document.addEventListener('DOMContentLoaded', bootWithRetry);
   document.addEventListener('partials:loaded', bootWithRetry);
 })();
+
+// === mobile-lang.js — 手機語言抽屜 ===
+(function () {
+  function init() {
+    const btn    = document.getElementById('lang-fab');     // <button class="menu-card--lang">
+    const panel  = document.getElementById('mobile-lang');  // <ul id="mobile-lang" class="lang-menu in-panel">
+    const mobile = document.getElementById('mobile-menu');
+
+    if (!btn || !panel || !mobile) return;
+
+    // 切換清單
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();                  // 不要讓 menu.js 把整個面板關掉
+      const open = panel.classList.toggle('show');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    // 點清單內部別關整個面板
+    panel.addEventListener('click', (e) => e.stopPropagation());
+
+    // 在 mobile 面板裡點其他地方，自動把語言清單收起
+    mobile.addEventListener('click', (e) => {
+      if (!e.target.closest('.mobile-lang-trigger')) {
+        panel.classList.remove('show');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  document.addEventListener('partials:loaded', init); // header 透過 include 載入時
+  document.addEventListener('DOMContentLoaded', init);
+})();

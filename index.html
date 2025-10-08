@@ -40,32 +40,58 @@
 
     <!-- ===== SERVICES SUMMARY ===== -->
     <section id="services" class="section">
-      <div class="container">
-        <h2 data-i18n="svc.title">Core Services</h2>
-        <div class="feature-grid">
-          <article class="feature">
-            <h3 data-i18n="svc.virtualstudio.title">Virtual Studio Integration</h3>
-            <p data-i18n="svc.virtualstudio.desc">
-              End-to-end setup with chroma keying, camera tracking, and multi-protocol routing (NDI / SDI / IP).
-            </p>
-          </article>
+  <div class="container">
+    <h2 data-i18n="svc.title">Core Services</h2>
 
-          <article class="feature">
-            <h3 data-i18n="svc.broadcast.title">TV & Campus Broadcast Setup</h3>
-            <p data-i18n="svc.broadcast.desc">
-              One-stop system for educational or corporate studios — from planning and equipment selection to integration and training.
-            </p>
-          </article>
-
-          <article class="feature">
-            <h3 data-i18n="svc.digitalhuman.title">Digital Human Video Production</h3>
-            <p data-i18n="svc.digitalhuman.desc">
-              AI voice synthesis, lip-sync, and 3D virtual scenes for efficient automated video production.
-            </p>
-          </article>
+    <div class="service-grid service-grid--icons">
+      <!-- Virtual Studio -->
+      <article class="service-card service-card--icon">
+        <div class="service-icon">
+          <!-- 若有檔案： -->
+          <img src="./assets/icons/virtual.svg" alt="" onerror="this.closest('.service-icon').classList.add('fallback')" />
+          <!-- emoji fallback 會由 CSS 顯示 -->
         </div>
-      </div>
-    </section>
+        <h3 data-i18n="svc.virtualstudio.title">Virtual Studio Integration</h3>
+        <p data-i18n="svc.virtualstudio.desc">
+          End-to-end system design for real-time virtual production — chroma keying, camera tracking, and multi-protocol routing (NDI / SDI / IP). Reliable, scalable, on-air ready.
+        </p>
+      </article>
+
+      <!-- Broadcast -->
+      <article class="service-card service-card--icon">
+        <div class="service-icon">
+          <img src="./assets/icons/broadcast.svg" alt="" onerror="this.closest('.service-icon').classList.add('fallback')" />
+        </div>
+        <h3 data-i18n="svc.broadcast.title">TV & Campus Broadcast Setup</h3>
+        <p data-i18n="svc.broadcast.desc">
+          One-stop solution for schools and enterprises: requirements, equipment list, wiring, commissioning, and operator training — from planning to first broadcast.
+        </p>
+      </article>
+
+      <!-- Digital Human -->
+      <article class="service-card service-card--icon">
+        <div class="service-icon">
+          <img src="./assets/icons/digitalhuman.svg" alt="" onerror="this.closest('.service-icon').classList.add('fallback')" />
+        </div>
+        <h3 data-i18n="svc.digitalhuman.title">Digital Human Video Production</h3>
+        <p data-i18n="svc.digitalhuman.desc">
+          AI voice, lip-sync, and 3D scene integration for automated presentation and program segments. Consistent quality with repeatable pipelines.
+        </p>
+      </article>
+
+      <!-- Green Screen -->
+      <article class="service-card service-card--icon">
+        <div class="service-icon">
+          <img src="./assets/icons/greenscreen.svg" alt="" onerror="this.closest('.service-icon').classList.add('fallback')" />
+        </div>
+        <h3 data-i18n="svc.green.title">Green Screen Studio (Taiwan)</h3>
+        <p data-i18n="svc.green.desc">
+          Compact studio with lighting and audio setup. Ideal for course recording, explainers, and virtual presenter shoots. Optional on-site technical support.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
 
     <!-- ===== SHOWCASE ===== -->
 <section id="showcase" class="section alt">

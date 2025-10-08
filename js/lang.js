@@ -30,9 +30,21 @@ function applyI18n(dict) {
   elements.forEach((el) => {
     const key = el.getAttribute("data-i18n");
     const value = resolveKey(dict, key);
-    if (value) {
-      if (el.placeholder !== undefined && el.tagName === "INPUT") {
+    if (!value) return;
+
+    // 表單類元素
+    if (el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.tagName === "SELECT") {
+      if (el.placeholder !== undefined && el.hasAttribute("placeholder")) {
         el.placeholder = value;
+      } else {
+        el.value = value;
+      }
+    }
+    // 其他 HTML 元素（允許安全標籤）
+    else {
+      // 若文字中有 HTML 標籤，使用 innerHTML
+      if (value.includes("<") && value.includes(">")) {
+        el.innerHTML = value;
       } else {
         el.textContent = value;
       }

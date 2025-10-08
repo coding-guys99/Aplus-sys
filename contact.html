@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title data-i18n="contact.title">Contact — Aplus Systems</title>
-  <meta name="description" content="Get in touch with Aplus Systems for virtual studio and broadcast system integration."/>
-  <link rel="icon" href="./assets/favicon.png">
-  <!-- 共用樣式 -->
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/theme.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)">
-  <link rel="stylesheet" href="./css/mobile.css"  media="screen and (max-width:1024px)">
-  <!-- 本頁樣式 -->
-  <link rel="stylesheet" href="./css/contact.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="contact.meta.title">Contact — Aplus Systems | Broadcast & Virtual Studio Integration</title>
+  <meta name="description" content="Contact Aplus Systems for virtual studio integration, broadcast systems, and digital human production. Reach us via email, WhatsApp, or LINE for consultation."/>
+  <link rel="icon" href="./assets/favicon.png" />
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/theme.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
 </head>
+
 <body>
   <!-- Header -->
   <div id="include-header"></div>
@@ -23,125 +22,58 @@
     <!-- HERO -->
     <section class="hero bright">
       <div class="container">
-        <h1 data-i18n="contact_hero.h1">Contact Aplus Systems</h1>
+        <h1 data-i18n="contact_hero.h1">Get in Touch with Aplus Systems</h1>
         <p class="lead" data-i18n="contact_hero.lead">
-          Tell us about your studio or program. We’ll propose a practical plan and timeline.
+          We specialize in virtual studio integration, digital human production, and broadcast workflow design.
+          Tell us your project goals — we’ll help you build a reliable, creative system.
         </p>
       </div>
     </section>
 
-    <!-- 快速聯絡卡片 -->
-    <section class="section">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section alt">
       <div class="container">
-        <h2 data-i18n="contact.quick.title">Quick Reach</h2>
+        <h2 data-i18n="contact.title">Contact Channels</h2>
+        <p data-i18n="contact.desc">
+          Reach out through your preferred method below — our team will respond within one working day.
+        </p>
+
         <div class="contact-grid">
-          <a class="contact-card" href="mailto:hello@aplussys.co?subject=Inquiry%20from%20Website" rel="nofollow">
-            <img src="./assets/icons/mail.svg" alt="Email">
+          <!-- Email -->
+          <article class="contact-card">
+            <div class="contact-icon">📧</div>
             <h3>Email</h3>
-            <p class="muted" data-i18n="contact.quick.email">hello@aplussys.co</p>
-          </a>
+            <p><a href="mailto:aplusystem@gmail.com">aplusystem@gmail.com</a></p>
+          </article>
 
-          <a class="contact-card" href="https://wa.me/886900000000" target="_blank" rel="noopener">
-            <img src="./assets/icons/whatsapp.svg" alt="WhatsApp">
+          <!-- WhatsApp -->
+          <article class="contact-card">
+            <div class="contact-icon">💬</div>
             <h3>WhatsApp</h3>
-            <p class="muted" data-i18n="contact.quick.whats">Message on WhatsApp</p>
-          </a>
+            <p><a href="https://wa.me/60146672458" target="_blank">wa.me/60146672458</a></p>
+          </article>
 
-          <a class="contact-card" href="https://line.me/R/ti/p/" target="_blank" rel="noopener">
-            <img src="./assets/icons/line.svg" alt="LINE">
+          <!-- LINE -->
+          <article class="contact-card">
+            <div class="contact-icon">🟩</div>
             <h3>LINE</h3>
-            <p class="muted" data-i18n="contact.quick.line">Add on LINE</p>
-          </a>
+            <p><a href="https://lin.ee/Wn6fRoT" target="_blank">lin.ee/Wn6fRoT</a></p>
+          </article>
+        </div>
+
+        <div class="cta-row" style="margin-top: 24px;">
+          <a class="btn primary" href="mailto:aplusystem@gmail.com" data-i18n="contact.cta1">Send Inquiry</a>
+          <a class="btn ghost" href="https://wa.me/60146672458" target="_blank" data-i18n="contact.cta2">Chat on WhatsApp</a>
         </div>
       </div>
     </section>
 
-    <!-- 專案簡介表單（無後端版：mailto；要用表單服務時替換 action） -->
-    <section class="section alt">
+    <!-- Company Info -->
+    <section class="section company-info">
       <div class="container">
-        <h2 data-i18n="contact.form.title">Project Brief</h2>
-        <p class="muted" data-i18n="contact.form.desc">Share a few details so we can prepare suggestions before our call.</p>
-
-        <!-- 如果你要先用 mailto（無後端），保留這個 action="mailto:"；未來換 Formspree/自架 API 再改 action -->
-        <form id="contact-form" class="contact-form" action="mailto:hello@aplussys.co" method="post" enctype="text/plain">
-          <div class="form-row">
-            <label>
-              <span data-i18n="contact.form.name">Your Name</span>
-              <input type="text" name="name" placeholder="Your name" required>
-            </label>
-            <label>
-              <span data-i18n="contact.form.email">Email</span>
-              <input type="email" name="email" placeholder="you@example.com" required>
-            </label>
-          </div>
-
-          <div class="form-row">
-            <label class="full">
-              <span data-i18n="contact.form.org">Organization (optional)</span>
-              <input type="text" name="org" placeholder="Company / School">
-            </label>
-          </div>
-
-          <div class="form-row">
-            <label>
-              <span data-i18n="contact.form.type">Project Type</span>
-              <select name="type" required>
-                <option value="" disabled selected data-i18n="contact.form.type.placeholder">Select…</option>
-                <option value="virtual" data-i18n="contact.form.type.virtual">Virtual Studio</option>
-                <option value="tv" data-i18n="contact.form.type.tv">TV / Campus Broadcast</option>
-                <option value="digital" data-i18n="contact.form.type.digital">Digital Human / Lip-sync</option>
-                <option value="other" data-i18n="contact.form.type.other">Other</option>
-              </select>
-            </label>
-
-            <label>
-              <span data-i18n="contact.form.timeline">Target Timeline</span>
-              <select name="timeline">
-                <option value="" disabled selected data-i18n="contact.form.timeline.placeholder">Select…</option>
-                <option value="1-2m" data-i18n="contact.form.timeline.1">1–2 months</option>
-                <option value="3-6m" data-i18n="contact.form.timeline.2">3–6 months</option>
-                <option value="tbd"  data-i18n="contact.form.timeline.3">To be discussed</option>
-              </select>
-            </label>
-          </div>
-
-          <label class="full">
-            <span data-i18n="contact.form.message">What are you trying to achieve?</span>
-            <textarea name="message" rows="6" placeholder="Describe your scenario, room size, devices, or example programs…" required></textarea>
-          </label>
-
-          <!-- 簡單防機器：人類可讀，機器容易出錯 -->
-          <div class="form-row">
-            <label>
-              <span data-i18n="contact.form.human">Human check: 3 + 4 = ?</span>
-              <input type="number" name="human" placeholder="7" required>
-            </label>
-            <div></div>
-          </div>
-
-          <div class="cta-row">
-            <button type="submit" class="btn primary" data-i18n="contact.form.submit">Send</button>
-            <button type="button" class="btn ghost" id="copy-email" data-i18n="contact.form.copy">Copy Email</button>
-          </div>
-
-          <p id="form-note" class="form-note muted" aria-live="polite"></p>
-        </form>
-
-        <!-- 你若日後改用 Formspree，把 form 的 action 改成：
-             action="https://formspree.io/f/xxxxxxxx" method="POST"
-             並移除 enctype、改成標準 input name 即可 -->
-      </div>
-    </section>
-
-    <!-- FAQ / 承諾 -->
-    <section class="section">
-      <div class="container">
-        <h2 data-i18n="contact.faq.title">What to Expect</h2>
-        <ul class="expect">
-          <li data-i18n="contact.faq.1">We reply within 1–2 business days.</li>
-          <li data-i18n="contact.faq.2">We may propose a short discovery call to confirm scope and budget range.</li>
-          <li data-i18n="contact.faq.3">Your information is used only to respond to your inquiry.</li>
-        </ul>
+        <h3>Aplus Systems</h3>
+        <p>Broadcast Integration · Virtual Studio · Digital Human Solutions</p>
+        <p class="muted">Taipei, Taiwan — Serving clients across Asia</p>
       </div>
     </section>
   </main>
@@ -154,6 +86,5 @@
   <script src="./js/lang.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/lang-dropdown.js"></script>
-  <script src="./js/contact.js"></script>
 </body>
 </html>

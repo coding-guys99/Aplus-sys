@@ -2,81 +2,107 @@
 <html lang="en">
 <head>
   <!-- ========================================= -->
-  <!-- 🌐 Aplus Systems — Demos / Showcase Meta -->
+  <!-- 🌐 Aplus Systems — Demos / Showcase (Multi-language) -->
   <!-- ========================================= -->
 
-  <!-- 共用設定 -->
+  <!-- 基本設定 -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" href="./assets/favicon.png" />
   <meta name="theme-color" content="#0d0d0d" />
   <meta name="robots" content="index,follow" />
+  <link rel="icon" href="https://coding-guys99.github.io/Aplus-sys/assets/favicon.png" />
 
-  <!-- 共用 OG / Twitter -->
+  <!-- 語系設定：英文版；其他語言請調整 og:locale -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_TW" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="ms_MY" />
+
+  <!-- 四語 alternate（請依你的實際檔案路徑） -->
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/en/demos.html" hreflang="en" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh/demos.html" hreflang="zh-TW" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh-cn/demos.html" hreflang="zh-CN" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/ms/demos.html" hreflang="ms" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/demos.html" hreflang="x-default" />
+
+  <!-- =============================== -->
+  <!-- ✅ Demos 頁專屬 SEO（英文版範例） -->
+  <!-- =============================== -->
+  <title>Demo Showcase — Aplus Systems | Virtual Studio & Broadcast Integration</title>
+  <meta name="description"
+        content="Watch Aplus Systems’ demo videos — from virtual studio production to digital human workflows and KeySearch software showcases." />
+
+  <!-- OG / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Aplus Systems" />
-  <meta property="og:image" content="https://your-domain.com/assets/og/og-demos.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://your-domain.com/assets/og/og-demos.jpg" />
+  <meta property="og:title" content="Demo Showcase — Aplus Systems | Virtual Studio & Broadcast Integration" />
+  <meta property="og:description"
+        content="Explore real demos from Aplus Systems, including virtual studio integration, system setup, and broadcast workflow previews." />
+  <meta property="og:url" content="https://coding-guys99.github.io/Aplus-sys/demos.html" />
+  <meta property="og:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/demos-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-  <!-- 結構化資料：Organization（全站共用） -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Demo Showcase — Aplus Systems | Virtual Studio & Broadcast Integration" />
+  <meta name="twitter:description"
+        content="Explore real demos from Aplus Systems, including virtual studio integration, system setup, and broadcast workflow previews." />
+  <meta name="twitter:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/demos-1200x630.jpg" />
+
+  <link rel="canonical" href="https://coding-guys99.github.io/Aplus-sys/demos.html" />
+
+  <!-- =============================== -->
+  <!-- 🧭 結構化資料：Organization（全站共用） -->
+  <!-- =============================== -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Aplus Systems",
-    "url": "https://your-domain.com/",
-    "logo": "https://your-domain.com/assets/logo.svg",
-    "sameAs": [
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Aplus Systems",
+    "url":"https://coding-guys99.github.io/Aplus-sys/",
+    "logo":"https://coding-guys99.github.io/Aplus-sys/assets/logo.svg",
+    "sameAs":[
       "https://www.youtube.com/@wuyatheworld",
       "https://www.youtube.com/@heho"
     ]
   }
   </script>
 
-  <!-- 結構化資料：VideoObject（展示影片） -->
+  <!-- =============================== -->
+  <!-- 🎬 結構化資料：VideoObject（示例一則） -->
+  <!-- 如果本頁有多支影片，建議為每支影片各放一個 VideoObject 區塊 -->
+  <!-- =============================== -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    "name": "Virtual Studio Demo — Aplus Systems",
-    "description": "Showcase of Aplus Systems’ virtual studio integration, AI tracking cameras, and digital human production.",
-    "thumbnailUrl": "https://your-domain.com/assets/og/og-demos.jpg",
-    "uploadDate": "2025-01-10",
-    "embedUrl": "https://www.youtube.com/embed/iR4t_6PuiZI",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Aplus Systems",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://your-domain.com/assets/logo.svg"
+    "@context":"https://schema.org",
+    "@type":"VideoObject",
+    "name":"Virtual Studio Demo — Aplus Systems",
+    "description":"Showcase of Aplus Systems’ virtual studio integration, AI tracking cameras, and digital human production.",
+    "thumbnailUrl":"https://coding-guys99.github.io/Aplus-sys/assets/og/demos-1200x630.jpg",
+    "uploadDate":"2025-01-10",
+    "embedUrl":"https://www.youtube.com/embed/iR4t_6PuiZI",
+    "publisher":{
+      "@type":"Organization",
+      "name":"Aplus Systems",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://coding-guys99.github.io/Aplus-sys/assets/logo.svg"
       }
     }
   }
   </script>
 
   <!-- =============================== -->
-  <!-- ✅ Demos 頁專屬 SEO -->
+  <!-- 🎨 樣式載入 -->
   <!-- =============================== -->
-  <title data-i18n="meta.demos.title">Demo Showcase — Aplus Systems | Virtual Studio & Broadcast Integration</title>
-  <meta name="description" data-i18n="meta.demos.desc"
-        content="Watch Aplus Systems’ demo videos — from virtual studio production to digital human workflows and KeySearch software showcases." />
-  <meta property="og:title" content="Demo Showcase — Aplus Systems" />
-  <meta property="og:description"
-        content="Explore real demos from Aplus Systems, including virtual studio integration, system setup, and broadcast workflow previews." />
-  <meta property="og:url" content="https://your-domain.com/demos.html" />
-  <link rel="canonical" href="https://your-domain.com/demos.html" />
-
-  <!-- =============================== -->
-  <!-- ✅ 樣式載入 -->
-  <!-- =============================== -->
-  <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/theme.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)" />
-  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:1024px)" />
-  <link rel="stylesheet" href="./css/lang.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/base.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/theme.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/header.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/desktop.css" media="screen and (min-width:1025px)" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/mobile.css" media="screen and (max-width:1024px)" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/lang.css" />
 </head>
+
 
 <body>
   <!-- Header include -->

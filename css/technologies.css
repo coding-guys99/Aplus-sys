@@ -252,3 +252,15 @@
   width: 100%;
   height: 100%;
 }
+
+/* 強制還原 Header 的品牌 logo，不受 technologies.css 影響 */
+.site-header .brand-logo {
+  width: 28px !important;
+  height: 28px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+  filter: none;
+  opacity: 1;
+  transform: none;
+}

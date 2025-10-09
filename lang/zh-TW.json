@@ -327,7 +327,7 @@
   "brands": {
     "blackmagic": {
       "name": "Blackmagic Design",
-      "desc": "Blackmagic Design 提供經實戰驗證的專業工具，涵蓋導播切換、攝影機、擷取/輸出與後期製作。常見組合包含 ATEM 導播機（直播切換）、透過 SDI/NDI 的 URSA／Studio 攝影機、DeckLink 擷取卡與 HyperDeck 錄放機，並以 DaVinci Resolve 進行調色與完片。非常適合棚內製作、校園電視與混合型活動。",
+      "desc": "Blackmagic Design 提供完整的影視製播解決方案，涵蓋攝影機、導播機、擷取卡與後期軟體。以專業穩定與靈活擴充著稱，廣泛應用於導播室、校園電視台與混合製播系統。",
       "gallery": {
         "atem_mini": { "caption": "ATEM Mini Extreme ISO — live switcher core" },
         "studio_cam": { "caption": "Studio Camera 4K Pro G2" },
@@ -339,7 +339,7 @@
     },
     "synco": {
       "name": "SYNCO",
-      "desc": "SYNCO 提供輕巧的機頂與棚內麥克風，確保現場收音穩定可靠。常見用途：無線領夾套組用於訪談、指向性麥克風用於對話或旁白錄製。",
+      "desc": "SYNCO 為廣州智影科技旗下品牌，專注於無線與機頂麥克風系統，具備高穩定度與清晰收音品質。常用於訪談、教學與內容創作的現場錄製。",
       "gallery": {
         "g2a2": { "caption": "G2 A2 dual-channel wireless lav kit" },
         "d2_shotgun": { "caption": "MIC-D2 XLR shotgun mic" },
@@ -349,7 +349,7 @@
     },
     "unileader": {
       "name": "Uni-Leader",
-      "desc": "Uni-Leader 提供整合式廣播與虛擬攝影棚解決方案（硬體＋軟體），從影像切換（U-Caster 4K）、合成與字幕（U-CG），到棚控（U-Studio 4K）與遠距教學系統（U-Mooc）。",
+      "desc": "Uni-Leader（勵得數碼科技）提供整合式導播與虛擬棚系統，結合切換、CG 與自動化控制。Aplus 常用於校園與企業錄播室，打造高效率的一體化製播流程。",
       "gallery": {
         "u_caster_4k": { "caption": "U-Caster 4K — live switcher" },
         "u_studio_4k": { "caption": "U-Studio 4K — studio control" },
@@ -360,7 +360,7 @@
     },
     "obsbot": {
       "name": "OBSBOT",
-      "desc": "OBSBOT 專注於 AI 驅動的 PTZ 與追蹤攝影機，具備智慧取景、手勢控制與多模式追蹤功能，適用於攝影棚、直播與內容創作。",
+      "desc": "OBSBOT（睿魔智能）專注於 AI 自動追蹤攝影機，具備手勢控制與智能取景功能。適合遠距教學、小型棚內拍攝與個人內容創作的自動化製播環境。",
       "gallery": {
         "tiny_4k": { "caption": "OBSBOT Tiny 4K — AI PTZ webcam" },
         "tiny_2": { "caption": "OBSBOT Tiny 2 — multi-mode tracking" },
@@ -370,7 +370,7 @@
     },
     "acemic": {
       "name": "Acemic",
-      "desc": "Acemic（宏博音響）專精於無線麥克風系統、入耳式監聽與音訊傳輸模組，廣泛應用於舞台、教育、廣播、演出與錄音，提供穩定且抗干擾的音訊傳輸。",
+      "desc": "Acemic（深圳愛尚達電子）專精於無線麥克風與入耳監聽系統，強調穩定傳輸與抗干擾能力。廣泛應用於教育、舞台演出與廣播製作場景。",
       "gallery": {
         "wireless_8ch": { "caption": "8-channel wireless microphone system" },
         "iem_4ch": { "caption": "4-channel in-ear monitoring system" },
@@ -382,7 +382,7 @@
     },
     "yamaha": {
       "name": "Yamaha Mixer",
-      "desc": "Yamaha 提供完整系列專業級類比與數位調音台，適用於錄音棚、現場與廣播環境。常見系列包括 TF、DM、CL/QL、M7CL 與 RIVAGE，支援混音、路由、效果與場景召回。",
+      "desc": "Yamaha 提供從模擬到數位的專業混音器產品線，包含 TF、DM、CL、QL 與 RIVAGE 系列。以優異音質與高穩定性著稱，是錄音室與現場音訊系統的核心。",
       "gallery": {
         "tf5": { "caption": "TF5 digital mixer" },
         "dm3s": { "caption": "DM3S ultra-compact digital mixer" },
@@ -392,7 +392,7 @@
     },
     "mipro": {
       "name": "MIPRO",
-      "desc": "MIPRO 為台灣無線麥克風、行動音響與入耳監聽系統的先驅品牌。其專利 ACT（自動頻道對應）技術可快速同步發射器與接收器。",
+      "desc": "MIPRO 為台灣領先的無線音訊品牌，擁有 ACT 自動對頻技術與高可靠性傳輸。常見於學校、活動與企業會議，提供穩定清晰的無線收音解決方案。",
       "gallery": {
         "act32h": { "caption": "ACT-32H handheld wireless mic" },
         "act312": { "caption": "ACT-312 dual-channel receiver" },
@@ -402,7 +402,7 @@
     },
     "mls": {
       "name": "MLS LED (木林森)",
-      "desc": "MLS（木林森）專注於高品質 LED 顯示模組，應用於廣播牆、舞台牆與虛擬棚背景。模組支援高刷新率與細像素間距，提供清晰穩定的影像輸出。",
+      "desc": "木林森光顯專注於高刷新率與細點距 LED 顯示模組，應用於廣播背景牆、舞台大屏與 XR 虛擬製播環境。Aplus 採用其產品建立穩定亮麗的影像呈現。",
       "gallery": {
         "p1_92": { "caption": "1.92 mm LED module" },
         "p2_5": { "caption": "2.5 mm LED module" },
@@ -412,7 +412,7 @@
     },
     "obs": {
       "name": "OBS",
-      "desc": "OBS Studio 為免費開源的影片錄製與直播軟體，支援多重訊號源、畫面合成、外掛擴充、虛擬攝影機與即時場景切換。",
+      "desc": "OBS Studio 為開源直播與錄影軟體，支援多來源混合、插件擴充與虛擬攝影機功能。Aplus 常用於教育錄播與線上活動的彈性製播流程。",
       "gallery": {
         "ui": { "caption": "OBS Studio — main interface" },
         "plugin": { "caption": "OBS plugin / hotkey demo" },
@@ -422,7 +422,7 @@
     },
     "unreal": {
       "name": "Unreal Engine",
-      "desc": "Unreal Engine 是即時 3D 創作工具，廣泛用於遊戲、虛擬攝影棚與廣播圖像製作，支援虛擬場景、即時算繪與互動視覺。",
+      "desc": "Unreal Engine（虛幻引擎）為即時 3D 渲染平台，能實現高擬真虛擬製播與沉浸式視覺體驗。Aplus 以其作為虛擬棚與實景追蹤整合的核心引擎。",
       "gallery": {
         "vsnap": { "caption": "Virtual set screenshot" },
         "viz": { "caption": "Real-time rendering visual" },
@@ -432,7 +432,7 @@
     },
     "ndi": {
       "name": "NDI",
-      "desc": "NDI（Network Device Interface）是一種低延遲 IP 影像傳輸協定，可讓影像、音訊與中介資料於網路中共享，是現代廣播與內容製作流程的關鍵技術。",
+      "desc": "NDI（Network Device Interface）為低延遲 IP 視訊協定，可在網路中傳輸影音與控制訊號。是現代製播環境中實現靈活連線與遠端協作的關鍵技術。",
       "gallery": {
         "logo": { "caption": "NDI logo" },
         "diagram": { "caption": "NDI signal flow diagram" },
@@ -442,7 +442,7 @@
     },
     "streamdeck": {
       "name": "StreamDeck",
-      "desc": "StreamDeck 為硬體巨集控制器，可將按鍵對應至指令、快捷鍵或場景切換，大幅提升直播與操作效率。",
+      "desc": "StreamDeck（Elgato）為可自定義巨集控制器，可快速觸發場景切換、特效與工作流程命令。Aplus 在導播與虛擬棚系統中整合使用以提升操作效率。",
       "gallery": {
         "sd_32": { "caption": "StreamDeck 32-key" },
         "sd_xl": { "caption": "StreamDeck XL" },

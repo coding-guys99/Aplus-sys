@@ -1,10 +1,6 @@
 /* ======================================
    Technologies Page — Brand Grid + Modal
    ====================================== */
-
-
-
-
 /* ---------- General Intro ---------- */
 .tech-intro {
   color: var(--muted);
@@ -139,7 +135,7 @@
 /* Gallery tiles */
 .sheet-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 12px;
   margin-top: 12px;
 }

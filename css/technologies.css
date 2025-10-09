@@ -255,8 +255,8 @@
 
 /* 強制還原 Header 的品牌 logo，不受 technologies.css 影響 */
 .site-header .brand-logo {
-  width: 28px !important;
-  height: 28px !important;
+  width: 30px !important;
+  height: 30px !important;
   max-width: none !important;
   max-height: none !important;
   object-fit: contain;

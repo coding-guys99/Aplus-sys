@@ -326,127 +326,127 @@
   "brands": {
     "blackmagic": {
       "name": "Blackmagic Design",
-      "desc": "Blackmagic Design 提供在业界经过验证的专业工具，涵盖导播切换、摄影机、采集/输出与后期制作。常见配置包括用于直播的 ATEM 切换台、通过 SDI/NDI 的 URSA/Studio 摄影机、用于采集播放的 DeckLink 与 HyperDeck 录机，并以 DaVinci Resolve 进行调色与完片。非常适合用于演播室、校园电视与混合型活动。",
+      "desc": "Blackmagic Design 提供完整的视频制作与广播解决方案，涵盖摄像机、切换台、采集卡与后期软件。以专业稳定和灵活扩展著称，广泛应用于导播室、校园电视台与混合制作系统。",
       "gallery": {
-        "atem_mini": { "caption": "ATEM Mini Extreme ISO — live switcher core" },
-        "studio_cam": { "caption": "Studio Camera 4K Pro G2" },
-        "ursa_bcast": { "caption": "URSA Broadcast G2" },
-        "decklink": { "caption": "DeckLink 8K Pro — capture/output" },
-        "hyperdeck": { "caption": "HyperDeck Studio HD — recording/playout" },
-        "resolve": { "caption": "DaVinci Resolve — color & finishing" }
+        "atem_mini": { "caption": "ATEM Mini Extreme ISO 导播核心系统" },
+        "studio_cam": { "caption": "Studio Camera 4K Pro G2 专业摄像机" },
+        "ursa_bcast": { "caption": "URSA Broadcast G2 广播级摄像机" },
+        "decklink": { "caption": "DeckLink 8K Pro 采集／输出卡" },
+        "hyperdeck": { "caption": "HyperDeck Studio HD 录播／回放机" },
+        "resolve": { "caption": "DaVinci Resolve 调色与后期软件" }
       }
     },
     "synco": {
       "name": "SYNCO",
-      "desc": "SYNCO 提供小型机顶与棚内麦克风，确保现场录音稳定可靠。常用于无线领夹麦套装采访录音，以及枪式麦克风对话或配音录制。",
+      "desc": "SYNCO 是广州智影科技旗下品牌，专注于无线与机顶麦克风系统，具备高稳定性与清晰拾音效果。常用于访谈、教学与内容创作的现场录制。",
       "gallery": {
-        "g2a2": { "caption": "G2 A2 dual-channel wireless lav kit" },
-        "d2_shotgun": { "caption": "MIC-D2 XLR shotgun mic" },
-        "d30": { "caption": "D30 on-camera shotgun" },
-        "accessories": { "caption": "Windshields, cold shoes, cables" }
+        "g2a2": { "caption": "G2 A2 双通道无线麦克风套装" },
+        "d2_shotgun": { "caption": "MIC-D2 XLR 指向性麦克风" },
+        "d30": { "caption": "D30 机顶电容麦克风" },
+        "accessories": { "caption": "防风罩、冷靴座、连接线配件" }
       }
     },
     "unileader": {
       "name": "Uni-Leader",
-      "desc": "Uni-Leader 提供整合式广播与虚拟演播室解决方案（软硬件一体），涵盖切换（U-Caster 4K）、合成与字幕（U-CG）、棚控（U-Studio 4K）与远程教学系统（U-Mooc）。",
+      "desc": "Uni-Leader（励得数码科技）提供一体化的导播与虚拟演播室系统，结合切换、CG 与自动化控制。Aplus 常用于校园与企业录播室，打造高效的一站式制作流程。",
       "gallery": {
-        "u_caster_4k": { "caption": "U-Caster 4K — live switcher" },
-        "u_studio_4k": { "caption": "U-Studio 4K — studio control" },
-        "u_cg": { "caption": "U-CG — compositing & graphics" },
-        "u_meta_v": { "caption": "U-Meta V — virtual studio" },
-        "u_mooc": { "caption": "U-Mooc — e-learning module" }
+        "u_caster_4k": { "caption": "U-Caster 4K 导播切换系统" },
+        "u_studio_4k": { "caption": "U-Studio 4K 控制与管理平台" },
+        "u_cg": { "caption": "U-CG 字幕与图文合成系统" },
+        "u_meta_v": { "caption": "U-Meta V 虚拟演播室系统" },
+        "u_mooc": { "caption": "U-Mooc 在线教学模块" }
       }
     },
     "obsbot": {
       "name": "OBSBOT",
-      "desc": "OBSBOT 专注于 AI 驱动的 PTZ 与追踪摄像机，具备智能取景、手势控制与多模式追踪功能，适用于演播室、直播与内容创作。",
+      "desc": "OBSBOT（睿魔智能）专注于 AI 自动追踪摄像机，具备手势控制与智能取景功能。适用于远程教学、小型棚内拍摄与个人内容创作的自动化制作环境。",
       "gallery": {
-        "tiny_4k": { "caption": "OBSBOT Tiny 4K — AI PTZ webcam" },
-        "tiny_2": { "caption": "OBSBOT Tiny 2 — multi-mode tracking" },
-        "tail_air": { "caption": "OBSBOT Tail Air — streaming PTZ" },
-        "tiny_se": { "caption": "OBSBOT Tiny SE — 1080p tracking webcam" }
+        "tiny_4k": { "caption": "OBSBOT Tiny 4K AI 摄像机" },
+        "tiny_2": { "caption": "OBSBOT Tiny 2 多模式追踪摄像机" },
+        "tail_air": { "caption": "OBSBOT Tail Air 直播用 PTZ 摄像机" },
+        "tiny_se": { "caption": "OBSBOT Tiny SE 1080p 追踪摄像机" }
       }
     },
     "acemic": {
       "name": "Acemic",
-      "desc": "Acemic（宏博音响）专注于无线麦克风、入耳监听与音频传输模块，广泛用于舞台、教育、广播、演出与录音场合，提供稳定且抗干扰的音频链路。",
+      "desc": "Acemic（深圳爱尚达电子）专注于无线麦克风与入耳监听系统，强调稳定传输与抗干扰性能。广泛应用于教育、舞台表演与广播制作场景。",
       "gallery": {
-        "wireless_8ch": { "caption": "8-channel wireless microphone system" },
-        "iem_4ch": { "caption": "4-channel in-ear monitoring system" },
-        "ad900": { "caption": "AD-900 antenna distribution" },
-        "ad600": { "caption": "AD-600 antenna/IEM distribution" },
-        "g4": { "caption": "G4 series wireless microphone" },
-        "em_d01": { "caption": "EM-D01 single-channel IEM" }
+        "wireless_8ch": { "caption": "8 通道无线麦克风系统" },
+        "iem_4ch": { "caption": "4 通道入耳式监听系统" },
+        "ad900": { "caption": "AD-900 天线分配器" },
+        "ad600": { "caption": "AD-600 天线／IEM 分配模块" },
+        "g4": { "caption": "G4 系列无线麦克风" },
+        "em_d01": { "caption": "EM-D01 单通道入耳监听器" }
       }
     },
     "yamaha": {
       "name": "Yamaha Mixer",
-      "desc": "Yamaha 提供完整系列的专业模拟与数字调音台，适用于录音棚、现场与广播环境。常见型号包括 TF、DM、CL/QL、M7CL 与 RIVAGE 系列，支持混音、路由、特效与场景召回。",
+      "desc": "Yamaha 提供从模拟到数字的专业调音台产品线，包括 TF、DM、CL、QL 与 RIVAGE 系列。以卓越音质与高稳定性著称，是录音棚与现场音频系统的核心设备。",
       "gallery": {
-        "tf5": { "caption": "TF5 digital mixer" },
-        "dm3s": { "caption": "DM3S ultra-compact digital mixer" },
-        "m7cl": { "caption": "M7CL digital mixing console" },
-        "ql5": { "caption": "QL5 digital mixer" }
+        "tf5": { "caption": "TF5 数字调音台" },
+        "dm3s": { "caption": "DM3S 迷你型数字调音台" },
+        "m7cl": { "caption": "M7CL 专业调音控制台" },
+        "ql5": { "caption": "QL5 数字调音控制台" }
       }
     },
     "mipro": {
       "name": "MIPRO",
-      "desc": "MIPRO 是台湾无线麦克风、便携音响与入耳监听系统的先驱品牌。其专利 ACT（自动频道配对）技术可快速同步发射器与接收器。",
+      "desc": "MIPRO 是台湾领先的无线音频品牌，拥有 ACT 自动对频技术与高可靠性传输。常用于学校、活动与企业会议，提供稳定清晰的无线收音解决方案。",
       "gallery": {
-        "act32h": { "caption": "ACT-32H handheld wireless mic" },
-        "act312": { "caption": "ACT-312 dual-channel receiver" },
-        "mi58": { "caption": "MI-58 digital IEM system" },
-        "ad900": { "caption": "AD-900 antenna distribution module" }
+        "act32h": { "caption": "ACT-32H 手持无线麦克风" },
+        "act312": { "caption": "ACT-312 双通道接收器" },
+        "mi58": { "caption": "MI-58 数字入耳监听系统" },
+        "ad900": { "caption": "AD-900 天线分配模块" }
       }
     },
     "mls": {
       "name": "MLS LED (木林森)",
-      "desc": "MLS（木林森）专精高品质 LED 显示模组，用于广播视频墙、舞台背景与虚拟布景。模块支持高刷新率与细致像素间距，提供清晰流畅的画面输出。",
+      "desc": "木林森光显专注于高刷新率与细像素间距 LED 显示模块，应用于广播背景墙、舞台大屏与 XR 虚拟制作环境。Aplus 采用其产品构建稳定亮丽的影像呈现。",
       "gallery": {
-        "p1_92": { "caption": "1.92 mm LED module" },
-        "p2_5": { "caption": "2.5 mm LED module" },
-        "wall": { "caption": "LED wall assembly" },
-        "ctrl": { "caption": "LED controller/interface" }
+        "p1_92": { "caption": "1.92mm LED 显示模块" },
+        "p2_5": { "caption": "2.5mm LED 显示模块" },
+        "wall": { "caption": "LED 墙拼接展示" },
+        "ctrl": { "caption": "LED 控制器／接口模块" }
       }
     },
     "obs": {
       "name": "OBS",
-      "desc": "OBS Studio 是一款免费开源的视频录制与直播软件，支持多视频源、画面合成、插件扩展、虚拟摄像头与实时场景切换。",
+      "desc": "OBS Studio 是开源的直播与录制软件，支持多源混合、插件扩展与虚拟摄像功能。Aplus 常用于教育录播与线上活动的灵活制作流程。",
       "gallery": {
-        "ui": { "caption": "OBS Studio — main interface" },
-        "plugin": { "caption": "OBS plugin / hotkey demo" },
-        "output": { "caption": "Streaming/recording output" },
-        "multisc": { "caption": "Multi-scene switching" }
+        "ui": { "caption": "OBS Studio 主界面" },
+        "plugin": { "caption": "OBS 插件与快捷键示例" },
+        "output": { "caption": "直播与录制输出界面" },
+        "multisc": { "caption": "多场景切换操作" }
       }
     },
     "unreal": {
       "name": "Unreal Engine",
-      "desc": "Unreal Engine 是实时 3D 创作工具，用于游戏、虚拟棚与广播图形制作。支持虚拟场景、实时渲染与互动视觉。",
+      "desc": "Unreal Engine（虚幻引擎）是一款实时 3D 渲染平台，可实现高拟真虚拟制作与沉浸式视觉体验。Aplus 以其作为虚拟演播室与实景追踪整合的核心引擎。",
       "gallery": {
-        "vsnap": { "caption": "Virtual set screenshot" },
-        "viz": { "caption": "Real-time rendering visual" },
-        "graph": { "caption": "Material/graph editor" },
-        "liveset": { "caption": "Live virtual scene setup" }
+        "vsnap": { "caption": "虚拟演播室画面截图" },
+        "viz": { "caption": "实时渲染视觉" },
+        "graph": { "caption": "材质与节点编辑器" },
+        "liveset": { "caption": "虚拟场景搭建示例" }
       }
     },
     "ndi": {
       "name": "NDI",
-      "desc": "NDI（Network Device Interface）是一种低延迟的 IP 视频协议，使视频源、音频与元数据可在网络中共享，是现代广播与内容制作工作流的核心技术之一。",
+      "desc": "NDI（Network Device Interface）是一种低延迟 IP 视频协议，可在网络中传输音视频与控制信号。是现代制作环境中实现灵活连接与远程协作的关键技术。",
       "gallery": {
-        "logo": { "caption": "NDI logo" },
-        "diagram": { "caption": "NDI signal flow diagram" },
-        "mixer": { "caption": "NDI integration with switchers" },
-        "capture": { "caption": "NDI capture/output hardware" }
+        "logo": { "caption": "NDI 标志" },
+        "diagram": { "caption": "NDI 信号流程图" },
+        "mixer": { "caption": "NDI 与导播系统集成示例" },
+        "capture": { "caption": "NDI 采集与输出设备" }
       }
     },
     "streamdeck": {
       "name": "StreamDeck",
-      "desc": "StreamDeck 是一款硬件宏控制器，可将按钮映射为动作、快捷键或场景切换，大幅提升直播与操作效率。",
+      "desc": "StreamDeck（Elgato）是一款可自定义的宏控制器，可快速触发场景切换、特效与工作流指令。Aplus 在导播与虚拟演播系统中集成使用以提升操作效率。",
       "gallery": {
-        "sd_32": { "caption": "StreamDeck 32-key" },
-        "sd_xl": { "caption": "StreamDeck XL" },
-        "sd_mob": { "caption": "StreamDeck Mobile app" },
-        "sd_pro": { "caption": "StreamDeck Pro" }
+        "sd_32": { "caption": "StreamDeck 32 键版" },
+        "sd_xl": { "caption": "StreamDeck XL 扩展版" },
+        "sd_mob": { "caption": "StreamDeck Mobile 移动应用" },
+        "sd_pro": { "caption": "StreamDeck Pro 专业控制器" }
       }
     }
   }

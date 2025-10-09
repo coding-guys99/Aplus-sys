@@ -2,48 +2,65 @@
 <html lang="en">
 <head>
   <!-- =============================== -->
-  <!--  Aplus Systems — Services -->
+  <!--  Aplus Systems — Services (Multi-language) -->
   <!-- =============================== -->
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <link rel="icon" href="./assets/favicon.png"/>
   <meta name="theme-color" content="#0d0d0d"/>
   <meta name="robots" content="index,follow"/>
+  <link rel="icon" href="https://coding-guys99.github.io/Aplus-sys/assets/favicon.png"/>
 
-  <!-- ✅ Page SEO -->
-  <title data-i18n="meta.services.title">
-    Services — Aplus Systems | Virtual Studio & Broadcast Integration
-  </title>
-  <meta name="description" data-i18n="meta.services.desc"
+  <!-- 🌍 語系設定（此為英文版；其他語言請調整 og:locale） -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:locale:alternate" content="zh_TW"/>
+  <meta property="og:locale:alternate" content="zh_CN"/>
+  <meta property="og:locale:alternate" content="ms_MY"/>
+
+  <!-- hreflang（請依你的實際檔案結構放置到對應資料夾） -->
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/services.html" hreflang="x-default"/>
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/en/services.html" hreflang="en"/>
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh/services.html" hreflang="zh-TW"/>
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh-cn/services.html" hreflang="zh-CN"/>
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/ms/services.html" hreflang="ms"/>
+
+  <!-- ✅ Page SEO（英文版範例） -->
+  <title>Services — Aplus Systems | Virtual Studio & Broadcast Integration</title>
+  <meta name="description"
         content="End-to-end services: virtual studio integration, TV & campus broadcast setup, and digital human video production. Clear scope, deliverables, and support."/>
 
   <!-- ✅ Canonical -->
-  <link rel="canonical" href="https://your-domain.com/services.html"/>
+  <link rel="canonical" href="https://coding-guys99.github.io/Aplus-sys/services.html"/>
 
   <!-- ✅ Open Graph / Twitter -->
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Aplus Systems"/>
-  <meta property="og:title" content="Services — Aplus Systems"/>
+  <meta property="og:title" content="Services — Aplus Systems | Virtual Studio & Broadcast Integration"/>
   <meta property="og:description"
         content="Virtual studio integration, broadcast setup, and digital human videos — from planning to on-air."/>
-  <meta property="og:url" content="https://your-domain.com/services.html"/>
-  <meta property="og:image" content="https://your-domain.com/assets/og/og-services.jpg"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="https://your-domain.com/assets/og/og-services.jpg"/>
+  <meta property="og:url" content="https://coding-guys99.github.io/Aplus-sys/services.html"/>
+  <meta property="og:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/services-1200x630.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
-  <!-- ✅ Structured Data: Breadcrumb -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Services — Aplus Systems | Virtual Studio & Broadcast Integration"/>
+  <meta name="twitter:description"
+        content="Virtual studio integration, broadcast setup, and digital human videos — from planning to on-air."/>
+  <meta name="twitter:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/services-1200x630.jpg"/>
+
+  <!-- ✅ Structured Data: Breadcrumb（改絕對 URL） -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"BreadcrumbList",
     "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://your-domain.com/"},
-      {"@type":"ListItem","position":2,"name":"Services","item":"https://your-domain.com/services.html"}
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://coding-guys99.github.io/Aplus-sys/"},
+      {"@type":"ListItem","position":2,"name":"Services","item":"https://coding-guys99.github.io/Aplus-sys/services.html"}
     ]
   }
   </script>
 
-  <!-- ✅ Structured Data: Services（3 大服務 + 起價描述） -->
+  <!-- ✅ Structured Data: Services（改絕對 URL、保留價格幣別結構） -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -55,7 +72,7 @@
         "name":"Virtual Studio Integration",
         "serviceType":"Systems Integration",
         "description":"Chroma keying, camera tracking, NDI/SDI/IP routing, and control surface setup with SOP & training.",
-        "provider":{"@type":"Organization","name":"Aplus Systems","url":"https://your-domain.com/"},
+        "provider":{"@type":"Organization","name":"Aplus Systems","url":"https://coding-guys99.github.io/Aplus-sys/"},
         "areaServed":{"@type":"Place","name":"Taiwan & Remote"},
         "offers":{
           "@type":"Offer",
@@ -68,7 +85,7 @@
         "name":"TV & Campus Broadcast Setup",
         "serviceType":"Studio Build & Commissioning",
         "description":"One-stop planning, equipment selection, wiring, commissioning and operator training for educational or corporate studios.",
-        "provider":{"@type":"Organization","name":"Aplus Systems"},
+        "provider":{"@type":"Organization","name":"Aplus Systems","url":"https://coding-guys99.github.io/Aplus-sys/"},
         "areaServed":{"@type":"Place","name":"Taiwan & Remote"},
         "offers":{
           "@type":"Offer",
@@ -81,7 +98,7 @@
         "name":"Digital Human Video Production",
         "serviceType":"Automated Content Production",
         "description":"AI voice, lip-sync pipeline, and 3D scene integration for efficient long-form presentation and scheduling.",
-        "provider":{"@type":"Organization","name":"Aplus Systems"},
+        "provider":{"@type":"Organization","name":"Aplus Systems","url":"https://coding-guys99.github.io/Aplus-sys/"},
         "areaServed":{"@type":"Place","name":"Taiwan & Remote"},
         "offers":{
           "@type":"Offer",
@@ -93,21 +110,22 @@
     "publisher":{
       "@type":"Organization",
       "name":"Aplus Systems",
-      "url":"https://your-domain.com/",
-      "logo":{"@type":"ImageObject","url":"https://your-domain.com/assets/logo.svg"}
+      "url":"https://coding-guys99.github.io/Aplus-sys/",
+      "logo":{"@type":"ImageObject","url":"https://coding-guys99.github.io/Aplus-sys/assets/logo.svg"}
     }
   }
   </script>
 
-  <!-- ✅ Styles -->
-  <link rel="stylesheet" href="./css/base.css"/>
-  <link rel="stylesheet" href="./css/theme.css"/>
-  <link rel="stylesheet" href="./css/header.css"/>
-  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)"/>
-  <link rel="stylesheet" href="./css/mobile.css"  media="screen and (max-width:1024px)"/>
-  <link rel="stylesheet" href="./css/lang.css"/>
-  <link rel="stylesheet" href="./css/services.css"/>
+  <!-- ✅ Styles（改絕對路徑避免相對路徑問題） -->
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/base.css"/>
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/theme.css"/>
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/header.css"/>
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/desktop.css" media="screen and (min-width:1025px)"/>
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/mobile.css"  media="screen and (max-width:1024px)"/>
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/lang.css"/>
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/services.css"/>
 </head>
+
 
 <body>
   <!-- Header -->

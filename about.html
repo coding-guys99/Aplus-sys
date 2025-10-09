@@ -2,31 +2,70 @@
 <html lang="en">
 <head>
   <!-- ========================================= -->
-  <!-- 🌐 Aplus Systems — Global Meta Template -->
+  <!-- 🌐 Aplus Systems — Global Multi-language Head -->
   <!-- ========================================= -->
 
-  <!-- 共用設定 -->
+  <!-- 基本設定 -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" href="./assets/favicon.png" />
   <meta name="theme-color" content="#0d0d0d" />
+  <link rel="icon" href="https://coding-guys99.github.io/Aplus-sys/assets/favicon.png" />
 
-  <!-- 共用 Open Graph / Twitter 資訊 -->
+  <!-- =============================== -->
+  <!-- 🌍 語系設定（依頁面版本修改） -->
+  <!-- =============================== -->
+  <!-- English 版示例 -->
+  <!-- 中文版請將 <html lang="en"> 改為 zh-TW / zh-CN / ms -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_TW" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="ms_MY" />
+
+  <!-- Alternate hreflang Links -->
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/en/about.html" hreflang="en" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh/about.html" hreflang="zh-TW" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh-cn/about.html" hreflang="zh-CN" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/ms/about.html" hreflang="ms" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/about.html" hreflang="x-default" />
+
+  <!-- =============================== -->
+  <!-- ✅ 頁面專屬 SEO 區（以 About 為例） -->
+  <!-- =============================== -->
+  <title>About — Aplus Systems | System Integration & Broadcast Solutions</title>
+  <meta name="description"
+        content="Aplus Systems provides professional virtual studio and broadcast integration services. Learn about our background, expertise, and system design experience." />
+
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Aplus Systems" />
-  <meta property="og:image" content="https://your-domain.com/assets/og/og-default.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://your-domain.com/assets/og/og-default.jpg" />
+  <meta property="og:title" content="About — Aplus Systems | System Integration & Broadcast Solutions" />
+  <meta property="og:description"
+        content="Discover Aplus Systems — founded by engineer Andy, delivering end-to-end integration for virtual studios, campus TV, and digital human production." />
+  <meta property="og:url" content="https://coding-guys99.github.io/Aplus-sys/about.html" />
+  <meta property="og:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/about-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-  <!-- 結構化資料：組織資訊 -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About — Aplus Systems | System Integration & Broadcast Solutions" />
+  <meta name="twitter:description"
+        content="Discover Aplus Systems — founded by engineer Andy, delivering end-to-end integration for virtual studios, campus TV, and digital human production." />
+  <meta name="twitter:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/about-1200x630.jpg" />
+
+  <link rel="canonical" href="https://coding-guys99.github.io/Aplus-sys/about.html" />
+
+  <!-- =============================== -->
+  <!-- 📘 結構化資料（Organization） -->
+  <!-- =============================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Aplus Systems",
-    "url": "https://your-domain.com/",
-    "logo": "https://your-domain.com/assets/logo.svg",
+    "url": "https://coding-guys99.github.io/Aplus-sys/",
+    "logo": "https://coding-guys99.github.io/Aplus-sys/assets/logo.svg",
     "description": "Aplus Systems — System Integration & Broadcast Consultancy. Specializing in virtual studios, digital humans, and on-air workflows.",
+    "availableLanguage": ["en", "zh-TW", "zh-CN", "ms"],
     "sameAs": [
       "https://www.youtube.com/@wuyatheworld",
       "https://www.youtube.com/@heho"
@@ -40,44 +79,34 @@
   }
   </script>
 
-  <!-- 結構化資料：網站搜尋 -->
+  <!-- =============================== -->
+  <!-- 🔍 結構化資料（WebSite） -->
+  <!-- =============================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://your-domain.com/",
+    "url": "https://coding-guys99.github.io/Aplus-sys/",
+    "inLanguage": "en",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://your-domain.com/search?q={query}",
+      "target": "https://coding-guys99.github.io/Aplus-sys/search?q={query}",
       "query-input": "required name=query"
     }
   }
   </script>
 
-  <!-- ========================================= -->
-  <!-- ✅ 關於頁專屬 SEO 區 -->
-  <!-- ========================================= -->
-
-  <title data-i18n="meta.about.title">About — Aplus Systems | System Integration & Broadcast Solutions</title>
-  <meta name="description" data-i18n="meta.about.desc"
-        content="Aplus Systems provides professional virtual studio and broadcast integration services. Learn about our background, expertise, and system design experience." />
-  <meta property="og:title" content="About — Aplus Systems | System Integration & Broadcast Solutions" />
-  <meta property="og:description"
-        content="Discover Aplus Systems — founded by engineer Andy, delivering end-to-end integration for virtual studios, campus TV, and digital human production." />
-  <meta property="og:url" content="https://your-domain.com/about.html" />
-  <link rel="canonical" href="https://your-domain.com/about.html" />
-
-  <!-- ========================================= -->
-  <!-- ✅ 樣式載入區 -->
-  <!-- ========================================= -->
-
-  <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/theme.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)" />
-  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:1024px)" />
-  <link rel="stylesheet" href="./css/lang.css" />
+  <!-- =============================== -->
+  <!-- 🎨 樣式載入區 -->
+  <!-- =============================== -->
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/base.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/theme.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/header.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/desktop.css" media="screen and (min-width:1025px)" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/mobile.css" media="screen and (max-width:1024px)" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/lang.css" />
 </head>
+
 
 <body>
   <!-- Header -->

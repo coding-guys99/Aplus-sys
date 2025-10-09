@@ -323,142 +323,130 @@
     "disclaimer_body": "All trademarks, logos, and brand names are the property of their respective owners. They are used solely for descriptive and reference purposes to illustrate technologies that Aplus Systems has worked with or integrated in professional projects. This site is not affiliated with, endorsed by, or sponsored by any of the mentioned brands."
   },
   
-
   "brands": {
     "blackmagic": {
       "name": "Blackmagic Design",
-      "desc": "Blackmagic Design delivers production-proven tools across switching, cameras, capture/IO and post. Typical builds include ATEM switchers for live production, URSA/Studio cameras over SDI/NDI, DeckLink for ingest/playout, and HyperDeck recorders, with DaVinci Resolve for color and finishing. Ideal for studio, campus TV and hybrid events.",
+      "desc": "Blackmagic Design provides a complete range of video production and broadcast solutions — covering cameras, switchers, capture cards, and post-production software. Known for reliability and flexibility, it is widely used in control rooms, campus TV stations, and hybrid production systems.",
       "gallery": {
-        "atem_mini":  { "caption": "ATEM Mini Extreme ISO — live switcher core" },
-        "studio_cam": { "caption": "Studio Camera 4K Pro G2" },
-        "ursa_bcast": { "caption": "URSA Broadcast G2" },
-        "decklink":   { "caption": "DeckLink 8K Pro — capture/output" },
-        "hyperdeck":  { "caption": "HyperDeck Studio HD — recording/playout" },
-        "resolve":    { "caption": "DaVinci Resolve — color & finishing" }
+        "atem_mini": { "caption": "ATEM Mini Extreme ISO — Core switching system" },
+        "studio_cam": { "caption": "Studio Camera 4K Pro G2 — Professional camera" },
+        "ursa_bcast": { "caption": "URSA Broadcast G2 — Broadcast-grade camera" },
+        "decklink": { "caption": "DeckLink 8K Pro — Capture/output card" },
+        "hyperdeck": { "caption": "HyperDeck Studio HD — Recording/playout unit" },
+        "resolve": { "caption": "DaVinci Resolve — Color and post-production software" }
       }
     },
-
     "synco": {
       "name": "SYNCO",
-      "desc": "Compact on-camera and studio microphones for reliable on-set capture. Common use: wireless lav kits for interviews, and shotgun mics for dialogue/VO.",
+      "desc": "SYNCO, a brand under Zhiying Technology (Guangzhou), specializes in wireless and on-camera microphones with stable and clear sound quality. Commonly used in interviews, education, and content creation setups.",
       "gallery": {
-        "g2a2":        { "caption": "G2 A2 dual-channel wireless lav kit" },
-        "d2_shotgun":  { "caption": "MIC-D2 XLR shotgun mic" },
-        "d30":         { "caption": "D30 on-camera shotgun" },
-        "accessories": { "caption": "Windshields, cold shoes, cables" }
+        "g2a2": { "caption": "G2 A2 — Dual-channel wireless microphone set" },
+        "d2_shotgun": { "caption": "MIC-D2 XLR — Directional shotgun microphone" },
+        "d30": { "caption": "D30 — On-camera condenser microphone" },
+        "accessories": { "caption": "Windshields, cold shoe mounts, and connection cables" }
       }
     },
-
     "unileader": {
       "name": "Uni-Leader",
-      "desc": "Uni-Leader provides integrated broadcast and virtual studio solutions — hardware + software — from camera switching (U-Caster 4K), compositing & CG (U-CG), to studio control (U-Studio 4K) and real-time remote learning (U-Mooc).",
+      "desc": "Uni-Leader (Lide Digital Technology) delivers integrated switching and virtual studio systems that combine video switching, CG, and automation control. Aplus frequently implements Uni-Leader setups for schools and enterprises, enabling efficient all-in-one production workflows.",
       "gallery": {
-        "u_caster_4k": { "caption": "U-Caster 4K — live switcher" },
-        "u_studio_4k": { "caption": "U-Studio 4K — studio control" },
-        "u_cg":        { "caption": "U-CG — compositing & graphics" },
-        "u_meta_v":    { "caption": "U-Meta V — virtual studio" },
-        "u_mooc":      { "caption": "U-Mooc — e-learning module" }
+        "u_caster_4k": { "caption": "U-Caster 4K — Live switching system" },
+        "u_studio_4k": { "caption": "U-Studio 4K — Control and management platform" },
+        "u_cg": { "caption": "U-CG — Subtitle and graphics compositing system" },
+        "u_meta_v": { "caption": "U-Meta V — Virtual studio system" },
+        "u_mooc": { "caption": "U-Mooc — Online learning module" }
       }
     },
-
     "obsbot": {
       "name": "OBSBOT",
-      "desc": "OBSBOT focuses on AI-powered PTZ and tracking cameras, offering smart framing, gesture control, and multi-mode tracking for studio, live streaming, and content creation.",
+      "desc": "OBSBOT focuses on AI-powered tracking cameras featuring gesture control and smart framing. Ideal for remote teaching, compact studio recording, and automated personal content creation environments.",
       "gallery": {
-        "tiny_4k":  { "caption": "OBSBOT Tiny 4K — AI PTZ webcam" },
-        "tiny_2":   { "caption": "OBSBOT Tiny 2 — multi-mode tracking" },
-        "tail_air": { "caption": "OBSBOT Tail Air — streaming PTZ" },
-        "tiny_se":  { "caption": "OBSBOT Tiny SE — 1080p tracking webcam" }
+        "tiny_4k": { "caption": "OBSBOT Tiny 4K — AI tracking camera" },
+        "tiny_2": { "caption": "OBSBOT Tiny 2 — Multi-mode tracking camera" },
+        "tail_air": { "caption": "OBSBOT Tail Air — PTZ camera for live streaming" },
+        "tiny_se": { "caption": "OBSBOT Tiny SE — 1080p tracking camera" }
       }
     },
-
     "acemic": {
       "name": "Acemic",
-      "desc": "Acemic (Honbo Audio) specialises in wireless microphone systems, in-ear monitor systems, and related audio transmission modules. Products are widely used in stage, education, broadcast, performance, and recording setups for stable, interference-resistant audio pipelines.",
+      "desc": "Acemic (Shenzhen Aishangda Electronics) specializes in wireless microphone and in-ear monitoring systems, emphasizing stable transmission and anti-interference performance. Widely used in education, stage performances, and broadcast production environments.",
       "gallery": {
         "wireless_8ch": { "caption": "8-channel wireless microphone system" },
-        "iem_4ch":      { "caption": "4-channel in-ear monitoring system" },
-        "ad900":        { "caption": "AD-900 antenna distribution" },
-        "ad600":        { "caption": "AD-600 antenna/IEM distribution" },
-        "g4":           { "caption": "G4 series wireless microphone" },
-        "em_d01":       { "caption": "EM-D01 single-channel IEM" }
+        "iem_4ch": { "caption": "4-channel in-ear monitoring system" },
+        "ad900": { "caption": "AD-900 — Antenna distribution unit" },
+        "ad600": { "caption": "AD-600 — Antenna/IEM distribution module" },
+        "g4": { "caption": "G4 Series — Wireless microphone" },
+        "em_d01": { "caption": "EM-D01 — Single-channel in-ear monitor" }
       }
     },
-
     "yamaha": {
       "name": "Yamaha Mixer",
-      "desc": "Yamaha offers a full line of professional analog and digital mixers tailored for studio, live, and broadcast environments. Popular lines include the TF, DM, CL/QL, M7CL, and RIVAGE series for mixing, routing, effects, and recall workflows.",
+      "desc": "Yamaha offers a full range of professional analog and digital mixers, including the TF, DM, CL, QL, and RIVAGE series. Renowned for audio clarity and stability, Yamaha mixers are central to studio and live sound systems worldwide.",
       "gallery": {
-        "tf5":  { "caption": "TF5 digital mixer" },
-        "dm3s": { "caption": "DM3S ultra-compact digital mixer" },
-        "m7cl": { "caption": "M7CL digital mixing console" },
-        "ql5":  { "caption": "QL5 digital mixer" }
+        "tf5": { "caption": "TF5 — Digital mixing console" },
+        "dm3s": { "caption": "DM3S — Compact digital mixer" },
+        "m7cl": { "caption": "M7CL — Professional audio mixing console" },
+        "ql5": { "caption": "QL5 — Digital audio console" }
       }
     },
-
     "mipro": {
       "name": "MIPRO",
-      "desc": "MIPRO is a Taiwanese pioneer in wireless microphone, portable PA, and in-ear monitoring systems. Their patented ACT (Automatic Channel Targeting) enables fast syncing between transmitters and receivers.",
+      "desc": "MIPRO is a leading Taiwanese brand in wireless audio systems, featuring patented ACT (Automatic Channel Targeting) technology and reliable transmission. Commonly used in schools, events, and corporate meetings for stable and clear wireless sound capture.",
       "gallery": {
-        "act32h": { "caption": "ACT-32H handheld wireless mic" },
-        "act312": { "caption": "ACT-312 dual-channel receiver" },
-        "mi58":   { "caption": "MI-58 digital IEM system" },
-        "ad900":  { "caption": "AD-900 antenna distribution module" }
+        "act32h": { "caption": "ACT-32H — Handheld wireless microphone" },
+        "act312": { "caption": "ACT-312 — Dual-channel receiver" },
+        "mi58": { "caption": "MI-58 — Digital in-ear monitoring system" },
+        "ad900": { "caption": "AD-900 — Antenna distribution module" }
       }
     },
-
     "mls": {
-      "name": "MLS LED (木林森)",
-      "desc": "MLS (木林森) specializes in high-quality LED display modules used for broadcast video walls, stage walls, and virtual set backdrops. Their modules support high refresh rates and fine pixel pitch for crisp video output.",
+      "name": "MLS LED (Mulinsen)",
+      "desc": "Mulinsen specializes in high-refresh and fine-pixel LED display modules, used for broadcast video walls, stage screens, and XR virtual production environments. Aplus employs MLS products to deliver vibrant and stable visual outputs.",
       "gallery": {
-        "p1_92": { "caption": "1.92 mm LED module" },
-        "p2_5":  { "caption": "2.5 mm LED module" },
-        "wall":  { "caption": "LED wall assembly" },
-        "ctrl":  { "caption": "LED controller/interface" }
+        "p1_92": { "caption": "1.92mm LED display module" },
+        "p2_5": { "caption": "2.5mm LED display module" },
+        "wall": { "caption": "LED wall installation" },
+        "ctrl": { "caption": "LED controller/interface module" }
       }
     },
-
     "obs": {
       "name": "OBS",
-      "desc": "OBS Studio is a free, open-source software suite for video recording and live streaming. It supports multiple video sources, compositing, plugins, virtual cameras, and real-time scene switching.",
+      "desc": "OBS Studio is an open-source software for live streaming and recording, supporting multi-source mixing, plugin extensions, and virtual camera functions. Aplus uses OBS for flexible educational recording and online event production workflows.",
       "gallery": {
-        "ui":      { "caption": "OBS Studio — main interface" },
-        "plugin":  { "caption": "OBS plugin / hotkey demo" },
-        "output":  { "caption": "Streaming/recording output" },
-        "multisc": { "caption": "Multi-scene switching" }
+        "ui": { "caption": "OBS Studio — Main interface" },
+        "plugin": { "caption": "OBS plugins and hotkey examples" },
+        "output": { "caption": "Streaming and recording output" },
+        "multisc": { "caption": "Multi-scene switching view" }
       }
     },
-
     "unreal": {
       "name": "Unreal Engine",
-      "desc": "Unreal Engine is a real-time 3D creation tool used for games, virtual studios, and broadcast graphics. It powers virtual sets, real-time rendering, and interactive visuals.",
+      "desc": "Unreal Engine is a real-time 3D rendering platform enabling high-fidelity virtual production and immersive visuals. Aplus uses it as the core engine for virtual set integration and real-scene tracking.",
       "gallery": {
-        "vsnap":   { "caption": "Virtual set screenshot" },
-        "viz":     { "caption": "Real-time rendering visual" },
-        "graph":   { "caption": "Material/graph editor" },
-        "liveset": { "caption": "Live virtual scene setup" }
+        "vsnap": { "caption": "Virtual studio screenshot" },
+        "viz": { "caption": "Real-time rendering visual" },
+        "graph": { "caption": "Material and node editor" },
+        "liveset": { "caption": "Virtual scene setup example" }
       }
     },
-
     "ndi": {
       "name": "NDI",
-      "desc": "NDI (Network Device Interface) is a low-latency IP video protocol that enables video sources, audio, and metadata to be shared across networks. It powers many modern video workflows in broadcast and content production.",
+      "desc": "NDI (Network Device Interface) is a low-latency IP video protocol enabling audio, video, and control signals over networks. It powers modern, flexible, and collaborative production environments across broadcast systems.",
       "gallery": {
-        "logo":    { "caption": "NDI logo" },
+        "logo": { "caption": "NDI logo" },
         "diagram": { "caption": "NDI signal flow diagram" },
-        "mixer":   { "caption": "NDI integration with switchers" },
-        "capture": { "caption": "NDI capture/output hardware" }
+        "mixer": { "caption": "NDI integration with switching systems" },
+        "capture": { "caption": "NDI capture and output devices" }
       }
     },
-
     "streamdeck": {
       "name": "StreamDeck",
-      "desc": "StreamDeck is a hardware macro controller that lets operators map buttons to actions, shortcuts, or scene changes — greatly enhancing live workflow efficiency.",
+      "desc": "StreamDeck (Elgato) is a customizable macro controller that allows quick scene switching, effects, and workflow automation. Aplus integrates StreamDeck in studio and virtual production setups to enhance operation efficiency.",
       "gallery": {
-        "sd_32": { "caption": "StreamDeck 32-key" },
-        "sd_xl": { "caption": "StreamDeck XL" },
-        "sd_mob":{ "caption": "StreamDeck Mobile app" },
-        "sd_pro":{ "caption": "StreamDeck Pro" }
+        "sd_32": { "caption": "StreamDeck 32-Key" },
+        "sd_xl": { "caption": "StreamDeck XL — Extended version" },
+        "sd_mob": { "caption": "StreamDeck Mobile — App version" },
+        "sd_pro": { "caption": "StreamDeck Pro — Professional controller" }
       }
     }
   }

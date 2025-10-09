@@ -1,7 +1,110 @@
 <!doctype html>
 <html lang="en">
-<head> <!-- ========================================= --> <!-- 🌐 Aplus Systems — Global Meta Template --> <!-- ========================================= --> <!-- 共用設定 --> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width,initial-scale=1" /> <link rel="icon" href="./assets/favicon.png" /> <meta name="theme-color" content="#0d0d0d" /> <!-- 共用 Open Graph / Twitter 資訊 --> <meta property="og:type" content="website" /> <meta property="og:site_name" content="Aplus Systems" /> <meta property="og:image" content="https://your-domain.com/assets/og/og-default.jpg" /> <meta name="twitter:card" content="summary_large_image" /> <meta name="twitter:image" content="https://your-domain.com/assets/og/og-default.jpg" /> <!-- 結構化資料：組織資訊 --> <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "Organization", "name": "Aplus Systems", "url": "https://your-domain.com/", "logo": "https://your-domain.com/assets/logo.svg", "description": "Aplus Systems — System Integration & Broadcast Consultancy. Specializing in virtual studios, digital humans, and on-air workflows.", "sameAs": [ "https://www.youtube.com/@wuyatheworld", "https://www.youtube.com/@heho" ], "contactPoint": { "@type": "ContactPoint", "email": "aplusystem@gmail.com", "contactType": "Customer Service", "availableLanguage": ["en", "zh-TW", "zh-CN", "ms"] } } </script> <!-- 結構化資料：網站搜尋 --> <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "WebSite", "url": "https://your-domain.com/", "potentialAction": { "@type": "SearchAction", "target": "https://your-domain.com/search?q={query}", "query-input": "required name=query" } } </script> <!-- ========================================= --> <!-- ✅ 首頁專屬 SEO 區 --> <!-- ========================================= --> <title data-i18n="meta.index.title">Aplus Systems — Virtual Studio & Broadcast Integration</title> <meta name="description" data-i18n="meta.index.desc" content="Aplus Systems specializes in virtual studio design, broadcast integration, and digital human video production — combining creativity with precise engineering." /> <meta property="og:title" content="Aplus Systems — Virtual Studio & Broadcast Integration" /> <meta property="og:description" content="Professional system integration for studios, education, and digital human production. Based in Taiwan, serving creative and broadcast industries." /> <meta property="og:url" content="https://your-domain.com/" /> <link rel="canonical" href="https://your-domain.com/" /> <!-- ========================================= --> <!-- ✅ 樣式載入區 --> <!-- ========================================= --> <link rel="stylesheet" href="./css/base.css" /> <link rel="stylesheet" href="./css/theme.css" /> <link rel="stylesheet" href="./css/header.css" /> <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)" /> <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:1024px)" /> <link rel="stylesheet" href="./css/lang.css" /> <!-- 預載字型（可選，加快載入） --> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> </head>
 
+<head>
+  <!-- ========================================= -->
+  <!-- 🌐 Aplus Systems — Home (Multi-language) -->
+  <!-- ========================================= -->
+
+  <!-- 基本設定 -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="https://coding-guys99.github.io/Aplus-sys/assets/favicon.png" />
+
+  <!-- 語系設定：英文版；其他語言請調整 og:locale -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_TW" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="ms_MY" />
+
+  <!-- 四語 alternate（請依你的實際檔案結構） -->
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/" hreflang="x-default" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/en/" hreflang="en" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh/" hreflang="zh-TW" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh-cn/" hreflang="zh-CN" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/ms/" hreflang="ms" />
+
+  <!-- =============================== -->
+  <!-- ✅ 首頁專屬 SEO（英文版範例） -->
+  <!-- =============================== -->
+  <title>Aplus Systems — Virtual Studio & Broadcast Integration</title>
+  <meta name="description"
+        content="Aplus Systems specializes in virtual studio design, broadcast integration, and digital human video production — combining creativity with precise engineering." />
+
+  <!-- OG / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Aplus Systems" />
+  <meta property="og:title" content="Aplus Systems — Virtual Studio & Broadcast Integration" />
+  <meta property="og:description"
+        content="Professional system integration for studios, education, and digital human production. Based in Taiwan, serving creative and broadcast industries." />
+  <meta property="og:url" content="https://coding-guys99.github.io/Aplus-sys/" />
+  <meta property="og:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/home-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aplus Systems — Virtual Studio & Broadcast Integration" />
+  <meta name="twitter:description"
+        content="Professional system integration for studios, education, and digital human production." />
+  <meta name="twitter:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/home-1200x630.jpg" />
+
+  <link rel="canonical" href="https://coding-guys99.github.io/Aplus-sys/" />
+
+  <!-- =============================== -->
+  <!-- 🧭 結構化資料：Organization -->
+  <!-- =============================== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Aplus Systems",
+    "url":"https://coding-guys99.github.io/Aplus-sys/",
+    "logo":"https://coding-guys99.github.io/Aplus-sys/assets/logo.svg",
+    "description":"Aplus Systems — System Integration & Broadcast Consultancy. Specializing in virtual studios, digital humans, and on-air workflows.",
+    "sameAs":[
+      "https://www.youtube.com/@wuyatheworld",
+      "https://www.youtube.com/@heho"
+    ],
+    "contactPoint":{
+      "@type":"ContactPoint",
+      "email":"aplusystem@gmail.com",
+      "contactType":"Customer Service",
+      "availableLanguage":["en","zh-TW","zh-CN","ms"]
+    }
+  }
+  </script>
+
+  <!-- =============================== -->
+  <!-- 🔍 結構化資料：WebSite（若尚未有搜尋頁可先暫時移除） -->
+  <!-- =============================== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://coding-guys99.github.io/Aplus-sys/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://coding-guys99.github.io/Aplus-sys/search?q={query}",
+      "query-input":"required name=query"
+    }
+  }
+  </script>
+
+  <!-- =============================== -->
+  <!-- 🎨 樣式載入 -->
+  <!-- =============================== -->
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/base.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/theme.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/header.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/desktop.css" media="screen and (min-width:1025px)" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/mobile.css" media="screen and (max-width:1024px)" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/lang.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+  
 <body>
   <!-- ===== Header (自動載入) ===== -->
   <div id="include-header"></div>

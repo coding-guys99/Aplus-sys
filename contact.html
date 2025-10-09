@@ -2,31 +2,66 @@
 <html lang="en">
 <head>
   <!-- ========================================= -->
-  <!-- 🌐 Aplus Systems — Global Meta (Contact) -->
+  <!-- 🌐 Aplus Systems — Contact Page (Multi-language) -->
   <!-- ========================================= -->
 
-  <!-- 共用設定 -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" href="./assets/favicon.png" />
   <meta name="theme-color" content="#0d0d0d" />
   <meta name="robots" content="index,follow" />
+  <link rel="icon" href="https://coding-guys99.github.io/Aplus-sys/assets/favicon.png" />
 
-  <!-- 共用 Open Graph / Twitter -->
+  <!-- =============================== -->
+  <!-- 🌍 語系設定 -->
+  <!-- =============================== -->
+  <!-- 以英文版為例；其他語言改 html lang 與 og:locale -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_TW" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="ms_MY" />
+
+  <!-- Alternate hreflang Links -->
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/en/contact.html" hreflang="en" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh/contact.html" hreflang="zh-TW" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/zh-cn/contact.html" hreflang="zh-CN" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/ms/contact.html" hreflang="ms" />
+  <link rel="alternate" href="https://coding-guys99.github.io/Aplus-sys/contact.html" hreflang="x-default" />
+
+  <!-- =============================== -->
+  <!-- ✅ Contact Page SEO (EN version) -->
+  <!-- =============================== -->
+  <title>Contact — Aplus Systems | Virtual Studio & Broadcast Integration</title>
+  <meta name="description"
+        content="Reach out to Aplus Systems for virtual studio integration, broadcast setup, and digital human production. Connect via WhatsApp, Email, or LINE." />
+
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Aplus Systems" />
-  <meta property="og:image" content="https://your-domain.com/assets/og/og-contact.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://your-domain.com/assets/og/og-contact.jpg" />
+  <meta property="og:title" content="Contact — Aplus Systems | Virtual Studio & Broadcast Integration" />
+  <meta property="og:description"
+        content="Get in touch with our team for professional broadcast and virtual studio system solutions. WhatsApp, Email, and LINE supported." />
+  <meta property="og:url" content="https://coding-guys99.github.io/Aplus-sys/contact.html" />
+  <meta property="og:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/contact-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-  <!-- 結構化資料：Organization（全站共用，可保留在每頁） -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Aplus Systems | Virtual Studio & Broadcast Integration" />
+  <meta name="twitter:description"
+        content="Connect with Aplus Systems for broadcast, digital human, and virtual studio integration solutions." />
+  <meta name="twitter:image" content="https://coding-guys99.github.io/Aplus-sys/assets/og/contact-1200x630.jpg" />
+  <link rel="canonical" href="https://coding-guys99.github.io/Aplus-sys/contact.html" />
+
+  <!-- =============================== -->
+  <!-- 🧭 結構化資料 -->
+  <!-- =============================== -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"Aplus Systems",
-    "url":"https://your-domain.com/",
-    "logo":"https://your-domain.com/assets/logo.svg",
+    "url":"https://coding-guys99.github.io/Aplus-sys/",
+    "logo":"https://coding-guys99.github.io/Aplus-sys/assets/logo.svg",
+    "availableLanguage":["en","zh-TW","zh-CN","ms"],
     "sameAs":[
       "https://www.youtube.com/@wuyatheworld",
       "https://www.youtube.com/@heho"
@@ -41,13 +76,12 @@
   }
   </script>
 
-  <!-- 結構化資料：ContactPage（聯絡頁專屬） -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"ContactPage",
     "name":"Contact Aplus Systems",
-    "url":"https://your-domain.com/contact.html",
+    "url":"https://coding-guys99.github.io/Aplus-sys/contact.html",
     "about":{
       "@type":"Organization",
       "name":"Aplus Systems"
@@ -59,34 +93,23 @@
       "telephone":"+60-14-667-2458",
       "areaServed":"Global",
       "availableLanguage":["en","zh-TW","zh-CN","ms"],
-      "url":"https://your-domain.com/contact.html"
+      "url":"https://coding-guys99.github.io/Aplus-sys/contact.html"
     }
   }
   </script>
 
   <!-- =============================== -->
-  <!-- ✅ Contact 頁專屬 SEO -->
+  <!-- 🎨 樣式載入 -->
   <!-- =============================== -->
-  <title data-i18n="meta.contact.title">Contact — Aplus Systems | System Integration & Broadcast</title>
-  <meta name="description" data-i18n="meta.contact.desc"
-        content="Contact Aplus Systems for virtual studio integration, broadcast systems, and digital human video solutions. WhatsApp, email, and LINE available." />
-  <meta property="og:title" content="Contact — Aplus Systems" />
-  <meta property="og:description"
-        content="Get in touch via WhatsApp, email, or LINE for system integration and production services." />
-  <meta property="og:url" content="https://your-domain.com/contact.html" />
-  <link rel="canonical" href="https://your-domain.com/contact.html" />
-
-  <!-- =============================== -->
-  <!-- ✅ 樣式載入 -->
-  <!-- =============================== -->
-  <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/theme.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1025px)" />
-  <link rel="stylesheet" href="./css/mobile.css"  media="screen and (max-width:1024px)" />
-  <link rel="stylesheet" href="./css/lang.css" />
-  <link rel="stylesheet" href="./css/contact.css"/>
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/base.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/theme.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/header.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/desktop.css" media="screen and (min-width:1025px)" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/mobile.css"  media="screen and (max-width:1024px)" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/lang.css" />
+  <link rel="stylesheet" href="https://coding-guys99.github.io/Aplus-sys/css/contact.css"/>
 </head>
+
 
 <body>
   <!-- Header -->

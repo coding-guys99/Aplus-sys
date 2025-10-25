@@ -1,6 +1,7 @@
 /* ======================================
    Technologies Page — Brand Grid + Modal
    ====================================== */
+
 /* ---------- General Intro ---------- */
 .tech-intro {
   color: var(--muted);
@@ -53,6 +54,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* 建議給個合理高度，避免 logo 撐開卡片 */
+  min-height: 110px;
 }
 
 .brand-logo {
@@ -71,8 +74,6 @@
 
 .brand-name { color: var(--text); font-weight: 700; margin-top: 10px; }
 .brand-desc { color: var(--muted); font-size: .9rem; margin-top: 4px; }
-
-
 
 /* ---------- Section Headings ---------- */
 .section header h2 {
@@ -117,9 +118,10 @@
     inset 0 1px 0 rgba(255,255,255,.03);
   color: #eee;
   line-height: 1.7;
-  padding: 14px 22px 20px;
+  padding: 14px 22px 24px; /* 底部多留些空間，避免貼齊 */
 }
 
+/* modal 把手（行動裝置） */
 .sheet-handle {
   width: 48px; height: 5px;
   background: linear-gradient(90deg, rgba(255,255,255,.18), rgba(255,255,255,.28), rgba(255,255,255,.18));
@@ -139,19 +141,33 @@
   gap: 12px;
   margin-top: 12px;
 }
-.sheet-gallery img {
+
+/* 使用 figure/figcaption 結構，避免圖文與按鈕重疊 */
+.sheet-gallery .tile{
+  display: flex;
+  flex-direction: column;
+}
+.sheet-gallery .tile img{
   width: 100%;
-  height:100%;
-  aspect-ratio: 4/3;
+  height: auto;           /* ✅ 修正：不再強制撐滿高度 */
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,.08);
   box-shadow: 0 8px 24px rgba(0,0,0,.35);
   transition: transform .25s ease, box-shadow .25s ease;
 }
-.sheet-gallery img:hover {
+.sheet-gallery .tile img:hover {
   transform: translateY(-2px) scale(1.015);
   box-shadow: 0 12px 28px rgba(0,0,0,.45);
+}
+.sheet-gallery .tile figcaption{
+  margin-top: 8px;
+  line-height: 1.45;
+  color: var(--muted);
+  font-size: .95rem;
+  word-break: break-word;   /* 長字不會擠到按鈕 */
+  hyphens: auto;
 }
 
 /* ---------- Animations ---------- */
@@ -164,12 +180,8 @@
     border-bottom-left-radius: 0; border-bottom-right-radius: 0;
     transform: translateY(100%);
   }
-  .brand-sheet.is-opening .sheet-content {
-    animation: sheet-in .38s cubic-bezier(.2,.85,.2,1) forwards;
-  }
-  .brand-sheet.is-closing .sheet-content {
-    animation: sheet-out .28s cubic-bezier(.4,.0,.6,1) forwards;
-  }
+  .brand-sheet.is-opening .sheet-content { animation: sheet-in .38s cubic-bezier(.2,.85,.2,1) forwards; }
+  .brand-sheet.is-closing .sheet-content { animation: sheet-out .28s cubic-bezier(.4,.0,.6,1) forwards; }
   @keyframes sheet-in{
     0%   { transform: translateY(100%) scale(.98); }
     80%  { transform: translateY(-6px) scale(1); }
@@ -192,12 +204,8 @@
     transform: translateY(6px) scale(.98);
     opacity: 0;
   }
-  .brand-sheet.is-opening .sheet-content {
-    animation: modal-in .28s cubic-bezier(.2,.7,.2,1) forwards;
-  }
-  .brand-sheet.is-closing .sheet-content {
-    animation: modal-out .22s ease forwards;
-  }
+  .brand-sheet.is-opening .sheet-content { animation: modal-in .28s cubic-bezier(.2,.7,.2,1) forwards; }
+  .brand-sheet.is-closing .sheet-content { animation: modal-out .22s ease forwards; }
   @keyframes modal-in{
     from { transform: translateY(10px) scale(.96); opacity: 0; filter: blur(2px); }
     to   { transform: translateY(0) scale(1);   opacity: 1; filter: blur(0); }
@@ -220,37 +228,31 @@
 
 /* 統一每張卡片的 logo 展示框：夠高、可自適應 */
 .brand-logo-box{
-  width: min(92%, 640px);   /* 上限 640px，版面窄時用 92% */
-  height: 160px;            /* 關鍵：給足高度讓長條 logo 有空間 */
+  width: min(92%, 640px);
+  height: 160px;                    /* 給長條 logo 空間 */
   margin: 0 auto 10px;
   display:flex;align-items:center;justify-content:center;
 }
-
-/* 方形/高logo 可用變體（選用）*/
+/* 方形/高logo 變體（選用）*/
 .brand-card.is-square .brand-logo-box{ height: 200px; }
 .brand-card.is-tall   .brand-logo-box{ height: 220px; }
 
-/* 圖片自己等比縮放填入容器 */
+/* 圖片等比縮放 */
 .brand-logo{
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain;   /* 重要：不變形 */
-  image-rendering: auto; /* 高解析保持銳利 */
+  object-fit: contain;
+  image-rendering: auto;
 }
 
-.brand-logo-box img{
-  width: 100%;
-  height: 100%;
-}
+/* ❌ 不要用「.brand-logo-box img { width:100%; height:100%; }」以免拉伸 logo */
 
-.sheet-logo img{
-  width: 100%;
-  height: 100%;
-}
+/* Brand Sheet 頂部小 logo */
+.sheet-logo { width: 74px; height: 74px; object-fit: contain; }
 
-/* 強制還原 Header 的品牌 logo，不受 technologies.css 影響 */
+/* 強制還原 Header 的品牌 logo，不受本頁影響 */
 .site-header .brand-logo {
   width: 30px !important;
   height: 30px !important;
@@ -262,16 +264,12 @@
   transform: none;
 }
 
-/* 阻斷滾動串連（Android/桌面瀏覽器） */
+/* 阻斷滾動串連（Android/桌面） */
 .brand-sheet,
-.sheet-content {
-  overscroll-behavior: contain;
-}
+.sheet-content { overscroll-behavior: contain; }
 
 /* 行動裝置慣性滾動（iOS/Safari 友善） */
-.sheet-content {
-  -webkit-overflow-scrolling: touch;
-}
+.sheet-content { -webkit-overflow-scrolling: touch; }
 
 /* Brand Sheet 內的按鈕區 */
 .sheet-actions {
@@ -282,7 +280,7 @@
   justify-content: center;
 }
 
-/* 通用按鈕樣式（保留黑金風） */
+/* 通用按鈕樣式（黑金風） */
 .sheet-actions .btn {
   display: inline-block;
   font-size: 0.95rem;
@@ -321,7 +319,7 @@
   transform: translateY(-1px);
 }
 
-/* 手機版微調：滿寬顯示更方便點擊 */
+/* 手機版：滿寬好點 */
 @media (max-width: 640px) {
   .sheet-actions .btn {
     flex: 1 1 100%;

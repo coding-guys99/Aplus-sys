@@ -272,3 +272,60 @@
 .sheet-content {
   -webkit-overflow-scrolling: touch;
 }
+
+/* Brand Sheet 內的按鈕區 */
+.sheet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* 通用按鈕樣式（保留黑金風） */
+.sheet-actions .btn {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 22px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 180px;
+  transition: all 0.25s ease;
+}
+
+/* 主按鈕：金底黑字 */
+.sheet-actions .btn.primary {
+  background: var(--primary);
+  color: #000;
+  border: none;
+  box-shadow: 0 4px 12px rgba(212,175,55,0.25);
+}
+.sheet-actions .btn.primary:hover {
+  background: #e0c561;
+  box-shadow: 0 6px 18px rgba(212,175,55,0.35);
+  transform: translateY(-1px);
+}
+
+/* 副按鈕：透明底 + 金框 */
+.sheet-actions .btn.ghost {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+}
+.sheet-actions .btn.ghost:hover {
+  background: rgba(212,175,55,0.1);
+  color: #f8e7b3;
+  transform: translateY(-1px);
+}
+
+/* 手機版微調：滿寬顯示更方便點擊 */
+@media (max-width: 640px) {
+  .sheet-actions .btn {
+    flex: 1 1 100%;
+    min-width: auto;
+    text-align: center;
+  }
+}

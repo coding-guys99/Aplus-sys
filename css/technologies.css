@@ -261,3 +261,14 @@
   opacity: 1;
   transform: none;
 }
+
+/* 阻斷滾動串連（Android/桌面瀏覽器） */
+.brand-sheet,
+.sheet-content {
+  overscroll-behavior: contain;
+}
+
+/* 行動裝置慣性滾動（iOS/Safari 友善） */
+.sheet-content {
+  -webkit-overflow-scrolling: touch;
+}

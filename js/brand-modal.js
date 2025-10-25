@@ -225,6 +225,10 @@
     lastActiveTrigger = triggerEl || null;
 
     renderBrandSheet(key);
+    
+      // --- 新增：更新 CTA 的 products 連結 ---
+  const productLink = document.getElementById('sheet-products');
+  if (productLink) productLink.href = `products.html#${key}`;
 
     sheet.classList.remove('hidden', 'is-closing');
     void sheet.offsetWidth; // reflow 以重置動畫

@@ -157,6 +157,7 @@
           </div>
           <div class="brand-name">Blackmagic Design</div>
           <div class="brand-desc" data-i18n="tech_hw.bmd">Switchers, studio cameras & I/O</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card" data-brand="synco">
@@ -165,6 +166,7 @@
           </div>
           <div class="brand-name">SYNCO</div>
           <div class="brand-desc" data-i18n="tech_hw.synco">Microphones & on-set audio</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card" data-brand="unileader">
@@ -173,6 +175,7 @@
           </div>
           <div class="brand-name">Uni-Leader</div>
           <div class="brand-desc" data-i18n="tech_hw.unileader">Broadcast peripherals & accessories</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card" data-brand="obsbot">
@@ -181,6 +184,7 @@
           </div>
           <div class="brand-name">OBSBOT</div>
           <div class="brand-desc" data-i18n="tech_hw.obsbot">PTZ / AI tracking cameras</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card" data-brand="acemic">
@@ -189,6 +193,7 @@
           </div>
           <div class="brand-name">Acemic</div>
           <div class="brand-desc" data-i18n="tech_hw.acemic">Studio hardware & integration modules</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card" data-brand="yamaha">
@@ -197,6 +202,7 @@
           </div>
           <div class="brand-name">Yamaha Mixer</div>
           <div class="brand-desc" data-i18n="tech_hw.yamaha">Mixers & audio signal paths</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card" data-brand="mipro">
@@ -205,6 +211,7 @@
           </div>
           <div class="brand-name">Mipro</div>
           <div class="brand-desc" data-i18n="tech_hw.mipro">Wireless mics & receivers</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card is-wide" data-brand="mls">
@@ -213,6 +220,7 @@
           </div>
           <div class="brand-name">MLS LED</div>
           <div class="brand-desc" data-i18n="tech_hw.mls">LED display systems and wall panels</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
       </div>
 
@@ -237,6 +245,7 @@
           </div>
           <div class="brand-name">OBS</div>
           <div class="brand-desc" data-i18n="tech_sw.obs">Live production & streaming</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card is-wide" data-brand="unreal">
@@ -245,6 +254,7 @@
           </div>
           <div class="brand-name">Unreal Engine</div>
           <div class="brand-desc" data-i18n="tech_sw.unreal">Virtual sets & real-time rendering</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card" data-brand="ndi">
@@ -253,6 +263,7 @@
           </div>
           <div class="brand-name">NDI</div>
           <div class="brand-desc" data-i18n="tech_sw.ndi">IP-based video transport</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
 
         <div class="brand-card" data-brand="streamdeck">
@@ -261,6 +272,7 @@
           </div>
           <div class="brand-name">StreamDeck</div>
           <div class="brand-desc" data-i18n="tech_sw.streamdeck">Macro control & operator UX</div>
+          <div class="brand-note" data-i18n="tech.brand_note">Integrated in multiple real-world builds</div>
         </div>
       </div>
     </div>
@@ -275,10 +287,10 @@
   </section>
 </main>
 
-  <!-- Footer -->
-  <div id="include-footer"></div>
+<!-- Footer -->
+<div id="include-footer"></div>
 
-  <!-- === Brand Detail Sheet / Modal === -->
+<!-- === Brand Detail Sheet / Modal === -->
 <div id="brand-sheet" class="brand-sheet hidden" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
   <div class="sheet-handle"></div>
   <div class="sheet-content">
@@ -286,6 +298,12 @@
     <h3 id="sheet-title"></h3>
     <p id="sheet-desc"></p>
     <div id="sheet-gallery" class="sheet-gallery" aria-live="polite"></div>
+
+    <!-- 新增：品牌層 CTA（由 JS 設定品牌錨點） -->
+    <div class="sheet-actions" style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+      <a id="sheet-products" class="btn ghost" href="products.html" data-i18n="tech_cta.products">View this brand’s products</a>
+      <a class="btn primary" href="contact.html" data-i18n="tech_cta.btn">Contact Me</a>
+    </div>
   </div>
 </div>
 

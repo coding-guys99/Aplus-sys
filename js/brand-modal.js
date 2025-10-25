@@ -280,29 +280,43 @@
   sheet.addEventListener('click', (e) => { if (e.target === sheet) closeSheet(); });
   document.addEventListener('keydown', (e) => { if (isOpen && e.key === 'Escape') closeSheet(); });
 
-  // 手機：下滑關閉
-  let touchStartY = null, dragging = false;
-  content.addEventListener('touchstart', (e) => {
-    if (e.touches.length !== 1) return;
-    touchStartY = e.touches[0].clientY; dragging = true;
-  }, { passive: true });
-  content.addEventListener('touchmove', (e) => {
-    if (!dragging || touchStartY == null) return;
-    const delta = e.touches[0].clientY - touchStartY;
-    const atTop = content.scrollTop <= 0;
-    if (delta > 0 && atTop) {
-      e.preventDefault();
-      content.style.transform = `translateY(${delta * 0.5}px)`;
-    }
-  }, { passive: false });
-  content.addEventListener('touchend', (e) => {
-    if (!dragging) return;
-    const endY = (e.changedTouches && e.changedTouches[0].clientY) || 0;
-    const delta = endY - (touchStartY || 0);
-    content.style.transform = '';
-    if (delta > 80) closeSheet();
-    dragging = false; touchStartY = null;
-  });
+  // --- 在現有 touchmove 監聽中加入【頂/底邊界】攔截 ---
+content.addEventListener('touchmove', (e) => {
+  if (!dragging || touchStartY == null) return;
+  const currentY = e.touches[0].clientY;
+  const delta = currentY - touchStartY;
+
+  const atTop    = content.scrollTop <= 0;
+  const atBottom = content.scrollTop + content.clientHeight >= content.scrollHeight - 1;
+
+  // ▼ 已有：往下拉且在頂部 → 跟隨位移（下滑關閉的手勢）
+  if (delta > 0 && atTop) {
+    e.preventDefault(); // 阻止整頁滾動
+    content.style.transform = `translateY(${delta * 0.5}px)`;
+    return;
+  }
+
+  // ▼ 新增：往上滑且在底部 → 阻止背景被捲動
+  if (delta < 0 && atBottom) {
+    e.preventDefault(); // 阻止整頁滾動/串連
+    return;
+  }
+
+  // 其餘情況：正常滾動，不處理
+}, { passive: false });
+
+// --- 針對滑鼠滾輪/觸控板（桌面/Android）也避免滾動外溢 ---
+content.addEventListener('wheel', (e) => {
+  const atTop    = content.scrollTop <= 0;
+  const atBottom = content.scrollTop + content.clientHeight >= content.scrollHeight - 1;
+
+  const scrollingUp   = e.deltaY < 0;
+  const scrollingDown = e.deltaY > 0;
+
+  if ((atTop && scrollingUp) || (atBottom && scrollingDown)) {
+    e.preventDefault(); // 不讓滾動串到背景
+  }
+}, { passive: false });
 
   // ---------- 語言切換後即時更新 ----------
   document.addEventListener('i18n:changed', () => {

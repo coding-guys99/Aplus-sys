@@ -1,28 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
   <title data-i18n="meta.products.title">Products — Aplus Systems</title>
-  <meta name="description" data-i18n="meta.products.desc"
-    content="Explore representative products by brand. We help you plan reliable, integrated workflows." />
+  <meta name="description" data-i18n="meta.products.desc" content="Explore representative products by brand. We help you plan reliable, integrated workflows."/>
 
-  <!-- 你站上的全域樣式 -->
-  <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
+  <!-- 全站既有樣式 -->
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <!-- 本頁樣式 -->
-  <link rel="stylesheet" href="./css/products.css" />
-
-  <!-- Favicon / Icons（視需要保留） -->
-  <link rel="icon" href="./assets/favicon.ico" />
+  <link rel="stylesheet" href="./css/products.css">
 </head>
 <body class="theme-dark">
 
-  <!-- ===== Header（若你用 include 機制，這裡放容器即可） ===== -->
+  <!-- 共用 Header 容器（由 include.js 注入） -->
   <div id="include-header"></div>
 
   <main id="products-page">
@@ -36,23 +29,23 @@
       </div>
     </section>
 
-    <!-- BRAND PICKER（Sticky） -->
+    <!-- 品牌選擇（黑金風 Sticky Bar） -->
     <section class="section brand-picker-wrap">
       <div class="container">
-        <!-- Mobile: select -->
+        <!-- Mobile: 下拉 -->
         <label class="sr-only" for="brand-select" data-i18n="prod.brand.select_label">Select brand</label>
         <select id="brand-select" class="brand-select">
           <option value="all" data-i18n="prod.brand.all">All brands</option>
         </select>
 
-        <!-- Desktop: logo row -->
+        <!-- Desktop: 品牌 chips（logo + 名稱，極簡） -->
         <div class="brand-row" role="tablist" aria-label="Brands">
-          <!-- JS 注入：品牌 chips -->
+          <!-- 由 JS 注入 -->
         </div>
       </div>
     </section>
 
-    <!-- PRODUCT GRID -->
+    <!-- 產品列表 -->
     <section class="section">
       <div class="container">
         <header class="prod-header">
@@ -62,11 +55,7 @@
           </p>
         </header>
 
-        <div id="product-grid" class="product-grid" aria-live="polite">
-          <!-- JS 依品牌渲染產品卡 -->
-        </div>
-
-        <!-- 空結果提示 -->
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
         <p id="empty-hint" class="empty-hint" hidden data-i18n="prod.empty">No products to show for this brand.</p>
       </div>
     </section>
@@ -81,22 +70,13 @@
     </section>
   </main>
 
-  <!-- ===== Footer（若你用 include 機制，這裡放容器即可） ===== -->
+  <!-- 共用 Footer 容器 -->
   <div id="include-footer"></div>
 
-  <noscript>
-    <div class="container" style="margin:16px auto;color:#bbb;">
-      JavaScript is required to view product content.
-    </div>
-  </noscript>
-
-  <!-- 你的共用 JS（載入 Header / Footer、工具函式等） -->
+  <!-- 共用腳本 -->
   <script defer src="./js/include.js"></script>
-
-  <!-- i18n -->
   <script defer src="./js/lang.js"></script>
-
-  <!-- 本頁腳本：渲染品牌與產品、支援 i18n 和深連結 -->
+  <!-- 本頁腳本 -->
   <script defer src="./js/products.js"></script>
 </body>
 </html>

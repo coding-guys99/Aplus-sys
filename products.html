@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Products — Aplus Systems</title>
-  <link rel="stylesheet" href="./css/products.css">
-  <link rel="icon" href="./assets/favicon.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.product.title">Product — Aplus Systems</title>
+
+  <link rel="stylesheet" href="./css/product.css" />
+  <link rel="icon" href="./assets/favicon.png" />
+  <meta name="description" content="Product details: specs, features, and integration notes by Aplus Systems." />
 </head>
 
 <body>
@@ -13,52 +15,62 @@
   <div id="include-header"></div>
 
   <main>
-    <!-- HERO -->
+    <!-- HERO / Breadcrumb -->
     <section class="hero bright">
       <div class="container">
-        <h1 data-i18n="products_hero.h1">Products</h1>
-        <p class="lead" data-i18n="products_hero.lead">
-          Explore the full lineup of studio, broadcast and virtual production tools we integrate and support.
-        </p>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="products.html" data-i18n="product.breadcrumb.products">Products</a>
+          <span aria-hidden="true">/</span>
+          <a id="crumb-brand" href="products.html" data-i18n="product.breadcrumb.brand">Brand</a>
+          <span aria-hidden="true">/</span>
+          <span id="crumb-name">—</span>
+        </nav>
+
+        <h1 id="p-name">—</h1>
+        <p class="lead" id="p-tagline">—</p>
       </div>
     </section>
 
-    <!-- FILTER -->
+    <!-- CONTENT -->
     <section class="section">
-      <div class="container filter-bar">
-        <div class="brand-select mobile-only">
-          <select id="brandSelect">
-            <option value="all" selected>All Brands</option>
-            <option value="blackmagic">Blackmagic Design</option>
-            <option value="unileader">Uni-Leader</option>
-            <option value="yamaha">Yamaha</option>
-            <option value="mipro">MIPRO</option>
-            <option value="acemic">Acemic</option>
-            <option value="obs">OBS</option>
-            <option value="unreal">Unreal Engine</option>
-            <option value="ndi">NDI</option>
-            <option value="streamdeck">StreamDeck</option>
-          </select>
-        </div>
-        <div class="brand-chips desktop-only">
-          <button data-brand="all" class="active">All</button>
-          <button data-brand="blackmagic">Blackmagic</button>
-          <button data-brand="unileader">Uni-Leader</button>
-          <button data-brand="yamaha">Yamaha</button>
-          <button data-brand="mipro">MIPRO</button>
-          <button data-brand="acemic">Acemic</button>
-          <button data-brand="obs">OBS</button>
-          <button data-brand="unreal">Unreal</button>
-          <button data-brand="ndi">NDI</button>
-          <button data-brand="streamdeck">StreamDeck</button>
-        </div>
-      </div>
-    </section>
+      <div class="container product-wrap">
 
-    <!-- PRODUCTS GRID -->
-    <section class="section">
-      <div class="container">
-        <div id="productGrid" class="product-grid"></div>
+        <!-- Gallery -->
+        <aside class="gallery">
+          <img id="p-hero" class="hero-img" alt="" />
+          <div id="p-thumbs" class="thumbs" aria-label="Gallery thumbnails"></div>
+        </aside>
+
+        <!-- Info -->
+        <article class="info">
+          <div class="brand-line">
+            <img id="p-brand-logo" class="brand-logo" alt="brand logo" />
+            <span id="p-brand" class="brand-name">—</span>
+          </div>
+
+          <ul id="p-badges" class="badges"></ul>
+
+          <div id="p-desc" class="desc"></div>
+
+          <!-- Spec table -->
+          <h3 class="h3" data-i18n="product.specs">Specifications</h3>
+          <div class="spec-scroll">
+            <table class="spec">
+              <tbody id="p-spec"></tbody>
+            </table>
+          </div>
+
+          <!-- Highlights -->
+          <h3 class="h3" data-i18n="product.features">Highlights</h3>
+          <ul id="p-features" class="features"></ul>
+
+          <!-- CTAs -->
+          <div class="cta-row">
+            <a id="cta-contact" class="btn primary" href="contact.html" data-i18n="product.cta.contact">Contact Us</a>
+            <a id="cta-brand" class="btn ghost" href="technologies.html" data-i18n="product.cta.brand">View brand overview</a>
+            <a id="cta-back" class="btn ghost" href="javascript:history.back()" data-i18n="product.cta.back">Back</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
@@ -66,7 +78,9 @@
   <!-- Footer -->
   <div id="include-footer"></div>
 
+  <!-- Scripts -->
   <script src="./js/lang.js" defer></script>
-  <script src="./js/products.js" defer></script>
+  <script src="./js/products.data.js" defer></script>
+  <script src="./js/product-detail.js" defer></script>
 </body>
 </html>

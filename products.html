@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+  <title data-i18n="meta.products.title">Products — Aplus Systems</title>
+  <meta name="description" data-i18n="meta.products.desc"
+    content="Explore representative products by brand. We help you plan reliable, integrated workflows." />
+
+  <!-- 你站上的全域樣式 -->
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <!-- 本頁樣式 -->
+  <link rel="stylesheet" href="./css/products.css" />
+
+  <!-- Favicon / Icons（視需要保留） -->
+  <link rel="icon" href="./assets/favicon.ico" />
+</head>
+<body class="theme-dark">
+
+  <!-- ===== Header（若你用 include 機制，這裡放容器即可） ===== -->
+  <div id="include-header"></div>
+
+  <main id="products-page">
+    <!-- HERO -->
+    <section class="hero bright">
+      <div class="container">
+        <h1 data-i18n="prod.hero.h1">Products</h1>
+        <p class="lead" data-i18n="prod.hero.lead">
+          Explore representative products by brand. I’ll help you plan the right combination for your studio or workflow.
+        </p>
+      </div>
+    </section>
+
+    <!-- BRAND PICKER（Sticky） -->
+    <section class="section brand-picker-wrap">
+      <div class="container">
+        <!-- Mobile: select -->
+        <label class="sr-only" for="brand-select" data-i18n="prod.brand.select_label">Select brand</label>
+        <select id="brand-select" class="brand-select">
+          <option value="all" data-i18n="prod.brand.all">All brands</option>
+        </select>
+
+        <!-- Desktop: logo row -->
+        <div class="brand-row" role="tablist" aria-label="Brands">
+          <!-- JS 注入：品牌 chips -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section class="section">
+      <div class="container">
+        <header class="prod-header">
+          <h2 id="prod-section-title" data-i18n="prod.section.title">Featured Products</h2>
+          <p class="muted" id="prod-section-desc" data-i18n="prod.section.desc">
+            Key models we commonly integrate in real projects.
+          </p>
+        </header>
+
+        <div id="product-grid" class="product-grid" aria-live="polite">
+          <!-- JS 依品牌渲染產品卡 -->
+        </div>
+
+        <!-- 空結果提示 -->
+        <p id="empty-hint" class="empty-hint" hidden data-i18n="prod.empty">No products to show for this brand.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section alt">
+      <div class="container cta-center">
+        <h3 data-i18n="prod.cta.h3">Not sure what to pick?</h3>
+        <p class="muted" data-i18n="prod.cta.p">Tell me your scenario and budget. I’ll propose a practical, reliable setup.</p>
+        <a class="btn primary" href="contact.html" data-i18n="prod.cta.btn">Get a planning consult</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer（若你用 include 機制，這裡放容器即可） ===== -->
+  <div id="include-footer"></div>
+
+  <noscript>
+    <div class="container" style="margin:16px auto;color:#bbb;">
+      JavaScript is required to view product content.
+    </div>
+  </noscript>
+
+  <!-- 你的共用 JS（載入 Header / Footer、工具函式等） -->
+  <script defer src="./js/include.js"></script>
+
+  <!-- i18n -->
+  <script defer src="./js/lang.js"></script>
+
+  <!-- 本頁腳本：渲染品牌與產品、支援 i18n 和深連結 -->
+  <script defer src="./js/products.js"></script>
+</body>
+</html>

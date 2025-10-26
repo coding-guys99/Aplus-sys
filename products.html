@@ -1,82 +1,72 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-  <title data-i18n="meta.products.title">Products — Aplus Systems</title>
-  <meta name="description" data-i18n="meta.products.desc" content="Explore representative products by brand. We help you plan reliable, integrated workflows."/>
-
-  <!-- 全站既有樣式 -->
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <!-- 本頁樣式 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products — Aplus Systems</title>
   <link rel="stylesheet" href="./css/products.css">
+  <link rel="icon" href="./assets/favicon.png">
 </head>
-<body class="theme-dark">
 
-  <!-- 共用 Header 容器（由 include.js 注入） -->
+<body>
+  <!-- Header -->
   <div id="include-header"></div>
 
-  <main id="products-page">
+  <main>
     <!-- HERO -->
     <section class="hero bright">
       <div class="container">
-        <h1 data-i18n="prod.hero.h1">Products</h1>
-        <p class="lead" data-i18n="prod.hero.lead">
-          Explore representative products by brand. I’ll help you plan the right combination for your studio or workflow.
+        <h1 data-i18n="products_hero.h1">Products</h1>
+        <p class="lead" data-i18n="products_hero.lead">
+          Explore the full lineup of studio, broadcast and virtual production tools we integrate and support.
         </p>
       </div>
     </section>
 
-    <!-- 品牌選擇（黑金風 Sticky Bar） -->
-    <section class="section brand-picker-wrap">
-      <div class="container">
-        <!-- Mobile: 下拉 -->
-        <label class="sr-only" for="brand-select" data-i18n="prod.brand.select_label">Select brand</label>
-        <select id="brand-select" class="brand-select">
-          <option value="all" data-i18n="prod.brand.all">All brands</option>
-        </select>
-
-        <!-- Desktop: 品牌 chips（logo + 名稱，極簡） -->
-        <div class="brand-row" role="tablist" aria-label="Brands">
-          <!-- 由 JS 注入 -->
+    <!-- FILTER -->
+    <section class="section">
+      <div class="container filter-bar">
+        <div class="brand-select mobile-only">
+          <select id="brandSelect">
+            <option value="all" selected>All Brands</option>
+            <option value="blackmagic">Blackmagic Design</option>
+            <option value="unileader">Uni-Leader</option>
+            <option value="yamaha">Yamaha</option>
+            <option value="mipro">MIPRO</option>
+            <option value="acemic">Acemic</option>
+            <option value="obs">OBS</option>
+            <option value="unreal">Unreal Engine</option>
+            <option value="ndi">NDI</option>
+            <option value="streamdeck">StreamDeck</option>
+          </select>
+        </div>
+        <div class="brand-chips desktop-only">
+          <button data-brand="all" class="active">All</button>
+          <button data-brand="blackmagic">Blackmagic</button>
+          <button data-brand="unileader">Uni-Leader</button>
+          <button data-brand="yamaha">Yamaha</button>
+          <button data-brand="mipro">MIPRO</button>
+          <button data-brand="acemic">Acemic</button>
+          <button data-brand="obs">OBS</button>
+          <button data-brand="unreal">Unreal</button>
+          <button data-brand="ndi">NDI</button>
+          <button data-brand="streamdeck">StreamDeck</button>
         </div>
       </div>
     </section>
 
-    <!-- 產品列表 -->
+    <!-- PRODUCTS GRID -->
     <section class="section">
       <div class="container">
-        <header class="prod-header">
-          <h2 id="prod-section-title" data-i18n="prod.section.title">Featured Products</h2>
-          <p class="muted" id="prod-section-desc" data-i18n="prod.section.desc">
-            Key models we commonly integrate in real projects.
-          </p>
-        </header>
-
-        <div id="product-grid" class="product-grid" aria-live="polite"></div>
-        <p id="empty-hint" class="empty-hint" hidden data-i18n="prod.empty">No products to show for this brand.</p>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section alt">
-      <div class="container cta-center">
-        <h3 data-i18n="prod.cta.h3">Not sure what to pick?</h3>
-        <p class="muted" data-i18n="prod.cta.p">Tell me your scenario and budget. I’ll propose a practical, reliable setup.</p>
-        <a class="btn primary" href="contact.html" data-i18n="prod.cta.btn">Get a planning consult</a>
+        <div id="productGrid" class="product-grid"></div>
       </div>
     </section>
   </main>
 
-  <!-- 共用 Footer 容器 -->
+  <!-- Footer -->
   <div id="include-footer"></div>
 
-  <!-- 共用腳本 -->
-  <script defer src="./js/include.js"></script>
-  <script defer src="./js/lang.js"></script>
-  <!-- 本頁腳本 -->
-  <script defer src="./js/products.js"></script>
+  <script src="./js/lang.js" defer></script>
+  <script src="./js/products.js" defer></script>
 </body>
 </html>

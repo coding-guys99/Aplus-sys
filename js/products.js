@@ -55,57 +55,59 @@
       return PRODUCTS.filter(p=>p.brandKey === brandKey);
     }
 
-    function renderCards(list){
-      grid.innerHTML = '';
-      if(!list.length){
-        emptyState.classList.remove('hidden');
-        return;
-      }
-      emptyState.classList.add('hidden');
+    // 渲染卡片時
+function renderCards(list){
+  grid.innerHTML = '';
+  if(!list.length){
+    if (emptyState) emptyState.classList.remove('hidden'); // ← 加保護
+    return;
+  }
+  if (emptyState) emptyState.classList.add('hidden'); // ← 加保護
 
-      const frag = document.createDocumentFragment();
-      list.forEach(p=>{
-        const card = document.createElement('article');
-        card.className = 'product-card';
+  const frag = document.createDocumentFragment();
+  list.forEach(p=>{
+    const card = document.createElement('article');
+    card.className = 'product-card';
 
-        const a = document.createElement('a');
-        a.className = 'product-link';
-        a.href = `product.html?id=${encodeURIComponent(p.id)}`;
-        a.setAttribute('aria-label', `${p.name || ''} — view details`);
+    const a = document.createElement('a');
+    a.className = 'product-link';
+    a.href = `product.html?id=${encodeURIComponent(p.id)}`;
+    a.setAttribute('aria-label', `${p.name || ''} — view details`);
 
-        const thumb = document.createElement('div');
-        thumb.className = 'product-thumb';
-        const img = document.createElement('img');
-        img.src = p.hero || '';
-        img.alt = `${p.brand || ''} ${p.name || ''}`;
-        thumb.appendChild(img);
+    const thumb = document.createElement('div');
+    thumb.className = 'product-thumb';
+    const img = document.createElement('img');
+    img.src = p.hero || '';
+    img.alt = `${p.brand || ''} ${p.name || ''}`;
+    img.loading = 'lazy';                // ← 懶載入
+    thumb.appendChild(img);
 
-        const body = document.createElement('div');
-        body.className = 'product-body';
+    const body = document.createElement('div');
+    body.className = 'product-body';
 
-        const brand = document.createElement('div');
-        brand.className = 'product-brand';
-        brand.textContent = p.brand || p.brandKey || '';
+    const brand = document.createElement('div');
+    brand.className = 'product-brand';
+    brand.textContent = p.brand || p.brandKey || '';
 
-        const name = document.createElement('div');
-        name.className = 'product-name';
-        name.textContent = p.name || '';
+    const name = document.createElement('div');
+    name.className = 'product-name';
+    name.textContent = p.name || '';
 
-        const desc = document.createElement('div');
-        desc.className = 'product-desc';
-        desc.textContent = p.tagline || p.desc || '';
+    const desc = document.createElement('div');
+    desc.className = 'product-desc';
+    desc.textContent = p.tagline || p.desc || '';
 
-        body.appendChild(brand);
-        body.appendChild(name);
-        body.appendChild(desc);
+    body.appendChild(brand);
+    body.appendChild(name);
+    body.appendChild(desc);
 
-        a.appendChild(thumb);
-        a.appendChild(body);
-        card.appendChild(a);
-        frag.appendChild(card);
-      });
-      grid.appendChild(frag);
-    }
+    a.appendChild(thumb);
+    a.appendChild(body);
+    card.appendChild(a);
+    frag.appendChild(card);
+  });
+  grid.appendChild(frag);
+}
 
     function setFilter(brandKey='all', pushHash=true){
       // 更新桌機 chips

@@ -1,72 +1,74 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Products — Aplus Systems</title>
-  <link rel="stylesheet" href="./css/products.css">
-  <link rel="icon" href="./assets/favicon.png">
+  <meta charset="utf-8" />
+  <title>Products — Aplus Systems | Broadcast & Virtual Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 黑金主題（共用） -->
+  <link rel="stylesheet" href="css/products.css" />
 </head>
-
 <body>
-  <!-- Header -->
+
+  <!-- Header（共用 include） -->
   <div id="include-header"></div>
 
   <main>
     <!-- HERO -->
     <section class="hero bright">
       <div class="container">
-        <h1 data-i18n="products_hero.h1">Products</h1>
-        <p class="lead" data-i18n="products_hero.lead">
-          Explore the full lineup of studio, broadcast and virtual production tools we integrate and support.
+        <h1 data-i18n="products.hero.h1">Products</h1>
+        <p class="lead" data-i18n="products.hero.lead">
+          Explore virtual studio and broadcast products we design and integrate. Click any card to view details.
         </p>
       </div>
     </section>
 
-    <!-- FILTER -->
+    <!-- Controls -->
     <section class="section">
-      <div class="container filter-bar">
-        <div class="brand-select mobile-only">
-          <select id="brandSelect">
-            <option value="all" selected>All Brands</option>
-            <option value="blackmagic">Blackmagic Design</option>
-            <option value="unileader">Uni-Leader</option>
-            <option value="yamaha">Yamaha</option>
-            <option value="mipro">MIPRO</option>
-            <option value="acemic">Acemic</option>
-            <option value="obs">OBS</option>
-            <option value="unreal">Unreal Engine</option>
-            <option value="ndi">NDI</option>
-            <option value="streamdeck">StreamDeck</option>
-          </select>
+      <div class="container">
+        <!-- Desktop: brand chips -->
+        <div class="brand-tabs" aria-label="Filter by brand">
+          <button class="brand-chip is-active" data-brand="all" aria-pressed="true">All</button>
+          <!-- JS 會插入各品牌 chip -->
         </div>
-        <div class="brand-chips desktop-only">
-          <button data-brand="all" class="active">All</button>
-          <button data-brand="blackmagic">Blackmagic</button>
-          <button data-brand="unileader">Uni-Leader</button>
-          <button data-brand="yamaha">Yamaha</button>
-          <button data-brand="mipro">MIPRO</button>
-          <button data-brand="acemic">Acemic</button>
-          <button data-brand="obs">OBS</button>
-          <button data-brand="unreal">Unreal</button>
-          <button data-brand="ndi">NDI</button>
-          <button data-brand="streamdeck">StreamDeck</button>
+
+        <!-- Mobile: brand select -->
+        <div class="brand-select">
+          <label for="brandFilter" class="sr-only">Brand</label>
+          <select id="brandFilter" aria-label="Brand filter">
+            <option value="all" selected>All brands</option>
+            <!-- JS 會插入各品牌 option -->
+          </select>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCTS GRID -->
+    <!-- Grid -->
     <section class="section">
       <div class="container">
-        <div id="productGrid" class="product-grid"></div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+
+        <div id="emptyState" class="empty-state hidden" role="status">
+          <p>No products under this brand yet.</p>
+        </div>
+
+        <noscript>
+          <p class="muted">Please enable JavaScript to view products.</p>
+        </noscript>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer（共用 include） -->
   <div id="include-footer"></div>
 
-  <script src="./js/lang.js" defer></script>
-  <script src="./js/products.js" defer></script>
+  <!-- 你的共用 i18n / include loader 若有（可放在此） -->
+   <script src="js/include.js" defer></script>
+   <script src="js/lang.js" defer></script>
+
+  <!-- 產品資料（你已經有） -->
+  <script src="js/product.data.js"></script>
+  <!-- 本頁 JS -->
+  <script src="js/products.js" defer></script>
 </body>
 </html>

@@ -1,53 +1,168 @@
-const products = {
-  blackmagic: [
-    { id:"atem-mini", name:"ATEM Mini Extreme ISO", brand:"Blackmagic Design", thumb:"./assets/products/bmd-atem-mini-extreme-iso.jpg", desc:"多路 HDMI 導播機，支援多畫面與 ISO 錄製。" },
-    { id:"ursa-broadcast", name:"URSA Broadcast G2", brand:"Blackmagic Design", thumb:"./assets/products/bmd-ursa-broadcast-g2.jpg", desc:"廣播級攝影機，支援 SDI 與 B4 鏡頭介面。" }
-  ],
-  unileader: [
-    { id:"u-caster-4k", name:"U-Caster 4K", brand:"Uni-Leader", thumb:"./assets/products/unileader-u-caster-4k.jpg", desc:"導播、錄製、串流一體的 4K 導播系統。" },
-    { id:"u-meta-v", name:"U-Meta V", brand:"Uni-Leader", thumb:"./assets/products/unileader-u-meta-v.jpg", desc:"Unreal 虛擬棚引擎整合平台。" }
-  ],
-  yamaha: [
-    { id:"tf5", name:"TF5 Mixer", brand:"Yamaha", thumb:"./assets/products/yamaha-tf5.jpg", desc:"專業數位混音台，支援多軌錄音與場景記憶。" }
-  ]
-};
+/* ==========================================
+   products.js — Products listing + filtering
+   ========================================== */
 
-// --- DOM ---
-const grid = document.getElementById('productGrid');
-const chipBtns = document.querySelectorAll('.brand-chips button');
-const brandSelect = document.getElementById('brandSelect');
+(function(){
+  const grid = document.getElementById('productGrid');
+  const emptyState = document.getElementById('emptyState');
+  const tabsWrap = document.querySelector('.brand-tabs');
+  const selectEl = document.getElementById('brandFilter');
 
-// --- Render ---
-function renderProducts(brand='all') {
-  grid.innerHTML = '';
-  const list = brand==='all' ? Object.values(products).flat() : products[brand] || [];
-  list.forEach(p=>{
-    const card = document.createElement('div');
-    card.className = 'product-card';
-    card.innerHTML = `
-      <img src="${p.thumb}" class="product-thumb" alt="${p.name}">
-      <div class="product-info">
-        <div class="product-brand">${p.brand}</div>
-        <div class="product-name">${p.name}</div>
-        <div class="product-desc">${p.desc}</div>
-      </div>`;
-    card.addEventListener('click', ()=> location.href=`product.html?id=${p.id}`);
-    grid.appendChild(card);
+  const DATA = (window.PRODUCT_DATA || {});
+  const PRODUCTS = Object.values(DATA); // 扁平陣列
+
+  // 聚合品牌（依 brandKey）
+  const brandMap = new Map();
+  PRODUCTS.forEach(p=>{
+    if(!p.brandKey) return;
+    if(!brandMap.has(p.brandKey)){
+      brandMap.set(p.brandKey, { key:p.brandKey, name:p.brand || p.brandKey });
+    }
   });
-}
+  // 排序：英文字母
+  const brands = [{key:'all', name:'All'}].concat(
+    Array.from(brandMap.values()).sort((a,b)=>a.name.localeCompare(b.name))
+  );
 
-// --- Event ---
-chipBtns.forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    chipBtns.forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    renderProducts(btn.dataset.brand);
-  });
-});
+  // 生成品牌 chips（桌機）
+  function buildChips(){
+    // 先清空（保留第一顆「All」）
+    tabsWrap.querySelectorAll('.brand-chip:not([data-brand="all"])').forEach(n=>n.remove());
+    brands.slice(1).forEach(b=>{
+      const btn = document.createElement('button');
+      btn.className = 'brand-chip';
+      btn.textContent = b.name;
+      btn.setAttribute('data-brand', b.key);
+      btn.addEventListener('click', ()=>setFilter(b.key));
+      tabsWrap.appendChild(btn);
+    });
+  }
 
-brandSelect?.addEventListener('change', e=>{
-  renderProducts(e.target.value);
-});
+  // 生成品牌下拉（手機）
+  function buildSelect(){
+    // 清空 existing options except first "All"
+    [...selectEl.options].forEach((opt,i)=>{ if(i>0) selectEl.removeChild(opt); });
+    brands.slice(1).forEach(b=>{
+      const opt = document.createElement('option');
+      opt.value = b.key;
+      opt.textContent = b.name;
+      selectEl.appendChild(opt);
+    });
+    selectEl.addEventListener('change', ()=>{
+      setFilter(selectEl.value);
+    });
+  }
 
-// --- Init ---
-renderProducts('all');
+  // 依品牌過濾產品
+  function filterProducts(brandKey){
+    if(!brandKey || brandKey === 'all') return PRODUCTS;
+    return PRODUCTS.filter(p=>p.brandKey === brandKey);
+  }
+
+  // 渲染卡片
+  function renderCards(list){
+    grid.innerHTML = '';
+    if(!list.length){
+      emptyState.classList.remove('hidden');
+      return;
+    }
+    emptyState.classList.add('hidden');
+    const frag = document.createDocumentFragment();
+
+    list.forEach(p=>{
+      const card = document.createElement('article');
+      card.className = 'product-card';
+
+      const a = document.createElement('a');
+      a.className = 'product-link';
+      a.href = `product.html?id=${encodeURIComponent(p.id)}`;
+      a.setAttribute('aria-label', `${p.name} — view details`);
+
+      const thumb = document.createElement('div');
+      thumb.className = 'product-thumb';
+      const img = document.createElement('img');
+      img.src = p.hero || '';
+      img.alt = `${p.brand || ''} ${p.name || ''}`;
+      thumb.appendChild(img);
+
+      const body = document.createElement('div');
+      body.className = 'product-body';
+
+      const brand = document.createElement('div');
+      brand.className = 'product-brand';
+      brand.textContent = p.brand || p.brandKey || '';
+
+      const name = document.createElement('div');
+      name.className = 'product-name';
+      name.textContent = p.name || '';
+
+      const desc = document.createElement('div');
+      desc.className = 'product-desc';
+      desc.textContent = p.tagline || p.desc || '';
+
+      body.appendChild(brand);
+      body.appendChild(name);
+      body.appendChild(desc);
+
+      a.appendChild(thumb);
+      a.appendChild(body);
+      card.appendChild(a);
+      frag.appendChild(card);
+    });
+
+    grid.appendChild(frag);
+  }
+
+  // 設定並渲染過濾
+  function setFilter(brandKey='all', pushHash=true){
+    // 更新桌機 chip 狀態
+    tabsWrap.querySelectorAll('.brand-chip').forEach(ch=>{
+      const isActive = ch.getAttribute('data-brand') === brandKey;
+      ch.classList.toggle('is-active', isActive);
+      ch.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+    // 更新手機 select
+    if(selectEl.value !== brandKey){
+      selectEl.value = brandKey;
+    }
+    // 渲染
+    renderCards(filterProducts(brandKey));
+    // 更新 URL hash（可分享/返回）
+    if(pushHash){
+      if(brandKey === 'all') history.replaceState(null,'', 'products.html');
+      else history.replaceState(null,'', `products.html#${brandKey}`);
+    }
+  }
+
+  // 從 hash 讀取預設品牌
+  function getInitialBrand(){
+    const h = (location.hash || '').replace('#','').trim();
+    return h && brandMap.has(h) ? h : 'all';
+  }
+
+  // 初始化
+  document.addEventListener('DOMContentLoaded', ()=>{});
+  (function boot(){
+    if(!PRODUCTS.length){
+      renderCards([]); // 顯示 empty
+      return;
+    }
+    buildChips();
+    buildSelect();
+    setFilter(getInitialBrand(), /*pushHash*/false);
+
+    // 允許使用者直接點品牌錨點切換
+    window.addEventListener('hashchange', ()=>{
+      setFilter(getInitialBrand(), /*pushHash*/false);
+    });
+
+    // 可選：根據品牌更新標題（英文站）
+    const current = getInitialBrand();
+    if(current !== 'all'){
+      const brandName = (brandMap.get(current)||{}).name || current;
+      document.title = `${brandName} Products — Aplus Systems`;
+    }else{
+      document.title = `Products — Aplus Systems`;
+    }
+  })();
+})();

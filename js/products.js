@@ -1,9 +1,9 @@
 /* ==========================================
-   products.js — Products listing + filtering (robust)
+   products.js — Products listing + filtering (i18n-ready)
    ========================================== */
 
 (function(){
-  const grid = document.getElementById('productGrid');
+  const grid     = document.getElementById('productGrid');
   const emptyState = document.getElementById('emptyState');
   const tabsWrap = document.querySelector('.brand-tabs');
   const selectEl = document.getElementById('brandFilter');
@@ -13,7 +13,55 @@
     return;
   }
 
-  // 等待 window.PRODUCT_DATA 可用
+  // ---------- i18n helpers ----------
+  // 取目前語言（用你現有的 i18n 套件狀態）
+  function getLocale(){
+    return (window.i18n && (window.i18n.locale || window.i18n.lang)) ||
+           document.documentElement.lang ||
+           'en';
+  }
+
+  // 翻譯函式：優先 common/products，再 fallback
+  function t(key, fallback=''){
+    const API = window.i18n && (window.i18n.t || window.i18n.translate);
+    if (typeof API === 'function') {
+      const v = API(key);
+      if (v && typeof v === 'string') return v;
+    }
+    // 允許你自家 t()
+    if (typeof window.t === 'function') {
+      const v = window.t(key);
+      if (v && typeof v === 'string') return v;
+    }
+    return fallback;
+  }
+
+  // 「全部」標籤的 key（依你前面 i18n 結構選一個有的）
+  function tAll(){
+    return t('products.all',
+          t('common.all',
+          t('ui.all','All')));
+  }
+
+  // 品牌顯示名稱：優先 brands.<brandKey>.name -> 用原 brand / brandKey
+  function tBrand(brandKey, fallbackName){
+    return t(`brands.${brandKey}.name`, fallbackName || brandKey || '');
+  }
+
+  // 產品顯示名稱/標語/描述：用 i18nKey（你已加在每個產品上）
+  function tProductName(p){
+    return p.i18nKey ? t(`${p.i18nKey}.name`, p.name || '') : (p.name || '');
+  }
+  function tProductTagline(p){
+    // 列表頁顯示簡短字串，先用 tagline，沒有就 desc
+    const byKey = p.i18nKey ? t(`${p.i18nKey}.tagline`, '') : '';
+    if (byKey) return byKey;
+    const byKeyDesc = p.i18nKey ? t(`${p.i18nKey}.desc`, '') : '';
+    if (byKeyDesc) return byKeyDesc;
+    return p.tagline || p.desc || '';
+  }
+
+  // ---------- 等待資料 ----------
   function waitForData(timeoutMs = 3000){
     return new Promise((resolve, reject)=>{
       const start = Date.now();
@@ -29,94 +77,106 @@
     });
   }
 
-  function render(DATA){
-    const PRODUCTS = Object.values(DATA || {});
-    console.log(`[products] Loaded ${PRODUCTS.length} products.`);
+  let LAST_DATA = null;
+  let LAST_BRANDS = null;
 
-    // 聚合品牌
+  function render(DATA){
+    LAST_DATA = DATA;
+    const PRODUCTS = Object.values(DATA || {});
+    const locale = getLocale();
+    console.log(`[products] Loaded ${PRODUCTS.length} products. locale=${locale}`);
+
+    // 聚合品牌（顯示名稱用 i18n）
     const brandMap = new Map();
     PRODUCTS.forEach(p=>{
       if(!p || !p.brandKey) return;
       if(!brandMap.has(p.brandKey)){
-        brandMap.set(p.brandKey, { key:p.brandKey, name:p.brand || p.brandKey });
+        const displayName = tBrand(p.brandKey, p.brand || p.brandKey);
+        brandMap.set(p.brandKey, { key: p.brandKey, name: displayName });
       }
     });
-    const brands = [{key:'all', name:'All'}].concat(
-      Array.from(brandMap.values()).sort((a,b)=>a.name.localeCompare(b.name))
-    );
 
-    // UI 生成
+    // 品牌陣列（含 All），依當前語言排序
+    const brands = [{key:'all', name: tAll()}].concat(
+      Array.from(brandMap.values())
+           .sort((a,b)=> a.name.localeCompare(b.name, locale, {sensitivity:'base'}))
+    );
+    LAST_BRANDS = brands;
+
     buildChips(brands);
     buildSelect(brands);
 
-    // 過濾 + 渲染
     function filterProducts(brandKey){
       if(!brandKey || brandKey === 'all') return PRODUCTS;
       return PRODUCTS.filter(p=>p.brandKey === brandKey);
     }
 
-    // 渲染卡片時
-function renderCards(list){
-  grid.innerHTML = '';
-  if(!list.length){
-    if (emptyState) emptyState.classList.remove('hidden'); // ← 加保護
-    return;
-  }
-  if (emptyState) emptyState.classList.add('hidden'); // ← 加保護
+    function renderCards(list){
+      grid.innerHTML = '';
+      if(!list.length){
+        if (emptyState) emptyState.classList.remove('hidden');
+        return;
+      }
+      if (emptyState) emptyState.classList.add('hidden');
 
-  const frag = document.createDocumentFragment();
-  list.forEach(p=>{
-    const card = document.createElement('article');
-    card.className = 'product-card';
+      const frag = document.createDocumentFragment();
+      list.forEach(p=>{
+        const card = document.createElement('article');
+        card.className = 'product-card';
 
-    const a = document.createElement('a');
-    a.className = 'product-link';
-    a.href = `product.html?id=${encodeURIComponent(p.id)}`;
-    a.setAttribute('aria-label', `${p.name || ''} — view details`);
+        const a = document.createElement('a');
+        a.className = 'product-link';
+        a.href = `product.html?id=${encodeURIComponent(p.id)}`;
 
-    const thumb = document.createElement('div');
-    thumb.className = 'product-thumb';
-    const img = document.createElement('img');
-    img.src = p.hero || '';
-    img.alt = `${p.brand || ''} ${p.name || ''}`;
-    img.loading = 'lazy';                // ← 懶載入
-    thumb.appendChild(img);
+        const displayName  = tProductName(p);
+        const displayBrand = tBrand(p.brandKey, p.brand || p.brandKey);
+        const displayDesc  = tProductTagline(p);
 
-    const body = document.createElement('div');
-    body.className = 'product-body';
+        a.setAttribute('aria-label', `${displayName} — ${t('products.view_details','view details')}`);
 
-    const brand = document.createElement('div');
-    brand.className = 'product-brand';
-    brand.textContent = p.brand || p.brandKey || '';
+        const thumb = document.createElement('div');
+        thumb.className = 'product-thumb';
+        const img = document.createElement('img');
+        img.src = p.hero || '';
+        img.alt = `${displayBrand} ${displayName}`;
+        img.loading = 'lazy';
+        thumb.appendChild(img);
 
-    const name = document.createElement('div');
-    name.className = 'product-name';
-    name.textContent = p.name || '';
+        const body = document.createElement('div');
+        body.className = 'product-body';
 
-    const desc = document.createElement('div');
-    desc.className = 'product-desc';
-    desc.textContent = p.tagline || p.desc || '';
+        const brand = document.createElement('div');
+        brand.className = 'product-brand';
+        brand.textContent = displayBrand;
 
-    body.appendChild(brand);
-    body.appendChild(name);
-    body.appendChild(desc);
+        const name = document.createElement('div');
+        name.className = 'product-name';
+        name.textContent = displayName;
 
-    a.appendChild(thumb);
-    a.appendChild(body);
-    card.appendChild(a);
-    frag.appendChild(card);
-  });
-  grid.appendChild(frag);
-}
+        const desc = document.createElement('div');
+        desc.className = 'product-desc';
+        desc.textContent = displayDesc;
+
+        body.appendChild(brand);
+        body.appendChild(name);
+        body.appendChild(desc);
+
+        a.appendChild(thumb);
+        a.appendChild(body);
+        card.appendChild(a);
+        frag.appendChild(card);
+      });
+      grid.appendChild(frag);
+    }
 
     function setFilter(brandKey='all', pushHash=true){
-      // 更新桌機 chips
+      // 更新 chips
       tabsWrap.querySelectorAll('.brand-chip').forEach(ch=>{
         const isActive = ch.getAttribute('data-brand') === brandKey;
         ch.classList.toggle('is-active', isActive);
         ch.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       });
-      // 更新手機 select
+      // 更新 select
       if(selectEl.value !== brandKey) selectEl.value = brandKey;
 
       renderCards(filterProducts(brandKey));
@@ -127,12 +187,13 @@ function renderCards(list){
         else history.replaceState(null,'', `products.html#${brandKey}`);
       }
 
-      // 可選：更新標題
+      // 更新標題（品牌名要 i18n）
       if(brandKey !== 'all'){
-        const b = brandMap.get(brandKey);
-        document.title = `${(b && b.name) || brandKey} Products — Aplus Systems`;
+        const b = LAST_BRANDS.find(x=>x.key===brandKey);
+        const brandName = (b && b.name) || brandKey;
+        document.title = `${brandName} ${t('products.title_suffix','Products')} — Aplus Systems`;
       }else{
-        document.title = `Products — Aplus Systems`;
+        document.title = `${t('products.page_title','Products')} — Aplus Systems`;
       }
     }
 
@@ -141,21 +202,20 @@ function renderCards(list){
       return h && brandMap.has(h) ? h : 'all';
     }
 
-    // 初始化：Chips / Select
     function buildChips(blist){
-      // 先清空 All 之外的
+      // 清掉 All 之外
       tabsWrap.querySelectorAll('.brand-chip:not([data-brand="all"])').forEach(n=>n.remove());
-      // 確保存在 All chip（HTML 有放一顆）
+      // 確保 All 存在，並更新文案
       let allChip = tabsWrap.querySelector('.brand-chip[data-brand="all"]');
       if(!allChip){
         allChip = document.createElement('button');
         allChip.className = 'brand-chip is-active';
-        allChip.textContent = 'All';
         allChip.setAttribute('data-brand','all');
         allChip.setAttribute('aria-pressed','true');
         tabsWrap.appendChild(allChip);
       }
-      allChip.addEventListener('click', ()=>setFilter('all'));
+      allChip.textContent = tAll();
+      allChip.onclick = ()=>setFilter('all');
 
       blist.slice(1).forEach(b=>{
         const btn = document.createElement('button');
@@ -170,27 +230,46 @@ function renderCards(list){
     function buildSelect(blist){
       // 清空 All 之外
       [...selectEl.options].forEach((o,i)=>{ if(i>0) o.remove(); });
+      // 更新第一個 option（All）的顯示
+      if (selectEl.options[0]) selectEl.options[0].textContent = tAll();
+
       blist.slice(1).forEach(b=>{
         const opt = document.createElement('option');
         opt.value = b.key;
         opt.textContent = b.name;
         selectEl.appendChild(opt);
       });
-      selectEl.addEventListener('change', ()=> setFilter(selectEl.value));
+      // 綁 change
+      if (!selectEl._i18nBound) {
+        selectEl.addEventListener('change', ()=> setFilter(selectEl.value));
+        selectEl._i18nBound = true;
+      }
     }
 
     // 首次渲染
     setFilter(getInitialBrand(), /*pushHash*/false);
 
     // 監聽 hash 切換
-    window.addEventListener('hashchange', ()=> setFilter(getInitialBrand(), false));
+    if (!window._productsHashBound) {
+      window.addEventListener('hashchange', ()=> setFilter(getInitialBrand(), false));
+      window._productsHashBound = true;
+    }
+  }
+
+  // 語言切換時重新渲染（你的 i18n 系統如果有不同事件名，把 'i18n:change' 換掉即可）
+  function bindI18nRerender(){
+    if (window._productsI18nBound) return;
+    window.addEventListener('i18n:change', ()=>{
+      if (LAST_DATA) render(LAST_DATA);
+    });
+    window._productsI18nBound = true;
   }
 
   // 啟動
   document.addEventListener('DOMContentLoaded', ()=>{
+    bindI18nRerender();
     waitForData().then(render).catch(err=>{
       console.warn('[products] Failed to load PRODUCT_DATA:', err);
-      // 仍然安全 fallback
       render({});
     });
   });

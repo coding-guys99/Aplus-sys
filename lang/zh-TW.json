@@ -570,10 +570,8 @@
         "可與 U-Caster 場景/字幕節奏配合",
         "模組化安裝：快拆、配重簡單、維護容易"
       ]
-    }
-  },
+    },
   
-  "products": {
     "bmd_studio_4k_pro_g2": {
       "name": "Studio Camera 4K Pro G2",
       "tagline": "廣播級 4K 攝影機，專為導播棚與現場製播設計。",
@@ -689,10 +687,8 @@
         "低延遲擷取，適合即時流程",
         "工作站/伺服器友善的 PCIe 介面"
       ]
-    }
-  },
-  
-  "products": {
+    },
+
     "obsbot_tiny_2": {
       "name": "OBSBOT Tiny 2",
       "tagline": "AI 智能追蹤攝影機，專為教學、直播與企業會議設計。",
@@ -915,10 +911,8 @@
         "免電池，插上即錄",
         "附防震與防風，室內外穩定"
       ]
-    }
-  },
+    },
   
-  "products": {
     "acemic_g5_iem": {
       "name": "Acemic G5 In-Ear Monitoring System",
       "tagline": "專業級 UHF 入耳監聽系統，穩定清晰、低延遲、現場必備。",

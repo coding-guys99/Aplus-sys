@@ -50,7 +50,7 @@ window.PRODUCT_DATA = {
     images: [
       "./assets/products/UniLeader/unileader-u-caster-switch.jpg",
       "./assets/products/UniLeader/unileader-u-caster-timeline.jpg",
-      "./assets/products/UniLeader/unileader-u-caster-multiwindow.jpg"
+      "./assets/products/UniLeader/unileader-u-caster-multiwindow.jpg",
        "./assets/products/UniLeader/unileader-u-caster-aitracker.jpg"
     ],
     tagline: "多機位導播、錄製與直播的一體化工作站。",

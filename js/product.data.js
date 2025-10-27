@@ -21,7 +21,7 @@ window.PRODUCT_DATA = {
     desc:
       "U-Meta V 整合 Unreal Engine 渲染、追蹤與鍵控模組，可支援多機位混合拍攝，適用於教育錄播、企業直播與廣播棚控。",
     specs: {
-      "引擎核心": "Unreal Engine 4.27",
+      "引擎核心": "Unreal Engine",
       "輸入": "SDI / NDI / HDMI 多訊號輸入",
       "輸出": "SDI、NDI、HDMI 監看",
       "解析度": "最高 4K 60p 即時輸出",

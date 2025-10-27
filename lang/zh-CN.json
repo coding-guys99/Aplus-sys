@@ -570,5 +570,124 @@
         "模块化安装：快拆、易维护"
       ]
     }
+  },
+
+  "products": {
+    "bmd_studio_4k_pro_g2": {
+      "name": "Studio Camera 4K Pro G2",
+      "tagline": "广播级 4K 摄像机，面向演播室与现场制作。",
+      "desc": "Studio Camera 4K Pro G2 结合高感光 4K 传感器与 12G-SDI / NDI/IP 输出，可与 ATEM 无缝联动远程调校。大亮屏与丰富接口，适合校园、活动与专业转播。",
+      "badges": ["4K Camera", "Live Production", "NDI / SDI", "Remote Control"],
+      "specs": {
+        "传感器": "4/3\" CMOS（双原生 ISO 400 / 3200）",
+        "分辨率": "UHD 4K 60p",
+        "输出接口": "12G-SDI / HDMI / NDI / IP Streaming",
+        "音频": "XLR ×2、耳机输出",
+        "控制": "SDI 控制 / ATEM 远程 / USB-C 扩展",
+        "显示": "7\" 高亮触控（2000 nits）",
+        "供电": "DC 12V / PoE+",
+        "应用": "演播室、校园电视台、舞台活动、直播"
+      },
+      "features": [
+        "12G-SDI 与 NDI/IP 混合流程",
+        "高感光 4K 成像，低照度也清晰",
+        "内置 7\" HDR 屏与 XLR 音频",
+        "ATEM 远程光圈/对焦/色彩",
+        "PoE+ 单线布线更整洁"
+      ]
+    },
+    "bmd_atem_mini_extreme_iso": {
+      "name": "ATEM Mini Extreme ISO",
+      "tagline": "多机位切换台，支持多画面预览与同步 ISO 录制。",
+      "desc": "ATEM Mini Extreme ISO 提供 8 路 HDMI 输入、USB-C 推流，并可同时录下节目与各输入源。具多画面、转场与图文，适合教学、企业直播与活动导播。",
+      "badges": ["Switcher", "Recorder", "Streaming", "HDMI I/O"],
+      "specs": {
+        "输入": "HDMI 2.0 ×8（1080p60）",
+        "输出": "HDMI ×3、USB-C 摄像头输出、以太网推流",
+        "录制": "9 轨 ISO（节目 + 8 路）",
+        "音频": "3.5mm ×2、Fairlight 处理",
+        "画面控制": "多画面 / 转场 / 下三分之一",
+        "媒体": "内置图库",
+        "控制": "ATEM 软件 / 面板按键 / StreamDeck",
+        "应用": "在线课程、企业直播、活动导播"
+      },
+      "features": [
+        "8 路 HDMI 与多画面监看",
+        "ISO 同步录制所有输入",
+        "可直接推流至主流平台",
+        "ATEM 远程控制",
+        "内建转场、键控与音频混音"
+      ]
+    },
+    "bmd_hyperdeck_studio_4k_pro": {
+      "name": "HyperDeck Studio 4K Pro",
+      "tagline": "专业级录播与回放，支持多格式 4K 录制。",
+      "desc": "HyperDeck Studio 4K Pro 支持 ProRes、DNx、H.264/H.265，双 SD + 双 SSD 槽实现不中断录制，适合录播中心、导播备份与回放。",
+      "badges": ["Recorder", "Playout", "4K", "SDI / NDI"],
+      "specs": {
+        "编解码": "ProRes / DNx / H.264 / H.265 / QuickTime",
+        "输入": "12G-SDI ×1、时码/参考输入",
+        "输出": "12G-SDI ×2、HDMI、耳机",
+        "存储": "双 SD + 双 SSD（热插拔）",
+        "分辨率": "最高 2160p60",
+        "音频": "16 声道嵌入、XLR 时码",
+        "控制": "前面板 / 以太网 / RS-422 / ATEM",
+        "应用": "导播录制、节目备份、现场回放"
+      },
+      "features": [
+        "12G-SDI/HDMI I/O，最高 4K60",
+        "双槽循环不中断",
+        "ProRes 与 H.265 等多格式支持",
+        "Genlock/时码，便于多机同步",
+        "支持远程与自动化整合"
+      ]
+    },
+    "bmd_ursa_broadcast_g2": {
+      "name": "URSA Broadcast G2",
+      "tagline": "广播级 6K 摄像机，棚内棚外全覆盖。",
+      "desc": "URSA Broadcast G2 兼顾电影画质与广播操控。支持 B4/EF 卡口、BRAW/ProRes 录制，配备 12G-SDI 与 Genlock，适合多机位制作。",
+      "badges": ["Camera", "6K", "Broadcast", "SDI / NDI"],
+      "specs": {
+        "传感器": "6K Super 35，13 档动态范围",
+        "录制格式": "BRAW / ProRes 422 / ProRes HQ",
+        "分辨率": "6K、UHD 4K、1080p",
+        "I/O": "12G-SDI ×2、XLR ×2、时码 / Genlock",
+        "镜头卡口": "B4（可更换 EF/PL/F）",
+        "显示": "4\" 翻转触控 + 2\" 状态屏",
+        "控制": "SDI 远程 / ATEM 控制 / USB-C 外录",
+        "存储": "CFast2.0 ×2、SD UHS-II ×2、USB-C",
+        "应用": "演播室、OB 车、校园电视、广播制作"
+      },
+      "features": [
+        "6K 传感器与高宽容度",
+        "内录 BRAW 与 ProRes",
+        "双卡与 USB-C 外录",
+        "ATEM 远程色彩/光圈/对焦",
+        "B4/EF/PL 多卡口扩展"
+      ]
+    },
+    "bmd_decklink_8k_pro": {
+      "name": "DeckLink 8K Pro",
+      "tagline": "四通道 SDI 采集/回放卡，支持 8K HDR。",
+      "desc": "DeckLink 8K Pro 提供 4×12G-SDI 双向端口，可同时采集/回放 HD/4K/8K。支持 HDR、Rec.2020 与 12-bit，适合虚拟演播、后期与录播系统。",
+      "badges": ["Capture", "Playback", "8K", "SDI"],
+      "specs": {
+        "I/O": "4× 12G-SDI（双向）",
+        "格式": "最高 8K DCI 60p / 4K / HD",
+        "位深": "最高 12-bit YUV 4:2:2 / RGB 4:4:4",
+        "色彩": "Rec.601 / Rec.709 / Rec.2020 / HDR",
+        "音频": "16 声道嵌入",
+        "软件": "Resolve / vMix / OBS / Unreal",
+        "接口": "PCIe 8x、Desktop Video SDK",
+        "应用": "虚拟制作、录制 I/O、后期进出带"
+      },
+      "features": [
+        "四路 12G-SDI 自由配置",
+        "支持 8K/HDR/Rec.2020/12-bit",
+        "兼容 OBS、vMix、Resolve、Unreal",
+        "低延迟采集适合实时流程",
+        "工作站/服务器 PCIe 形态"
+      ]
+    }
   }
 }

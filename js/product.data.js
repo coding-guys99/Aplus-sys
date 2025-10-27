@@ -440,5 +440,269 @@ window.PRODUCT_DATA = {
     "無線連接手機 App，可遠端控制、即時導播與串流"
   ]
 },
-
+/* ------------------ SYNCO Xtalk X ------------------ */
+"synco-xtalk-x": {
+  id: "synco-xtalk-x",
+  name: "SYNCO Xtalk X",
+  brand: "SYNCO",
+  brandKey: "synco",
+  brandLogo: "./assets/brands/SYNCO.svg",
+  hero: "./assets/products/synco-xtalk-x.jpg",
+  images: [
+    "./assets/products/synco-xtalk-x.jpg",
+    "./assets/products/synco-xtalk-x-case.jpg",
+    "./assets/products/synco-xtalk-x-transmitter.jpg",
+    "./assets/products/synco-xtalk-x-meeting.jpg"
+  ],
+  tagline: "智能全雙工無線會議系統，4 路同時對話，清晰自然。",
+  badges: ["Wireless Audio", "Full Duplex", "Conference", "AI Noise Cancel"],
+  desc:
+    "SYNCO Xtalk X 是專為多方對話與會議錄製設計的無線音訊系統。支援全雙工通話，最多可 4 人同時自由對話，無需搶話等待。搭載 AI 降噪與自動混音技術，適用於遠距會議、線上教學、企業錄播與直播節目。",
+  specs: {
+    "通訊技術": "2.4GHz 數位無線傳輸（全雙工）",
+    "通道數": "最多 4 組設備同時對話",
+    "收音範圍": "最遠 150 公尺（空曠環境）",
+    "收音模式": "全向高靈敏麥克風 / 外接 3.5mm Lavalier",
+    "降噪": "AI 雙重降噪演算法，自動環境優化",
+    "電池續航": "約 8 小時（含充電盒可延長至 20 小時）",
+    "介面": "USB-C / 3.5mm TRS / Type-C 數位輸出",
+    "相容": "相機 / 手機 / 電腦 / 混音器 / 導播機",
+    "應用": "會議錄播、直播節目、遠距教學、現場導播"
+  },
+  features: [
+    "全雙工四人對話，無需搶話，溝通自然流暢",
+    "AI 智能降噪，有效抑制環境與風聲雜音",
+    "收音距離最遠達 150 公尺，穩定低延遲",
+    "可接相機、筆電、導播機或手機錄音",
+    "支援 USB-C 數位音訊輸出與即時監聽",
+    "充電盒收納設計，一次完成收納與充電"
+  ]
+},
+/* ------------------ SYNCO Xtalk Pro ------------------ */
+"synco-xtalk-pro": {
+  id: "synco-xtalk-pro",
+  name: "SYNCO Xtalk Pro",
+  brand: "SYNCO",
+  brandKey: "synco",
+  brandLogo: "./assets/brands/SYNCO.svg",
+  hero: "./assets/products/synco-xtalk-pro.jpg",
+  images: [
+    "./assets/products/synco-xtalk-pro.jpg",
+    "./assets/products/synco-xtalk-pro-case.jpg",
+    "./assets/products/synco-xtalk-pro-transmitter.jpg",
+    "./assets/products/synco-xtalk-pro-conference.jpg"
+  ],
+  tagline: "專業級全雙工無線會議與導播通話系統，穩定清晰、即時互通。",
+  badges: ["Wireless Intercom", "Full Duplex", "Broadcast", "AI Noise Cancel"],
+  desc:
+    "SYNCO Xtalk Pro 是面向導播室、錄播中心與大型會議的專業全雙工無線通訊系統。支援多達 8 人同時對話與錄音，具備 AI 智能降噪與長距離穩定連線，確保現場協作零延遲。適用於轉播、舞台活動、教育錄播與企業會議。",
+  specs: {
+    "通訊技術": "2.4GHz 數位無線傳輸，全雙工模式",
+    "通道數": "最高支援 8 組同時對話 / 32 組配對",
+    "收音範圍": "最遠 350 公尺（開放環境）",
+    "收音模式": "全向麥克風 + 外接 Lavalier",
+    "降噪": "AI 智能雙向降噪 + 迴音抑制演算法",
+    "延遲": "<20ms 低延遲傳輸",
+    "電池續航": "10 小時（含充電盒可延長至 25 小時）",
+    "介面": "USB-C / 3.5mm TRRS / XLR（透過轉接模組）",
+    "相容": "導播機 / 攝影機 / 筆電 / 混音系統",
+    "應用": "導播通話、錄播中心、舞台協作、企業多方會議"
+  },
+  features: [
+    "全雙工通訊架構，支援 8 人同時即時對話",
+    "AI 智能降噪 + 低延遲傳輸，語音清晰穩定",
+    "最遠 350 公尺無線距離，適合大型活動現場",
+    "可外接 Lavalier 或頭戴式麥克風，靈活應用",
+    "多通道可獨立錄音，方便後期整合與備份",
+    "金屬機身設計，抗干擾、耐用度高"
+  ]
+},
+/* ------------------ SYNCO Xtalk XMax ------------------ */
+"synco-xtalk-xmax": {
+  id: "synco-xtalk-xmax",
+  name: "SYNCO Xtalk XMax",
+  brand: "SYNCO",
+  brandKey: "synco",
+  brandLogo: "./assets/brands/SYNCO.svg",
+  hero: "./assets/products/synco-xtalk-xmax.jpg",
+  images: [
+    "./assets/products/synco-xtalk-xmax.jpg",
+    "./assets/products/synco-xtalk-xmax-base.jpg",
+    "./assets/products/synco-xtalk-xmax-headset.jpg",
+    "./assets/products/synco-xtalk-xmax-setup.jpg"
+  ],
+  tagline: "旗艦級無線全雙工通訊系統，多群組協作、基地台管理、專業導播首選。",
+  badges: ["Full Duplex", "Base Station", "Multi-Group", "AI Noise Cancel"],
+  desc:
+    "SYNCO Xtalk XMax 是 Xtalk 系列的旗艦版，支援多達 16 人同時全雙工對話，並搭載專用 Base Station 基地台，可集中管理、群組分配與錄音備份。適用於大型轉播現場、舞台活動、錄播中心與企業協作指揮系統。",
+  specs: {
+    "通訊架構": "2.4GHz 數位無線傳輸 + Base Station 管理",
+    "通道數": "16 人同時對話 / 64 組設備配對",
+    "收音範圍": "最遠 500 公尺（開放環境）",
+    "降噪系統": "AI 雙向降噪 + 迴音抑制 + 智慧動態增益",
+    "群組管理": "Base Station 可分組、靜音、錄音同步控制",
+    "延遲": "<15ms 低延遲全雙工傳輸",
+    "電池續航": "耳機約 10 小時、基地台供電持續運作",
+    "介面": "USB-C / XLR / RJ45 / LAN 遠端控制",
+    "錄音": "Base Station 內建錄音模組（WAV 格式）",
+    "應用": "導播指揮、舞台協作、錄播中心、企業通訊"
+  },
+  features: [
+    "旗艦級全雙工架構，支援 16 人即時對話",
+    "Base Station 集中管理群組、錄音與靜音功能",
+    "AI 智慧降噪與動態音量平衡，長時間使用更清晰",
+    "最遠 500 公尺傳輸距離，穿牆抗干擾能力更強",
+    "可整合 LAN 網路與導播系統，擴充性高",
+    "金屬工業級機身設計，適合長時間現場使用"
+  ]
+},
+/* ------------------ SYNCO Xtalk Link ------------------ */
+"synco-xtalk-link": {
+  id: "synco-xtalk-link",
+  name: "SYNCO Xtalk Link",
+  brand: "SYNCO",
+  brandKey: "synco",
+  brandLogo: "./assets/brands/SYNCO.svg",
+  hero: "./assets/products/synco-xtalk-link.jpg",
+  images: [
+    "./assets/products/synco-xtalk-link.jpg",
+    "./assets/products/synco-xtalk-link-usbc.jpg",
+    "./assets/products/synco-xtalk-link-app.jpg",
+    "./assets/products/synco-xtalk-family.jpg"
+  ],
+  tagline: "Xtalk 全雙工通訊的橋接核心：把耳麥連到手機 / 電腦與混合製播流程。",
+  badges: ["Bridge Hub", "USB-C", "App Control", "Multi-Group"],
+  desc:
+    "Xtalk Link 是 Xtalk 系列的橋接中樞，將多個 Xtalk 耳麥/腰包集中到手機或電腦，快速建立混合通訊。適合遠端講者、行動導播與會議/直播協作，提供分組、靜音與優先通話等管控功能，讓現場與遠端團隊能無縫對話。",
+  specs: {
+    "用途": "Xtalk 系列擴充橋接器（現場 ↔ 手機/電腦）",
+    "連線": "2.4GHz 專屬無線（對 Xtalk 系列）／USB-C（對主機）",
+    "相容": "Xtalk X / Pro / XMax 耳機與腰包（同系列相容）",
+    "群組": "App/桌面軟體分組管理、靜音、優先通話",
+    "音訊介面": "UAC（USB Audio Class），可作會議/直播通話裝置",
+    "供電": "USB-C 供電；支援行動電源",
+    "控制": "行動 App／桌面軟體／基本實體按鍵",
+    "應用": "遠端講者串接、混合會議、行動導播、校園/企業活動"
+  },
+  features: [
+    "把 Xtalk 全雙工對講直接帶入手機或電腦的通話系統",
+    "可分組、靜音、指揮優先通話，現場調度更直覺",
+    "USB-C 即插即用，支援常見會議/串流平台",
+    "行動電源即可供電，戶外/臨時架設更輕便",
+    "與 Xtalk X／Pro／XMax 搭配，從小組到大型活動皆可擴充"
+  ]
+},
+/* ------------------ SYNCO G4 ------------------ */
+"synco-g4": {
+  id: "synco-g4",
+  name: "SYNCO G4 Wireless Microphone",
+  brand: "SYNCO",
+  brandKey: "synco",
+  brandLogo: "./assets/brands/SYNCO.svg",
+  hero: "./assets/products/synco-g4.jpg",
+  images: [
+    "./assets/products/synco-g4.jpg",
+    "./assets/products/synco-g4-kit.jpg",
+    "./assets/products/synco-g4-receiver.jpg",
+    "./assets/products/synco-g4-transmitter.jpg"
+  ],
+  tagline: "雙通道無線麥克風系統，4.0 無線架構、OLED 螢幕顯示、即錄即傳。",
+  badges: ["Wireless Mic", "2.4GHz", "Dual Channel", "OLED Display"],
+  desc:
+    "SYNCO G4 是專為創作者與行動錄播設計的雙通道無線麥克風系統。採用第四代 SYNCO 2.4GHz 無線架構，具備低延遲、高穩定性與出色的收音品質。內建錄音與 OLED 顯示螢幕，輕鬆掌控音量與狀態，適合教學、Vlog、企業錄播與行動導播場景。",
+  specs: {
+    "傳輸技術": "2.4GHz 數位無線傳輸（第四代架構）",
+    "通道": "雙通道（2TX + 1RX）",
+    "錄音": "TX 內建錄音（最高 8GB / 約 22 小時）",
+    "距離": "最遠 250 公尺（開放環境）",
+    "延遲": "<20ms 低延遲傳輸",
+    "輸入": "內建麥克風 / 外接 Lavalier",
+    "輸出": "3.5mm TRS / USB-C / Type-C 數位音訊",
+    "顯示": "OLED 顯示螢幕，即時監控電量與音量",
+    "電池續航": "8 小時（含充電盒可延長至 20 小時）",
+    "應用": "Vlog 拍攝、教育錄播、企業簡報、行動導播"
+  },
+  features: [
+    "第四代 2.4GHz 穩定傳輸架構，抗干擾性能更強",
+    "支援 TX 端內錄音，防止訊號中斷造成遺失",
+    "OLED 顯示螢幕，音量與電量清楚可視",
+    "雙通道設計，可同時錄製兩位講者",
+    "USB-C 數位音訊輸出，免轉接可直連筆電或手機",
+    "小型輕巧設計，支援磁吸安裝與收納充電盒"
+  ]
+},
+/* ------------------ SYNCO P2S ------------------ */
+"synco-p2s": {
+  id: "synco-p2s",
+  name: "SYNCO P2S Wireless Microphone",
+  brand: "SYNCO",
+  brandKey: "synco",
+  brandLogo: "./assets/brands/SYNCO.svg",
+  hero: "./assets/products/synco-p2s.jpg",
+  images: [
+    "./assets/products/synco-p2s.jpg",
+    "./assets/products/synco-p2s-case.jpg",
+    "./assets/products/synco-p2s-mobile.jpg",
+    "./assets/products/synco-p2s-clip.jpg"
+  ],
+  tagline: "行動即錄無線麥克風，隨插即用、清晰收音、口袋大小。",
+  badges: ["Mobile Mic", "Plug & Play", "Noise Reduction", "Charging Case"],
+  desc:
+    "SYNCO P2S 是專為手機拍攝與直播設計的無線麥克風系統。具備雙通道收音、即插即用的 Type-C／Lightning 接頭，以及主動降噪與收納充電盒設計。輕巧易攜、免設定，適合創作者、Vlog、線上課程與行動直播使用。",
+  specs: {
+    "傳輸技術": "2.4GHz 數位無線",
+    "通道": "雙通道（2TX + 1RX）",
+    "相容介面": "Type-C 或 Lightning（依版本）",
+    "距離": "最遠 150 公尺（開放環境）",
+    "收音": "內建全指向麥克風",
+    "降噪": "AI 智慧降噪，支援即時監聽",
+    "電池續航": "TX 約 5 小時，附充電盒可續航至 15 小時",
+    "充電": "Type-C 快充，約 1.5 小時充滿",
+    "應用": "行動拍攝、線上教學、企業直播、訪談錄音"
+  },
+  features: [
+    "即插即用，無需配對，插上即可錄音",
+    "AI 智慧降噪技術，嘈雜環境下語音依然清晰",
+    "雙通道錄音，可同時錄製兩人對話",
+    "輕巧便攜，配合收納充電盒即錄即收",
+    "支援 Type-C／Lightning 多平台相容（Android／iPhone）",
+    "適合 Vlog、直播、課程與企業影片錄製"
+  ]
+},
+/* ------------------ SYNCO MMic-U3 ------------------ */
+"synco-mmic-u3": {
+  id: "synco-mmic-u3",
+  name: "SYNCO MMic-U3 Mobile Microphone",
+  brand: "SYNCO",
+  brandKey: "synco",
+  brandLogo: "./assets/brands/SYNCO.svg",
+  hero: "./assets/products/synco-mmic-u3.jpg",
+  images: [
+    "./assets/products/synco-mmic-u3.jpg",
+    "./assets/products/synco-mmic-u3-with-phone.jpg",
+    "./assets/products/synco-mmic-u3-accessories.jpg"
+  ],
+  tagline: "輕巧心型指向麥克風，行動拍攝與錄音的高音質解決方案。",
+  badges: ["Cardioid Mic", "Plug & Play", "Noise Reduction", "Mobile Ready"],
+  desc:
+    "SYNCO MMic-U3 是一款專為手機與相機錄音設計的心型指向麥克風。採用鋁合金機身與高靈敏度電容音頭，可有效降低環境噪音並聚焦語音。支援 Type-C／3.5mm TRRS 連接，插上即可錄音，適合 Vlog、線上教學、訪談與行動拍攝。",
+  specs: {
+    "收音指向": "心型指向（Cardioid）",
+    "靈敏度": "-35dB ±3dB (1V/Pa @1kHz)",
+    "頻率響應": "50Hz–20kHz",
+    "訊噪比": ">75dB",
+    "介面": "Type-C／3.5mm TRRS（依版本）",
+    "尺寸": "Φ22 × 72mm",
+    "重量": "僅 39g",
+    "材質": "鋁合金機身，防震支架與防風罩",
+    "應用": "手機拍攝、線上教學、Vlog、訪談錄音"
+  },
+  features: [
+    "心型指向設計，有效抑制側面與後方雜音",
+    "鋁合金輕量機身，攜帶方便、耐用抗干擾",
+    "支援 Type-C／3.5mm 介面，手機與相機皆可使用",
+    "免電池設計，插上即可錄音",
+    "附防震支架與防風罩，室內外錄音皆穩定"
+  ]
+}
 };

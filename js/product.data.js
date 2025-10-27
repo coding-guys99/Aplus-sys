@@ -851,6 +851,44 @@ window.PRODUCT_DATA = {
     "靈活的輸入輸出配置，支援 AUX、GROUP、STEREO BUS"
   ]
 },
+/* ------------------ MIPRO ACT Series Wireless Microphone ------------------ */
+"mipro-act-series": {
+  id: "mipro-act-series",
+  name: "MIPRO ACT Series Wireless Microphone System",
+  brand: "MIPRO",
+  brandKey: "mipro",
+  brandLogo: "./assets/brands/MIPRO.svg",
+  hero: "./assets/products/mipro-act-series.jpg",
+  images: [
+    "./assets/products/mipro-act-series.jpg",
+    "./assets/products/mipro-act-32h.jpg",
+    "./assets/products/mipro-act-312.jpg",
+    "./assets/products/mipro-act-5802.jpg"
+  ],
+  tagline: "自動對頻無線麥克風系統，專業穩定、收音清晰。",
+  badges: ["Wireless Mic", "UHF", "Auto Sync", "Professional"],
+  desc:
+    "MIPRO ACT 系列以其創新的 Automatic Channel Targeting（ACT）自動對頻技術聞名，讓發射器與接收器快速同步頻道，操作直覺。系列涵蓋 ACT-3、ACT-5、ACT-7 與 ACT-8 等多款型號，從教育會議到專業演出皆能滿足需求，提供穩定清晰的無線收音體驗。",
+  specs: {
+    "頻率範圍": "UHF 480–934 MHz（依地區版本）",
+    "頻道數": "單 / 雙 / 四 / 八通道可選",
+    "對頻方式": "ACT 紅外自動對頻",
+    "頻率響應": "50 Hz – 18 kHz",
+    "動態範圍": "> 100 dB",
+    "輸出介面": "XLR / 6.3 mm / AES3 數位輸出（依型號）",
+    "電源": "接收器 AC / 發射器 使用 AA 電池或鋰電池",
+    "機身材質": "金屬外殼，附 LCD 顯示與群組掃描功能",
+    "應用": "教育錄播、會議室、舞台表演、教會、廣播錄音"
+  },
+  features: [
+    "MIPRO 專利 ACT 自動對頻技術，快速精準配對",
+    "多通道設計，可同時運作多組無線系統",
+    "高動態範圍與低延遲音訊傳輸",
+    "金屬機身、抗干擾設計，適合長時間運作",
+    "適用各類場合：學校、教會、企業會議與舞台演出"
+  ]
+},
+
 /* ------------------ MIPRO MI-58 Digital IEM System ------------------ */
 "mipro-mi58": {
   id: "mipro-mi58",

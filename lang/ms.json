@@ -570,6 +570,125 @@
         "Reka bentuk modular, mudah pasang dan servis"
       ]
     }
+  },
+  
+  "products": {
+    "bmd_studio_4k_pro_g2": {
+      "name": "Studio Camera 4K Pro G2",
+      "tagline": "Kamera penyiaran 4K direka untuk studio dan produksi langsung.",
+      "desc": "Studio Camera 4K Pro G2 menggabungkan sensor 4K sensitif tinggi dengan output 12G-SDI dan NDI/IP. Ia boleh dikawal terus melalui ATEM switcher untuk pelarasan warna dan fokus masa nyata. Dilengkapi skrin sentuh 7 inci dan pelbagai sambungan, sesuai untuk pendidikan, persembahan pentas dan siaran profesional.",
+      "badges": ["Kamera 4K", "Produksi Langsung", "NDI / SDI", "Kawalan Jauh"],
+      "specs": {
+        "Sensor": "Sensor CMOS 4/3” (Dual Native ISO 400 / 3200)",
+        "Resolusi": "UHD 4K 60p",
+        "Output": "12G-SDI / HDMI / NDI / Penstriman IP",
+        "Audio": "Input XLR ×2, output fon kepala",
+        "Kawalan": "Kawalan SDI / Jauh ATEM / USB-C",
+        "Paparan": "Skrin sentuh 7” 2000 nits beresolusi tinggi",
+        "Kuasa": "DC 12 V / PoE+",
+        "Aplikasi": "Studio siaran, TV kampus, pentas, siaran langsung"
+      },
+      "features": [
+        "Output 12G-SDI dan NDI/IP untuk integrasi fleksibel",
+        "Sensor 4K sensitif tinggi menghasilkan imej berkualiti dalam cahaya rendah",
+        "Skrin terang 7 inci dan input XLR dwi saluran",
+        "Kawalan jauh penuh melalui ATEM untuk iris, fokus dan warna",
+        "Sokongan PoE+ untuk bekalan kuasa dan data melalui satu kabel"
+      ]
+    },
+    "bmd_atem_mini_extreme_iso": {
+      "name": "ATEM Mini Extreme ISO",
+      "tagline": "Switcher berbilang kamera dengan pratonton berbilang skrin dan rakaman serentak.",
+      "desc": "ATEM Mini Extreme ISO ialah switcher profesional dengan 8 input HDMI dan rakaman ISO untuk setiap saluran. Ia menawarkan pratonton pelbagai tetingkap, kawalan dinamik, dan penstriman terus, sesuai untuk pendidikan, korporat, dan acara langsung.",
+      "badges": ["Switcher", "Rakaman", "Penstriman", "HDMI I/O"],
+      "specs": {
+        "Input": "8× HDMI 2.0 (hingga 1080p60)",
+        "Output": "3× HDMI, USB-C webcam, Ethernet penstriman",
+        "Rakaman": "9 trek ISO (program + semua input)",
+        "Audio": "Stereo 3.5 mm ×2, pemproses Fairlight",
+        "Paparan": "Pratonton multi-view, peralihan dinamik, grafik bawah",
+        "Media": "Penyimpanan imej dalaman, import grafik & tajuk",
+        "Kawalan": "Perisian ATEM / butang panel / StreamDeck",
+        "Aplikasi": "Siaran langsung pelbagai kamera, kursus dalam talian, acara korporat"
+      },
+      "features": [
+        "Sokong 8 input HDMI dan pratonton pelbagai tetingkap",
+        "Rakaman ISO semua sumber serentak",
+        "Penstriman terus ke YouTube / Facebook Live",
+        "Kawalan jauh melalui perisian ATEM",
+        "Gabungan peralihan, keying dan audio mixer terbina dalam"
+      ]
+    },
+    "bmd_hyperdeck_studio_4k_pro": {
+      "name": "HyperDeck Studio 4K Pro",
+      "tagline": "Perakam dan pemain semula profesional dengan output 4K dan pelbagai format.",
+      "desc": "HyperDeck Studio 4K Pro ialah penyelesaian rakaman dan playout peringkat penyiaran yang menyokong format ProRes, DNx, H.264/H.265. Dilengkapi slot SD berganda dan SSD boleh tukar panas, ia menjamin rakaman tanpa gangguan untuk studio dan pusat rakaman.",
+      "badges": ["Perakam", "Playout", "4K", "SDI / NDI"],
+      "specs": {
+        "Format Rakaman": "ProRes / DNx / H.264 / H.265 / QuickTime",
+        "Input": "12G-SDI ×1, Timecode / Reference In",
+        "Output": "12G-SDI ×2, HDMI, fon kepala",
+        "Storan": "2× SD + 2× SSD (hot-swap)",
+        "Resolusi": "Sehingga 2160p60 Ultra HD",
+        "Audio": "16 saluran SDI, input timecode XLR",
+        "Kawalan": "Panel hadapan / Ethernet / RS-422 / Jauh ATEM",
+        "Aplikasi": "Rakaman studio, sandaran program, main balik langsung"
+      },
+      "features": [
+        "Input/output 12G-SDI dan HDMI, rakaman sehingga 4K 60p",
+        "Rakaman berterusan dengan slot SD/SSD berganda",
+        "Sokong format ProRes, DNx, H.264/H.265",
+        "Timecode dan Genlock terbina dalam untuk penyegerakan berbilang kamera",
+        "Kawalan jauh automasi melalui ATEM atau U-Caster"
+      ]
+    },
+    "bmd_ursa_broadcast_g2": {
+      "name": "URSA Broadcast G2",
+      "tagline": "Kamera penyiaran 6K untuk studio dan produksi lapangan.",
+      "desc": "URSA Broadcast G2 menggabungkan kualiti sinematik dengan fungsi penyiaran profesional. Menyokong mount B4 dan EF, rakaman dalam Blackmagic RAW atau ProRes, dan sambungan 12G-SDI dengan Genlock, sesuai untuk multi-kamera, OB van dan siaran kampus.",
+      "badges": ["Kamera", "6K", "Penyiaran", "SDI / NDI"],
+      "specs": {
+        "Sensor": "6K Super 35 CMOS (13 stop julat dinamik)",
+        "Format Rakaman": "Blackmagic RAW / ProRes 422 / ProRes HQ",
+        "Resolusi": "6144×3456 (6K)、UHD 4K、1080p",
+        "I/O": "12G-SDI×2, XLR×2, Timecode / Genlock",
+        "Mount": "B4 (mengganti EF/PL/F mount)",
+        "Paparan": "Skrin sentuh 4” boleh lipat + 2” paparan status",
+        "Kawalan": "Kawalan SDI / ATEM jauh / Rakaman USB-C",
+        "Storan": "CFast 2.0×2, SD UHS-II×2, HDD USB-C",
+        "Aplikasi": "Studio, OB van, rakaman kampus, penyiaran profesional"
+      },
+      "features": [
+        "Sensor 6K dengan julat dinamik luas",
+        "Rakaman Blackmagic RAW dan ProRes",
+        "Slot SD / CFast berganda dan rakaman USB-C",
+        "Kawalan jauh ATEM untuk warna & tumpuan",
+        "Mount boleh tukar (B4, EF, PL) untuk pelbagai situasi produksi"
+      ]
+    },
+    "bmd_decklink_8k_pro": {
+      "name": "DeckLink 8K Pro",
+      "tagline": "Kad tangkap dan output 4-saluran SDI menyokong 8K HDR multi-format.",
+      "desc": "DeckLink 8K Pro ialah kad tangkapan/pemutaran profesional dengan empat port 12G-SDI dwi-arah, membolehkan rakaman atau output UHD/HD/8K serentak. Menyokong HDR, Rec.2020 dan 12-bit warna, sesuai untuk studio maya, penyuntingan pasca dan sistem rakaman.",
+      "badges": ["Tangkap", "Main Balik", "8K", "SDI"],
+      "specs": {
+        "I/O": "4× 12G-SDI (dwi-arah boleh dikonfigurasi)",
+        "Resolusi": "Sehingga 8K DCI 60p / 4K / HD",
+        "Kedalaman Warna": "12-bit YUV 4:2:2 / RGB 4:4:4",
+        "Ruang Warna": "Rec.601 / Rec.709 / Rec.2020 / HDR",
+        "Audio": "16 saluran SDI terbenam",
+        "Perisian Disokong": "DaVinci Resolve / vMix / OBS / Unreal Engine",
+        "Antara Muka Kawalan": "PCIe x8 / Desktop Video SDK",
+        "Aplikasi": "Studio maya, rakaman langsung, penyuntingan pasca"
+      },
+      "features": [
+        "Empat port 12G-SDI boleh konfigurasi input/output",
+        "Sokong 8K HDR dan Rec.2020 12-bit warna",
+        "Serasi dengan vMix, OBS, Unreal dan Resolve",
+        "Tangkapan latensi rendah untuk penggunaan masa nyata",
+        "PCIe untuk integrasi dalam workstation atau pelayan"
+      ]
+    }
   }
   
   

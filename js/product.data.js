@@ -329,5 +329,41 @@ window.PRODUCT_DATA = {
     "支援 ATEM 遠端控制與色彩調整",
     "兼容 B4、EF、PL 卡口，適合不同製播場景"
   ]
+},
+/* ------------------ DeckLink 8K Pro ------------------ */
+"bmd-decklink-8k-pro": {
+  id: "bmd-decklink-8k-pro",
+  name: "DeckLink 8K Pro",
+  brand: "Blackmagic Design",
+  brandKey: "blackmagic",
+  brandLogo: "./assets/brands/Blackmagicdesign.png",
+  hero: "./assets/products/bmd-decklink-8k-pro.jpg",
+  images: [
+    "./assets/products/bmd-decklink-8k-pro.jpg",
+    "./assets/products/bmd-decklink-8k-pro-ports.jpg",
+    "./assets/products/bmd-decklink-8k-pro-install.jpg",
+    "./assets/products/bmd-decklink-8k-pro-system.jpg"
+  ],
+  tagline: "四通道 SDI 擷取／輸出卡，支援 8K HDR 與多格式切換。",
+  badges: ["Capture", "Playback", "8K", "SDI"],
+  desc:
+    "DeckLink 8K Pro 是一款專業擷取與播放卡，配備四組 12G-SDI 接口，可同時錄製或輸出多路 UHD / HD / 8K 視訊訊號。支援 HDR、Rec.2020 與 12-bit 色深，是虛擬棚、後期製作與錄播系統的核心硬體之一。",
+  specs: {
+    "輸入/輸出": "4× 12G-SDI（雙向，可個別設定）",
+    "解析度": "最高 8K DCI 60p / 4K / HD 多格式",
+    "色深": "高達 12-bit YUV 4:2:2 / RGB 4:4:4",
+    "色彩空間": "Rec.601 / Rec.709 / Rec.2020 / HDR",
+    "音訊": "16 聲道嵌入 SDI 音訊",
+    "支援軟體": "DaVinci Resolve / vMix / OBS / Unreal Engine",
+    "控制介面": "PCIe 8x、Desktop Video SDK",
+    "應用": "虛擬製播、導播錄播、後期剪輯、信號轉換"
+  },
+  features: [
+    "四路 12G-SDI 雙向介面，可自由設定擷取或輸出",
+    "支援 8K、HDR、Rec.2020 廣色域與 12-bit 色深",
+    "兼容 vMix、OBS、Unreal、Resolve 等主流軟體",
+    "低延遲擷取，適合虛擬棚與實時製播應用",
+    "PCIe 介面設計，易於整合於工作站或伺服器"
+  ]
 }
 };

@@ -569,10 +569,8 @@
         "Penyegerakan dengan jadual U-Caster",
         "Reka bentuk modular, mudah pasang dan servis"
       ]
-    }
-  },
+    },
   
-  "products": {
     "bmd_studio_4k_pro_g2": {
       "name": "Studio Camera 4K Pro G2",
       "tagline": "Kamera penyiaran 4K direka untuk studio dan produksi langsung.",
@@ -688,10 +686,8 @@
         "Tangkapan latensi rendah untuk penggunaan masa nyata",
         "PCIe untuk integrasi dalam workstation atau pelayan"
       ]
-    }
-  },
+    },
 
-  "products": {
     "obsbot_tiny_2": {
       "name": "OBSBOT Tiny 2",
       "tagline": "Kamera penjejakan AI untuk pengajaran, penstriman langsung dan mesyuarat korporat.",
@@ -914,10 +910,8 @@
         "Tanpa bateri—plug & record",
         "Termasuk pemegang anti-getar dan penapis angin untuk dalam/luar"
       ]
-    }
-  },
-  
-  "products": {
+    },
+    
     "acemic_g5_iem": {
       "name": "Sistem Pemantauan Dalam Telinga Acemic G5",
       "tagline": "IEM UHF profesional—stabil, jelas dan kependaman rendah untuk kegunaan langsung.",

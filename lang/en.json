@@ -915,6 +915,205 @@
         "Includes shock mount and windscreen for indoor/outdoor use"
       ]
     }
+  },
+  
+  "products": {
+    "acemic_g5_iem": {
+      "name": "Acemic G5 In-Ear Monitoring System",
+      "tagline": "Professional UHF IEM—stable, clear and low-latency for live use.",
+      "desc": "Acemic G5 is a professional in-ear monitoring system for live production and stage performance. Using UHF wireless transmission, it delivers strong interference resistance and ultra-low latency for stable signal and clear sound. Multiple channels can be configured simultaneously—ideal for directors, performers and educational recording/streaming.",
+      "badges": ["IEM", "UHF", "Stage Monitoring", "Low Latency"],
+      "specs": {
+        "Frequency Range": "UHF 600–700 MHz (varies by region)",
+        "Channel Count": "Up to 80 selectable frequencies",
+        "Transmission Range": "Up to 100 m (environment dependent)",
+        "Latency": "< 2 ms",
+        "Audio Response": "50 Hz – 15 kHz",
+        "Inputs": "XLR / 6.3 mm combo input",
+        "Output": "3.5 mm TRS headphone out (receiver)",
+        "Power": "TX: DC 12 V; RX: 2 × AA batteries",
+        "Chassis": "Metal housing, durable and interference-resistant",
+        "Applications": "Stage monitoring, production monitoring, houses of worship, corporate events"
+      },
+      "features": [
+        "UHF wireless link with robust anti-interference",
+        "Multiple channels operating simultaneously for teams",
+        "High dynamic range with low latency for natural sync",
+        "Metal body and pro headphone output for reliability",
+        "Great for stage, director monitoring and education"
+      ]
+    },
+    "acemic_s_series": {
+      "name": "Acemic S Series Wireless Microphone System",
+      "tagline": "Multi-channel UHF wireless mics—stable and clear for any live environment.",
+      "desc": "The Acemic S Series is designed for professional and educational use. Covering single to eight-channel models (S2 / S4 / S6 / S8), it supports handheld, headset and lavalier transmitters. Known for stability, clarity and value, it’s widely used in classrooms, corporate meetings, live broadcasts and stage events.",
+      "badges": ["Wireless Mic", "UHF", "Multi-Channel", "Professional"],
+      "specs": {
+        "Frequency Range": "UHF 520–580 MHz (varies by region)",
+        "Channel Options": "2 / 4 / 6 / 8 channels",
+        "Range": "Up to 100 m (line-of-sight)",
+        "Sensitivity": "-90 dBm",
+        "Frequency Response": "40 Hz – 18 kHz",
+        "Outputs": "XLR / 6.3 mm mixed output",
+        "Power": "Receiver: DC 12 V; Transmitter: 2 × AA batteries",
+        "Build": "Metal chassis, LCD display and IR sync",
+        "Applications": "Schools, corporate meetings, churches, stage"
+      },
+      "features": [
+        "UHF transmission with excellent stability",
+        "Multiple systems operable at once with IR auto sync",
+        "Wide dynamic range and low-latency audio",
+        "Fits handheld, headset or lavalier transmitters",
+        "Ideal for education, corporate and live events"
+      ]
+    },
+    "acemic_wireless": {
+      "name": "Acemic Wireless Microphone System",
+      "tagline": "UHF wireless mics—reliable transmission and clear sound for education and pro use.",
+      "desc": "Acemic wireless systems are popular for education, corporate events and stage. With stable UHF transmission, low latency and clear audio, they support handheld, lavalier and headset transmitters. Available in single, dual and quad-channel configurations; easy to operate and highly resistant to interference.",
+      "badges": ["Wireless Mic", "UHF", "Professional", "Dual Channel"],
+      "specs": {
+        "Frequency Range": "UHF 520–580 MHz (varies by region)",
+        "Channel Options": "Single / Dual / Quad",
+        "Frequency Response": "40 Hz – 18 kHz",
+        "Dynamic Range": "> 100 dB",
+        "Range": "Up to 100 m (line-of-sight)",
+        "I/O": "XLR / 6.3 mm mixed output",
+        "Pairing": "IR auto sync",
+        "Power": "Receiver DC 12 V / Transmitter 2 × AA",
+        "Applications": "Education, corporate presentations, stage, meeting rooms"
+      },
+      "features": [
+        "Robust UHF link with strong anti-interference",
+        "High-sensitivity pickup and wide dynamics",
+        "IR auto-pairing for quick setup",
+        "Works with handheld, lavalier and headset TX",
+        "Multi-channel operation for large events"
+      ]
+    },
+    "yamaha_mg_series": {
+      "name": "Yamaha MG Series Mixer",
+      "tagline": "Professional analog mixers combining premium preamps with rugged design.",
+      "desc": "Yamaha’s MG Series is renowned for stability and sound quality in live, recording and corporate applications. Featuring Yamaha D-PRE class-A mic preamps and SPX effects, selected XU models add a USB audio interface for easy integration into digital workflows.",
+      "badges": ["Analog Mixer", "D-PRE", "SPX Effects", "USB Interface"],
+      "specs": {
+        "Channel Count": "6 / 10 / 12 / 16 / 20 (varies by model)",
+        "Mic Preamps": "Yamaha D-PRE Class-A",
+        "EQ": "3-band EQ / High-pass filter",
+        "Effects": "SPX digital effects (X / XU models)",
+        "USB Interface": "USB Audio 2-in / 2-out (XU models)",
+        "Power": "AC Adaptor (PA-10 / PA-20)",
+        "Size/Weight": "Varies (MG10XU ≈ 2.1 kg)",
+        "Applications": "Houses of worship, studios, corporate events, music"
+      },
+      "features": [
+        "D-PRE preamps for clear, full-bodied sound",
+        "Built-in SPX effects (24 programs incl. reverb, delay)",
+        "USB audio on XU models for recording/streaming",
+        "Rugged metal chassis for touring and installs",
+        "Flexible I/O with AUX, GROUP and STEREO BUS"
+      ]
+    },
+    "mipro_act_series": {
+      "name": "MIPRO ACT Series Wireless Microphone System",
+      "tagline": "Auto-sync UHF wireless mics—professional, stable and crystal clear.",
+      "desc": "MIPRO’s ACT Series is known for Automatic Channel Targeting (ACT) IR auto-sync, allowing fast and intuitive pairing between transmitters and receivers. Covering ACT-3/5/7/8, the lineup serves education, meetings and pro performances with reliable, high-quality wireless audio.",
+      "badges": ["Wireless Mic", "UHF", "Auto Sync", "Professional"],
+      "specs": {
+        "Frequency Range": "UHF 480–934 MHz (regional variants)",
+        "Channel Options": "Single / Dual / Quad / Eight-channel",
+        "Pairing": "ACT IR auto sync",
+        "Frequency Response": "50 Hz – 18 kHz",
+        "Dynamic Range": "> 100 dB",
+        "Outputs": "XLR / 6.3 mm / AES3 digital (model-dependent)",
+        "Power": "Receiver AC / Transmitters AA or Li-ion",
+        "Chassis": "Metal with LCD and group scan",
+        "Applications": "Education, conference rooms, stage, worship, broadcast"
+      },
+      "features": [
+        "MIPRO ACT auto-sync for quick, precise pairing",
+        "Multi-channel operation for concurrent systems",
+        "Wide dynamic range and low-latency audio",
+        "Metal construction with interference resistance",
+        "Covers classrooms, churches, corporate and stage"
+      ]
+    },
+    "mipro_mi58": {
+      "name": "MIPRO MI-58 Digital IEM System",
+      "tagline": "5.8 GHz digital IEM—low latency, high fidelity and interference-free.",
+      "desc": "The MI-58 Series uses the 5.8 GHz band to deliver CD-grade audio with low-latency monitoring. With stereo output, IR sync, auto scan and multiple channels, it avoids crowded UHF bands to ensure stable monitoring for stage and production.",
+      "badges": ["Digital IEM", "5.8 GHz", "Low Latency", "Stereo"],
+      "specs": {
+        "Band": "5.725 – 5.850 GHz (license-free band)",
+        "Transmission": "24-bit / 48 kHz digital stereo",
+        "Latency": "< 2.5 ms",
+        "Frequency Response": "20 Hz – 20 kHz",
+        "Simultaneous Systems": "Up to 12",
+        "Pairing": "IR Sync auto pairing",
+        "Inputs": "XLR / TRS balanced",
+        "Receiver": "Beltpack with OLED and volume",
+        "Power": "Receiver 2 × AA / charging dock optional",
+        "Applications": "Stage, worship, corporate presentations, studio monitoring"
+      },
+      "features": [
+        "5.8 GHz band avoids crowded UHF spectrum",
+        "24-bit digital audio with near-CD quality",
+        "Ultra-low latency < 2.5 ms",
+        "IR auto sync and channel scan",
+        "Stereo / dual-mono output modes",
+        "Works with charging docks and earsets"
+      ]
+    },
+    "mls_fixed_led": {
+      "name": "MLS LED Display (Fixed Installation)",
+      "tagline": "Fine-pitch LED for studios and control rooms.",
+      "desc": "MLS fixed-install LED walls use precision modules and COB packaging to deliver high brightness, contrast and seamless visuals. Ideal for studios, control rooms, exhibitions and corporate feature walls—offering stable imagery and excellent color uniformity.",
+      "badges": ["LED Display", "COB", "SMD", "Fixed Install"],
+      "specs": {
+        "Display Tech": "COB / SMD",
+        "Pixel Pitches": "P1.25 / P1.56 / P1.875 / P2.5",
+        "Brightness": "Up to 1500 nits (indoor)",
+        "Refresh Rate": "≥ 3840 Hz",
+        "Lifetime": "> 100,000 hours",
+        "Ingress Rating": "IP31 (indoor)",
+        "Color Uniformity": "Module-level calibration, HDR10 support",
+        "Control": "Synchronous / asynchronous controllers",
+        "Mounting": "Wall-mount / recessed / curved",
+        "Applications": "Studios, control rooms, exhibitions, conference halls"
+      },
+      "features": [
+        "Fine-pitch, bezel-free seamless visuals",
+        "High refresh and accurate color reproduction",
+        "HDR10 compatible for wide dynamic range",
+        "Magnetic modular design for easy service",
+        "Long-life LEDs with low power consumption"
+      ]
+    },
+    "mls_rental_led": {
+      "name": "MLS Rental LED Panels",
+      "tagline": "Quick-lock rental LED—built for stages and events.",
+      "desc": "MLS rental LED panels feature lightweight aluminum frames and fast locks for rapid rigging. With high brightness and weather protection, they support hanging and stacking for concerts, stage design and events, and are easy to service.",
+      "badges": ["LED Display", "Rental", "Fast Lock", "Outdoor"],
+      "specs": {
+        "Display Tech": "SMD",
+        "Pixel Pitches": "P2.6 / P3.9 / P4.8 / P5.9",
+        "Brightness": "4000–6000 nits (outdoor options)",
+        "Refresh Rate": "≥ 3840 Hz",
+        "Weight": "≈ 7.5 kg per 500×500 mm panel",
+        "Ingress Rating": "IP65 (front) / IP54 (rear)",
+        "Power/Signal": "Modular quick-swap PSU and data",
+        "Structure": "Aluminum cabinet—hang, stack or curve",
+        "Applications": "Stage shows, launches, worship, commercial events"
+      },
+      "features": [
+        "2-second fast-lock assembly and teardown",
+        "High-brightness, weather-ready design",
+        "Hang or stack with optional curving",
+        "High refresh for stable, flicker-free video",
+        "Low power draw for long-hour operation"
+      ]
+    }
   }
+
   
 }

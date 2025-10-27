@@ -689,6 +689,232 @@
         "PCIe form factor for workstation/server"
       ]
     }
+  },
+  
+  "products": {
+    "obsbot_tiny_2": {
+      "name": "OBSBOT Tiny 2",
+      "tagline": "AI tracking webcam designed for teaching, livestreaming and business meetings.",
+      "desc": "OBSBOT Tiny 2 features a next-gen AI tracking chip with face detection, gesture control and auto framing. With a 1/1.5\" sensor and 4K capture, it delivers natural skin tones and crisp detail in varied lighting—ideal for classes, online courses and content creation.",
+      "badges": ["AI Tracking", "PTZ", "4K", "USB-C"],
+      "specs": {
+        "Sensor": "1/1.5\" CMOS",
+        "Resolution": "4K 60fps / 1080p 60fps",
+        "Focal Length": "20mm eq. (wide)",
+        "Framing/Control": "AI Auto Framing / Gesture Control",
+        "I/O": "USB-C / HDMI (via dock)",
+        "Audio": "Dual directional mics built-in",
+        "Mounting": "Magnetic base / Tripod / Monitor clip",
+        "Use Cases": "Online teaching, meeting streams, lecture capture, content creation"
+      },
+      "features": [
+        "AI auto tracking and framing keeps the subject centered",
+        "Gesture control for switching lens, tracking and zoom",
+        "HDR, low-light gain and beautify algorithms for natural images",
+        "Works with OBS, vMix, Zoom, Teams and more",
+        "Flexible mounting to fit lecture-capture workflows"
+      ]
+    },
+    "obsbot_tail_2": {
+      "name": "OBSBOT Tail 2",
+      "tagline": "AI auto-director camera with 4K HDR, SSD recording and wireless streaming.",
+      "desc": "OBSBOT Tail 2 combines AI tracking with live auto-director capabilities. Built-in SSD recording and wireless control let it follow subjects and switch compositions, perfect for performance capture, live events and education.",
+      "badges": ["AI Tracking", "4K HDR", "Wireless", "SSD Recording"],
+      "specs": {
+        "Sensor": "1/1.8\" CMOS",
+        "Resolution": "4K 60fps / 1080p 120fps",
+        "Lens": "25.5mm eq., f/1.8 aperture",
+        "Tracking": "AI Auto Director + DeepTrack 3.0",
+        "Storage": "Built-in SSD (up to 1TB) / microSD expansion",
+        "Recording": "MP4 (H.265 / H.264)",
+        "Audio": "Omni mic built-in + 3.5mm input",
+        "I/O": "USB-C / Wi-Fi / Bluetooth / HDMI (option)",
+        "Control": "OBSBOT App / gestures / director mode",
+        "Use Cases": "Stage, sports, education capture, live events"
+      },
+      "features": [
+        "Auto-director mode for intelligent framing and scene cuts",
+        "4K HDR recording with efficient H.265 codec",
+        "Built-in SSD for long, drop-free recording",
+        "DeepTrack 3.0 for accurate subject tracking",
+        "Wireless app control for remote directing and streaming"
+      ]
+    },
+    "synco_xtalk_x": {
+      "name": "SYNCO Xtalk X",
+      "tagline": "Smart full-duplex wireless conference system for clear 4-way conversation.",
+      "desc": "SYNCO Xtalk X enables natural 4-party full-duplex talkback with AI noise reduction and auto mixing—no push-to-talk. Suited for remote meetings, online classes, corporate recording and live shows.",
+      "badges": ["Wireless Audio", "Full Duplex", "Conference", "AI Noise Cancel"],
+      "specs": {
+        "Wireless": "2.4GHz digital (full duplex)",
+        "Participants": "Up to 4 units talking simultaneously",
+        "Range": "Up to 150 m (open field)",
+        "Mic Modes": "Omni mic / 3.5mm lavalier input",
+        "Noise Reduction": "Dual-stage AI reduction",
+        "Battery Life": "≈8 hrs (up to 20 hrs with case)",
+        "I/O": "USB-C / 3.5mm TRS / Type-C digital audio",
+        "Compatibility": "Camera / phone / computer / mixer / switcher",
+        "Use Cases": "Conference recording, live shows, distance learning, OB talkback"
+      },
+      "features": [
+        "Natural 4-way full-duplex conversation",
+        "AI noise suppression tames wind and ambience",
+        "Up to 150 m range with low latency",
+        "Works with cameras, laptops and switchers",
+        "USB-C digital audio and realtime monitoring",
+        "Charging case for carry-and-charge convenience"
+      ]
+    },
+    "synco_xtalk_pro": {
+      "name": "SYNCO Xtalk Pro",
+      "tagline": "Professional full-duplex wireless intercom for studio and event coordination.",
+      "desc": "SYNCO Xtalk Pro targets control rooms, AV centers and large conferences with up to 8-party full-duplex talk and recording. AI noise reduction and long-range stability keep coordination instant for broadcast, stage and education.",
+      "badges": ["Wireless Intercom", "Full Duplex", "Broadcast", "AI Noise Cancel"],
+      "specs": {
+        "Wireless": "2.4GHz full-duplex",
+        "Participants": "Up to 8 talking / 32 paired",
+        "Range": "Up to 350 m (open)",
+        "Mic Modes": "Omni + lavalier input",
+        "Noise Reduction": "AI bi-directional NR + echo suppression",
+        "Latency": "<20 ms",
+        "Battery Life": "≈10 hrs (to 25 hrs with case)",
+        "I/O": "USB-C / 3.5mm TRRS / XLR (via module)",
+        "Compatibility": "Switchers / cameras / laptops / mixers",
+        "Use Cases": "Intercom, OB coordination, stage crew, multi-party meetings"
+      },
+      "features": [
+        "8-party full-duplex architecture",
+        "AI NR with low-latency audio",
+        "Up to 350 m wireless range",
+        "Supports lav/headset mics",
+        "Isolated track recording per channel",
+        "Durable metal construction"
+      ]
+    },
+    "synco_xtalk_xmax": {
+      "name": "SYNCO Xtalk XMax",
+      "tagline": "Flagship full-duplex system with base-station group management for pro broadcast.",
+      "desc": "SYNCO Xtalk XMax supports 16-party full-duplex with a dedicated base station for central grouping, mute and record. Designed for large events, OB trucks, EDU centers and enterprise comms.",
+      "badges": ["Full Duplex", "Base Station", "Multi-Group", "AI Noise Cancel"],
+      "specs": {
+        "Architecture": "2.4GHz + base-station management",
+        "Participants": "16 talking / 64 paired",
+        "Range": "Up to 500 m (open)",
+        "Noise System": "AI bi-directional NR + echo cancel + AGC",
+        "Group Control": "Grouping / mute / synced recording at base",
+        "Latency": "<15 ms",
+        "Battery": "Headsets ≈10 hrs; base continuous power",
+        "I/O": "USB-C / XLR / RJ45 / LAN remote",
+        "Recording": "Base-station internal recorder (WAV)",
+        "Use Cases": "Director talkback, stage crew, AV centers, enterprise comms"
+      },
+      "features": [
+        "16-party real-time intercom with multi-group",
+        "Centralized base-station control and recording",
+        "AI NR and adaptive gain for long sessions",
+        "Up to 500 m range with strong penetration",
+        "LAN integration and system scalability",
+        "Rugged metal build for field use"
+      ]
+    },
+    "synco_xtalk_link": {
+      "name": "SYNCO Xtalk Link",
+      "tagline": "Bridge hub that connects Xtalk intercom to phones/PCs and hybrid workflows.",
+      "desc": "Xtalk Link aggregates multiple Xtalk headsets/bodypacks to a phone or computer, enabling hybrid communications. Ideal for remote speakers, mobile directing and meeting/stream collaboration with grouping, mute and priority talk.",
+      "badges": ["Bridge Hub", "USB-C", "App Control", "Multi-Group"],
+      "specs": {
+        "Purpose": "Bridge for Xtalk to mobile/PC",
+        "Connectivity": "2.4GHz proprietary (Xtalk) / USB-C (host)",
+        "Compatibility": "Xtalk X / Pro / XMax",
+        "Grouping": "App/desktop grouping, mute, priority",
+        "Audio Class": "UAC for meeting/stream platforms",
+        "Power": "USB-C (power bank supported)",
+        "Control": "Mobile app / desktop app / hardware keys",
+        "Use Cases": "Remote speakers, hybrid meetings, mobile OB, campus/corporate"
+      },
+      "features": [
+        "Brings Xtalk intercom into phone/PC calls",
+        "Grouping, mute and priority for easy dispatch",
+        "USB-C plug-and-play with popular platforms",
+        "Power-bank friendly for mobile setups",
+        "Scales from small teams to large events"
+      ]
+    },
+    "synco_g4": {
+      "name": "SYNCO G4 Wireless Microphone",
+      "tagline": "Dual-channel wireless mic with Gen-4 2.4GHz link and OLED display.",
+      "desc": "SYNCO G4 delivers low-latency, stable audio with Gen-4 2.4GHz tech. On-board TX recording and an OLED screen simplify monitoring—great for classes, Vlog, corporate capture and mobile switching.",
+      "badges": ["Wireless Mic", "2.4GHz", "Dual Channel", "OLED Display"],
+      "specs": {
+        "Wireless": "2.4GHz (Gen-4)",
+        "Channels": "Dual (2TX + 1RX)",
+        "On-Device Rec": "TX up to 8GB (~22 hrs)",
+        "Range": "Up to 250 m (open)",
+        "Latency": "<20 ms",
+        "Inputs": "Built-in mic / 3.5mm lav",
+        "Outputs": "3.5mm TRS / USB-C / Type-C digital audio",
+        "Display": "OLED status display",
+        "Battery": "≈8 hrs (to 20 hrs with case)",
+        "Use Cases": "Vlog, education, corporate talks, mobile OB"
+      },
+      "features": [
+        "Robust Gen-4 2.4GHz link with strong anti-interference",
+        "TX on-board recording for backup",
+        "Clear OLED monitoring",
+        "Record two speakers at once",
+        "USB-C digital out to phones/laptops",
+        "Compact, magnetic and case-chargeable"
+      ]
+    },
+    "synco_p2s": {
+      "name": "SYNCO P2S Wireless Microphone",
+      "tagline": "Pocket-size mobile wireless mic—plug and play with clear voice pickup.",
+      "desc": "SYNCO P2S is built for phones and live platforms, featuring dual-channel pickup, Type-C/Lightning plug-and-play, active noise reduction and a charging case. Lightweight and setup-free for creators, Vlogs, courses and mobile live.",
+      "badges": ["Mobile Mic", "Plug & Play", "Noise Reduction", "Charging Case"],
+      "specs": {
+        "Wireless": "2.4GHz digital",
+        "Channels": "2TX + 1RX",
+        "Connectors": "Type-C or Lightning (model-dependent)",
+        "Range": "Up to 150 m (open)",
+        "Mic": "Built-in omni",
+        "Noise Reduction": "AI NR with monitoring",
+        "Battery": "TX ≈5 hrs; with case up to 15 hrs",
+        "Charging": "Type-C fast charge (~1.5 hrs)",
+        "Use Cases": "Mobile shoots, online classes, corporate live, interviews"
+      },
+      "features": [
+        "True plug-and-play—no pairing needed",
+        "AI noise reduction keeps speech clear",
+        "Dual-channel for two-person recording",
+        "Ultra-portable with charging case",
+        "Type-C/Lightning options for Android/iPhone",
+        "Ideal for Vlog, livestreams and courses"
+      ]
+    },
+    "synco_mmic_u3": {
+      "name": "SYNCO MMic-U3 Mobile Microphone",
+      "tagline": "Compact cardioid mic—clean mobile recording made easy.",
+      "desc": "SYNCO MMic-U3 is a cardioid on-camera/mobile mic with an aluminum body and high-sensitivity capsule to focus on voice and reduce ambience. Works via Type-C or 3.5mm TRRS for instant, battery-free recording—great for Vlogs, lessons and interviews.",
+      "badges": ["Cardioid Mic", "Plug & Play", "Noise Reduction", "Mobile Ready"],
+      "specs": {
+        "Polar Pattern": "Cardioid",
+        "Sensitivity": "-35 dB ±3 dB (1V/Pa @1kHz)",
+        "Frequency Response": "50 Hz–20 kHz",
+        "SNR": ">75 dB",
+        "I/O": "Type-C / 3.5mm TRRS (variant-dependent)",
+        "Dimensions": "Φ22 × 72 mm",
+        "Weight": "≈39 g",
+        "Build": "Aluminum body, shock mount and windscreen",
+        "Use Cases": "Mobile shooting, online lessons, Vlog, interviews"
+      },
+      "features": [
+        "Cardioid pickup reduces side/rear noise",
+        "Lightweight aluminum, durable and RF-resistant",
+        "Type-C or 3.5mm for phone and camera",
+        "No battery required—plug and record",
+        "Includes shock mount and windscreen for indoor/outdoor use"
+      ]
+    }
   }
   
 }

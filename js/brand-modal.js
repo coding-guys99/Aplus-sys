@@ -37,116 +37,50 @@
   const BRANDS = {
     blackmagic: {
       logo: "./assets/brands/Blackmagicdesign.png",
-      products: [
-        { id: "atem_mini",    src: "./assets/products/bmd-atem-mini-extreme-iso.jpg" },
-        { id: "studio_cam",   src: "./assets/products/bmd-studio-camera-4k-pro-g2.jpg" },
-        { id: "ursa_bcast",   src: "./assets/products/bmd-ursa-broadcast-g2.jpg" },
-        { id: "decklink",     src: "./assets/products/bmd-decklink-8k-pro.jpg" },
-        { id: "hyperdeck",    src: "./assets/products/bmd-hyperdeck-studio-hd.jpg" },
-        { id: "resolve",      src: "./assets/products/bmd-davinci-resolve.jpg" }
-      ]
     },
     synco: {
       logo: "./assets/brands/SYNCO.svg",
-      products: [
-        { id: "g2a2",       src: "./assets/products/synco-g2-a2-kit.jpg" },
-        { id: "d2_shotgun", src: "./assets/products/synco-mic-d2-shotgun.jpg" },
-        { id: "d30",        src: "./assets/products/synco-d30-oncamera.jpg" },
-        { id: "accessories",src: "./assets/products/synco-accessories.jpg" }
-      ]
+      
     },
     unileader: {
       logo: "./assets/brands/UNI-LEADER.svg",
-      products: [
-        { id: "u_caster_4k", src: "./assets/products/unileader-u-caster-4k.jpg" },
-        { id: "u_studio_4k", src: "./assets/products/unileader-u-studio-4k.jpg" },
-        { id: "u_cg",        src: "./assets/products/unileader-u-cg.jpg" },
-        { id: "u_meta_v",    src: "./assets/products/unileader-u-meta-v.jpg" },
-        { id: "u_mooc",      src: "./assets/products/unileader-u-mooc.jpg" }
-      ]
+      
     },
     obsbot: {
       logo: "./assets/brands/OBSBOT.svg",
-      products: [
-        { id: "tiny_4k",  src: "./assets/products/obsbot-tiny-4k.jpg" },
-        { id: "tiny_2",   src: "./assets/products/obsbot-tiny-2.jpg" },
-        { id: "tail_air", src: "./assets/products/obsbot-tail-air.jpg" },
-        { id: "tiny_se",  src: "./assets/products/obsbot-tiny-se.jpg" }
-      ]
+      
     },
     acemic: {
       logo: "./assets/brands/ACEMIC.svg",
-      products: [
-        { id: "wireless_8ch", src: "./assets/products/acemic-micpack-8ch-wireless.jpg" },
-        { id: "iem_4ch",      src: "./assets/products/acemic-iempack-4ch.jpg" },
-        { id: "ad900",        src: "./assets/products/acemic-ad-900-antenna-dist.jpg" },
-        { id: "ad600",        src: "./assets/products/acemic-ad-600-antenna-iem.jpg" },
-        { id: "g4",           src: "./assets/products/acemic-g4-wireless.jpg" },
-        { id: "em_d01",       src: "./assets/products/acemic-em-d01-ear-monitor.jpg" }
-      ]
+      
     },
     yamaha: {
       logo: "./assets/brands/YAMAHA.svg",
-      products: [
-        { id: "tf5",  src: "./assets/products/yamaha-tf5.jpg" },
-        { id: "dm3s", src: "./assets/products/yamaha-dm3s.jpg" },
-        { id: "m7cl", src: "./assets/products/yamaha-m7cl.jpg" },
-        { id: "ql5",  src: "./assets/products/yamaha-ql5.jpg" }
-      ]
+      
     },
     mipro: {
       logo: "./assets/brands/MIPRO.svg",
-      products: [
-        { id: "act32h",  src: "./assets/products/mipro-act32h.jpg" },
-        { id: "act312",  src: "./assets/products/mipro-act312.jpg" },
-        { id: "mi58",    src: "./assets/products/mipro-mi58-iem.jpg" },
-        { id: "ad900",   src: "./assets/products/mipro-ad900.jpg" }
-      ]
+      
     },
     mls: {
       logo: "./assets/brands/MLS.svg",
-      products: [
-        { id: "p1_92",   src: "./assets/products/mls-module-1_92.jpg" },
-        { id: "p2_5",    src: "./assets/products/mls-module-2_5.jpg" },
-        { id: "wall",    src: "./assets/products/mls-wall.jpg" },
-        { id: "ctrl",    src: "./assets/products/mls-controller.jpg" }
-      ]
+      
     },
     obs: {
       logo: "./assets/brands/OBS.svg",
-      products: [
-        { id: "ui",       src: "./assets/products/obs-ui-screenshot.jpg" },
-        { id: "plugin",   src: "./assets/products/obs-plugin-keystroke.jpg" },
-        { id: "output",   src: "./assets/products/obs-output-stream.jpg" },
-        { id: "multisc",  src: "./assets/products/obs-multi-scene.jpg" }
-      ]
+      
     },
     unreal: {
       logo: "./assets/brands/UNREALENGINE.svg",
-      products: [
-        { id: "vsnap",    src: "./assets/products/unreal-vscreenshot.jpg" },
-        { id: "viz",      src: "./assets/products/unreal-uviz.jpg" },
-        { id: "graph",    src: "./assets/products/unreal-graph-editor.jpg" },
-        { id: "liveset",  src: "./assets/products/unreal-live-set.jpg" }
-      ]
+      
     },
     ndi: {
       logo: "./assets/brands/NDI.svg",
-      products: [
-        { id: "logo",     src: "./assets/products/ndi-logo.jpg" },
-        { id: "diagram",  src: "./assets/products/ndi-flow-diagram.jpg" },
-        { id: "mixer",    src: "./assets/products/ndi-mixer-integration.jpg" },
-        { id: "capture",  src: "./assets/products/ndi-capture-card.jpg" }
-      ]
+      
     },
     streamdeck: {
       logo: "./assets/brands/STREAMDECK.svg",
-      products: [
-        { id: "sd_32",  src: "./assets/products/streamdeck-32.jpg" },
-        { id: "sd_xl",  src: "./assets/products/streamdeck-xl.jpg" },
-        { id: "sd_mob", src: "./assets/products/streamdeck-mobile.jpg" },
-        { id: "sd_pro", src: "./assets/products/streamdeck-pro.jpg" }
-      ]
+      
     }
   };
 

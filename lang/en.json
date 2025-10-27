@@ -569,10 +569,7 @@
         "Sync with U-Caster rundown/graphics timing",
         "Modular mounting, easy setup and service"
       ]
-    }
-  },
-  
-  "products": {
+    },
     "bmd_studio_4k_pro_g2": {
       "name": "Studio Camera 4K Pro G2",
       "tagline": "Broadcast-class 4K camera for studios and live production.",
@@ -688,10 +685,7 @@
         "Low-latency ingest for real-time pipelines",
         "PCIe form factor for workstation/server"
       ]
-    }
-  },
-  
-  "products": {
+    },
     "obsbot_tiny_2": {
       "name": "OBSBOT Tiny 2",
       "tagline": "AI tracking webcam designed for teaching, livestreaming and business meetings.",
@@ -914,10 +908,8 @@
         "No battery required—plug and record",
         "Includes shock mount and windscreen for indoor/outdoor use"
       ]
-    }
-  },
+    },
   
-  "products": {
     "acemic_g5_iem": {
       "name": "Acemic G5 In-Ear Monitoring System",
       "tagline": "Professional UHF IEM—stable, clear and low-latency for live use.",
@@ -1113,7 +1105,8 @@
         "Low power draw for long-hour operation"
       ]
     }
-  }
+    }
+  
 
   
 }

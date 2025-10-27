@@ -365,5 +365,80 @@ window.PRODUCT_DATA = {
     "低延遲擷取，適合虛擬棚與實時製播應用",
     "PCIe 介面設計，易於整合於工作站或伺服器"
   ]
-}
+},
+   /* ------------------ OBSBOT Tiny 2 ------------------ */
+"obsbot-tiny-2": {
+  id: "obsbot-tiny-2",
+  name: "OBSBOT Tiny 2",
+  brand: "OBSBOT",
+  brandKey: "obsbot",
+  brandLogo: "./assets/brands/OBSBOT.svg",
+  hero: "./assets/products/obsbot-tiny-2.jpg",
+  images: [
+    "./assets/products/obsbot-tiny-2.jpg",
+    "./assets/products/obsbot-tiny-2-side.jpg",
+    "./assets/products/obsbot-tiny-2-mount.jpg",
+    "./assets/products/obsbot-tiny-2-setup.jpg"
+  ],
+  tagline: "AI 智能追蹤攝影機，專為教學、直播與企業會議設計。",
+  badges: ["AI Tracking", "PTZ", "4K", "USB-C"],
+  desc:
+    "OBSBOT Tiny 2 搭載新一代 AI 智能追蹤晶片，具備人臉辨識、手勢控制與自動構圖功能。採用 1/1.5 吋感光元件與 4K 錄製，能在各種燈光環境下呈現自然膚色與清晰細節，適合教學、線上課程與內容創作。",
+  specs: {
+    "感光元件": "1/1.5 吋 CMOS 感光器",
+    "解析度": "4K 60fps / 1080p 60fps",
+    "鏡頭焦距": "等效 20mm（廣角）",
+    "畫面控制": "AI Auto Framing / Gesture Control",
+    "連接介面": "USB-C / HDMI（透過 Dock）",
+    "音訊": "內建雙指向性麥克風",
+    "安裝": "磁吸底座 / 三腳架 / 顯示器夾具",
+    "應用": "線上教學、會議直播、錄播系統、內容創作"
+  },
+  features: [
+    "AI 自動追蹤與智慧構圖，人物移動仍保持居中",
+    "手勢控制可切換鏡頭、啟動追蹤、縮放畫面",
+    "支援 HDR、低光增益與美顏演算法，畫面自然",
+    "支援 OBS / vMix / Zoom / Teams 等主流軟體",
+    "多角度安裝方式，靈活融入錄播系統"
+  ]
+},
+/* ------------------ OBSBOT Tail 2 ------------------ */
+"obsbot-tail-2": {
+  id: "obsbot-tail-2",
+  name: "OBSBOT Tail 2",
+  brand: "OBSBOT",
+  brandKey: "obsbot",
+  brandLogo: "./assets/brands/OBSBOT.svg",
+  hero: "./assets/products/obsbot-tail-2.jpg",
+  images: [
+    "./assets/products/obsbot-tail-2.jpg",
+    "./assets/products/obsbot-tail-2-back.jpg",
+    "./assets/products/obsbot-tail-2-side.jpg",
+    "./assets/products/obsbot-tail-2-app.jpg"
+  ],
+  tagline: "AI 自動導播攝影機，4K HDR、SSD 錄製、無線直播一機完成。",
+  badges: ["AI Tracking", "4K HDR", "Wireless", "SSD Recording"],
+  desc:
+    "OBSBOT Tail 2 是一款整合 AI 追蹤與即時導播功能的 4K 攝影機。內建 SSD 錄影與無線控制，可自動追蹤主體、切換鏡頭構圖，適用於表演錄影、活動直播與教學錄播等多場景應用。",
+  specs: {
+    "感光元件": "1/1.8 吋 CMOS 感光器",
+    "解析度": "4K 60fps / 1080p 120fps",
+    "鏡頭": "等效 25.5mm，f/1.8 大光圈",
+    "追蹤系統": "AI Auto Director + DeepTrack 3.0",
+    "儲存": "內建 SSD（最高 1TB） / microSD 擴充",
+    "錄影格式": "MP4 (H.265 / H.264)",
+    "音訊": "內建全向麥克風 + 外接 3.5mm 輸入",
+    "連接介面": "USB-C / Wi-Fi / Bluetooth / HDMI（選配）",
+    "控制": "OBSBOT App / 手勢控制 / 導播模式",
+    "應用": "舞台表演、運動紀錄、教育錄播、活動直播"
+  },
+  features: [
+    "AI Auto Director 智能導播模式，自動構圖與切景",
+    "支援 4K HDR 錄製與 H.265 高效壓縮",
+    "內建 SSD 可長時間錄製，穩定不掉幀",
+    "DeepTrack 3.0 主體辨識演算法，準確追蹤人物",
+    "無線連接手機 App，可遠端控制、即時導播與串流"
+  ]
+},
+
 };

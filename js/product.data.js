@@ -292,5 +292,42 @@ window.PRODUCT_DATA = {
     "內建時碼與 Genlock，適合多機同步錄製",
     "可遠端控制與自動化整合，搭配 ATEM 或 U-Caster 使用"
   ]
+},
+/* ------------------ URSA Broadcast G2 ------------------ */
+"bmd-ursa-broadcast-g2": {
+  id: "bmd-ursa-broadcast-g2",
+  name: "URSA Broadcast G2",
+  brand: "Blackmagic Design",
+  brandKey: "blackmagic",
+  brandLogo: "./assets/brands/Blackmagicdesign.png",
+  hero: "./assets/products/bmd-ursa-broadcast-g2.jpg",
+  images: [
+    "./assets/products/bmd-ursa-broadcast-g2.jpg",
+    "./assets/products/bmd-ursa-broadcast-side.jpg",
+    "./assets/products/bmd-ursa-broadcast-back.jpg",
+    "./assets/products/bmd-ursa-broadcast-setup.jpg"
+  ],
+  tagline: "廣播級 6K 攝影機，適用導播棚與現場製播。",
+  badges: ["Camera", "6K", "Broadcast", "SDI / NDI"],
+  desc:
+    "URSA Broadcast G2 是一款結合電影級影像品質與廣播級操作介面的 6K 攝影機。支援 B4 與 EF 鏡頭卡口，可錄製 Blackmagic RAW、ProRes 等格式，具備 12G-SDI I/O 與 Genlock，同時能融入多機位導播與錄播環境。",
+  specs: {
+    "感光元件": "6K Super 35 CMOS 感光器（13 段動態範圍）",
+    "錄製格式": "Blackmagic RAW / ProRes 422 / ProRes HQ",
+    "解析度": "6144 × 3456 (6K)、UHD 4K、1080p",
+    "輸入輸出": "12G-SDI ×2、XLR ×2、Timecode / Genlock",
+    "鏡頭卡口": "B4（可更換 EF / PL / F Mount）",
+    "顯示": "4 吋 可翻轉觸控螢幕 + 2 吋 狀態螢幕",
+    "控制": "SDI 遠端控制 / ATEM 導播控制 / USB-C 外錄",
+    "儲存": "CFast 2.0 ×2、SD UHS-II ×2、USB-C 外接硬碟",
+    "應用": "導播機位、戶外 OB 車、校園錄播、廣播製播"
+  },
+  features: [
+    "6K 感光器提供高解析與寬容度影像",
+    "可錄製 Blackmagic RAW 與 ProRes 格式",
+    "雙 SD / CFast 卡與 USB-C 外接錄製",
+    "支援 ATEM 遠端控制與色彩調整",
+    "兼容 B4、EF、PL 卡口，適合不同製播場景"
+  ]
 }
 };

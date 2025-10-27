@@ -931,7 +931,7 @@ window.PRODUCT_DATA = {
 "mls-fixed-led": {
   id: "mls-fixed-led",
   name: "MLS LED Display (Fixed Installation)",
-  brand: "木林森光顯科技",
+  brand: "MLS LED",
   brandKey: "mls",
   brandLogo: "./assets/brands/MLS.svg",
   hero: "./assets/products/mls/mls-led-fixed.jpg",
@@ -968,7 +968,7 @@ window.PRODUCT_DATA = {
 "mls-rental-led": {
   id: "mls-rental-led",
   name: "MLS Rental LED Panels",
-  brand: "木林森光顯科技",
+  brand: "MLS LED",
   brandKey: "mls",
   brandLogo: "./assets/brands/MLS.svg",
   hero: "./assets/products/mls/mls-led-rental.jpg",

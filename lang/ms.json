@@ -689,7 +689,232 @@
         "PCIe untuk integrasi dalam workstation atau pelayan"
       ]
     }
+  },
+
+  "products": {
+    "obsbot_tiny_2": {
+      "name": "OBSBOT Tiny 2",
+      "tagline": "Kamera penjejakan AI untuk pengajaran, penstriman langsung dan mesyuarat korporat.",
+      "desc": "OBSBOT Tiny 2 menggunakan cip AI generasi baharu dengan pengecaman wajah, kawalan isyarat tangan dan pembingkaian automatik. Sensor 1/1.5\" dan rakaman 4K memastikan tona kulit semula jadi dan butiran yang jelas—sesuai untuk kelas, kursus dalam talian dan penciptaan kandungan.",
+      "badges": ["AI Tracking", "PTZ", "4K", "USB-C"],
+      "specs": {
+        "Sensor": "CMOS 1/1.5\"",
+        "Resolusi": "4K 60fps / 1080p 60fps",
+        "Panjang Fokus": "20mm setara (lebar)",
+        "Kawalan": "AI Auto Framing / Gesture Control",
+        "I/O": "USB-C / HDMI (melalui dok)",
+        "Audio": "Mikrofon dwi-arah terbina dalam",
+        "Pemasangan": "Tapak magnet / Tripod / Klip monitor",
+        "Kegunaan": "Pengajaran dalam talian, siaran mesyuarat, rakaman kuliah, penciptaan kandungan"
+      },
+      "features": [
+        "Penjejakan & pembingkaian automatik berasaskan AI",
+        "Kawalan isyarat untuk tukar lensa, jejak & zum",
+        "Sokongan HDR dan prestasi cahaya rendah yang baik",
+        "Serasi dengan OBS, vMix, Zoom, Teams dan lain-lain",
+        "Pilihan pemasangan fleksibel untuk aliran kerja rakaman"
+      ]
+    },
+    "obsbot_tail_2": {
+      "name": "OBSBOT Tail 2",
+      "tagline": "Kamera pengarah automatik AI dengan 4K HDR, rakaman SSD dan penstriman tanpa wayar.",
+      "desc": "OBSBOT Tail 2 menggabungkan penjejakan AI dengan keupayaan pengarah automatik masa nyata. Rakaman SSD terbina dalam dan kawalan tanpa wayar membolehkan penjejakan subjek serta pertukaran komposisi—sesuai untuk persembahan, acara langsung dan pendidikan.",
+      "badges": ["AI Tracking", "4K HDR", "Wireless", "SSD Recording"],
+      "specs": {
+        "Sensor": "CMOS 1/1.8\"",
+        "Resolusi": "4K 60fps / 1080p 120fps",
+        "Lensa": "25.5mm setara, apertur f/1.8",
+        "Penjejakan": "AI Auto Director + DeepTrack 3.0",
+        "Storan": "SSD terbina dalam (hingga 1TB) / microSD",
+        "Format": "MP4 (H.265 / H.264)",
+        "Audio": "Mikrofon omni + input 3.5mm",
+        "Sambungan": "USB-C / Wi-Fi / Bluetooth / HDMI (pilihan)",
+        "Kawalan": "Apl OBSBOT / isyarat / mod pengarah",
+        "Kegunaan": "Pentasan, sukan, rakaman pendidikan, acara langsung"
+      },
+      "features": [
+        "Mod pengarah automatik untuk pembingkaian & pertukaran adegan",
+        "Rakaman 4K HDR dengan codec H.265",
+        "SSD terbina dalam untuk rakaman panjang yang stabil",
+        "DeepTrack 3.0 menjejak subjek dengan tepat",
+        "Kawalan aplikasi tanpa wayar untuk pengarahan & penstriman"
+      ]
+    },
+    "synco_xtalk_x": {
+      "name": "SYNCO Xtalk X",
+      "tagline": "Sistem persidangan tanpa wayar dwi-hala penuh untuk perbualan 4 hala yang jelas.",
+      "desc": "SYNCO Xtalk X membolehkan perbualan 4 pihak dwi-hala penuh yang semula jadi dengan pengurangan hingar AI dan pencampuran automatik—tanpa perlu tekan-untuk-bercakap. Sesuai untuk mesyuarat jarak jauh, kelas dalam talian, rakaman korporat dan siaran langsung.",
+      "badges": ["Wireless Audio", "Full Duplex", "Conference", "AI Noise Cancel"],
+      "specs": {
+        "Tanpa Wayar": "Digital 2.4GHz (dwi-hala penuh)",
+        "Peserta": "Sehingga 4 unit serentak",
+        "Jarak": "Sehingga 150 m (terbuka)",
+        "Mod Mic": "Mik omni / input 3.5mm lavalier",
+        "Pengurangan Hingar": "AI dwi-peringkat",
+        "Bateri": "≈8 jam (hingga 20 jam dengan bekas)",
+        "I/O": "USB-C / 3.5mm TRS / audio digital Type-C",
+        "Keserasian": "Kamera / telefon / komputer / pengadun / switcher",
+        "Kegunaan": "Rakaman mesyuarat, siaran langsung, pembelajaran jarak jauh, talkback OB"
+      },
+      "features": [
+        "Perbualan 4 hala dwi-hala penuh yang semula jadi",
+        "AI menindas bunyi angin dan persekitaran",
+        "Jarak hingga 150 m dengan kependaman rendah",
+        "Berfungsi dengan kamera, komputer riba & switcher",
+        "Audio digital USB-C dan pemantauan masa nyata",
+        "Bekas pengecas untuk simpan & cas serentak"
+      ]
+    },
+    "synco_xtalk_pro": {
+      "name": "SYNCO Xtalk Pro",
+      "tagline": "Interkom tanpa wayar dwi-hala profesional untuk studio dan koordinasi acara.",
+      "desc": "SYNCO Xtalk Pro menyasar bilik kawalan, pusat AV dan persidangan besar dengan interkom dwi-hala penuh sehingga 8 pihak dan rakaman. Pengurangan hingar AI dan jarak jauh yang stabil memastikan koordinasi segera untuk siaran, pentas dan pendidikan.",
+      "badges": ["Wireless Intercom", "Full Duplex", "Broadcast", "AI Noise Cancel"],
+      "specs": {
+        "Tanpa Wayar": "2.4GHz dwi-hala penuh",
+        "Peserta": "Sehingga 8 bercakap / 32 dipadankan",
+        "Jarak": "Sehingga 350 m (terbuka)",
+        "Mod Mic": "Omni + input lavalier",
+        "NR": "AI dwi-hala + penindasan gema",
+        "Kependaman": "<20 ms",
+        "Bateri": "≈10 jam (hingga 25 jam dengan bekas)",
+        "I/O": "USB-C / 3.5mm TRRS / XLR (modul)",
+        "Serasi": "Switcher / kamera / komputer riba / mixer",
+        "Kegunaan": "Interkom, koordinasi OB, kru pentas, mesyuarat pelbagai pihak"
+      },
+      "features": [
+        "Seni bina dwi-hala penuh 8 pihak",
+        "AI NR dengan audio kependaman rendah",
+        "Jarak hingga 350 m",
+        "Sokong mic lav/headset",
+        "Rakaman trek terasing setiap saluran",
+        "Binaan logam tahan lasak"
+      ]
+    },
+    "synco_xtalk_xmax": {
+      "name": "SYNCO Xtalk XMax",
+      "tagline": "Sistem dwi-hala penuh flagship dengan pengurusan stesen asas berbilang kumpulan.",
+      "desc": "SYNCO Xtalk XMax menyokong 16 pihak dwi-hala penuh dengan stesen asas khusus untuk pengelompokan, bisu dan rakaman berpusat. Direka untuk acara besar, trak OB, pusat EDU dan komunikasi perusahaan.",
+      "badges": ["Full Duplex", "Base Station", "Multi-Group", "AI Noise Cancel"],
+      "specs": {
+        "Seni Bina": "2.4GHz + pengurusan stesen asas",
+        "Peserta": "16 bercakap / 64 dipadankan",
+        "Jarak": "Sehingga 500 m (terbuka)",
+        "Sistem Hingar": "AI dwi-hala + pembatalan gema + AGC",
+        "Kawalan Kumpulan": "Kumpul, bisu, rakaman segerak",
+        "Kependaman": "<15 ms",
+        "Bateri": "Headset ≈10 jam; stesen asas kuasa berterusan",
+        "I/O": "USB-C / XLR / RJ45 / LAN",
+        "Rakaman": "Perakam dalaman stesen (WAV)",
+        "Kegunaan": "Talkback pengarah, kru pentas, pusat AV, komunikasi perusahaan"
+      },
+      "features": [
+        "Interkom masa nyata 16 pihak dengan multi-kumpulan",
+        "Kawalan berpusat stesen asas & rakaman",
+        "AI NR dan imbangan gain adaptif",
+        "Jarak hingga 500 m dengan penembusan baik",
+        "Integrasi LAN dan kebolehkembangan sistem",
+        "Binaan logam teguh untuk kegunaan lapangan"
+      ]
+    },
+    "synco_xtalk_link": {
+      "name": "SYNCO Xtalk Link",
+      "tagline": "Hab jambatan yang menyambung interkom Xtalk ke telefon/PC dan aliran kerja hibrid.",
+      "desc": "Xtalk Link mengumpulkan beberapa headset/bodypack Xtalk ke telefon atau komputer untuk komunikasi hibrid. Sesuai bagi penceramah jauh, pengarahan mudah alih dan kolaborasi mesyuarat/penstriman dengan pengelompokan, bisu dan keutamaan bercakap.",
+      "badges": ["Bridge Hub", "USB-C", "App Control", "Multi-Group"],
+      "specs": {
+        "Tujuan": "Jambatan Xtalk → mudah alih/PC",
+        "Ketersambungan": "2.4GHz proprietari (Xtalk) / USB-C (hos)",
+        "Keserasian": "Xtalk X / Pro / XMax",
+        "Pengelompokan": "Apl/desktop kumpulan, bisu, keutamaan",
+        "Audio": "UAC untuk platform mesyuarat/penstriman",
+        "Kuasa": "USB-C (sokong power bank)",
+        "Kawalan": "Apl mudah alih / apl desktop / kekunci fizikal",
+        "Kegunaan": "Penceramah jauh, mesyuarat hibrid, OB mudah alih, kampus/korporat"
+      },
+      "features": [
+        "Bawa interkom Xtalk ke panggilan telefon/PC",
+        "Kumpulan, bisu dan keutamaan untuk penyeliaan mudah",
+        "USB-C plug-and-play dengan platform popular",
+        "Mesra power bank untuk tetapan mudah alih",
+        "Skala daripada pasukan kecil ke acara besar"
+      ]
+    },
+    "synco_g4": {
+      "name": "SYNCO G4 Wireless Microphone",
+      "tagline": "Mik tanpa wayar dwi-saluran dengan pautan 2.4GHz Gen-4 dan paparan OLED.",
+      "desc": "SYNCO G4 menyampaikan audio stabil berkependaman rendah melalui teknologi 2.4GHz generasi ke-4. Rakaman terbina dalam pada TX dan paparan OLED memudahkan pemantauan—sesuai untuk kelas, Vlog, rakaman korporat dan switching mudah alih.",
+      "badges": ["Wireless Mic", "2.4GHz", "Dual Channel", "OLED Display"],
+      "specs": {
+        "Tanpa Wayar": "2.4GHz (Gen-4)",
+        "Saluran": "Dwi (2TX + 1RX)",
+        "Rakaman Terbina": "TX hingga 8GB (~22 jam)",
+        "Jarak": "Sehingga 250 m (terbuka)",
+        "Kependaman": "<20 ms",
+        "Input": "Mic terbina / 3.5mm lav",
+        "Output": "3.5mm TRS / USB-C / audio digital Type-C",
+        "Paparan": "Paparan status OLED",
+        "Bateri": "≈8 jam (hingga 20 jam dengan bekas)",
+        "Kegunaan": "Vlog, pendidikan, pembentangan korporat, OB mudah alih"
+      },
+      "features": [
+        "Pautan 2.4GHz Gen-4 dengan anti-gangguan kukuh",
+        "Rakaman sandaran pada TX",
+        "Pemantauan jelas melalui OLED",
+        "Dwi-saluran untuk dua penceramah",
+        "Output digital USB-C ke telefon/komputer riba",
+        "Reka bentuk kompak bermagnet dengan bekas pengecas"
+      ]
+    },
+    "synco_p2s": {
+      "name": "SYNCO P2S Wireless Microphone",
+      "tagline": "Mik tanpa wayar mudah alih bersaiz poket—plug-and-play dengan suara jelas.",
+      "desc": "SYNCO P2S dibina untuk telefon dan platform langsung: rakaman dua saluran, Type-C/Lightning plug-and-play, pengurangan hingar aktif dan bekas pengecas. Ringan dan tanpa persediaan—ideal untuk pencipta, Vlog, kursus dan live mudah alih.",
+      "badges": ["Mobile Mic", "Plug & Play", "Noise Reduction", "Charging Case"],
+      "specs": {
+        "Tanpa Wayar": "Digital 2.4GHz",
+        "Saluran": "2TX + 1RX",
+        "Penyambung": "Type-C atau Lightning (ikut model)",
+        "Jarak": "Sehingga 150 m (terbuka)",
+        "Mik": "Omni terbina dalam",
+        "NR": "AI dengan pemantauan",
+        "Bateri": "TX ≈5 jam; dengan bekas hingga 15 jam",
+        "Pengecasan": "Caj pantas Type-C (~1.5 jam)",
+        "Kegunaan": "Penggambaran mudah alih, kelas dalam talian, live korporat, temu bual"
+      },
+      "features": [
+        "Plug-and-play sebenar—tiada pemasangan berpasangan",
+        "AI mengurangkan hingar untuk ucapan yang jelas",
+        "Dua saluran untuk rakaman dua orang",
+        "Sangat mudah alih dengan bekas pengecas",
+        "Pilihan Type-C/Lightning untuk Android/iPhone",
+        "Sesuai untuk Vlog, livestream dan kursus"
+      ]
+    },
+    "synco_mmic_u3": {
+      "name": "SYNCO MMic-U3 Mobile Microphone",
+      "tagline": "Mik cardioid kompak—rakaman mudah alih yang bersih dengan mudah.",
+      "desc": "SYNCO MMic-U3 ialah mik cardioid untuk kamera/telefon dengan badan aluminium dan kapsul sensitif tinggi bagi memfokus pada suara serta mengurangkan bunyi sekitar. Berfungsi melalui Type-C atau 3.5mm TRRS—rakam serta-merta tanpa bateri.",
+      "badges": ["Cardioid Mic", "Plug & Play", "Noise Reduction", "Mobile Ready"],
+      "specs": {
+        "Corak Kutipan": "Cardioid",
+        "Kepekaan": "-35 dB ±3 dB (1V/Pa @1kHz)",
+        "Respons Frekuensi": "50 Hz–20 kHz",
+        "SNR": ">75 dB",
+        "I/O": "Type-C / 3.5mm TRRS (ikut varian)",
+        "Dimensi": "Φ22 × 72 mm",
+        "Berat": "≈39 g",
+        "Binaan": "Badan aluminium, pemegang anti-getar & penapis angin",
+        "Kegunaan": "Penggambaran mudah alih, kelas dalam talian, Vlog, temu bual"
+      },
+      "features": [
+        "Cardioid mengurangkan bunyi sisi/belakang",
+        "Badan aluminium ringan, tahan lama & rintangan RF",
+        "Type-C atau 3.5mm untuk telefon dan kamera",
+        "Tanpa bateri—plug & record",
+        "Termasuk pemegang anti-getar dan penapis angin untuk dalam/luar"
+      ]
+    }
   }
-  
   
 }

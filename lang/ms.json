@@ -915,6 +915,205 @@
         "Termasuk pemegang anti-getar dan penapis angin untuk dalam/luar"
       ]
     }
+  },
+  
+  "products": {
+    "acemic_g5_iem": {
+      "name": "Sistem Pemantauan Dalam Telinga Acemic G5",
+      "tagline": "IEM UHF profesional—stabil, jelas dan kependaman rendah untuk kegunaan langsung.",
+      "desc": "Acemic G5 direka untuk produksi langsung dan persembahan pentas. Menggunakan penghantaran tanpa wayar UHF dengan rintangan gangguan yang tinggi dan kependaman ultra rendah, memastikan isyarat stabil dan bunyi yang jelas. Menyokong berbilang saluran serentak—sesuai untuk pengarah, pemuzik dan rakaman/penstriman pendidikan.",
+      "badges": ["IEM", "UHF", "Pemantauan pentas", "Kependaman rendah"],
+      "specs": {
+        "Julat frekuensi": "UHF 600–700 MHz (mengikut wilayah)",
+        "Bilangan saluran": "Sehingga 80 frekuensi boleh dipilih",
+        "Jarak penghantaran": "Sehingga 100 m (bergantung persekitaran)",
+        "Kependaman": "< 2 ms",
+        "Respons audio": "50 Hz – 15 kHz",
+        "Input": "XLR / 6.3 mm kombo",
+        "Output": "Fon kepala 3.5 mm TRS (penerima)",
+        "Kuasa": "TX: DC 12 V; RX: 2 × AA",
+        "Perumah": "Badan logam, tahan lasak dan anti-gangguan",
+        "Aplikasi": "Pemantauan pentas, pemantauan produksi, rumah ibadat, acara korporat"
+      },
+      "features": [
+        "Pautan UHF yang mantap dengan anti-gangguan tinggi",
+        "Berbilang saluran beroperasi serentak untuk pasukan",
+        "Julat dinamik tinggi dengan kependaman rendah",
+        "Badan logam dan output fon kepala profesional",
+        "Sesuai untuk pentas, pengarah dan pendidikan"
+      ]
+    },
+    "acemic_s_series": {
+      "name": "Sistem Mikrofon Tanpa Wayar Acemic Siri S",
+      "tagline": "Mikrofon tanpa wayar UHF berbilang saluran—stabil dan jelas untuk pelbagai persekitaran langsung.",
+      "desc": "Siri Acemic S dibuat untuk penggunaan profesional dan pendidikan. Meliputi model satu hingga lapan saluran (S2 / S4 / S6 / S8), menyokong pemancar genggam, kepala dan lavalier. Dikenali kerana kestabilan, kejelasan dan nilai—digunakan secara meluas di bilik darjah, mesyuarat korporat, siaran langsung dan acara pentas.",
+      "badges": ["Mikrofon tanpa wayar", "UHF", "Berbilang saluran", "Profesional"],
+      "specs": {
+        "Julat frekuensi": "UHF 520–580 MHz (mengikut wilayah)",
+        "Pilihan saluran": "2 / 4 / 6 / 8 saluran",
+        "Jarak": "Sehingga 100 m (garis pandang)",
+        "Kepekaan": "-90 dBm",
+        "Respons frekuensi": "40 Hz – 18 kHz",
+        "Output": "XLR / 6.3 mm campuran",
+        "Kuasa": "Penerima: DC 12 V; Pemancar: 2 × AA",
+        "Binaan": "Casis logam, paparan LCD dan penyegerakan IR",
+        "Aplikasi": "Sekolah, mesyuarat, rumah ibadat, pentas"
+      },
+      "features": [
+        "Penghantaran UHF yang stabil",
+        "Operasi pelbagai sistem dengan penyegerakan IR automatik",
+        "Julat dinamik luas dan audio kependaman rendah",
+        "Serasi pemancar genggam/kepala/lavalier",
+        "Sesuai untuk pendidikan, korporat dan acara langsung"
+      ]
+    },
+    "acemic_wireless": {
+      "name": "Sistem Mikrofon Tanpa Wayar Acemic",
+      "tagline": "Mikrofon UHF—transmisi boleh dipercayai dan bunyi jelas untuk pendidikan serta kegunaan profesional.",
+      "desc": "Sistem tanpa wayar Acemic popular untuk pendidikan, acara korporat dan pentas. Dengan penghantaran UHF yang stabil, kependaman rendah dan audio yang jelas, ia menyokong pemancar genggam, lavalier dan kepala. Tersedia dalam konfigurasi satu, dwi dan empat saluran; mudah digunakan dan tahan gangguan.",
+      "badges": ["Mikrofon tanpa wayar", "UHF", "Profesional", "Dwi-saluran"],
+      "specs": {
+        "Julat frekuensi": "UHF 520–580 MHz (mengikut wilayah)",
+        "Pilihan saluran": "Tunggal / Dwi / Empat",
+        "Respons frekuensi": "40 Hz – 18 kHz",
+        "Julat dinamik": "> 100 dB",
+        "Jarak": "Sehingga 100 m (garis pandang)",
+        "I/O": "XLR / 6.3 mm campuran",
+        "Penyegerakan": "IR auto sync",
+        "Kuasa": "Penerima DC 12 V / Pemancar 2 × AA",
+        "Aplikasi": "Rakaman pendidikan, pembentangan korporat, pentas, bilik mesyuarat"
+      },
+      "features": [
+        "Pautan UHF teguh dengan anti-gangguan",
+        "Kepekaan tinggi dan julat dinamik luas",
+        "Penyegerakan IR automatik untuk tetapan pantas",
+        "Serasi pemancar genggam/lavalier/kepala",
+        "Operasi berbilang saluran untuk acara besar"
+      ]
+    },
+    "yamaha_mg_series": {
+      "name": "Pengadun Siri Yamaha MG",
+      "tagline": "Pengadun analog profesional dengan preamp premium dan binaan lasak.",
+      "desc": "Siri Yamaha MG terkenal kerana kestabilan dan kualiti bunyi untuk persembahan langsung, rakaman dan acara korporat. Menampilkan preamp D-PRE kelas A dan kesan SPX; model XU menambah antara muka audio USB untuk integrasi aliran kerja digital.",
+      "badges": ["Pengadun analog", "D-PRE", "Kesan SPX", "Antara muka USB"],
+      "specs": {
+        "Bilangan saluran": "6 / 10 / 12 / 16 / 20 (ikut model)",
+        "Preamps mikrofon": "Yamaha D-PRE Kelas A",
+        "EQ": "EQ 3 jalur / Penapis high-pass",
+        "Kesan": "Kesan digital SPX (model X / XU)",
+        "Antara muka USB": "USB Audio 2 masuk / 2 keluar (model XU)",
+        "Kuasa": "Penyesuai AC (PA-10 / PA-20)",
+        "Saiz/berat": "Ikut model (MG10XU ≈ 2.1 kg)",
+        "Aplikasi": "Rumah ibadat, studio, acara korporat, muzik"
+      },
+      "features": [
+        "Preamps D-PRE untuk bunyi jelas dan penuh",
+        "Kesan SPX terbina dalam (24 program)",
+        "Audio USB pada model XU untuk rakaman/penstriman",
+        "Casis logam tahan lasak untuk jelajah & pemasangan",
+        "I/O fleksibel dengan AUX, GROUP, STEREO BUS"
+      ]
+    },
+    "mipro_act_series": {
+      "name": "Sistem Mikrofon Tanpa Wayar MIPRO Siri ACT",
+      "tagline": "UHF auto-sync—profesional, stabil dan sangat jelas.",
+      "desc": "Siri MIPRO ACT terkenal dengan penyegerakan automatik IR (Automatic Channel Targeting), membolehkan pemadanan pemancar-penerima yang cepat dan intuitif. Meliputi ACT-3/5/7/8 untuk pendidikan, mesyuarat dan persembahan profesional dengan audio tanpa wayar yang boleh dipercayai.",
+      "badges": ["Mikrofon tanpa wayar", "UHF", "Auto sync", "Profesional"],
+      "specs": {
+        "Julat frekuensi": "UHF 480–934 MHz (varian wilayah)",
+        "Pilihan saluran": "Tunggal / Dwi / Empat / Lapan",
+        "Penyegerakan": "ACT IR auto sync",
+        "Respons frekuensi": "50 Hz – 18 kHz",
+        "Julat dinamik": "> 100 dB",
+        "Output": "XLR / 6.3 mm / AES3 (ikut model)",
+        "Kuasa": "Penerima AC / Pemancar AA atau Li-ion",
+        "Perumah": "Logam dengan LCD dan imbasan kumpulan",
+        "Aplikasi": "Pendidikan, bilik mesyuarat, pentas, rumah ibadat, rakaman siar"
+      },
+      "features": [
+        "Auto sync ACT untuk pemadanan pantas & tepat",
+        "Operasi berbilang saluran untuk sistem serentak",
+        "Julat dinamik luas & kependaman rendah",
+        "Binaan logam dengan ketahanan gangguan",
+        "Meliputi kelas, rumah ibadat, korporat & pentas"
+      ]
+    },
+    "mipro_mi58": {
+      "name": "Sistem IEM Digital MIPRO MI-58",
+      "tagline": "IEM digital 5.8 GHz—kependaman rendah, fideliti tinggi dan bebas gangguan.",
+      "desc": "Siri MI-58 menggunakan jalur 5.8 GHz untuk audio setara CD dengan pemantauan kependaman rendah. Dengan output stereo, IR sync, auto scan dan berbilang saluran, ia mengelakkan kesesakan jalur UHF, memastikan pemantauan stabil untuk pentas dan produksi.",
+      "badges": ["IEM digital", "5.8 GHz", "Kependaman rendah", "Stereo"],
+      "specs": {
+        "Jalur": "5.725 – 5.850 GHz (tanpa lesen)",
+        "Penghantaran": "24-bit / 48 kHz stereo digital",
+        "Kependaman": "< 2.5 ms",
+        "Respons frekuensi": "20 Hz – 20 kHz",
+        "Sistem serentak": "Sehingga 12",
+        "Penyegerakan": "IR Sync automatik",
+        "Input": "XLR / TRS seimbang",
+        "Penerima": "Beltpack dengan OLED & kawalan volum",
+        "Kuasa": "Penerima 2 × AA / dok pengecas pilihan",
+        "Aplikasi": "Pentas, rumah ibadat, pembentangan korporat, studio"
+      },
+      "features": [
+        "Jalur 5.8 GHz mengelak gangguan UHF",
+        "Audio digital 24-bit hampir setara CD",
+        "Kependaman ultra rendah < 2.5 ms",
+        "IR auto sync & imbasan saluran",
+        "Mod Stereo / dwi-mono boleh pilih",
+        "Serasi dok pengecas & set fon telinga"
+      ]
+    },
+    "mls_fixed_led": {
+      "name": "Paparan LED MLS (Pemasangan Tetap)",
+      "tagline": "LED jarak piksel halus untuk studio & bilik kawalan.",
+      "desc": "Dinding LED pemasangan tetap MLS menggunakan modul tepat dan pembungkusan COB untuk kecerahan tinggi, kontras hebat dan visual tanpa bezel. Sesuai untuk studio, bilik kawalan, pameran dan dinding korporat—imej stabil dengan keseragaman warna unggul.",
+      "badges": ["Paparan LED", "COB", "SMD", "Pemasangan tetap"],
+      "specs": {
+        "Teknologi paparan": "COB / SMD",
+        "Pitch piksel": "P1.25 / P1.56 / P1.875 / P2.5",
+        "Kecerahan": "Sehingga 1500 nits (dalam bangunan)",
+        "Kadar segar semula": "≥ 3840 Hz",
+        "Jangka hayat": "> 100,000 jam",
+        "Penarafan kalis": "IP31 (dalam bangunan)",
+        "Keseragaman warna": "Pentukalibrasian per modul, sokong HDR10",
+        "Kawalan": "Pengawal segerak / tak segerak",
+        "Pemasangan": "Dinding / tertanam / melengkung",
+        "Aplikasi": "Studio, bilik kawalan, pameran, dewan"
+      },
+      "features": [
+        "Paparan jarak halus tanpa bezel",
+        "Kadar segar semula tinggi & warna tepat",
+        "Sokongan HDR10 julat dinamik luas",
+        "Reka bentuk magnet modular—servis mudah",
+        "LED hayat panjang dengan penggunaan kuasa rendah"
+      ]
+    },
+    "mls_rental_led": {
+      "name": "Panel LED Sewaan MLS",
+      "tagline": "LED sewaan kunci pantas—direka untuk pentas dan acara.",
+      "desc": "Panel LED sewaan MLS menampilkan rangka aloi aluminium ringan dan kunci pantas untuk pemasangan pantas. Dengan kecerahan tinggi dan perlindungan cuaca, ia menyokong gantung dan susun untuk konsert, reka bentuk pentas dan acara komersial, serta mudah diselenggara.",
+      "badges": ["Paparan LED", "Sewaan", "Kunci pantas", "Luar"],
+      "specs": {
+        "Teknologi paparan": "SMD",
+        "Pitch piksel": "P2.6 / P3.9 / P4.8 / P5.9",
+        "Kecerahan": "4000–6000 nits (pilihan luar)",
+        "Kadar segar semula": "≥ 3840 Hz",
+        "Berat": "≈ 7.5 kg per panel 500×500 mm",
+        "Penarafan kalis": "IP65 (depan) / IP54 (belakang)",
+        "Kuasa/Isyarat": "PSU & data modular tukar-pantas",
+        "Struktur": "Kabinet aluminium—gantung, susun atau lengkung",
+        "Aplikasi": "Pentas, pelancaran, rumah ibadat, acara komersial"
+      },
+      "features": [
+        "Pemasangan & buka dalam 2 saat",
+        "Kecerahan tinggi, tahan cuaca untuk dalam/luar",
+        "Sokong gantung/susun & konfigurasi lengkung",
+        "Kadar segar semula tinggi—video stabil tanpa berkelip",
+        "Penggunaan kuasa rendah untuk operasi lama"
+      ]
+    }
   }
+
   
 }

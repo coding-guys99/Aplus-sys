@@ -704,5 +704,297 @@ window.PRODUCT_DATA = {
     "免電池設計，插上即可錄音",
     "附防震支架與防風罩，室內外錄音皆穩定"
   ]
+},
+/* ------------------ SYNCO CF5 Smoke Machine ------------------ */
+"synco-cf5": {
+  id: "synco-cf5",
+  name: "SYNCO CF5 Smoke Machine",
+  brand: "SYNCO",
+  brandKey: "synco",
+  brandLogo: "./assets/brands/SYNCO.svg",
+  hero: "./assets/products/synco-cf5.jpg",
+  images: [
+    "./assets/products/synco-cf5.jpg",
+    "./assets/products/synco-cf5-kit.jpg",
+    "./assets/products/synco-cf5-smoke.jpg"
+  ],
+  tagline: "便攜式煙霧機，為拍攝與舞台增添層次感與氛圍。",
+  badges: ["Fog Machine", "Portable", "Film Tool", "Atmosphere"],
+  desc:
+    "SYNCO CF5 是一款專為影視拍攝與舞台環境設計的迷你煙霧機。體積小巧但出霧穩定，可快速營造層次光影與空氣氛圍。採用安全無味的煙油配方，支援 USB 充電與多段出霧模式，適合影片拍攝、棚內燈光測試與展示活動使用。",
+  specs: {
+    "功率": "60W 微型加熱模組",
+    "出霧量": "約 2,000 立方英尺／分鐘",
+    "預熱時間": "約 20 秒",
+    "油箱容量": "12ml 可替換煙油瓶",
+    "控制": "按鍵／遙控／自動模式",
+    "電源": "Type-C 充電（支援行動電源）",
+    "尺寸": "約 16 × 5 × 7 cm",
+    "重量": "約 370g",
+    "應用": "影片拍攝、舞台特效、產品攝影、教學演示"
+  },
+  features: [
+    "小型輕量設計，單手即可操作",
+    "快速預熱，出霧穩定且分佈均勻",
+    "支援 Type-C 充電，可接行動電源使用",
+    "使用安全無味煙油，環保無刺激氣味",
+    "適用影片拍攝、舞台、展示與創作特效場景"
+  ]
+},
+/* ------------------ Acemic G5 IEM ------------------ */
+"acemic-g5-iem": {
+  id: "acemic-g5-iem",
+  name: "Acemic G5 In-Ear Monitoring System",
+  brand: "Acemic",
+  brandKey: "acemic",
+  brandLogo: "./assets/brands/ACEMIC.svg",
+  hero: "./assets/products/acemic-g5-iem.jpg",
+  images: [
+    "./assets/products/acemic-g5-iem.jpg",
+    "./assets/products/acemic-g5-txrx.jpg",
+    "./assets/products/acemic-g5-stage.jpg"
+  ],
+  tagline: "專業級 UHF 入耳監聽系統，穩定清晰、低延遲、現場必備。",
+  badges: ["IEM", "UHF", "Stage Monitoring", "Low Latency"],
+  desc:
+    "Acemic G5 是為現場製播與舞台演出設計的專業入耳監聽系統。採用 UHF 無線傳輸技術，具備高抗干擾能力與低延遲，確保訊號穩定與聲音清晰。系統可同時設定多組頻道，適合現場導播、表演者或教育錄播使用。",
+  specs: {
+    "頻率範圍": "UHF 600–700 MHz（依地區版本）",
+    "頻道數": "最多 80 組可選頻點",
+    "傳輸距離": "最遠 100 米（視環境）",
+    "延遲": "< 2 毫秒",
+    "音訊響應": "50 Hz – 15 kHz",
+    "輸入介面": "XLR / 6.3 mm 複合音源輸入",
+    "輸出介面": "耳機 3.5 mm TRS（接收端）",
+    "電源": "TX：DC 12 V；RX：AA 電池 × 2",
+    "機殼": "金屬機身，耐用抗干擾",
+    "應用": "舞台監聽、錄播監聽、教會、企業活動"
+  },
+  features: [
+    "UHF 無線傳輸技術，穩定抗干擾",
+    "支援多組頻道同時運作，方便多人使用",
+    "高動態範圍與低延遲設計，聲音同步自然",
+    "金屬機身與專業耳機輸出，耐用穩定",
+    "適合舞台演出、導播監聽、教學錄播等場景"
+  ]
+},
+/* ------------------ Acemic S Series Wireless Microphone ------------------ */
+"acemic-s-series": {
+  id: "acemic-s-series",
+  name: "Acemic S Series Wireless Microphone System",
+  brand: "Acemic",
+  brandKey: "acemic",
+  brandLogo: "./assets/brands/ACEMIC.svg",
+  hero: "./assets/products/acemic-s-series.jpg",
+  images: [
+    "./assets/products/acemic-s-series.jpg",
+    "./assets/products/acemic-s2-handheld.jpg",
+    "./assets/products/acemic-s8-rack.jpg"
+  ],
+  tagline: "多通道 UHF 無線麥克風系統，穩定清晰，適用各類現場環境。",
+  badges: ["Wireless Mic", "UHF", "Multi-Channel", "Professional"],
+  desc:
+    "Acemic S 系列是一套專為專業與教育應用設計的 UHF 無線麥克風系統。系列涵蓋單通道至八通道版本（S2 / S4 / S6 / S8），支援手握、頭戴與領夾式發射器。以穩定、清晰與高性價比著稱，廣泛應用於教學、企業會議、活動轉播與舞台演出。",
+  specs: {
+    "頻率範圍": "UHF 520–580 MHz（依地區版本）",
+    "頻道數": "2 / 4 / 6 / 8 通道可選",
+    "傳輸距離": "最遠 100 米（無遮蔽環境）",
+    "靈敏度": "-90 dBm",
+    "音訊響應": "40 Hz – 18 kHz",
+    "輸出介面": "XLR / 6.3 mm 混合輸出",
+    "電源": "接收器：DC 12V；發射器：AA 電池 × 2",
+    "機身": "金屬機殼，內建 LCD 顯示與紅外對頻",
+    "應用": "學校、企業會議、教會、舞台演出"
+  },
+  features: [
+    "UHF 無線傳輸技術，穩定抗干擾",
+    "可同時使用多組頻道，支援紅外自動對頻",
+    "高動態範圍與低延遲輸出，音質清晰自然",
+    "可搭配手握、頭戴或領夾式發射器",
+    "適用教育講堂、企業活動與現場演出"
+  ]
+},
+/* ------------------ Acemic Wireless Microphone System ------------------ */
+"acemic-wireless": {
+  id: "acemic-wireless",
+  name: "Acemic Wireless Microphone System",
+  brand: "Acemic",
+  brandKey: "acemic",
+  brandLogo: "./assets/brands/ACEMIC.svg",
+  hero: "./assets/products/acemic-wireless-system.jpg",
+  images: [
+    "./assets/products/acemic-wireless-system.jpg",
+    "./assets/products/acemic-handheld-mic.jpg",
+    "./assets/products/acemic-bodypack.jpg",
+    "./assets/products/acemic-dual-receiver.jpg"
+  ],
+  tagline: "UHF 無線麥克風系統，穩定傳輸、清晰收音，專為教育與專業場域設計。",
+  badges: ["Wireless Mic", "UHF", "Professional", "Dual Channel"],
+  desc:
+    "Acemic 無線麥克風系統廣泛應用於教育錄播、企業活動與舞台演出。具備高穩定度 UHF 傳輸、低延遲輸出與清晰音質，支援手握、領夾與頭戴多型發射器，滿足不同場景需求。提供單、雙、四通道多款配置，操作簡單且抗干擾能力強。",
+  specs: {
+    "頻率範圍": "UHF 520–580 MHz（依地區版本）",
+    "通道數": "單／雙／四通道可選",
+    "頻率響應": "40 Hz – 18 kHz",
+    "動態範圍": "> 100 dB",
+    "傳輸距離": "最遠 100 米（無遮蔽環境）",
+    "輸入輸出": "XLR / 6.3 mm 混合輸出",
+    "對頻方式": "紅外自動對頻（IR Sync）",
+    "電源": "接收器 DC 12V / 發射器 AA × 2",
+    "應用": "教育錄播、企業簡報、舞台表演、會議室"
+  },
+  features: [
+    "UHF 無線傳輸技術，穩定抗干擾",
+    "高靈敏度收音，動態範圍寬廣",
+    "紅外自動對頻設計，操作簡單快速",
+    "可搭配手握、領夾或頭戴式發射器",
+    "多通道可同時運作，適合大型活動使用"
+  ]
+},
+/* ------------------ Yamaha MG Series Mixer ------------------ */
+"yamaha-mg-series": {
+  id: "yamaha-mg-series",
+  name: "Yamaha MG Series Mixer",
+  brand: "Yamaha",
+  brandKey: "yamaha",
+  brandLogo: "./assets/brands/YAMAHA.svg",
+  hero: "./assets/products/yamaha-mg-series.jpg",
+  images: [
+    "./assets/products/yamaha-mg-series.jpg",
+    "./assets/products/yamaha-mg10xu.jpg",
+    "./assets/products/yamaha-mg16xu.jpg"
+  ],
+  tagline: "專業類比混音器系列，結合高音質前級與可靠設計。",
+  badges: ["Analog Mixer", "D-PRE", "SPX Effects", "USB Interface"],
+  desc:
+    "Yamaha MG 系列混音器以其穩定性與優異音質著稱，適用於現場演出、錄播與企業活動。採用 Yamaha 獨家的 D-PRE 類比前級與 SPX 效果器，並提供 USB 錄音介面版本（XU 系列），讓使用者能輕鬆整合至數位製播流程。",
+  specs: {
+    "通道數": "6 / 10 / 12 / 16 / 20（依型號）",
+    "麥克風前級": "Yamaha D-PRE Class-A Mic Preamps",
+    "EQ": "3-band EQ / High-pass Filter",
+    "效果器": "SPX 數位效果（X / XU 型號）",
+    "錄音介面": "USB Audio 2-In / 2-Out（XU 型號）",
+    "電源": "AC Adaptor (PA-10 / PA-20)",
+    "尺寸重量": "依型號而異（MG10XU 約 2.1 kg）",
+    "應用": "教會、錄播室、企業活動、音樂表演"
+  },
+  features: [
+    "Yamaha D-PRE 前級，音質清晰飽滿",
+    "SPX 效果器內建（含混響、延遲等 24 種效果）",
+    "USB 錄音介面（XU 型號）可直接錄音或串流",
+    "堅固金屬外殼，適合長期巡演與固定架設",
+    "靈活的輸入輸出配置，支援 AUX、GROUP、STEREO BUS"
+  ]
+},
+/* ------------------ MIPRO MI-58 Digital IEM System ------------------ */
+"mipro-mi58": {
+  id: "mipro-mi58",
+  name: "MIPRO MI-58 Digital IEM System",
+  brand: "MIPRO",
+  brandKey: "mipro",
+  brandLogo: "./assets/brands/MIPRO.svg",
+  hero: "./assets/products/mipro-mi58.jpg",
+  images: [
+    "./assets/products/mipro-mi58.jpg",
+    "./assets/products/mipro-mi58t.jpg",
+    "./assets/products/mipro-mi58r.jpg"
+  ],
+  tagline: "5.8 GHz 數位無線入耳監聽系統，低延遲、高音質、抗干擾。",
+  badges: ["Digital IEM", "5.8 GHz", "Low Latency", "Stereo"],
+  desc:
+    "MIPRO MI-58 系列採用 5.8 GHz 無線傳輸技術，提供 CD 級音質與低延遲監聽體驗。具備雙通道立體聲輸出、紅外對頻、自動掃描與多組頻道可選，能有效避開擁擠的 UHF 頻段，確保穩定可靠的舞台與錄播監聽環境。",
+  specs: {
+    "頻段": "5.725 – 5.850 GHz（免執照頻段）",
+    "傳輸模式": "數位 24-bit / 48 kHz 立體聲傳輸",
+    "延遲": "< 2.5 ms",
+    "頻率響應": "20 Hz – 20 kHz",
+    "通道數": "最多 12 組可同時運作",
+    "對頻方式": "紅外 IR Sync 自動對頻",
+    "輸入介面": "XLR / TRS 平衡輸入",
+    "接收器": "腰掛式，OLED 顯示與音量控制",
+    "電源": "接收器使用 AA × 2 電池 / 充電座選配",
+    "應用": "舞台表演、教會錄播、企業發表、錄音監聽"
+  },
+  features: [
+    "5.8 GHz 無線頻段，有效避開 UHF 干擾",
+    "數位 24-bit 傳輸，音質接近 CD 等級",
+    "超低延遲 < 2.5 ms，即時監聽無延誤",
+    "支援紅外線自動對頻與頻道掃描",
+    "立體聲 / 雙單聲道輸出模式可切換",
+    "搭配充電底座與耳機組件，完整一體化方案"
+  ]
+},
+/* ------------------ MLS Fixed LED Display Panels ------------------ */
+"mls-fixed-led": {
+  id: "mls-fixed-led",
+  name: "MLS LED Display (Fixed Installation)",
+  brand: "木林森光顯科技",
+  brandKey: "mls",
+  brandLogo: "./assets/brands/MLS.svg",
+  hero: "./assets/products/mls-led-fixed.jpg",
+  images: [
+    "./assets/products/mls-led-fixed.jpg",
+    "./assets/products/mls-led-studio.jpg",
+    "./assets/products/mls-led-controlroom.jpg"
+  ],
+  tagline: "高清小間距 LED 顯示屏，專為演播室與控制中心設計。",
+  badges: ["LED Display", "COB", "SMD", "Fixed Install"],
+  desc:
+    "木林森固定安裝型 LED 顯示屏採用高精密模組與 COB 封裝技術，提供高亮度、高對比與零拼縫畫面。適用於演播室、控制中心、展覽廳及企業展示牆等場所，畫面細膩穩定，色彩一致性佳。",
+  specs: {
+    "顯示技術": "COB / SMD 封裝",
+    "間距選項": "P1.25 / P1.56 / P1.875 / P2.5",
+    "亮度": "最高 1500 nits（室內專用）",
+    "刷新率": "≥3840 Hz",
+    "顯示壽命": ">100,000 小時",
+    "防護等級": "IP31（室內）",
+    "色彩一致性": "逐模組校正，支援 HDR10",
+    "控制方式": "同步 / 異步控制卡",
+    "安裝方式": "壁掛式 / 嵌入式 / 曲面拼接",
+    "應用": "演播室、控制中心、展覽展示、會議廳"
+  },
+  features: [
+    "高解析小間距顯示，畫面銳利無拼縫",
+    "高刷新率、色彩精準還原",
+    "支援 HDR10 動態範圍成像",
+    "模組化磁吸設計，維護方便",
+    "長壽命 LED 晶片與低功耗驅動"
+  ]
+},
+/* ------------------ MLS Rental LED Panels ------------------ */
+"mls-rental-led": {
+  id: "mls-rental-led",
+  name: "MLS Rental LED Panels",
+  brand: "木林森光顯科技",
+  brandKey: "mls",
+  brandLogo: "./assets/brands/MLS.svg",
+  hero: "./assets/products/mls-led-rental.jpg",
+  images: [
+    "./assets/products/mls-led-rental.jpg",
+    "./assets/products/mls-led-stage.jpg",
+    "./assets/products/mls-led-event.jpg"
+  ],
+  tagline: "快拆式租賃 LED 顯示屏，舞台活動專用。",
+  badges: ["LED Display", "Rental", "Fast Lock", "Outdoor"],
+  desc:
+    "木林森租賃型 LED 顯示屏採用輕量鋁合金框體與快拆結構，專為舞台、演唱會與活動布景設計。具備高亮度與防水結構，可吊裝或堆疊，便於快速搭建與維護。",
+  specs: {
+    "顯示技術": "SMD 封裝",
+    "間距選項": "P2.6 / P3.9 / P4.8 / P5.9",
+    "亮度": "4000–6000 nits（戶外可選）",
+    "刷新率": "≥3840 Hz",
+    "重量": "約 7.5 kg / 模組（500×500 mm）",
+    "防護等級": "IP65（前） / IP54（後）",
+    "電源/信號": "模組化快拆電源與傳輸設計",
+    "結構": "鋁合金箱體，支援吊裝 / 堆疊 / 曲面拼接",
+    "應用": "舞台演出、發表會、教會活動、商業展演"
+  },
+  features: [
+    "快拆式結構，2 秒完成拼接與拆裝",
+    "高亮防水設計，適用室內外舞台",
+    "可吊裝或堆疊，支援曲面造型",
+    "高刷新率畫面穩定，無拖影閃爍",
+    "低功耗設計，長時間運行穩定"
+  ]
 }
 };

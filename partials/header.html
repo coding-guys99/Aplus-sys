@@ -7,15 +7,30 @@
       <span class="brand-name" data-i18n="brand.name">Aplus Systems</span>
     </a>
 
-    <!-- 桌機主選單 -->
+    <!-- 桌機主選單（5 項，含 2 個下拉） -->
     <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <ul class="nav-list">
         <li><a href="about.html" data-i18n="nav.about">About</a></li>
-        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
-        <li><a href="demos.html" data-i18n="nav.demos">Demos</a></li>
-        <li><a href="process.html" data-i18n="nav.process">Process</a></li>
-        <li><a href="technologies.html" data-i18n="nav.tech">Technologies</a></li>
-        <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+
+        <!-- Services dropdown -->
+        <li class="has-dropdown">
+          <button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false" data-i18n="nav.services">Services</button>
+          <ul class="dropdown" role="menu">
+            <li role="none"><a role="menuitem" href="services.html" data-i18n="nav.services">Services</a></li>
+            <li role="none"><a role="menuitem" href="process.html"  data-i18n="nav.process">Process</a></li>
+          </ul>
+        </li>
+
+        <!-- Solutions dropdown -->
+        <li class="has-dropdown">
+          <button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false" data-i18n="nav.solutions">Solutions</button>
+          <ul class="dropdown" role="menu">
+            <li role="none"><a role="menuitem" href="technologies.html" data-i18n="nav.tech">Technologies</a></li>
+            <li role="none"><a role="menuitem" href="products.html"     data-i18n="nav.products">Products</a></li>
+          </ul>
+        </li>
+
+        <li><a href="demos.html"   data-i18n="nav.demos">Demos</a></li>
         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
@@ -43,14 +58,24 @@
     <button class="menu-close" aria-label="Close menu" data-i18n="header.menu.close">✕</button>
   </div>
 
-  <nav class="mobile-menu-grid" aria-label="Mobile navigation">
-    <a href="about.html" class="menu-card"><span data-i18n="nav.about">About</span></a>
-    <a href="services.html" class="menu-card"><span data-i18n="nav.services">Services</span></a>
-    <a href="demos.html" class="menu-card"><span data-i18n="nav.demos">Demos</span></a>
-    <a href="process.html" class="menu-card"><span data-i18n="nav.process">Process</span></a>
-    <a href="technologies.html" class="menu-card"><span data-i18n="nav.tech">Technologies</span></a>
-    <a href="products.html" class="menu-card"><span data-i18n="nav.products">Products</span></a>
-    <a href="contact.html" class="menu-card"><span data-i18n="nav.contact">Contact</span></a>
+  <!-- 手機：分組顯示（可收合） -->
+  <nav class="mobile-menu-groups" aria-label="Mobile navigation">
+    <a href="about.html" class="menu-item"><span data-i18n="nav.about">About</span></a>
+
+    <details class="menu-group">
+      <summary><span data-i18n="nav.services">Services</span></summary>
+      <a href="services.html" class="menu-subitem"><span data-i18n="nav.services">Services</span></a>
+      <a href="process.html"  class="menu-subitem"><span data-i18n="nav.process">Process</span></a>
+    </details>
+
+    <details class="menu-group">
+      <summary><span data-i18n="nav.solutions">Solutions</span></summary>
+      <a href="technologies.html" class="menu-subitem"><span data-i18n="nav.tech">Technologies</span></a>
+      <a href="products.html"     class="menu-subitem"><span data-i18n="nav.products">Products</span></a>
+    </details>
+
+    <a href="demos.html"  class="menu-item"><span data-i18n="nav.demos">Demos</span></a>
+    <a href="contact.html" class="menu-item"><span data-i18n="nav.contact">Contact</span></a>
   </nav>
 
   <!-- 手機語言：底部語言列 -->

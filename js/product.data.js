@@ -5,6 +5,7 @@ window.PRODUCT_DATA = {
   /* ------------------ U-Meta V ------------------ */
   "u-meta-v": {
     id: "u-meta-v",
+    i18nKey: "products.u_meta_v",
     name: "U-Meta V",
     brand: "Uni-Leader",
     brandKey: "unileader",
@@ -42,6 +43,7 @@ window.PRODUCT_DATA = {
   /* ------------------ U-Caster 4K ------------------ */
   "u-caster-4k": {
     id: "u-caster-4k",
+    i18nKey: "products.u_caster_4k",
     name: "U-Caster 4K",
     brand: "Uni-Leader",
     brandKey: "unileader",
@@ -58,8 +60,8 @@ window.PRODUCT_DATA = {
     desc:
       "U-Caster 4K 將導播、錄製、串流與多畫面合成整合於一台主機。支援多路 SDI/HDMI/NDI 輸入、時間線編排、字幕控制，適合學校、企業與現場活動快速上線。",
     specs: {
-      "通道數": "最多 4 路視訊輸入（依型號）",
-      "輸入": "SDI / HDMI / NDI / IP",
+      "通道數": "最多 6 路視訊輸入（依型號）",
+      "輸入": "SDI / HDMI / NDI / IP / USB",
       "輸出": "SDI / HDMI / NDI / 網路串流",
       "解析度": "最高 4K UHD 60p",
       "錄製": "內建多軌錄製 (ProRes / H.264)",
@@ -80,6 +82,7 @@ window.PRODUCT_DATA = {
   /* ------------------ U-CG ------------------ */
   "u-cg": {
     id: "u-cg",
+    i18nKey: "products.u_cg",
     name: "U-CG",
     brand: "Uni-Leader",
     brandKey: "unileader",
@@ -117,6 +120,7 @@ window.PRODUCT_DATA = {
   /* ------------------ U-Hub ------------------ */
   "u-hub": {
     id: "u-hub",
+    i18nKey: "products.u_hub",
     name: "U-Hub",
     brand: "Uni-Leader",
     brandKey: "unileader",
@@ -134,9 +138,8 @@ window.PRODUCT_DATA = {
     specs: {
       "輸入格式": "SDI / HDMI / NDI / IP Stream",
       "輸出格式": "SDI / NDI / HDMI / RTMP / SRT",
-      "轉換模式": "NDI ↔ SDI / SDI ↔ IP / 多源切換",
+      "轉換模式": "NDI ↔ SDI / SDI ↔ IP / SDI ↔ HDMI / HDMI ↔ IP",
       "同步控制": "Genlock / Ref / Frame Sync",
-      "監看": "多畫面輸出 (Multi-Viewer)",
       "網路協定": "RTMP / RTSP / SRT / UDP / HTTP",
       "控制介面": "U-Panel / Web UI / LAN 遠端控制",
       "應用": "導播訊號分配、虛擬棚橋接、校園電視台、錄播中心"
@@ -154,6 +157,7 @@ window.PRODUCT_DATA = {
   /* ------------------ U-TP ------------------ */
   "u-tp": {
     id: "u-tp",
+    i18nKey: "products.u_tp",
     name: "U-TP Teleprompter",
     brand: "Uni-Leader",
     brandKey: "unileader",
@@ -172,7 +176,7 @@ window.PRODUCT_DATA = {
       "鏡片": "分光鏡 70/30 高透光防反射鍍膜",
       "顯示": "高亮度面板 (室內棚用)，鏡像模式一鍵切換",
       "文字控制": "字體大小 / 行距 / 速度可調 / 段落跳轉",
-      "控制方式": "有線轉盤、無線遙控、腳踏開關、LAN 控制",
+      "控制方式": "無線遙控、腳踏開關、LAN 控制",
       "訊號相容": "HDMI (標配)，SDI/NDI 可外接轉換",
       "相機相容": "支援 ENG、Studio Cam、多規鏡頭遮光罩",
       "安裝": "快拆相機板、配重系統、可調水平/仰角",
@@ -189,6 +193,7 @@ window.PRODUCT_DATA = {
   /* ------------------ Studio Camera 4K Pro G2 ------------------ */
 "bmd-studio-4k-pro-g2": {
   id: "bmd-studio-4k-pro-g2",
+  i18nKey: "products.bmd_studio_4k_pro_g2",
   name: "Studio Camera 4K Pro G2",
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
@@ -225,6 +230,7 @@ window.PRODUCT_DATA = {
 /* ------------------ ATEM Mini Extreme ISO ------------------ */
 "bmd-atem-mini-extreme-iso": {
   id: "bmd-atem-mini-extreme-iso",
+  i18nKey: "products.bmd_atem_mini_extreme_iso",
   name: "ATEM Mini Extreme ISO",
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
@@ -242,7 +248,7 @@ window.PRODUCT_DATA = {
     "ATEM Mini Extreme ISO 是一台專為多攝影機現場製播設計的導播機，內建 8 路 HDMI 輸入與 USB-C 串流輸出，可同時錄製每個輸入來源。具備多畫面預覽與自動切換功能，適合教育錄播、企業直播與活動導播。",
   specs: {
     "輸入": "8 路 HDMI 2.0 輸入（支援 1080p60）",
-    "輸出": "2 路 HDMI、USB-C WebCam Out、以太網路串流",
+    "輸出": "3 路 HDMI、USB-C WebCam Out、以太網路串流",
     "錄製": "9 軌 ISO 錄製（含節目與各輸入源）",
     "音訊": "3.5mm 立體聲輸入 ×2、Fairlight 效果處理",
     "畫面控制": "多畫面預覽 / 動態轉場 / 下三分之一圖文",
@@ -261,6 +267,7 @@ window.PRODUCT_DATA = {
 /* ------------------ HyperDeck Studio 4K Pro ------------------ */
 "bmd-hyperdeck-studio-4k-pro": {
   id: "bmd-hyperdeck-studio-4k-pro",
+  i18nKey: "products.bmd_hyperdeck_studio_4k_pro",
   name: "HyperDeck Studio 4K Pro",
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
@@ -297,6 +304,7 @@ window.PRODUCT_DATA = {
 /* ------------------ URSA Broadcast G2 ------------------ */
 "bmd-ursa-broadcast-g2": {
   id: "bmd-ursa-broadcast-g2",
+  i18nKey: "products.bmd_ursa_broadcast_g2",
   name: "URSA Broadcast G2",
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
@@ -334,6 +342,7 @@ window.PRODUCT_DATA = {
 /* ------------------ DeckLink 8K Pro ------------------ */
 "bmd-decklink-8k-pro": {
   id: "bmd-decklink-8k-pro",
+  i18nKey: "products.bmd_decklink_8k_pro",
   name: "DeckLink 8K Pro",
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
@@ -370,6 +379,7 @@ window.PRODUCT_DATA = {
    /* ------------------ OBSBOT Tiny 2 ------------------ */
 "obsbot-tiny-2": {
   id: "obsbot-tiny-2",
+  i18nKey: "products.obsbot_tiny_2",
   name: "OBSBOT Tiny 2",
   brand: "OBSBOT",
   brandKey: "obsbot",
@@ -406,6 +416,7 @@ window.PRODUCT_DATA = {
 /* ------------------ OBSBOT Tail 2 ------------------ */
 "obsbot-tail-2": {
   id: "obsbot-tail-2",
+  i18nKey: "products.obsbot_tail_2",
   name: "OBSBOT Tail 2",
   brand: "OBSBOT",
   brandKey: "obsbot",
@@ -444,6 +455,7 @@ window.PRODUCT_DATA = {
 /* ------------------ SYNCO Xtalk X ------------------ */
 "synco-xtalk-x": {
   id: "synco-xtalk-x",
+  i18nKey: "products.synco_xtalk_x",
   name: "SYNCO Xtalk X",
   brand: "SYNCO",
   brandKey: "synco",
@@ -482,6 +494,7 @@ window.PRODUCT_DATA = {
 /* ------------------ SYNCO Xtalk Pro ------------------ */
 "synco-xtalk-pro": {
   id: "synco-xtalk-pro",
+  i18nKey: "products.synco_xtalk_pro",
   name: "SYNCO Xtalk Pro",
   brand: "SYNCO",
   brandKey: "synco",
@@ -521,6 +534,7 @@ window.PRODUCT_DATA = {
 /* ------------------ SYNCO Xtalk XMax ------------------ */
 "synco-xtalk-xmax": {
   id: "synco-xtalk-xmax",
+  i18nKey: "products.synco_xtalk_xmax",
   name: "SYNCO Xtalk XMax",
   brand: "SYNCO",
   brandKey: "synco",
@@ -560,6 +574,7 @@ window.PRODUCT_DATA = {
 /* ------------------ SYNCO Xtalk Link ------------------ */
 "synco-xtalk-link": {
   id: "synco-xtalk-link",
+  i18nKey: "products.synco_xtalk_link",
   name: "SYNCO Xtalk Link",
   brand: "SYNCO",
   brandKey: "synco",
@@ -596,6 +611,7 @@ window.PRODUCT_DATA = {
 /* ------------------ SYNCO G4 ------------------ */
 "synco-g4": {
   id: "synco-g4",
+  i18nKey: "products.synco_g4",
   name: "SYNCO G4 Wireless Microphone",
   brand: "SYNCO",
   brandKey: "synco",
@@ -635,6 +651,7 @@ window.PRODUCT_DATA = {
 /* ------------------ SYNCO P2S ------------------ */
 "synco-p2s": {
   id: "synco-p2s",
+  i18nKey: "products.synco_p2s",
   name: "SYNCO P2S Wireless Microphone",
   brand: "SYNCO",
   brandKey: "synco",
@@ -673,6 +690,7 @@ window.PRODUCT_DATA = {
 /* ------------------ SYNCO MMic-U3 ------------------ */
 "synco-mmic-u3": {
   id: "synco-mmic-u3",
+  i18nKey: "products.synco_mmic_u3",
   name: "SYNCO MMic-U3 Mobile Microphone",
   brand: "SYNCO",
   brandKey: "synco",
@@ -709,6 +727,7 @@ window.PRODUCT_DATA = {
 /* ------------------ Acemic G5 IEM ------------------ */
 "acemic-g5-iem": {
   id: "acemic-g5-iem",
+  i18nKey: "products.acemic_g5_iem",
   name: "Acemic G5 In-Ear Monitoring System",
   brand: "Acemic",
   brandKey: "acemic",
@@ -746,6 +765,7 @@ window.PRODUCT_DATA = {
 /* ------------------ Acemic S Series Wireless Microphone ------------------ */
 "acemic-s-series": {
   id: "acemic-s-series",
+  i18nKey: "products.acemic_s_series",
   name: "Acemic S Series Wireless Microphone System",
   brand: "Acemic",
   brandKey: "acemic",
@@ -782,6 +802,7 @@ window.PRODUCT_DATA = {
 /* ------------------ Acemic Wireless Microphone System ------------------ */
 "acemic-wireless": {
   id: "acemic-wireless",
+  i18nKey: "products.acemic_wireless",
   name: "Acemic Wireless Microphone System",
   brand: "Acemic",
   brandKey: "acemic",
@@ -819,6 +840,7 @@ window.PRODUCT_DATA = {
 /* ------------------ Yamaha MG Series Mixer ------------------ */
 "yamaha-mg-series": {
   id: "yamaha-mg-series",
+  i18nKey: "products.yamaha_mg_series",
   name: "Yamaha MG Series Mixer",
   brand: "Yamaha",
   brandKey: "yamaha",
@@ -854,6 +876,7 @@ window.PRODUCT_DATA = {
 /* ------------------ MIPRO ACT Series Wireless Microphone ------------------ */
 "mipro-act-series": {
   id: "mipro-act-series",
+  i18nKey: "products.mipro_act_series",
   name: "MIPRO ACT Series Wireless Microphone System",
   brand: "MIPRO",
   brandKey: "mipro",
@@ -892,6 +915,7 @@ window.PRODUCT_DATA = {
 /* ------------------ MIPRO MI-58 Digital IEM System ------------------ */
 "mipro-mi58": {
   id: "mipro-mi58",
+  i18nKey: "products.mipro_mi58",
   name: "MIPRO MI-58 Digital IEM System",
   brand: "MIPRO",
   brandKey: "mipro",
@@ -930,6 +954,7 @@ window.PRODUCT_DATA = {
 /* ------------------ MLS Fixed LED Display Panels ------------------ */
 "mls-fixed-led": {
   id: "mls-fixed-led",
+  i18nKey: "products.mls_fixed_led",
   name: "MLS LED Display (Fixed Installation)",
   brand: "MLS LED",
   brandKey: "mls",
@@ -967,6 +992,7 @@ window.PRODUCT_DATA = {
 /* ------------------ MLS Rental LED Panels ------------------ */
 "mls-rental-led": {
   id: "mls-rental-led",
+  i18nKey: "products.mls_rental_led",
   name: "MLS Rental LED Panels",
   brand: "MLS LED",
   brandKey: "mls",

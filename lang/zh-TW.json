@@ -571,6 +571,125 @@
         "模組化安裝：快拆、配重簡單、維護容易"
       ]
     }
+  },
+  
+  "products": {
+    "bmd_studio_4k_pro_g2": {
+      "name": "Studio Camera 4K Pro G2",
+      "tagline": "廣播級 4K 攝影機，專為導播棚與現場製播設計。",
+      "desc": "Studio Camera 4K Pro G2 結合高感光 4K 感光元件與 12G-SDI / NDI/IP 輸出，可與 ATEM 導播機整合遠端調校光圈、對焦與色彩。內建高亮大螢幕與完整 I/O，適合校園、活動與專業轉播。",
+      "badges": ["4K Camera", "Live Production", "NDI / SDI", "Remote Control"],
+      "specs": {
+        "感光元件": "4/3\" CMOS（雙原生 ISO 400 / 3200）",
+        "解析度": "UHD 4K 60p",
+        "輸出介面": "12G-SDI / HDMI / NDI / IP Streaming",
+        "音訊": "XLR ×2、耳機輸出",
+        "控制": "SDI 控制 / ATEM 遠端 / USB-C 擴充",
+        "顯示": "7 吋 高亮觸控（2000 nits）",
+        "電源": "DC 12V / PoE+",
+        "應用": "導播棚、校園電視台、舞台演出、直播"
+      },
+      "features": [
+        "12G-SDI 與 NDI/IP 混合流程",
+        "高感光 4K 影像，低光表現佳",
+        "內建 7 吋 HDR 螢幕與 XLR 音訊",
+        "ATEM 遠端光圈/對焦/色彩",
+        "PoE+ 單線佈線更俐落"
+      ]
+    },
+    "bmd_atem_mini_extreme_iso": {
+      "name": "ATEM Mini Extreme ISO",
+      "tagline": "多機位導播機，支援多畫面預覽與同步 ISO 錄製。",
+      "desc": "ATEM Mini Extreme ISO 內建 8 路 HDMI、USB-C 串流，並可同時錄下節目與各輸入來源。具備多畫面預覽、轉場與圖文，適合教學、企業直播與活動導播。",
+      "badges": ["Switcher", "Recorder", "Streaming", "HDMI I/O"],
+      "specs": {
+        "輸入": "HDMI 2.0 ×8（1080p60）",
+        "輸出": "HDMI ×3、USB-C WebCam、乙太網路串流",
+        "錄製": "9 軌 ISO（節目 + 8 路）",
+        "音訊": "3.5mm ×2、Fairlight 效果",
+        "畫面控制": "多畫面 / 轉場 / 下三分之一",
+        "媒體": "內建圖庫",
+        "控制": "ATEM App / 面板鍵 / StreamDeck",
+        "應用": "直播課程、企業轉播、活動導播"
+      },
+      "features": [
+        "8 路 HDMI 與多畫面監看",
+        "ISO 同步錄製所有輸入",
+        "直接推流至主流平台",
+        "ATEM 軟體遠端操作",
+        "轉場、鍵控與音訊混音內建"
+      ]
+    },
+    "bmd_hyperdeck_studio_4k_pro": {
+      "name": "HyperDeck Studio 4K Pro",
+      "tagline": "專業級錄播與回放機，支援多格式與 4K 輸出。",
+      "desc": "HyperDeck Studio 4K Pro 支援 ProRes、DNx、H.264/H.265，具雙 SD 與雙 SSD 槽，確保不中斷錄製。適用導播錄製、備份與播放。",
+      "badges": ["Recorder", "Playout", "4K", "SDI / NDI"],
+      "specs": {
+        "錄製格式": "ProRes / DNx / H.264 / H.265 / QuickTime",
+        "輸入": "12G-SDI ×1、Timecode/Ref In",
+        "輸出": "12G-SDI ×2、HDMI、耳機",
+        "儲存": "雙 SD + 雙 SSD（熱插拔）",
+        "解析度": "最高 2160p60",
+        "音訊": "16 聲道嵌入、XLR 時碼",
+        "控制": "前面板 / Ethernet / RS-422 / ATEM",
+        "應用": "導播錄製、備份、回放、廣播"
+      },
+      "features": [
+        "12G-SDI/HDMI I/O，4K60 錄製",
+        "雙槽循環不中斷",
+        "覆蓋 ProRes 與 H.265 等主流格式",
+        "Genlock/Timecode 同步多機",
+        "支援遠端自動化與整合"
+      ]
+    },
+    "bmd_ursa_broadcast_g2": {
+      "name": "URSA Broadcast G2",
+      "tagline": "廣播級 6K 攝影機，棚內棚外皆適用。",
+      "desc": "URSA Broadcast G2 兼具電影級畫質與廣播機身操作。支援 B4/EF 卡口、BRAW/ProRes 錄製，提供 12G-SDI 與 Genlock，能無縫融入多機位製播。",
+      "badges": ["Camera", "6K", "Broadcast", "SDI / NDI"],
+      "specs": {
+        "感光元件": "6K Super 35，13 級動態範圍",
+        "錄製格式": "BRAW / ProRes 422 / ProRes HQ",
+        "解析度": "6K、UHD 4K、1080p",
+        "I/O": "12G-SDI ×2、XLR ×2、Timecode / Genlock",
+        "鏡頭卡口": "B4（可換 EF/PL/F）",
+        "顯示": "4\" 翻轉觸控 + 2\" 狀態螢幕",
+        "控制": "SDI 遠端 / ATEM 控制 / USB-C 外錄",
+        "儲存": "CFast2.0 ×2、SD UHS-II ×2、USB-C",
+        "應用": "棚內機位、OB 車、校園錄播、廣播"
+      },
+      "features": [
+        "6K 感光器、高寬容度",
+        "內錄 BRAW 與 ProRes",
+        "雙卡與 USB-C 外錄更彈性",
+        "ATEM 遠端色彩/光圈/對焦",
+        "B4/EF/PL 多卡口可擴充"
+      ]
+    },
+    "bmd_decklink_8k_pro": {
+      "name": "DeckLink 8K Pro",
+      "tagline": "四通道 SDI 擷取/輸出卡，支援 8K HDR。",
+      "desc": "DeckLink 8K Pro 提供四組 12G-SDI 可雙向配置，支援 HD/4K/8K 同步擷取與播放。具 HDR、Rec.2020 與 12-bit，適合虛擬棚、後期與錄播系統。",
+      "badges": ["Capture", "Playback", "8K", "SDI"],
+      "specs": {
+        "I/O": "4× 12G-SDI（雙向）",
+        "格式": "最高 8K DCI 60p / 4K / HD",
+        "位元深度": "最高 12-bit YUV 4:2:2 / RGB 4:4:4",
+        "色彩": "Rec.601 / Rec.709 / Rec.2020 / HDR",
+        "音訊": "16 聲道嵌入",
+        "軟體": "Resolve / vMix / OBS / Unreal",
+        "介面": "PCIe 8x、Desktop Video SDK",
+        "應用": "虛擬製播、錄製 I/O、後期出入帶"
+      },
+      "features": [
+        "四路 12G-SDI 可獨立配置",
+        "支援 8K/HDR/Rec.2020/12-bit",
+        "相容 OBS、vMix、Resolve、Unreal",
+        "低延遲擷取，適合即時流程",
+        "工作站/伺服器友善的 PCIe 介面"
+      ]
+    }
   }
   
 }

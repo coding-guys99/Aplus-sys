@@ -50,3 +50,49 @@
   width:50px;
   height:50px;
 }
+
+/* ============= Desktop dropdown ============= */
+.main-nav .has-dropdown { position: relative; }
+.main-nav .has-dropdown .dropdown{
+  position: absolute; top: 100%; left: 0;
+  min-width: 220px;
+  background: #111214;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  z-index: 1200;
+
+  /* 預設隱藏 */
+  opacity: 0; visibility: hidden; transform: translateY(6px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s step-end;
+}
+.main-nav .has-dropdown .dropdown.open{
+  opacity: 1; visibility: visible; transform: translateY(0);
+  transition: opacity .18s ease, transform .18s ease, visibility 0s;
+}
+.main-nav .has-dropdown .dropdown a{
+  display: block; padding: 8px 10px; color: #ddd; border-radius: 8px;
+}
+.main-nav .has-dropdown .dropdown a:hover{ color: var(--primary,#d4af37); background: rgba(255,255,255,.04); }
+
+/* 可選：桌機 hover 即開（避免手機誤觸） */
+@media (min-width:1025px){
+  .main-nav .has-dropdown:hover .dropdown{ opacity:1;visibility:visible;transform:translateY(0); }
+}
+
+/* ============= Mobile panel grid 滿版可捲 + 自動換行 ============= */
+.mobile-menu-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 14px; padding: 18px;
+
+  /* 重點：高度限制＋可捲動，避免只看到一排 */
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+/* ============= 修正：限制品牌 logo 尺寸 ============= */
+.brand-logo{ width:28px; height:28px; object-fit: contain; }
+/* 刪掉或改成 ↓（千萬別用 .nav-container img） */
+/* .nav-container img{ width:50px;height:50px; }  ← 移除 */

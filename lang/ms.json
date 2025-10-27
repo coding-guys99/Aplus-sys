@@ -452,8 +452,125 @@
         "sd_pro": { "caption": "StreamDeck Pro — Pengawal profesional" }
       }
     }
-  }
+  },
 
+  "products": {
+    "u_meta_v": {
+      "name": "U-Meta V",
+      "tagline": "Sistem teras produksi maya dengan enjin Unreal Engine dan teknologi penjejakan masa nyata.",
+      "desc": "U-Meta V menggabungkan rendering masa nyata Unreal Engine dengan modul penjejakan dan kunci kroma. Menyokong penggambaran berbilang kamera untuk pendidikan, siaran korporat dan studio penyiaran.",
+      "badges": ["Studio Maya", "Unreal Engine", "Penjejakan", "Komposit"],
+      "specs": {
+        "Enjin": "Unreal Engine",
+        "Input": "SDI / NDI / HDMI pelbagai isyarat",
+        "Output": "SDI, NDI, HDMI paparan",
+        "Resolusi": "Sehingga 4K 60p masa nyata",
+        "Penjejakan": "Free-D / Visca over IP",
+        "Kunci": "Chroma / Luma key, matte masa nyata",
+        "Kawalan": "U-Panel atau IP LAN",
+        "Aplikasi": "Rakaman pendidikan, siaran korporat, kawalan studio"
+      },
+      "features": [
+        "Integrasi penuh Unreal Engine masa nyata",
+        "Sokong Free-D dan penjejakan optik",
+        "Pertukaran pelbagai adegan dan animasi",
+        "Reka bentuk modular NDI/SDI hibrid",
+        "Integrasi dengan U-Caster, U-CG, U-TP"
+      ]
+    },
+    "u_caster_4k": {
+      "name": "U-Caster 4K",
+      "tagline": "Stesen kerja sehenti untuk penukaran, rakaman dan penstriman.",
+      "desc": "U-Caster 4K menggabungkan fungsi penukaran, rakaman, penstriman dan komposisi pelbagai tetingkap dalam satu unit. Sesuai untuk sekolah, korporat dan acara langsung.",
+      "badges": ["Switcher", "Rakaman", "Penstriman", "NDI/SDI"],
+      "specs": {
+        "Saluran": "Sehingga 6 input video (bergantung model)",
+        "Input": "SDI / HDMI / NDI / IP / USB",
+        "Output": "SDI / HDMI / NDI / rangkaian",
+        "Resolusi": "Sehingga 4K UHD 60p",
+        "Rakaman": "Multi-trek (ProRes / H.264)",
+        "Penstriman": "RTMP / SRT / HLS",
+        "Grafik": "Serasi dengan U-CG",
+        "Kawalan": "U-Panel / UI perisian / StreamDeck",
+        "Aplikasi": "TV kampus, acara korporat, upacara, siaran langsung"
+      },
+      "features": [
+        "Penukaran, rakaman dan penstriman dalam satu peranti",
+        "Penjadualan Step Timeline",
+        "Komposisi dan pertukaran adegan pelbagai lapisan",
+        "Aliran kerja hibrid NDI/SDI/HDMI",
+        "Integrasi dengan U-CG & U-Meta V"
+      ]
+    },
+    "u_cg": {
+      "name": "U-CG",
+      "tagline": "Sistem grafik dan tajuk langsung untuk persembahan profesional.",
+      "desc": "U-CG menyampaikan tajuk masa nyata, teks bawah dan kesan animasi. Disegerakkan dengan U-Caster dan U-Meta V, sesuai untuk berita, siaran langsung dan pendidikan.",
+      "badges": ["Grafik", "Tajuk Langsung", "Penyiaran", "NDI"],
+      "specs": {
+        "Input": "SDI / NDI / HDMI / IP / Alpha Channel",
+        "Output": "SDI Fill/Key, NDI, PNG, MOV Alpha",
+        "Resolusi": "Sehingga 4K UHD 60p",
+        "Templat": "Pelbagai templat tajuk tersedia",
+        "Kawalan": "U-Panel atau UI U-CG",
+        "Data": "Excel / TXT / RSS / Google Sheet",
+        "Kesan": "Animasi masuk/keluar, ikon dinamik, gradasi teks",
+        "Aplikasi": "Berita, majlis, siaran langsung, pendidikan"
+      },
+      "features": [
+        "Kemas kini teks secara langsung tanpa gangguan",
+        "Output dwi-saluran NDI / SDI Alpha",
+        "Templat boleh disesuaikan dan mudah digunakan",
+        "Kemaskini data automatik masa nyata",
+        "Integrasi dengan U-Caster / U-Meta V"
+      ]
+    },
+    "u_hub": {
+      "name": "U-Hub",
+      "tagline": "Pusat pengagihan isyarat yang menghubungkan switcher, studio maya dan rakaman.",
+      "desc": "U-Hub menguruskan pengedaran isyarat SDI, NDI, HDMI dan IP antara sistem. Ia bertindak sebagai jambatan antara studio maya, switcher dan perakam untuk aliran kerja yang stabil.",
+      "badges": ["Jambatan Isyarat", "NDI/SDI", "Penghalaan", "Penyegerakan"],
+      "specs": {
+        "Input": "SDI / HDMI / NDI / IP Stream",
+        "Output": "SDI / NDI / HDMI / RTMP / SRT",
+        "Penukaran": "NDI ↔ SDI / SDI ↔ IP / SDI ↔ HDMI / HDMI ↔ IP",
+        "Sync": "Genlock / Ref / Frame Sync",
+        "Protokol": "RTMP / RTSP / SRT / UDP / HTTP",
+        "Kawalan": "U-Panel / Web UI / LAN",
+        "Aplikasi": "Pengedaran isyarat, jambatan maya, TV kampus"
+      },
+      "features": [
+        "Pengurusan I/O berbilang sumber secara berpusat",
+        "Sokongan seni bina hibrid SDI/NDI/HDMI",
+        "Jambatan antara studio maya dan switcher",
+        "Penyegerakan terbina dalam, kestabilan tinggi",
+        "Penstriman pelbagai platform (RTMP/SRT)"
+      ]
+    },
+    "u_tp": {
+      "name": "U-TP Teleprompter",
+      "tagline": "Teleprompter studio dengan kaca pembahagi dan kawalan intuitif.",
+      "desc": "U-TP menggunakan kaca pembahagi pantulan tinggi dan paparan terang untuk bacaan jelas. Kawalan kelajuan, cermin dan perenggan terbina dalam. Menyokong kawalan tangan, kaki dan LAN.",
+      "badges": ["Teleprompter", "Kaca Cermin", "Kawalan Jauh", "Skrip"],
+      "specs": {
+        "Kaca": "70/30 beam-splitter, salutan anti-pantulan",
+        "Paparan": "Kecerahan tinggi, mod cermin satu sentuhan",
+        "Teks": "Saiz fon / jarak / kelajuan / perenggan boleh ubah",
+        "Kawalan": "Jauh tanpa wayar, pedal kaki, LAN",
+        "Isyarat": "HDMI standard, SDI/NDI dengan penukar",
+        "Kamera": "Serasi dengan ENG / kamera studio",
+        "Pemasangan": "Tapak cepat, pemberat, sudut boleh laras",
+        "Aplikasi": "Ucapan, pendidikan, sidang media, berita"
+      },
+      "features": [
+        "Kaca jelas dengan teks mudah dibaca",
+        "Kawalan kelajuan dan perenggan dengan kekunci panas",
+        "Sokong kawalan tangan, kaki dan jauh",
+        "Penyegerakan dengan jadual U-Caster",
+        "Reka bentuk modular, mudah pasang dan servis"
+      ]
+    }
+  }
   
   
 }

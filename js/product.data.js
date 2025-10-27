@@ -184,5 +184,113 @@ window.PRODUCT_DATA = {
       "可與 U-Caster 場景/字幕節奏配合，流程更順",
       "模組化安裝：快拆、配重簡單、維護容易"
     ]
-  }
+  },
+  /* ------------------ Studio Camera 4K Pro G2 ------------------ */
+"bmd-studio-4k-pro-g2": {
+  id: "bmd-studio-4k-pro-g2",
+  name: "Studio Camera 4K Pro G2",
+  brand: "Blackmagic Design",
+  brandKey: "blackmagic",
+  brandLogo: "./assets/brands/Blackmagicdesign.png",
+  hero: "./assets/products/bmd-studio-camera-4k-pro-g2.jpg",
+  images: [
+    "./assets/products/bmd-studio-camera-4k-pro-g2.jpg",
+    "./assets/products/bmd-studio-camera-4k-side.jpg",
+    "./assets/products/bmd-studio-camera-4k-rear.jpg",
+    "./assets/products/bmd-studio-camera-setup.jpg"
+  ],
+  tagline: "廣播級 4K 攝影機，專為導播棚與現場製播設計。",
+  badges: ["4K Camera", "Live Production", "NDI / SDI", "Remote Control"],
+  desc:
+    "Studio Camera 4K Pro G2 結合高感光 4K 感光元件、12G-SDI 與 NDI/IP 輸出，可搭配 ATEM 導播機進行即時控制與色彩調校。具備大型顯示螢幕與多種連線介面，適用教育錄播、演出與專業轉播環境。",
+  specs: {
+    "感光元件": "4/3” CMOS 感光器（雙原生 ISO 400 / 3200）",
+    "解析度": "UHD 4K 60p",
+    "輸出介面": "12G-SDI / HDMI / NDI / IP Streaming",
+    "音訊": "內建 XLR 輸入 × 2、耳機輸出",
+    "控制": "SDI 控制 / ATEM 遠端 / USB-C 擴充",
+    "顯示": "7 吋 高亮度觸控螢幕 (2000 nits)",
+    "電源": "DC 12 V / PoE+ 供電",
+    "應用": "導播棚、校園電視台、舞台演出、直播製播"
+  },
+  features: [
+    "支援 12G-SDI 與 NDI/IP 輸出，靈活融入現代導播流程",
+    "高感光 4K 感光器，低光環境下仍保持細膩影像",
+    "內建 7 吋 高亮螢幕與 XLR 音訊輸入",
+    "可經 ATEM 導播機遠端調整光圈、對焦與色彩",
+    "支援 PoE+ 單線供電，佈線簡單、現場更整潔"
+  ]
+},
+/* ------------------ ATEM Mini Extreme ISO ------------------ */
+"bmd-atem-mini-extreme-iso": {
+  id: "bmd-atem-mini-extreme-iso",
+  name: "ATEM Mini Extreme ISO",
+  brand: "Blackmagic Design",
+  brandKey: "blackmagic",
+  brandLogo: "./assets/brands/Blackmagicdesign.png",
+  hero: "./assets/products/bmd-atem-mini-extreme-iso.jpg",
+  images: [
+    "./assets/products/bmd-atem-mini-extreme-iso.jpg",
+    "./assets/products/bmd-atem-mini-extreme-rear.jpg",
+    "./assets/products/bmd-atem-mini-extreme-top.jpg",
+    "./assets/products/bmd-atem-mini-extreme-multiview.jpg"
+  ],
+  tagline: "多機位導播機，支援多畫面預覽與同步錄製。",
+  badges: ["Switcher", "Recorder", "Streaming", "HDMI I/O"],
+  desc:
+    "ATEM Mini Extreme ISO 是一台專為多攝影機現場製播設計的導播機，內建 8 路 HDMI 輸入與 USB-C 串流輸出，可同時錄製每個輸入來源。具備多畫面預覽與自動切換功能，適合教育錄播、企業直播與活動導播。",
+  specs: {
+    "輸入": "8 路 HDMI 2.0 輸入（支援 1080p60）",
+    "輸出": "2 路 HDMI、USB-C WebCam Out、以太網路串流",
+    "錄製": "9 軌 ISO 錄製（含節目與各輸入源）",
+    "音訊": "3.5mm 立體聲輸入 ×2、Fairlight 效果處理",
+    "畫面控制": "多畫面預覽 / 動態轉場 / 下三分之一圖文",
+    "媒體支援": "內建 Still Store、可匯入圖像與標題",
+    "控制": "ATEM Software Control / 面板按鍵 / StreamDeck",
+    "應用": "多機位直播、線上課程、企業轉播、活動導播"
+  },
+  features: [
+    "支援 8 路 HDMI 來源與多畫面預覽",
+    "內建 ISO 錄製功能，可同步錄下所有輸入畫面",
+    "支援 YouTube / Facebook Live 直接串流",
+    "可搭配 ATEM Software Control 遠端操作",
+    "內建轉場、鍵控與音訊混音，輕鬆完成專業導播"
+  ]
+},
+/* ------------------ HyperDeck Studio 4K Pro ------------------ */
+"bmd-hyperdeck-studio-4k-pro": {
+  id: "bmd-hyperdeck-studio-4k-pro",
+  name: "HyperDeck Studio 4K Pro",
+  brand: "Blackmagic Design",
+  brandKey: "blackmagic",
+  brandLogo: "./assets/brands/Blackmagicdesign.png",
+  hero: "./assets/products/bmd-hyperdeck-studio-4k-pro.jpg",
+  images: [
+    "./assets/products/bmd-hyperdeck-studio-4k-pro.jpg",
+    "./assets/products/bmd-hyperdeck-front.jpg",
+    "./assets/products/bmd-hyperdeck-rear.jpg",
+    "./assets/products/bmd-hyperdeck-setup.jpg"
+  ],
+  tagline: "專業級錄播與回放機，支援多格式錄製與 4K 輸出。",
+  badges: ["Recorder", "Playout", "4K", "SDI / NDI"],
+  desc:
+    "HyperDeck Studio 4K Pro 是廣播級錄播與回放解決方案，支援 ProRes、DNx 以及 H.264/H.265 格式錄製，並具備雙 SD 卡與 SSD 插槽，確保不中斷記錄。適用導播棚、錄播中心與多機位同步錄製應用。",
+  specs: {
+    "錄製格式": "ProRes / DNx / H.264 / H.265 / QuickTime",
+    "輸入": "12G-SDI ×1、Timecode / Reference In",
+    "輸出": "12G-SDI ×2、HDMI、耳機監聽",
+    "儲存": "雙 SD 卡槽 + 雙 SSD 槽（支援熱插拔）",
+    "解析度": "最高 2160p60 Ultra HD",
+    "音訊": "16 聲道嵌入音訊、XLR 時碼輸入",
+    "控制": "前面板 / Ethernet / RS-422 / ATEM 遠端",
+    "應用": "導播錄製、節目備份、現場播放、廣播中心"
+  },
+  features: [
+    "支援 12G-SDI / HDMI 輸入輸出，最高可錄 4K 60p",
+    "雙卡循環錄製不中斷，支援 SSD 熱插拔",
+    "錄製格式多樣，涵蓋 ProRes、DNx、H.264/H.265",
+    "內建時碼與 Genlock，適合多機同步錄製",
+    "可遠端控制與自動化整合，搭配 ATEM 或 U-Caster 使用"
+  ]
+}
 };

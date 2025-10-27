@@ -451,5 +451,124 @@
         "sd_pro": { "caption": "StreamDeck Pro 专业控制器" }
       }
     }
+  },
+
+  "products": {
+    "u_meta_v": {
+      "name": "U-Meta V",
+      "tagline": "虚拟制作核心系统，融合 Unreal Engine 实时渲染与追踪技术。",
+      "desc": "U-Meta V 集成 Unreal Engine 渲染、追踪与抠像模块，可支持多机位混合拍摄，适用于教育录播、企业直播及广播演播室。",
+      "badges": ["虚拟演播室", "Unreal Engine", "追踪", "抠像合成"],
+      "specs": {
+        "引擎核心": "Unreal Engine",
+        "输入": "SDI / NDI / HDMI 多信号输入",
+        "输出": "SDI、NDI、HDMI 监看",
+        "分辨率": "最高 4K 60p 实时输出",
+        "追踪": "Free-D / Visca over IP 多协议",
+        "抠像": "Chroma Key / Luma Key / 实时 Matte 调整",
+        "控制": "U-Panel 切换台 / 局域网 IP",
+        "应用": "教育录播、企业直播、电视演播室控制"
+      },
+      "features": [
+        "整合 Unreal Engine 实时渲染",
+        "支持 Free-D 与光学追踪",
+        "多场景与动画切换",
+        "模块化 NDI/SDI 混合制作架构",
+        "与 U-Caster、U-CG、U-Studio、U-TP 无缝整合"
+      ]
+    },
+    "u_caster_4k": {
+      "name": "U-Caster 4K",
+      "tagline": "多机位导播、录制与直播的一体化工作站。",
+      "desc": "U-Caster 4K 将导播、录制、推流与多画面合成集成在一台主机中，支持多路 SDI/HDMI/NDI 输入、时间线编排、字幕控制，适合学校、企业与现场活动快速上架。",
+      "badges": ["切换台", "录制", "推流", "NDI/SDI"],
+      "specs": {
+        "通道数": "最多 6 路视频输入（依型号）",
+        "输入": "SDI / HDMI / NDI / IP / USB",
+        "输出": "SDI / HDMI / NDI / 网络推流",
+        "分辨率": "最高 4K UHD 60p",
+        "录制": "内建多轨录制 (ProRes / H.264)",
+        "推流": "RTMP / SRT / HLS",
+        "字幕/图文": "可搭配 U-CG 图文字幕",
+        "控制": "U-Panel 控制台 / 软件界面 / StreamDeck",
+        "应用": "校园电视台、企业活动、典礼转播、多机位直播"
+      },
+      "features": [
+        "一机完成导播、录制与直播",
+        "时间线步进式排程 (Step Timeline)",
+        "多画面合成与场景切换",
+        "支持 NDI/SDI/HDMI 混合工作流程",
+        "与 U-CG、U-Meta V 无缝整合"
+      ]
+    },
+    "u_cg": {
+      "name": "U-CG",
+      "tagline": "实时图文字幕与动画系统，打造专业级节目呈现。",
+      "desc": "U-CG 提供实时标题、动态字幕、下三分之一与多层特效叠加，可与 U-Caster、U-Meta V 同步控制，适用于新闻、直播与教育节目。",
+      "badges": ["图文", "字幕", "广播", "NDI"],
+      "specs": {
+        "输入": "SDI / NDI / HDMI / IP / Alpha Channel",
+        "输出": "SDI Fill/Key、NDI、PNG 序列、MOV Alpha",
+        "分辨率": "最高 4K UHD 60p",
+        "模板": "内建多款标题与滚动字幕模板",
+        "控制": "U-Panel 或 U-CG 软件界面",
+        "数据整合": "Excel / TXT / RSS / Google Sheet",
+        "特效": "进出场动画、动态图标、文字渐变",
+        "应用": "新闻字幕、活动典礼、直播节目、教育录播"
+      },
+      "features": [
+        "不中断画面即可实时更新字幕",
+        "支持 NDI / SDI Alpha 双通道输出",
+        "模板可自定义，快速套用",
+        "自动绑定数据源即时更新",
+        "与 U-Caster、U-Meta V 工作流程整合"
+      ]
+    },
+    "u_hub": {
+      "name": "U-Hub",
+      "tagline": "多信号整合与桥接中心，连接导播、虚拟棚与录播系统。",
+      "desc": "U-Hub 是信号整合中枢，用于分配与管理 SDI、NDI、HDMI、网络流等多格式信号，作为虚拟棚、导播与录播系统之间的桥梁，让制作流程更稳定灵活。",
+      "badges": ["信号桥", "NDI/SDI", "路由", "同步"],
+      "specs": {
+        "输入格式": "SDI / HDMI / NDI / IP Stream",
+        "输出格式": "SDI / NDI / HDMI / RTMP / SRT",
+        "转换模式": "NDI ↔ SDI / SDI ↔ IP / SDI ↔ HDMI / HDMI ↔ IP",
+        "同步控制": "Genlock / Ref / Frame Sync",
+        "网络协议": "RTMP / RTSP / SRT / UDP / HTTP",
+        "控制界面": "U-Panel / Web UI / LAN 远程控制",
+        "应用": "导播信号分配、虚拟棚桥接、校园电视台、录播中心"
+      },
+      "features": [
+        "集中管理多来源信号输入输出",
+        "支持 SDI、NDI、HDMI 混合架构",
+        "可作为虚拟棚与导播机之间的桥接节点",
+        "内建同步与 Frame Sync 模块，画面稳定无延迟",
+        "支持多平台推流 (RTMP/SRT)",
+        "搭配 U-Caster 与 U-Meta V 形成完整制作网络"
+      ]
+    },
+    "u_tp": {
+      "name": "U-TP 提词器",
+      "tagline": "演播室专用提词器，清晰镜像、操作直觉，兼容多机型安装。",
+      "desc": "U-TP 采用高透光分光镜与高亮显示面板，字体清晰柔和。内建镜像、速度与段落控制，支持手控、脚控与 LAN 远程控制，适用于教育录播、企业发布与新闻节目。",
+      "badges": ["提词器", "镜像玻璃", "遥控", "讲稿"],
+      "specs": {
+        "镜片": "分光镜 70/30 高透光防反射镀膜",
+        "显示": "高亮度面板，一键切换镜像模式",
+        "文字控制": "字体大小 / 行距 / 速度调节 / 段落跳转",
+        "控制方式": "无线遥控、脚踏开关、LAN 控制",
+        "信号兼容": "HDMI（标配），SDI/NDI 可外接转换",
+        "相机兼容": "ENG、Studio Cam、多种遮光罩",
+        "安装": "快拆相机板、配重系统、可调水平/仰角",
+        "应用": "讲稿演讲、教学录播、记者会、企业直播"
+      },
+      "features": [
+        "高透光分光镜，清晰易读",
+        "字体、速度、段落热键控制",
+        "多种控制方式：手控、脚控、无线",
+        "可与 U-Caster 节奏同步",
+        "模块化安装：快拆、易维护"
+      ]
+    }
   }
 }

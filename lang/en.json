@@ -1,1362 +1,1119 @@
-[
 {
-   "meta":{
-      "home":{
-         "title":"Aplus Systems — Virtual Studio, Broadcast Integration & Digital Human Video",
-         "desc":"System integration for virtual studios and broadcast workflows: NDI/SDI/IP routing, Unreal/OBS/vMix pipelines, and digital human video automation."
-      },
-      "about":{
-         "title":"About — Aplus Systems | System Engineer & Broadcast Consultant",
-         "desc":"System engineer focused on virtual studio and broadcast integration. Five years of end-to-end experience across planning, integration, and production."
-      },
-      "services":{
-         "title":"Services — Aplus Systems | Virtual Studio & Broadcast Integration",
-         "desc":"From requirement discovery to on-air delivery: virtual studio integration, TV & campus broadcast setup, and digital human video pipelines."
-      },
-      "demos":{
-         "title":"Demos — Aplus Systems | Showcase & Reference Videos",
-         "desc":"Selected demo videos including shorts (9:16) and landscape (16:9) for reference."
-      },
-      "process":{
-         "title":"Process — Aplus Systems | From Discovery to On-Air",
-         "desc":"A clear, repeatable process covering discovery, design, integration, validation, training and go-live."
-      },
-      "tech":{
-         "title":"Technologies — Aplus Systems | Virtual Studio & Broadcast Tools",
-         "desc":"Explore the technologies behind Aplus Systems’ workflows — NDI, SDI, Unreal Engine, OBS, vMix, and automation tools."
-      },
-      "contact":{
-         "title":"Contact — Aplus Systems | Get a Quote or Consultation",
-         "desc":"Reach out via email, WhatsApp, or LINE to discuss your studio or production scenario."
-      }
-   },
-   "nav":{
-      "about":"About",
-      "services":"Services",
-      "demos":"Demos",
-      "process":"Process",
-      "tech":"Technologies",
-      "products":"Products",
-      "contact":"Contact"
-   },
-   "home_hero":{
-      "title":"Virtual Studio × Broadcast Integration × Digital Human Production",
-      "subtitle":"Aplus Systems delivers end-to-end broadcast and virtual studio solutions — combining creative production, technical precision, and reliable system design.",
-      "cta1":"Get in Touch",
-      "cta2":"View Services"
-   },
-   "home_svc":{
-      "title":"Core Services",
-      "virtualstudio":{
-         "title":"Virtual Studio Integration",
-         "desc":"End-to-end system design for real-time virtual production — chroma keying, camera tracking, and multi-protocol routing (NDI / SDI / IP). Reliable, scalable, on-air ready."
-      },
-      "broadcast":{
-         "title":"TV & Campus Broadcast Setup",
-         "desc":"One-stop solution for schools and enterprises: requirements, equipment list, wiring, commissioning, and operator training — from planning to first broadcast."
-      },
-      "digitalhuman":{
-         "title":"Digital Human Video Production",
-         "desc":"AI voice, lip-sync, and 3D scene integration for automated presentation and program segments. Consistent quality with repeatable pipelines."
-      },
-      "green":{
-         "title":"Green Screen Studio (Taiwan)",
-         "desc":"Compact studio with lighting and audio setup. Ideal for course recording, explainers, and virtual presenter shoots. Optional on-site technical support."
-      }
-   },
-   "home_showcase":{
-      "title":"Showcase",
-      "desc":"Selected demo videos and production highlights",
-      "wuya":"Latest uploads from <strong>@WuYaTheWorld</strong>",
-      "heho":"Latest uploads from <strong>@Heho</strong>",
-      "verticalTitle":"Short-form Videos (9:16)",
-      "short1":"Digital Human — Studio Narration Demo",
-      "short2":"AI Lip-sync — Character Presentation"
-   },
-   "home_about":{
-      "title":"About Aplus Systems",
-      "desc":"Aplus Systems specializes in <strong>virtual studio</strong> and <strong>broadcast system integration</strong> — delivering end-to-end solutions from planning and installation to live production support. Originating from technical expertise in Taiwan, our team combines creative engineering and reliable design to build modern production environments for media, education, and enterprise clients.",
-      "item1":"5+ years of broadcast & system integration experience",
-      "item2":"NDI / SDI / IP hybrid workflow design",
-      "item3":"Virtual studio, LED wall & digital human production"
-   },
-   "home_contact":{
-      "title":"Get in Touch with Aplus Systems",
-      "desc":"Whether you’re planning a new studio, looking for technical integration, or exploring digital human production — our team provides tailored consultation and end-to-end solutions across broadcast and virtual environments.",
-      "cta1":"Request a Consultation",
-      "cta2":"Chat on WhatsApp"
-   },
-   "about_hero":{
-      "h1":"About Aplus Systems",
-      "lead":"Integrated solutions for <strong>Virtual Studio</strong> · <strong>Broadcast Systems</strong> · <strong>Digital Human Production</strong><br/>Building reliable, creative, and connected video environments across industries."
-   },
-   "about_intro":{
-      "title":"Company Profile",
-      "p1":"Aplus Systems is a Taiwan-based technical integrator specializing in <strong>virtual studio design</strong>, <strong>broadcast system integration</strong>, and <strong>end-to-end workflow consulting</strong> for both educational and corporate sectors. Our mission is to connect creative vision with reliable broadcast technology.",
-      "p2":"From initial planning to on-site deployment, we handle every stage — requirement analysis, hardware selection, wiring and setup, software configuration, and operator training. Each system we deliver is designed to be <strong>stable, intuitive, and scalable</strong>.",
-      "item1":"Virtual Studio & Camera Tracking Integration",
-      "item2":"Broadcast & Campus TV Setup",
-      "item3":"AI Lip-sync & Digital Human Production",
-      "item4":"Technical Training & Remote Support"
-   },
-   "about_exp":{
-      "title":"Company Milestones",
-      "2025":"Expanded <strong>Aplus Systems</strong> operations with multi-camera virtual studio solutions for leading universities and media institutions in Taiwan.",
-      "2024":"Delivered the <strong>iSmart Broadcast Integration Project</strong>, establishing an automated workflow from camera capture to on-air delivery — marking a major step in smart broadcast systems.",
-      "2022":"Designed and implemented <strong>campus TV and hybrid broadcast classrooms</strong>, providing technical training for over 100 educators and operators.",
-      "2020":"Built a foundation in <strong>broadcast production, editing, and system maintenance</strong>, shaping the integrated service approach that defines Aplus Systems today."
-   },
-   "about_show":{
-      "title":"Featured Productions",
-      "wuya":"“@wuyatheworld” — Editing",
-      "cross":"“InterVision” — Production",
-      "heho":"“Heho Health” — Executive Production"
-   },
-   "about_cta":{
-      "h3":"Let’s build your next studio together",
-      "btn":"Contact Me"
-   },
-   "contact_hero":{
-      "h1":"Get in Touch with Aplus Systems",
-      "lead":"We specialize in virtual studio integration, digital human production, and broadcast workflow design. Tell us your project goals — we’ll help you build a reliable, creative system."
-   },
-   "contact":{
-      "title":"Contact Channels",
-      "desc":"Reach out through your preferred method below — our team will respond within one working day.",
-      "cta1":"Send Inquiry",
-      "cta2":"Chat on WhatsApp",
-      "cta3":"Message on LINE",
-      "channels":{
-         "email":"Email",
-         "whatsapp":"WhatsApp",
-         "line":"LINE"
-      }
-   },
-   "form":{
-      "title":"Send a Project Brief",
-      "desc":"Tell us your goals and constraints. We’ll get back within one working day.",
-      "name":{
-         "label":"Your Name"
-      },
-      "email":{
-         "label":"Email"
-      },
-      "company":{
-         "label":"Company / School (optional)"
-      },
-      "subject":{
-         "label":"Subject"
-      },
-      "message":{
-         "label":"Project Details"
-      },
-      "service":{
-         "label":"Service Type",
-         "virtual":"Virtual Studio Integration",
-         "broadcast":"TV & Campus Broadcast",
-         "digital":"Digital Human Production",
-         "greenscreen":"Green Screen Studio",
-         "consult":"Consultation",
-         "other":"Other"
-      },
-      "budget":{
-         "label":"Budget (optional)",
-         "unknown":"Not sure yet",
-         "under":"Under NTD 100k",
-         "b1":"NTD 100k–300k",
-         "b2":"NTD 300k–800k",
-         "b3":"NTD 800k+"
-      },
-      "submit":"Send via Email",
-      "copy":"Copy Brief",
-      "note":"This form opens your email app with a pre-filled message. Or copy the brief and send it to <strong>aplusystem@gmail.com</strong>.",
-      "error":{
-         "name":"Please enter your name.",
-         "email":"Please enter a valid email.",
-         "subject":"Please enter a subject."
-      }
-   },
-   "company":{
-      "name":"Aplus Systems",
-      "tagline":"Broadcast Integration · Virtual Studio · Digital Human Solutions",
-      "location":"Taipei, Taiwan — Serving clients across Asia"
-   },
-   "demos_hero":{
-      "h1":"Demo Showcase",
-      "lead":"Selected demos featuring <strong>virtual studio integration</strong>, <strong>digital human</strong> production, and <strong>TV system workflow</strong>."
-   },
-   "demos_section":{
-      "horizontal":"Featured Projects (16:9)",
-      "vertical":"Short Format (9:16)"
-   },
-   "demos_cards":{
-      "vs":{
-         "title":"Virtual Studio Build",
-         "desc":"System integration + camera tracking demo"
-      },
-      "short1":{
-         "title":"Short Demo — Tracking & Framing"
-      },
-      "short2":{
-         "title":"Short Demo — Digital Human Snippet"
-      },
-      "short3":{
-         "title":"Short Demo — Workflow Highlight"
-      }
-   },
-   "process_hero":{
-      "h1":"How We Work",
-      "lead":"From discovery to delivery — our integration process is built to ensure clarity, efficiency, and reliability at every step."
-   },
-   "process_main":{
-      "title":"Our Workflow",
-      "step1":{
-         "title":"Discovery & Consultation",
-         "desc":"We begin by understanding your goals, environment, and challenges — identifying what your studio or system truly needs."
-      },
-      "step2":{
-         "title":"System Design & Planning",
-         "desc":"We draft technical diagrams, select compatible hardware and software, and prepare a timeline that aligns with your resources."
-      },
-      "step3":{
-         "title":"Integration & Setup",
-         "desc":"On-site wiring, configuration, and calibration — ensuring seamless communication between NDI, SDI, and IP-based components."
-      },
-      "step4":{
-         "title":"Training & Handover",
-         "desc":"We provide operator training, workflow documentation, and post-deployment remote support for long-term reliability."
-      }
-   },
-   "process_cta":{
-      "h3":"Ready to start your project?",
-      "desc":"Let’s design your next virtual studio or broadcast workflow together.",
-      "btn":"Contact Aplus Systems"
-   },
-   "svc":{
-      "hero":{
-         "h1":"Services",
-         "lead":"Integrating creativity and technology — building reliable workflows for every production."
-      },
-      "shoot":{
-         "title":"Studio & Production Services",
-         "desc":"Virtual and physical studio support for creators, schools, and enterprises.",
-         "item1":{
-            "title":"Green Screen Studio (Taiwan)",
-            "desc":"Equipped with lighting and sound, suitable for corporate or educational recording."
-         },
-         "item2":{
-            "title":"Virtual Studio Filming",
-            "desc":"Using Unreal Engine and tracking systems for real-time compositing and live production."
-         }
-      },
-      "system":{
-         "title":"System Integration & Setup",
-         "desc":"Engineering-based solutions for virtual production and broadcast systems.",
-         "item1":{
-            "title":"Virtual Studio Installation",
-            "desc":"Full system planning, wiring, and testing for NDI / SDI / IP workflows."
-         },
-         "item2":{
-            "title":"System Integration Consulting",
-            "desc":"Workflow planning across capture, switching, recording, and delivery."
-         },
-         "item3":{
-            "title":"Digital Human Lip-Sync Training",
-            "desc":"Voice-to-face matching for AI or virtual presenter applications."
-         }
-      },
-      "collab":{
-         "title":"Project Collaboration & Creative Support",
-         "desc":"Partnering with trusted creators and designers to complete integrated projects.",
-         "item1":{
-            "title":"Illustration & Character Design",
-            "desc":"Created in collaboration with partner artists to support digital or brand storytelling."
-         },
-         "item2":{
-            "title":"Video Editing & Post-production",
-            "desc":"Delivered with professional editors and motion designers for high-quality output."
-         },
-         "item3":{
-            "title":"Web & Multimedia Integration",
-            "desc":"Support for brand showcase, educational platforms, and online demo presentation."
-         }
-      },
-      "philosophy":{
-         "title":"Our Approach",
-         "desc":"Aplus Systems bridges creative teams and technical operations — ensuring every project runs efficiently and reliably.",
-         "cta":"Discuss Your Project"
-      }
-   },
-   "tech_hero":{
-      "h1":"Technologies & Tools",
-      "lead":"The following brands and technologies are part of the systems I’ve integrated and configured for virtual studio and broadcast environments. Logos are used here for identification purposes only."
-   },
-   "tech_hw":{
-      "title":"Hardware & Equipment",
-      "desc":"Frequently used devices and brands in studio builds and live environments.",
-      "bmd":"Switchers, studio cameras & I/O",
-      "synco":"Microphones & on-set audio",
-      "unileader":"Broadcast peripherals & accessories",
-      "obsbot":"PTZ / AI tracking cameras",
-      "acemic":"Studio hardware & integration modules",
-      "yamaha":"Mixers & audio signal paths",
-      "mipro":"Wireless mics & receivers",
-      "mls":"LED display systems and wall panels"
-   },
-   "tech_sw":{
-      "title":"Software & Workflow Tools",
-      "desc":"Software and protocols I use to build modern virtual studio pipelines.",
-      "obs":"Live production & streaming",
-      "unreal":"Virtual sets & real-time rendering",
-      "ndi":"IP-based video transport",
-      "streamdeck":"Macro control & operator UX"
-   },
-   "tech_cta":{
-      "h3":"Need a system built around these tools?",
-      "btn":"Contact Me"
-   },
-   "tech_note":{
-      "legal":"All brand names and logos are property of their respective owners and are shown for reference only."
-   },
-   "footer":{
-      "rights":"All rights reserved.",
-      "about":"About",
-      "services":"Services",
-      "demos":"Demos",
-      "process":"Process",
-      "technologies":"Technologies",
-      "products":"Products",
-      "contact":"Contact"
-   },
-   "legal":{
-      "disclaimer_title":"Disclaimer:",
-      "disclaimer_body":"All trademarks, logos, and brand names are the property of their respective owners. They are used solely for descriptive and reference purposes to illustrate technologies that Aplus Systems has worked with or integrated in professional projects. This site is not affiliated with, endorsed by, or sponsored by any of the mentioned brands."
-   },
-   "brands":{
-      "blackmagic":{
-         "name":"Blackmagic Design",
-         "desc":"Blackmagic Design provides a complete range of video production and broadcast solutions — covering cameras, switchers, capture cards, and post-production software. Known for reliability and flexibility, it is widely used in control rooms, campus TV stations, and hybrid production systems.",
-         "gallery":{
-            "atem_mini":{
-               "caption":"ATEM Mini Extreme ISO — Core switching system"
-            },
-            "studio_cam":{
-               "caption":"Studio Camera 4K Pro G2 — Professional camera"
-            },
-            "ursa_bcast":{
-               "caption":"URSA Broadcast G2 — Broadcast-grade camera"
-            },
-            "decklink":{
-               "caption":"DeckLink 8K Pro — Capture/output card"
-            },
-            "hyperdeck":{
-               "caption":"HyperDeck Studio HD — Recording/playout unit"
-            },
-            "resolve":{
-               "caption":"DaVinci Resolve — Color and post-production software"
-            }
-         }
-      },
-      "synco":{
-         "name":"SYNCO",
-         "desc":"SYNCO, a brand under Zhiying Technology (Guangzhou), specializes in wireless and on-camera microphones with stable and clear sound quality. Commonly used in interviews, education, and content creation setups.",
-         "gallery":{
-            "g2a2":{
-               "caption":"G2 A2 — Dual-channel wireless microphone set"
-            },
-            "d2_shotgun":{
-               "caption":"MIC-D2 XLR — Directional shotgun microphone"
-            },
-            "d30":{
-               "caption":"D30 — On-camera condenser microphone"
-            },
-            "accessories":{
-               "caption":"Windshields, cold shoe mounts, and connection cables"
-            }
-         }
-      },
-      "unileader":{
-         "name":"Uni-Leader",
-         "desc":"Uni-Leader (Lide Digital Technology) delivers integrated switching and virtual studio systems that combine video switching, CG, and automation control. Aplus frequently implements Uni-Leader setups for schools and enterprises, enabling efficient all-in-one production workflows.",
-         "gallery":{
-            "u_caster_4k":{
-               "caption":"U-Caster 4K — Live switching system"
-            },
-            "u_studio_4k":{
-               "caption":"U-Studio 4K — Control and management platform"
-            },
-            "u_cg":{
-               "caption":"U-CG — Subtitle and graphics compositing system"
-            },
-            "u_meta_v":{
-               "caption":"U-Meta V — Virtual studio system"
-            },
-            "u_mooc":{
-               "caption":"U-Mooc — Online learning module"
-            }
-         }
-      },
-      "obsbot":{
-         "name":"OBSBOT",
-         "desc":"OBSBOT focuses on AI-powered tracking cameras featuring gesture control and smart framing. Ideal for remote teaching, compact studio recording, and automated personal content creation environments.",
-         "gallery":{
-            "tiny_4k":{
-               "caption":"OBSBOT Tiny 4K — AI tracking camera"
-            },
-            "tiny_2":{
-               "caption":"OBSBOT Tiny 2 — Multi-mode tracking camera"
-            },
-            "tail_air":{
-               "caption":"OBSBOT Tail Air — PTZ camera for live streaming"
-            },
-            "tiny_se":{
-               "caption":"OBSBOT Tiny SE — 1080p tracking camera"
-            }
-         }
-      },
-      "acemic":{
-         "name":"Acemic",
-         "desc":"Acemic (Shenzhen Aishangda Electronics) specializes in wireless microphone and in-ear monitoring systems, emphasizing stable transmission and anti-interference performance. Widely used in education, stage performances, and broadcast production environments.",
-         "gallery":{
-            "wireless_8ch":{
-               "caption":"8-channel wireless microphone system"
-            },
-            "iem_4ch":{
-               "caption":"4-channel in-ear monitoring system"
-            },
-            "ad900":{
-               "caption":"AD-900 — Antenna distribution unit"
-            },
-            "ad600":{
-               "caption":"AD-600 — Antenna/IEM distribution module"
-            },
-            "g4":{
-               "caption":"G4 Series — Wireless microphone"
-            },
-            "em_d01":{
-               "caption":"EM-D01 — Single-channel in-ear monitor"
-            }
-         }
-      },
-      "yamaha":{
-         "name":"Yamaha Mixer",
-         "desc":"Yamaha offers a full range of professional analog and digital mixers, including the TF, DM, CL, QL, and RIVAGE series. Renowned for audio clarity and stability, Yamaha mixers are central to studio and live sound systems worldwide.",
-         "gallery":{
-            "tf5":{
-               "caption":"TF5 — Digital mixing console"
-            },
-            "dm3s":{
-               "caption":"DM3S — Compact digital mixer"
-            },
-            "m7cl":{
-               "caption":"M7CL — Professional audio mixing console"
-            },
-            "ql5":{
-               "caption":"QL5 — Digital audio console"
-            }
-         }
-      },
-      "mipro":{
-         "name":"MIPRO",
-         "desc":"MIPRO is a leading Taiwanese brand in wireless audio systems, featuring patented ACT (Automatic Channel Targeting) technology and reliable transmission. Commonly used in schools, events, and corporate meetings for stable and clear wireless sound capture.",
-         "gallery":{
-            "act32h":{
-               "caption":"ACT-32H — Handheld wireless microphone"
-            },
-            "act312":{
-               "caption":"ACT-312 — Dual-channel receiver"
-            },
-            "mi58":{
-               "caption":"MI-58 — Digital in-ear monitoring system"
-            },
-            "ad900":{
-               "caption":"AD-900 — Antenna distribution module"
-            }
-         }
-      },
-      "mls":{
-         "name":"MLS LED (Mulinsen)",
-         "desc":"Mulinsen specializes in high-refresh and fine-pixel LED display modules, used for broadcast video walls, stage screens, and XR virtual production environments. Aplus employs MLS products to deliver vibrant and stable visual outputs.",
-         "gallery":{
-            "p1_92":{
-               "caption":"1.92mm LED display module"
-            },
-            "p2_5":{
-               "caption":"2.5mm LED display module"
-            },
-            "wall":{
-               "caption":"LED wall installation"
-            },
-            "ctrl":{
-               "caption":"LED controller/interface module"
-            }
-         }
-      },
-      "obs":{
-         "name":"OBS",
-         "desc":"OBS Studio is an open-source software for live streaming and recording, supporting multi-source mixing, plugin extensions, and virtual camera functions. Aplus uses OBS for flexible educational recording and online event production workflows.",
-         "gallery":{
-            "ui":{
-               "caption":"OBS Studio — Main interface"
-            },
-            "plugin":{
-               "caption":"OBS plugins and hotkey examples"
-            },
-            "output":{
-               "caption":"Streaming and recording output"
-            },
-            "multisc":{
-               "caption":"Multi-scene switching view"
-            }
-         }
-      },
-      "unreal":{
-         "name":"Unreal Engine",
-         "desc":"Unreal Engine is a real-time 3D rendering platform enabling high-fidelity virtual production and immersive visuals. Aplus uses it as the core engine for virtual set integration and real-scene tracking.",
-         "gallery":{
-            "vsnap":{
-               "caption":"Virtual studio screenshot"
-            },
-            "viz":{
-               "caption":"Real-time rendering visual"
-            },
-            "graph":{
-               "caption":"Material and node editor"
-            },
-            "liveset":{
-               "caption":"Virtual scene setup example"
-            }
-         }
-      },
-      "ndi":{
-         "name":"NDI",
-         "desc":"NDI (Network Device Interface) is a low-latency IP video protocol enabling audio, video, and control signals over networks. It powers modern, flexible, and collaborative production environments across broadcast systems.",
-         "gallery":{
-            "logo":{
-               "caption":"NDI logo"
-            },
-            "diagram":{
-               "caption":"NDI signal flow diagram"
-            },
-            "mixer":{
-               "caption":"NDI integration with switching systems"
-            },
-            "capture":{
-               "caption":"NDI capture and output devices"
-            }
-         }
-      },
-      "streamdeck":{
-         "name":"StreamDeck",
-         "desc":"StreamDeck (Elgato) is a customizable macro controller that allows quick scene switching, effects, and workflow automation. Aplus integrates StreamDeck in studio and virtual production setups to enhance operation efficiency.",
-         "gallery":{
-            "sd_32":{
-               "caption":"StreamDeck 32-Key"
-            },
-            "sd_xl":{
-               "caption":"StreamDeck XL — Extended version"
-            },
-            "sd_mob":{
-               "caption":"StreamDeck Mobile — App version"
-            },
-            "sd_pro":{
-               "caption":"StreamDeck Pro — Professional controller"
-            }
-         }
-      }
-   },
-   "products":{
-      "u_meta_v":{
-         "name":"U-Meta V",
-         "tagline":"Core virtual production system with Unreal Engine rendering and tracking.",
-         "desc":"U-Meta V integrates Unreal Engine real-time rendering, tracking and keying modules. It supports multi-camera hybrid shoots and fits education recording, corporate live events and broadcast studios.",
-         "badges":[
-            "Virtual Studio",
-            "Unreal Engine",
-            "Tracking",
-            "Compositing"
-         ],
-         "specs":{
-            "Engine":"Unreal Engine",
-            "Inputs":"SDI / NDI / HDMI multiple inputs",
-            "Outputs":"SDI, NDI, HDMI monitoring",
-            "Resolution":"Up to 4K 60p real-time output",
-            "Tracking":"Free-D / Visca over IP protocols",
-            "Keying":"Chroma / Luma key, real-time matte",
-            "Control":"U-Panel switcher / LAN IP",
-            "Use cases":"Education recording, corporate live, studio control"
-         },
-         "features":[
-            "Integrated real-time Unreal Engine rendering",
-            "Supports Free-D and optical tracking",
-            "Multi-scene management with animated switching",
-            "Modular NDI/SDI hybrid workflow",
-            "Works with U-Caster, U-CG, U-Studio, U-TP"
-         ]
-      },
-      "u_caster_4k":{
-         "name":"U-Caster 4K",
-         "tagline":"All-in-one workstation for switching, recording and streaming.",
-         "desc":"U-Caster 4K combines live switching, recording, streaming and multi-view compositing in one unit. With SDI/HDMI/NDI inputs, step timeline, and graphics control, it’s ideal for schools, enterprises and live events.",
-         "badges":[
-            "Switcher",
-            "Recorder",
-            "Streaming",
-            "NDI/SDI"
-         ],
-         "specs":{
-            "Channels":"Up to 6 video inputs (model dependent)",
-            "Inputs":"SDI / HDMI / NDI / IP / USB",
-            "Outputs":"SDI / HDMI / NDI / network streaming",
-            "Resolution":"Up to 4K UHD 60p",
-            "Recording":"Multi-track (ProRes / H.264)",
-            "Streaming":"RTMP / SRT / HLS",
-            "Graphics":"Works with U-CG live graphics",
-            "Control":"U-Panel / software UI / StreamDeck",
-            "Use cases":"Campus TV, corporate events, ceremonies, multicam live"
-         },
-         "features":[
-            "Switch, record and stream in one unit",
-            "Step Timeline scheduling",
-            "Multi-layer composition and scene switching",
-            "Hybrid NDI/SDI/HDMI workflows",
-            "Seamless with U-CG and U-Meta V"
-         ]
-      },
-      "u_cg":{
-         "name":"U-CG",
-         "tagline":"Live graphics and titles for professional broadcast looks.",
-         "desc":"U-CG delivers real-time titles, lower thirds and layered effects. It syncs with U-Caster and U-Meta V, suitable for news, live shows and education.",
-         "badges":[
-            "Graphics",
-            "Live Titles",
-            "Broadcast",
-            "NDI"
-         ],
-         "specs":{
-            "Inputs":"SDI / NDI / HDMI / IP / Alpha Channel",
-            "Outputs":"SDI Fill/Key, NDI, PNG seq, MOV Alpha",
-            "Resolution":"Up to 4K UHD 60p",
-            "Templates":"Built-in title and ticker templates",
-            "Control":"U-Panel or U-CG UI",
-            "Data":"Excel / TXT / RSS / Google Sheets",
-            "Effects":"In/Out animations, icons, text fades",
-            "Use cases":"News, ceremonies, live shows, education"
-         },
-         "features":[
-            "Update titles without cutting program",
-            "NDI / SDI Alpha dual-channel output",
-            "Customizable templates for quick use",
-            "Auto data binding for live updates",
-            "Integrated with U-Caster / U-Meta V"
-         ]
-      },
-      "u_hub":{
-         "name":"U-Hub",
-         "tagline":"Signal bridge and routing center connecting switcher, virtual set and recorder.",
-         "desc":"U-Hub distributes and manages SDI, NDI, HDMI and IP streams across systems. It acts as the bridge between virtual studio, switching and recording for a stable, flexible workflow.",
-         "badges":[
-            "Signal Bridge",
-            "NDI/SDI",
-            "Routing",
-            "Sync"
-         ],
-         "specs":{
-            "Inputs":"SDI / HDMI / NDI / IP Stream",
-            "Outputs":"SDI / NDI / HDMI / RTMP / SRT",
-            "Conversion":"NDI ↔ SDI / SDI ↔ IP / SDI ↔ HDMI / HDMI ↔ IP",
-            "Sync":"Genlock / Ref / Frame Sync",
-            "Protocols":"RTMP / RTSP / SRT / UDP / HTTP",
-            "Control":"U-Panel / Web UI / LAN",
-            "Use cases":"Signal distribution, virtual-set bridge, campus TV, record center"
-         },
-         "features":[
-            "Centralized multi-source I/O management",
-            "Hybrid SDI/NDI/HDMI architecture",
-            "Bridge node between virtual set and switcher",
-            "Built-in sync/frame-sync for stable output",
-            "Multi-platform streaming (RTMP/SRT)",
-            "Works with U-Caster / U-Meta V"
-         ]
-      },
-      "u_tp":{
-         "name":"U-TP Teleprompter",
-         "tagline":"Studio teleprompter with clear beam-splitter glass and intuitive control.",
-         "desc":"U-TP uses high-transmittance beam-splitter glass and a bright display for clear reading. Built-in mirror, speed and paragraph controls with hand/foot/LAN operation.",
-         "badges":[
-            "Teleprompter",
-            "Mirror Glass",
-            "Remote Control",
-            "Script"
-         ],
-         "specs":{
-            "Glass":"70/30 beam-splitter, AR coated",
-            "Display":"High-brightness, one-tap mirroring",
-            "Text control":"Font/line spacing/speed, jump to paragraph",
-            "Control":"Wireless remote, footswitch, LAN",
-            "Signal":"HDMI (standard), SDI/NDI via converters",
-            "Camera":"ENG / studio cam compatibility",
-            "Mount":"Quick-release plate, counterweight, tilt",
-            "Use cases":"Speeches, education, press, news & live"
-         },
-         "features":[
-            "High-transmittance glass: sharp text without lens flare",
-            "Simple hotkeys for speed and sections",
-            "Hand/foot/wireless controls available",
-            "Sync with U-Caster rundown/graphics timing",
-            "Modular mounting, easy setup and service"
-         ]
-      }
-   },
-   
-      "bmd_studio_4k_pro_g2":{
-         "name":"Studio Camera 4K Pro G2",
-         "tagline":"Broadcast-class 4K camera for studios and live production.",
-         "desc":"Studio Camera 4K Pro G2 combines a sensitive 4K sensor with 12G-SDI and NDI/IP output. Works seamlessly with ATEM switchers for remote iris/focus/color control. Large HDR screen and rich I/O fit education, events and professional broadcasting.",
-         "badges":[
-            "4K Camera",
-            "Live Production",
-            "NDI / SDI",
-            "Remote Control"
-         ],
-         "specs":{
-            "Sensor":"4/3\" CMOS, Dual Native ISO 400 / 3200",
-            "Resolution":"UHD 4K 60p",
-            "Output I/O":"12G-SDI / HDMI / NDI / IP Streaming",
-            "Audio":"Dual XLR inputs, headphone out",
-            "Control":"SDI control / ATEM remote / USB-C expansion",
-            "Display":"7\" high-brightness touch (2000 nits)",
-            "Power":"DC 12V / PoE+",
-            "Applications":"Studios, campus TV, stage events, live streaming"
-         },
-         "features":[
-            "12G-SDI and NDI/IP for modern hybrid workflows",
-            "High-sensitivity 4K sensor for clean low-light images",
-            "Built-in 7\" HDR screen and XLR audio",
-            "Remote iris/focus/color via ATEM",
-            "PoE+ single-cable deployment"
-         ]
-      },
-      "bmd_atem_mini_extreme_iso":{
-         "name":"ATEM Mini Extreme ISO",
-         "tagline":"Multi-cam switcher with multiview and simultaneous ISO recording.",
-         "desc":"ATEM Mini Extreme ISO features 8 HDMI inputs, USB-C streaming, and records the program plus each input as separate files. With multiview, transitions and graphics, it’s ideal for classes, corporate live, and event production.",
-         "badges":[
-            "Switcher",
-            "Recorder",
-            "Streaming",
-            "HDMI I/O"
-         ],
-         "specs":{
-            "Inputs":"8× HDMI 2.0 (1080p60)",
-            "Outputs":"3× HDMI, USB-C WebCam Out, Ethernet streaming",
-            "Recording":"9-track ISO (program + 8 inputs)",
-            "Audio":"Dual 3.5mm, Fairlight processing",
-            "Vision Control":"Multiview / DVE transitions / lower thirds",
-            "Media":"Built-in still store for graphics",
-            "Control":"ATEM Software Control / panel keys / StreamDeck",
-            "Applications":"Live classes, corporate streams, event switching"
-         },
-         "features":[
-            "8 HDMI sources with multiview monitoring",
-            "ISO record all inputs for post",
-            "Direct streaming to platforms like YouTube",
-            "Remote control via ATEM app",
-            "Built-in transitions, keys, and audio mixer"
-         ]
-      },
-      "bmd_hyperdeck_studio_4k_pro":{
-         "name":"HyperDeck Studio 4K Pro",
-         "tagline":"Professional recorder/playout with multi-format 4K recording.",
-         "desc":"HyperDeck Studio 4K Pro records ProRes, DNx, H.264/H.265 with dual SD and dual SSD slots for uninterrupted capture. Perfect for studio record, backup and playout.",
-         "badges":[
-            "Recorder",
-            "Playout",
-            "4K",
-            "SDI / NDI"
-         ],
-         "specs":{
-            "Codecs":"ProRes / DNx / H.264 / H.265 / QuickTime",
-            "Inputs":"12G-SDI ×1, Timecode/Ref In",
-            "Outputs":"12G-SDI ×2, HDMI, headphone out",
-            "Storage":"Dual SD + Dual SSD (hot-swap)",
-            "Resolution":"Up to 2160p60",
-            "Audio":"16-ch embedded, XLR timecode in",
-            "Control":"Front panel / Ethernet / RS-422 / ATEM remote",
-            "Applications":"Program record, backup, playout, broadcast"
-         },
-         "features":[
-            "12G-SDI/HDMI I/O up to 4K60",
-            "Continuous recording with dual-slot cycling",
-            "Wide codec support including ProRes and H.265",
-            "Genlock and timecode for multi-cam sync",
-            "Remote automation; integrates with ATEM/U-Caster"
-         ]
-      },
-      "bmd_ursa_broadcast_g2":{
-         "name":"URSA Broadcast G2",
-         "tagline":"Broadcast-class 6K camera for studio and field work.",
-         "desc":"URSA Broadcast G2 blends cinema-quality imaging with a broadcast-oriented body. Supports B4 and EF mounts, records BRAW/ProRes, and offers 12G-SDI with genlock—ready for multi-camera production.",
-         "badges":[
-            "Camera",
-            "6K",
-            "Broadcast",
-            "SDI / NDI"
-         ],
-         "specs":{
-            "Sensor":"6K Super 35, 13 stops DR",
-            "Recording":"Blackmagic RAW / ProRes 422 / ProRes HQ",
-            "Resolution":"6144×3456 (6K), UHD 4K, 1080p",
-            "I/O":"12G-SDI ×2, XLR ×2, Timecode / Genlock",
-            "Lens Mount":"B4 (switchable EF/PL/F)",
-            "Displays":"4\" flip-touch + 2\" status",
-            "Control":"SDI remote / ATEM control / USB-C external record",
-            "Media":"CFast 2.0 ×2, SD UHS-II ×2, USB-C SSD",
-            "Applications":"Studio cam, OB van, campus TV, broadcast"
-         },
-         "features":[
-            "6K sensor with wide latitude",
-            "BRAW and ProRes internal recording",
-            "Dual SD/CFast and USB-C external recording",
-            "ATEM remote color/iris/focus support",
-            "Flexible B4/EF/PL mounts"
-         ]
-      },
-      "bmd_decklink_8k_pro":{
-         "name":"DeckLink 8K Pro",
-         "tagline":"Four-channel SDI capture/playout with 8K HDR support.",
-         "desc":"DeckLink 8K Pro provides four 12G-SDI bidirectional ports for simultaneous capture/playout in HD/4K/8K. Supports HDR, Rec.2020 and 12-bit—ideal for virtual studios, post and ingest systems.",
-         "badges":[
-            "Capture",
-            "Playback",
-            "8K",
-            "SDI"
-         ],
-         "specs":{
-            "I/O":"4× 12G-SDI (bidirectional)",
-            "Formats":"Up to 8K DCI 60p / 4K / HD",
-            "Bit Depth":"Up to 12-bit YUV 4:2:2 / RGB 4:4:4",
-            "Color":"Rec.601 / Rec.709 / Rec.2020 / HDR",
-            "Audio":"16-ch embedded SDI",
-            "Software":"DaVinci Resolve / vMix / OBS / Unreal",
-            "Interface":"PCIe 8x, Desktop Video SDK",
-            "Applications":"Virtual production, live record, post I/O"
-         },
-         "features":[
-            "Four 12G-SDI ports configurable per channel",
-            "8K/HDR/Rec.2020 and 12-bit support",
-            "Works with OBS, vMix, Resolve, Unreal",
-            "Low-latency ingest for real-time pipelines",
-            "PCIe form factor for workstation/server"
-         ]
-      }
-   },
-   "products",":",{
-      "obsbot_tiny_2":{
-         "name":"OBSBOT Tiny 2",
-         "tagline":"AI tracking webcam designed for teaching, livestreaming and business meetings.",
-         "desc":"OBSBOT Tiny 2 features a next-gen AI tracking chip with face detection, gesture control and auto framing. With a 1/1.5\" sensor and 4K capture, it delivers natural skin tones and crisp detail in varied lighting—ideal for classes, online courses and content creation.",
-         "badges":[
-            "AI Tracking",
-            "PTZ",
-            "4K",
-            "USB-C"
-         ],
-         "specs":{
-            "Sensor":"1/1.5\" CMOS",
-            "Resolution":"4K 60fps / 1080p 60fps",
-            "Focal Length":"20mm eq. (wide)",
-            "Framing/Control":"AI Auto Framing / Gesture Control",
-            "I/O":"USB-C / HDMI (via dock)",
-            "Audio":"Dual directional mics built-in",
-            "Mounting":"Magnetic base / Tripod / Monitor clip",
-            "Use Cases":"Online teaching, meeting streams, lecture capture, content creation"
-         },
-         "features":[
-            "AI auto tracking and framing keeps the subject centered",
-            "Gesture control for switching lens, tracking and zoom",
-            "HDR, low-light gain and beautify algorithms for natural images",
-            "Works with OBS, vMix, Zoom, Teams and more",
-            "Flexible mounting to fit lecture-capture workflows"
-         ]
-      },
-      "obsbot_tail_2":{
-         "name":"OBSBOT Tail 2",
-         "tagline":"AI auto-director camera with 4K HDR, SSD recording and wireless streaming.",
-         "desc":"OBSBOT Tail 2 combines AI tracking with live auto-director capabilities. Built-in SSD recording and wireless control let it follow subjects and switch compositions, perfect for performance capture, live events and education.",
-         "badges":[
-            "AI Tracking",
-            "4K HDR",
-            "Wireless",
-            "SSD Recording"
-         ],
-         "specs":{
-            "Sensor":"1/1.8\" CMOS",
-            "Resolution":"4K 60fps / 1080p 120fps",
-            "Lens":"25.5mm eq., f/1.8 aperture",
-            "Tracking":"AI Auto Director + DeepTrack 3.0",
-            "Storage":"Built-in SSD (up to 1TB) / microSD expansion",
-            "Recording":"MP4 (H.265 / H.264)",
-            "Audio":"Omni mic built-in + 3.5mm input",
-            "I/O":"USB-C / Wi-Fi / Bluetooth / HDMI (option)",
-            "Control":"OBSBOT App / gestures / director mode",
-            "Use Cases":"Stage, sports, education capture, live events"
-         },
-         "features":[
-            "Auto-director mode for intelligent framing and scene cuts",
-            "4K HDR recording with efficient H.265 codec",
-            "Built-in SSD for long, drop-free recording",
-            "DeepTrack 3.0 for accurate subject tracking",
-            "Wireless app control for remote directing and streaming"
-         ]
-      },
-      "synco_xtalk_x":{
-         "name":"SYNCO Xtalk X",
-         "tagline":"Smart full-duplex wireless conference system for clear 4-way conversation.",
-         "desc":"SYNCO Xtalk X enables natural 4-party full-duplex talkback with AI noise reduction and auto mixing—no push-to-talk. Suited for remote meetings, online classes, corporate recording and live shows.",
-         "badges":[
-            "Wireless Audio",
-            "Full Duplex",
-            "Conference",
-            "AI Noise Cancel"
-         ],
-         "specs":{
-            "Wireless":"2.4GHz digital (full duplex)",
-            "Participants":"Up to 4 units talking simultaneously",
-            "Range":"Up to 150 m (open field)",
-            "Mic Modes":"Omni mic / 3.5mm lavalier input",
-            "Noise Reduction":"Dual-stage AI reduction",
-            "Battery Life":"≈8 hrs (up to 20 hrs with case)",
-            "I/O":"USB-C / 3.5mm TRS / Type-C digital audio",
-            "Compatibility":"Camera / phone / computer / mixer / switcher",
-            "Use Cases":"Conference recording, live shows, distance learning, OB talkback"
-         },
-         "features":[
-            "Natural 4-way full-duplex conversation",
-            "AI noise suppression tames wind and ambience",
-            "Up to 150 m range with low latency",
-            "Works with cameras, laptops and switchers",
-            "USB-C digital audio and realtime monitoring",
-            "Charging case for carry-and-charge convenience"
-         ]
-      },
-      "synco_xtalk_pro":{
-         "name":"SYNCO Xtalk Pro",
-         "tagline":"Professional full-duplex wireless intercom for studio and event coordination.",
-         "desc":"SYNCO Xtalk Pro targets control rooms, AV centers and large conferences with up to 8-party full-duplex talk and recording. AI noise reduction and long-range stability keep coordination instant for broadcast, stage and education.",
-         "badges":[
-            "Wireless Intercom",
-            "Full Duplex",
-            "Broadcast",
-            "AI Noise Cancel"
-         ],
-         "specs":{
-            "Wireless":"2.4GHz full-duplex",
-            "Participants":"Up to 8 talking / 32 paired",
-            "Range":"Up to 350 m (open)",
-            "Mic Modes":"Omni + lavalier input",
-            "Noise Reduction":"AI bi-directional NR + echo suppression",
-            "Latency":"<20 ms",
-            "Battery Life":"≈10 hrs (to 25 hrs with case)",
-            "I/O":"USB-C / 3.5mm TRRS / XLR (via module)",
-            "Compatibility":"Switchers / cameras / laptops / mixers",
-            "Use Cases":"Intercom, OB coordination, stage crew, multi-party meetings"
-         },
-         "features":[
-            "8-party full-duplex architecture",
-            "AI NR with low-latency audio",
-            "Up to 350 m wireless range",
-            "Supports lav/headset mics",
-            "Isolated track recording per channel",
-            "Durable metal construction"
-         ]
-      },
-      "synco_xtalk_xmax":{
-         "name":"SYNCO Xtalk XMax",
-         "tagline":"Flagship full-duplex system with base-station group management for pro broadcast.",
-         "desc":"SYNCO Xtalk XMax supports 16-party full-duplex with a dedicated base station for central grouping, mute and record. Designed for large events, OB trucks, EDU centers and enterprise comms.",
-         "badges":[
-            "Full Duplex",
-            "Base Station",
-            "Multi-Group",
-            "AI Noise Cancel"
-         ],
-         "specs":{
-            "Architecture":"2.4GHz + base-station management",
-            "Participants":"16 talking / 64 paired",
-            "Range":"Up to 500 m (open)",
-            "Noise System":"AI bi-directional NR + echo cancel + AGC",
-            "Group Control":"Grouping / mute / synced recording at base",
-            "Latency":"<15 ms",
-            "Battery":"Headsets ≈10 hrs; base continuous power",
-            "I/O":"USB-C / XLR / RJ45 / LAN remote",
-            "Recording":"Base-station internal recorder (WAV)",
-            "Use Cases":"Director talkback, stage crew, AV centers, enterprise comms"
-         },
-         "features":[
-            "16-party real-time intercom with multi-group",
-            "Centralized base-station control and recording",
-            "AI NR and adaptive gain for long sessions",
-            "Up to 500 m range with strong penetration",
-            "LAN integration and system scalability",
-            "Rugged metal build for field use"
-         ]
-      },
-      "synco_xtalk_link":{
-         "name":"SYNCO Xtalk Link",
-         "tagline":"Bridge hub that connects Xtalk intercom to phones/PCs and hybrid workflows.",
-         "desc":"Xtalk Link aggregates multiple Xtalk headsets/bodypacks to a phone or computer, enabling hybrid communications. Ideal for remote speakers, mobile directing and meeting/stream collaboration with grouping, mute and priority talk.",
-         "badges":[
-            "Bridge Hub",
-            "USB-C",
-            "App Control",
-            "Multi-Group"
-         ],
-         "specs":{
-            "Purpose":"Bridge for Xtalk to mobile/PC",
-            "Connectivity":"2.4GHz proprietary (Xtalk) / USB-C (host)",
-            "Compatibility":"Xtalk X / Pro / XMax",
-            "Grouping":"App/desktop grouping, mute, priority",
-            "Audio Class":"UAC for meeting/stream platforms",
-            "Power":"USB-C (power bank supported)",
-            "Control":"Mobile app / desktop app / hardware keys",
-            "Use Cases":"Remote speakers, hybrid meetings, mobile OB, campus/corporate"
-         },
-         "features":[
-            "Brings Xtalk intercom into phone/PC calls",
-            "Grouping, mute and priority for easy dispatch",
-            "USB-C plug-and-play with popular platforms",
-            "Power-bank friendly for mobile setups",
-            "Scales from small teams to large events"
-         ]
-      },
-      "synco_g4":{
-         "name":"SYNCO G4 Wireless Microphone",
-         "tagline":"Dual-channel wireless mic with Gen-4 2.4GHz link and OLED display.",
-         "desc":"SYNCO G4 delivers low-latency, stable audio with Gen-4 2.4GHz tech. On-board TX recording and an OLED screen simplify monitoring—great for classes, Vlog, corporate capture and mobile switching.",
-         "badges":[
-            "Wireless Mic",
-            "2.4GHz",
-            "Dual Channel",
-            "OLED Display"
-         ],
-         "specs":{
-            "Wireless":"2.4GHz (Gen-4)",
-            "Channels":"Dual (2TX + 1RX)",
-            "On-Device Rec":"TX up to 8GB (~22 hrs)",
-            "Range":"Up to 250 m (open)",
-            "Latency":"<20 ms",
-            "Inputs":"Built-in mic / 3.5mm lav",
-            "Outputs":"3.5mm TRS / USB-C / Type-C digital audio",
-            "Display":"OLED status display",
-            "Battery":"≈8 hrs (to 20 hrs with case)",
-            "Use Cases":"Vlog, education, corporate talks, mobile OB"
-         },
-         "features":[
-            "Robust Gen-4 2.4GHz link with strong anti-interference",
-            "TX on-board recording for backup",
-            "Clear OLED monitoring",
-            "Record two speakers at once",
-            "USB-C digital out to phones/laptops",
-            "Compact, magnetic and case-chargeable"
-         ]
-      },
-      "synco_p2s":{
-         "name":"SYNCO P2S Wireless Microphone",
-         "tagline":"Pocket-size mobile wireless mic—plug and play with clear voice pickup.",
-         "desc":"SYNCO P2S is built for phones and live platforms, featuring dual-channel pickup, Type-C/Lightning plug-and-play, active noise reduction and a charging case. Lightweight and setup-free for creators, Vlogs, courses and mobile live.",
-         "badges":[
-            "Mobile Mic",
-            "Plug & Play",
-            "Noise Reduction",
-            "Charging Case"
-         ],
-         "specs":{
-            "Wireless":"2.4GHz digital",
-            "Channels":"2TX + 1RX",
-            "Connectors":"Type-C or Lightning (model-dependent)",
-            "Range":"Up to 150 m (open)",
-            "Mic":"Built-in omni",
-            "Noise Reduction":"AI NR with monitoring",
-            "Battery":"TX ≈5 hrs; with case up to 15 hrs",
-            "Charging":"Type-C fast charge (~1.5 hrs)",
-            "Use Cases":"Mobile shoots, online classes, corporate live, interviews"
-         },
-         "features":[
-            "True plug-and-play—no pairing needed",
-            "AI noise reduction keeps speech clear",
-            "Dual-channel for two-person recording",
-            "Ultra-portable with charging case",
-            "Type-C/Lightning options for Android/iPhone",
-            "Ideal for Vlog, livestreams and courses"
-         ]
-      },
-      "synco_mmic_u3":{
-         "name":"SYNCO MMic-U3 Mobile Microphone",
-         "tagline":"Compact cardioid mic—clean mobile recording made easy.",
-         "desc":"SYNCO MMic-U3 is a cardioid on-camera/mobile mic with an aluminum body and high-sensitivity capsule to focus on voice and reduce ambience. Works via Type-C or 3.5mm TRRS for instant, battery-free recording—great for Vlogs, lessons and interviews.",
-         "badges":[
-            "Cardioid Mic",
-            "Plug & Play",
-            "Noise Reduction",
-            "Mobile Ready"
-         ],
-         "specs":{
-            "Polar Pattern":"Cardioid",
-            "Sensitivity":"-35 dB ±3 dB (1V/Pa @1kHz)",
-            "Frequency Response":"50 Hz–20 kHz",
-            "SNR":">75 dB",
-            "I/O":"Type-C / 3.5mm TRRS (variant-dependent)",
-            "Dimensions":"Φ22 × 72 mm",
-            "Weight":"≈39 g",
-            "Build":"Aluminum body, shock mount and windscreen",
-            "Use Cases":"Mobile shooting, online lessons, Vlog, interviews"
-         },
-         "features":[
-            "Cardioid pickup reduces side/rear noise",
-            "Lightweight aluminum, durable and RF-resistant",
-            "Type-C or 3.5mm for phone and camera",
-            "No battery required—plug and record",
-            "Includes shock mount and windscreen for indoor/outdoor use"
-         ]
-      }
-   },
-   "products",":",{
-      "acemic_g5_iem":{
-         "name":"Acemic G5 In-Ear Monitoring System",
-         "tagline":"Professional UHF IEM—stable, clear and low-latency for live use.",
-         "desc":"Acemic G5 is a professional in-ear monitoring system for live production and stage performance. Using UHF wireless transmission, it delivers strong interference resistance and ultra-low latency for stable signal and clear sound. Multiple channels can be configured simultaneously—ideal for directors, performers and educational recording/streaming.",
-         "badges":[
-            "IEM",
-            "UHF",
-            "Stage Monitoring",
-            "Low Latency"
-         ],
-         "specs":{
-            "Frequency Range":"UHF 600–700 MHz (varies by region)",
-            "Channel Count":"Up to 80 selectable frequencies",
-            "Transmission Range":"Up to 100 m (environment dependent)",
-            "Latency":"< 2 ms",
-            "Audio Response":"50 Hz – 15 kHz",
-            "Inputs":"XLR / 6.3 mm combo input",
-            "Output":"3.5 mm TRS headphone out (receiver)",
-            "Power":"TX: DC 12 V; RX: 2 × AA batteries",
-            "Chassis":"Metal housing, durable and interference-resistant",
-            "Applications":"Stage monitoring, production monitoring, houses of worship, corporate events"
-         },
-         "features":[
-            "UHF wireless link with robust anti-interference",
-            "Multiple channels operating simultaneously for teams",
-            "High dynamic range with low latency for natural sync",
-            "Metal body and pro headphone output for reliability",
-            "Great for stage, director monitoring and education"
-         ]
-      },
-      "acemic_s_series":{
-         "name":"Acemic S Series Wireless Microphone System",
-         "tagline":"Multi-channel UHF wireless mics—stable and clear for any live environment.",
-         "desc":"The Acemic S Series is designed for professional and educational use. Covering single to eight-channel models (S2 / S4 / S6 / S8), it supports handheld, headset and lavalier transmitters. Known for stability, clarity and value, it’s widely used in classrooms, corporate meetings, live broadcasts and stage events.",
-         "badges":[
-            "Wireless Mic",
-            "UHF",
-            "Multi-Channel",
-            "Professional"
-         ],
-         "specs":{
-            "Frequency Range":"UHF 520–580 MHz (varies by region)",
-            "Channel Options":"2 / 4 / 6 / 8 channels",
-            "Range":"Up to 100 m (line-of-sight)",
-            "Sensitivity":"-90 dBm",
-            "Frequency Response":"40 Hz – 18 kHz",
-            "Outputs":"XLR / 6.3 mm mixed output",
-            "Power":"Receiver: DC 12 V; Transmitter: 2 × AA batteries",
-            "Build":"Metal chassis, LCD display and IR sync",
-            "Applications":"Schools, corporate meetings, churches, stage"
-         },
-         "features":[
-            "UHF transmission with excellent stability",
-            "Multiple systems operable at once with IR auto sync",
-            "Wide dynamic range and low-latency audio",
-            "Fits handheld, headset or lavalier transmitters",
-            "Ideal for education, corporate and live events"
-         ]
-      },
-      "acemic_wireless":{
-         "name":"Acemic Wireless Microphone System",
-         "tagline":"UHF wireless mics—reliable transmission and clear sound for education and pro use.",
-         "desc":"Acemic wireless systems are popular for education, corporate events and stage. With stable UHF transmission, low latency and clear audio, they support handheld, lavalier and headset transmitters. Available in single, dual and quad-channel configurations; easy to operate and highly resistant to interference.",
-         "badges":[
-            "Wireless Mic",
-            "UHF",
-            "Professional",
-            "Dual Channel"
-         ],
-         "specs":{
-            "Frequency Range":"UHF 520–580 MHz (varies by region)",
-            "Channel Options":"Single / Dual / Quad",
-            "Frequency Response":"40 Hz – 18 kHz",
-            "Dynamic Range":"> 100 dB",
-            "Range":"Up to 100 m (line-of-sight)",
-            "I/O":"XLR / 6.3 mm mixed output",
-            "Pairing":"IR auto sync",
-            "Power":"Receiver DC 12 V / Transmitter 2 × AA",
-            "Applications":"Education, corporate presentations, stage, meeting rooms"
-         },
-         "features":[
-            "Robust UHF link with strong anti-interference",
-            "High-sensitivity pickup and wide dynamics",
-            "IR auto-pairing for quick setup",
-            "Works with handheld, lavalier and headset TX",
-            "Multi-channel operation for large events"
-         ]
-      },
-      "yamaha_mg_series":{
-         "name":"Yamaha MG Series Mixer",
-         "tagline":"Professional analog mixers combining premium preamps with rugged design.",
-         "desc":"Yamaha’s MG Series is renowned for stability and sound quality in live, recording and corporate applications. Featuring Yamaha D-PRE class-A mic preamps and SPX effects, selected XU models add a USB audio interface for easy integration into digital workflows.",
-         "badges":[
-            "Analog Mixer",
-            "D-PRE",
-            "SPX Effects",
-            "USB Interface"
-         ],
-         "specs":{
-            "Channel Count":"6 / 10 / 12 / 16 / 20 (varies by model)",
-            "Mic Preamps":"Yamaha D-PRE Class-A",
-            "EQ":"3-band EQ / High-pass filter",
-            "Effects":"SPX digital effects (X / XU models)",
-            "USB Interface":"USB Audio 2-in / 2-out (XU models)",
-            "Power":"AC Adaptor (PA-10 / PA-20)",
-            "Size/Weight":"Varies (MG10XU ≈ 2.1 kg)",
-            "Applications":"Houses of worship, studios, corporate events, music"
-         },
-         "features":[
-            "D-PRE preamps for clear, full-bodied sound",
-            "Built-in SPX effects (24 programs incl. reverb, delay)",
-            "USB audio on XU models for recording/streaming",
-            "Rugged metal chassis for touring and installs",
-            "Flexible I/O with AUX, GROUP and STEREO BUS"
-         ]
-      },
-      "mipro_act_series":{
-         "name":"MIPRO ACT Series Wireless Microphone System",
-         "tagline":"Auto-sync UHF wireless mics—professional, stable and crystal clear.",
-         "desc":"MIPRO’s ACT Series is known for Automatic Channel Targeting (ACT) IR auto-sync, allowing fast and intuitive pairing between transmitters and receivers. Covering ACT-3/5/7/8, the lineup serves education, meetings and pro performances with reliable, high-quality wireless audio.",
-         "badges":[
-            "Wireless Mic",
-            "UHF",
-            "Auto Sync",
-            "Professional"
-         ],
-         "specs":{
-            "Frequency Range":"UHF 480–934 MHz (regional variants)",
-            "Channel Options":"Single / Dual / Quad / Eight-channel",
-            "Pairing":"ACT IR auto sync",
-            "Frequency Response":"50 Hz – 18 kHz",
-            "Dynamic Range":"> 100 dB",
-            "Outputs":"XLR / 6.3 mm / AES3 digital (model-dependent)",
-            "Power":"Receiver AC / Transmitters AA or Li-ion",
-            "Chassis":"Metal with LCD and group scan",
-            "Applications":"Education, conference rooms, stage, worship, broadcast"
-         },
-         "features":[
-            "MIPRO ACT auto-sync for quick, precise pairing",
-            "Multi-channel operation for concurrent systems",
-            "Wide dynamic range and low-latency audio",
-            "Metal construction with interference resistance",
-            "Covers classrooms, churches, corporate and stage"
-         ]
-      },
-      "mipro_mi58":{
-         "name":"MIPRO MI-58 Digital IEM System",
-         "tagline":"5.8 GHz digital IEM—low latency, high fidelity and interference-free.",
-         "desc":"The MI-58 Series uses the 5.8 GHz band to deliver CD-grade audio with low-latency monitoring. With stereo output, IR sync, auto scan and multiple channels, it avoids crowded UHF bands to ensure stable monitoring for stage and production.",
-         "badges":[
-            "Digital IEM",
-            "5.8 GHz",
-            "Low Latency",
-            "Stereo"
-         ],
-         "specs":{
-            "Band":"5.725 – 5.850 GHz (license-free band)",
-            "Transmission":"24-bit / 48 kHz digital stereo",
-            "Latency":"< 2.5 ms",
-            "Frequency Response":"20 Hz – 20 kHz",
-            "Simultaneous Systems":"Up to 12",
-            "Pairing":"IR Sync auto pairing",
-            "Inputs":"XLR / TRS balanced",
-            "Receiver":"Beltpack with OLED and volume",
-            "Power":"Receiver 2 × AA / charging dock optional",
-            "Applications":"Stage, worship, corporate presentations, studio monitoring"
-         },
-         "features":[
-            "5.8 GHz band avoids crowded UHF spectrum",
-            "24-bit digital audio with near-CD quality",
-            "Ultra-low latency < 2.5 ms",
-            "IR auto sync and channel scan",
-            "Stereo / dual-mono output modes",
-            "Works with charging docks and earsets"
-         ]
-      },
-      "mls_fixed_led":{
-         "name":"MLS LED Display (Fixed Installation)",
-         "tagline":"Fine-pitch LED for studios and control rooms.",
-         "desc":"MLS fixed-install LED walls use precision modules and COB packaging to deliver high brightness, contrast and seamless visuals. Ideal for studios, control rooms, exhibitions and corporate feature walls—offering stable imagery and excellent color uniformity.",
-         "badges":[
-            "LED Display",
-            "COB",
-            "SMD",
-            "Fixed Install"
-         ],
-         "specs":{
-            "Display Tech":"COB / SMD",
-            "Pixel Pitches":"P1.25 / P1.56 / P1.875 / P2.5",
-            "Brightness":"Up to 1500 nits (indoor)",
-            "Refresh Rate":"≥ 3840 Hz",
-            "Lifetime":"> 100,000 hours",
-            "Ingress Rating":"IP31 (indoor)",
-            "Color Uniformity":"Module-level calibration, HDR10 support",
-            "Control":"Synchronous / asynchronous controllers",
-            "Mounting":"Wall-mount / recessed / curved",
-            "Applications":"Studios, control rooms, exhibitions, conference halls"
-         },
-         "features":[
-            "Fine-pitch, bezel-free seamless visuals",
-            "High refresh and accurate color reproduction",
-            "HDR10 compatible for wide dynamic range",
-            "Magnetic modular design for easy service",
-            "Long-life LEDs with low power consumption"
-         ]
-      },
-      "mls_rental_led":{
-         "name":"MLS Rental LED Panels",
-         "tagline":"Quick-lock rental LED—built for stages and events.",
-         "desc":"MLS rental LED panels feature lightweight aluminum frames and fast locks for rapid rigging. With high brightness and weather protection, they support hanging and stacking for concerts, stage design and events, and are easy to service.",
-         "badges":[
-            "LED Display",
-            "Rental",
-            "Fast Lock",
-            "Outdoor"
-         ],
-         "specs":{
-            "Display Tech":"SMD",
-            "Pixel Pitches":"P2.6 / P3.9 / P4.8 / P5.9",
-            "Brightness":"4000–6000 nits (outdoor options)",
-            "Refresh Rate":"≥ 3840 Hz",
-            "Weight":"≈ 7.5 kg per 500×500 mm panel",
-            "Ingress Rating":"IP65 (front) / IP54 (rear)",
-            "Power/Signal":"Modular quick-swap PSU and data",
-            "Structure":"Aluminum cabinet—hang, stack or curve",
-            "Applications":"Stage shows, launches, worship, commercial events"
-         },
-         "features":[
-            "2-second fast-lock assembly and teardown",
-            "High-brightness, weather-ready design",
-            "Hang or stack with optional curving",
-            "High refresh for stable, flicker-free video",
-            "Low power draw for long-hour operation"
-         ]
-      }
-   }
+  "meta": {
+    "home": {
+      "title": "Aplus Systems — Virtual Studio, Broadcast Integration & Digital Human Video",
+      "desc": "System integration for virtual studios and broadcast workflows: NDI/SDI/IP routing, Unreal/OBS/vMix pipelines, and digital human video automation."
+    },
+    "about": {
+      "title": "About — Aplus Systems | System Engineer & Broadcast Consultant",
+      "desc": "System engineer focused on virtual studio and broadcast integration. Five years of end-to-end experience across planning, integration, and production."
+    },
+    "services": {
+      "title": "Services — Aplus Systems | Virtual Studio & Broadcast Integration",
+      "desc": "From requirement discovery to on-air delivery: virtual studio integration, TV & campus broadcast setup, and digital human video pipelines."
+    },
+    "demos": {
+      "title": "Demos — Aplus Systems | Showcase & Reference Videos",
+      "desc": "Selected demo videos including shorts (9:16) and landscape (16:9) for reference."
+    },
+    "process": {
+      "title": "Process — Aplus Systems | From Discovery to On-Air",
+      "desc": "A clear, repeatable process covering discovery, design, integration, validation, training and go-live."
+    },
+    "tech": {
+      "title": "Technologies — Aplus Systems | Virtual Studio & Broadcast Tools",
+      "desc": "Explore the technologies behind Aplus Systems’ workflows — NDI, SDI, Unreal Engine, OBS, vMix, and automation tools."
+    },
+    "contact": {
+      "title": "Contact — Aplus Systems | Get a Quote or Consultation",
+      "desc": "Reach out via email, WhatsApp, or LINE to discuss your studio or production scenario."
+    }
+  },
+  
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "demos": "Demos",
+    "process": "Process",
+    "tech": "Technologies",
+    "products": "Products",
+    "contact": "Contact"
+  },
 
-]
+  "home_hero": {
+    "title": "Virtual Studio × Broadcast Integration × Digital Human Production",
+    "subtitle": "Aplus Systems delivers end-to-end broadcast and virtual studio solutions — combining creative production, technical precision, and reliable system design.",
+    "cta1": "Get in Touch",
+    "cta2": "View Services"
+  },
+  "home_svc": {
+    "title": "Core Services",
+    "virtualstudio": {
+      "title": "Virtual Studio Integration",
+      "desc": "End-to-end system design for real-time virtual production — chroma keying, camera tracking, and multi-protocol routing (NDI / SDI / IP). Reliable, scalable, on-air ready."
+    },
+    "broadcast": {
+      "title": "TV & Campus Broadcast Setup",
+      "desc": "One-stop solution for schools and enterprises: requirements, equipment list, wiring, commissioning, and operator training — from planning to first broadcast."
+    },
+    "digitalhuman": {
+      "title": "Digital Human Video Production",
+      "desc": "AI voice, lip-sync, and 3D scene integration for automated presentation and program segments. Consistent quality with repeatable pipelines."
+    },
+    "green": {
+      "title": "Green Screen Studio (Taiwan)",
+      "desc": "Compact studio with lighting and audio setup. Ideal for course recording, explainers, and virtual presenter shoots. Optional on-site technical support."
+    }
+  },
+  "home_showcase": {
+    "title": "Showcase",
+    "desc": "Selected demo videos and production highlights",
+    "wuya": "Latest uploads from <strong>@WuYaTheWorld</strong>",
+    "heho": "Latest uploads from <strong>@Heho</strong>",
+    "verticalTitle": "Short-form Videos (9:16)",
+    "short1": "Digital Human — Studio Narration Demo",
+    "short2": "AI Lip-sync — Character Presentation"
+  },
+  "home_about": {
+    "title": "About Aplus Systems",
+    "desc": "Aplus Systems specializes in <strong>virtual studio</strong> and <strong>broadcast system integration</strong> — delivering end-to-end solutions from planning and installation to live production support. Originating from technical expertise in Taiwan, our team combines creative engineering and reliable design to build modern production environments for media, education, and enterprise clients.",
+    "item1": "5+ years of broadcast & system integration experience",
+    "item2": "NDI / SDI / IP hybrid workflow design",
+    "item3": "Virtual studio, LED wall & digital human production"
+  },
+  "home_contact": {
+    "title": "Get in Touch with Aplus Systems",
+    "desc": "Whether you’re planning a new studio, looking for technical integration, or exploring digital human production — our team provides tailored consultation and end-to-end solutions across broadcast and virtual environments.",
+    "cta1": "Request a Consultation",
+    "cta2": "Chat on WhatsApp"
+  },
+
+  "about_hero": {
+    "h1": "About Aplus Systems",
+    "lead": "Integrated solutions for <strong>Virtual Studio</strong> · <strong>Broadcast Systems</strong> · <strong>Digital Human Production</strong><br/>Building reliable, creative, and connected video environments across industries."
+  },
+  "about_intro": {
+    "title": "Company Profile",
+    "p1": "Aplus Systems is a Taiwan-based technical integrator specializing in <strong>virtual studio design</strong>, <strong>broadcast system integration</strong>, and <strong>end-to-end workflow consulting</strong> for both educational and corporate sectors. Our mission is to connect creative vision with reliable broadcast technology.",
+    "p2": "From initial planning to on-site deployment, we handle every stage — requirement analysis, hardware selection, wiring and setup, software configuration, and operator training. Each system we deliver is designed to be <strong>stable, intuitive, and scalable</strong>.",
+    "item1": "Virtual Studio & Camera Tracking Integration",
+    "item2": "Broadcast & Campus TV Setup",
+    "item3": "AI Lip-sync & Digital Human Production",
+    "item4": "Technical Training & Remote Support"
+  },
+  "about_exp": {
+    "title": "Company Milestones",
+    "2025": "Expanded <strong>Aplus Systems</strong> operations with multi-camera virtual studio solutions for leading universities and media institutions in Taiwan.",
+    "2024": "Delivered the <strong>iSmart Broadcast Integration Project</strong>, establishing an automated workflow from camera capture to on-air delivery — marking a major step in smart broadcast systems.",
+    "2022": "Designed and implemented <strong>campus TV and hybrid broadcast classrooms</strong>, providing technical training for over 100 educators and operators.",
+    "2020": "Built a foundation in <strong>broadcast production, editing, and system maintenance</strong>, shaping the integrated service approach that defines Aplus Systems today."
+  },
+  "about_show": {
+    "title": "Featured Productions",
+    "wuya": "“@wuyatheworld” — Editing",
+    "cross": "“InterVision” — Production",
+    "heho": "“Heho Health” — Executive Production"
+  },
+  "about_cta": {
+    "h3": "Let’s build your next studio together",
+    "btn": "Contact Me"
+  },
+
+  "contact_hero": {
+    "h1": "Get in Touch with Aplus Systems",
+    "lead": "We specialize in virtual studio integration, digital human production, and broadcast workflow design. Tell us your project goals — we’ll help you build a reliable, creative system."
+  },
+  "contact": {
+    "title": "Contact Channels",
+    "desc": "Reach out through your preferred method below — our team will respond within one working day.",
+    "cta1": "Send Inquiry",
+    "cta2": "Chat on WhatsApp",
+    "cta3": "Message on LINE",
+    "channels": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "line": "LINE"
+    }
+  },
+  "form": {
+    "title": "Send a Project Brief",
+    "desc": "Tell us your goals and constraints. We’ll get back within one working day.",
+    "name": { "label": "Your Name" },
+    "email": { "label": "Email" },
+    "company": { "label": "Company / School (optional)" },
+    "subject": { "label": "Subject" },
+    "message": { "label": "Project Details" },
+    "service": {
+      "label": "Service Type",
+      "virtual": "Virtual Studio Integration",
+      "broadcast": "TV & Campus Broadcast",
+      "digital": "Digital Human Production",
+      "greenscreen": "Green Screen Studio",
+      "consult": "Consultation",
+      "other": "Other"
+    },
+    "budget": {
+      "label": "Budget (optional)",
+      "unknown": "Not sure yet",
+      "under": "Under NTD 100k",
+      "b1": "NTD 100k–300k",
+      "b2": "NTD 300k–800k",
+      "b3": "NTD 800k+"
+    },
+    "submit": "Send via Email",
+    "copy": "Copy Brief",
+    "note": "This form opens your email app with a pre-filled message. Or copy the brief and send it to <strong>aplusystem@gmail.com</strong>.",
+    "error": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email.",
+      "subject": "Please enter a subject."
+    }
+  },
+  "company": {
+    "name": "Aplus Systems",
+    "tagline": "Broadcast Integration · Virtual Studio · Digital Human Solutions",
+    "location": "Taipei, Taiwan — Serving clients across Asia"
+  },
+
+  "demos_hero": {
+    "h1": "Demo Showcase",
+    "lead": "Selected demos featuring <strong>virtual studio integration</strong>, <strong>digital human</strong> production, and <strong>TV system workflow</strong>."
+  },
+  "demos_section": {
+    "horizontal": "Featured Projects (16:9)",
+    "vertical": "Short Format (9:16)"
+  },
+  "demos_cards": {
+    "vs": {
+      "title": "Virtual Studio Build",
+      "desc": "System integration + camera tracking demo"
+    },
+    "short1": { "title": "Short Demo — Tracking & Framing" },
+    "short2": { "title": "Short Demo — Digital Human Snippet" },
+    "short3": { "title": "Short Demo — Workflow Highlight" }
+  },
+
+  "process_hero": {
+    "h1": "How We Work",
+    "lead": "From discovery to delivery — our integration process is built to ensure clarity, efficiency, and reliability at every step."
+  },
+  "process_main": {
+    "title": "Our Workflow",
+    "step1": {
+      "title": "Discovery & Consultation",
+      "desc": "We begin by understanding your goals, environment, and challenges — identifying what your studio or system truly needs."
+    },
+    "step2": {
+      "title": "System Design & Planning",
+      "desc": "We draft technical diagrams, select compatible hardware and software, and prepare a timeline that aligns with your resources."
+    },
+    "step3": {
+      "title": "Integration & Setup",
+      "desc": "On-site wiring, configuration, and calibration — ensuring seamless communication between NDI, SDI, and IP-based components."
+    },
+    "step4": {
+      "title": "Training & Handover",
+      "desc": "We provide operator training, workflow documentation, and post-deployment remote support for long-term reliability."
+    }
+  },
+  "process_cta": {
+    "h3": "Ready to start your project?",
+    "desc": "Let’s design your next virtual studio or broadcast workflow together.",
+    "btn": "Contact Aplus Systems"
+  },
+
+  "svc": {
+    "hero": {
+      "h1": "Services",
+      "lead": "Integrating creativity and technology — building reliable workflows for every production."
+    },
+    "shoot": {
+      "title": "Studio & Production Services",
+      "desc": "Virtual and physical studio support for creators, schools, and enterprises.",
+      "item1": {
+        "title": "Green Screen Studio (Taiwan)",
+        "desc": "Equipped with lighting and sound, suitable for corporate or educational recording."
+      },
+      "item2": {
+        "title": "Virtual Studio Filming",
+        "desc": "Using Unreal Engine and tracking systems for real-time compositing and live production."
+      }
+    },
+    "system": {
+      "title": "System Integration & Setup",
+      "desc": "Engineering-based solutions for virtual production and broadcast systems.",
+      "item1": {
+        "title": "Virtual Studio Installation",
+        "desc": "Full system planning, wiring, and testing for NDI / SDI / IP workflows."
+      },
+      "item2": {
+        "title": "System Integration Consulting",
+        "desc": "Workflow planning across capture, switching, recording, and delivery."
+      },
+      "item3": {
+        "title": "Digital Human Lip-Sync Training",
+        "desc": "Voice-to-face matching for AI or virtual presenter applications."
+      }
+    },
+    "collab": {
+      "title": "Project Collaboration & Creative Support",
+      "desc": "Partnering with trusted creators and designers to complete integrated projects.",
+      "item1": {
+        "title": "Illustration & Character Design",
+        "desc": "Created in collaboration with partner artists to support digital or brand storytelling."
+      },
+      "item2": {
+        "title": "Video Editing & Post-production",
+        "desc": "Delivered with professional editors and motion designers for high-quality output."
+      },
+      "item3": {
+        "title": "Web & Multimedia Integration",
+        "desc": "Support for brand showcase, educational platforms, and online demo presentation."
+      }
+    },
+    "philosophy": {
+      "title": "Our Approach",
+      "desc": "Aplus Systems bridges creative teams and technical operations — ensuring every project runs efficiently and reliably.",
+      "cta": "Discuss Your Project"
+    }
+  },
+
+  "tech_hero": {
+    "h1": "Technologies & Tools",
+    "lead": "The following brands and technologies are part of the systems I’ve integrated and configured for virtual studio and broadcast environments. Logos are used here for identification purposes only."
+  },
+  "tech_hw": {
+    "title": "Hardware & Equipment",
+    "desc": "Frequently used devices and brands in studio builds and live environments.",
+    "bmd": "Switchers, studio cameras & I/O",
+    "synco": "Microphones & on-set audio",
+    "unileader": "Broadcast peripherals & accessories",
+    "obsbot": "PTZ / AI tracking cameras",
+    "acemic": "Studio hardware & integration modules",
+    "yamaha": "Mixers & audio signal paths",
+    "mipro": "Wireless mics & receivers",
+    "mls": "LED display systems and wall panels"
+  },
+  "tech_sw": {
+    "title": "Software & Workflow Tools",
+    "desc": "Software and protocols I use to build modern virtual studio pipelines.",
+    "obs": "Live production & streaming",
+    "unreal": "Virtual sets & real-time rendering",
+    "ndi": "IP-based video transport",
+    "streamdeck": "Macro control & operator UX"
+  },
+  "tech_cta": {
+    "h3": "Need a system built around these tools?",
+    "btn": "Contact Me"
+  },
+  "tech_note": {
+    "legal": "All brand names and logos are property of their respective owners and are shown for reference only."
+  },
+
+  "footer": {
+    "rights": "All rights reserved.",
+    "about": "About",
+    "services": "Services",
+    "demos": "Demos",
+    "process": "Process",
+    "technologies": "Technologies",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "legal": {
+    "disclaimer_title": "Disclaimer:",
+    "disclaimer_body": "All trademarks, logos, and brand names are the property of their respective owners. They are used solely for descriptive and reference purposes to illustrate technologies that Aplus Systems has worked with or integrated in professional projects. This site is not affiliated with, endorsed by, or sponsored by any of the mentioned brands."
+  },
+  
+  "brands": {
+    "blackmagic": {
+      "name": "Blackmagic Design",
+      "desc": "Blackmagic Design provides a complete range of video production and broadcast solutions — covering cameras, switchers, capture cards, and post-production software. Known for reliability and flexibility, it is widely used in control rooms, campus TV stations, and hybrid production systems.",
+      "gallery": {
+        "atem_mini": { "caption": "ATEM Mini Extreme ISO — Core switching system" },
+        "studio_cam": { "caption": "Studio Camera 4K Pro G2 — Professional camera" },
+        "ursa_bcast": { "caption": "URSA Broadcast G2 — Broadcast-grade camera" },
+        "decklink": { "caption": "DeckLink 8K Pro — Capture/output card" },
+        "hyperdeck": { "caption": "HyperDeck Studio HD — Recording/playout unit" },
+        "resolve": { "caption": "DaVinci Resolve — Color and post-production software" }
+      }
+    },
+    "synco": {
+      "name": "SYNCO",
+      "desc": "SYNCO, a brand under Zhiying Technology (Guangzhou), specializes in wireless and on-camera microphones with stable and clear sound quality. Commonly used in interviews, education, and content creation setups.",
+      "gallery": {
+        "g2a2": { "caption": "G2 A2 — Dual-channel wireless microphone set" },
+        "d2_shotgun": { "caption": "MIC-D2 XLR — Directional shotgun microphone" },
+        "d30": { "caption": "D30 — On-camera condenser microphone" },
+        "accessories": { "caption": "Windshields, cold shoe mounts, and connection cables" }
+      }
+    },
+    "unileader": {
+      "name": "Uni-Leader",
+      "desc": "Uni-Leader (Lide Digital Technology) delivers integrated switching and virtual studio systems that combine video switching, CG, and automation control. Aplus frequently implements Uni-Leader setups for schools and enterprises, enabling efficient all-in-one production workflows.",
+      "gallery": {
+        "u_caster_4k": { "caption": "U-Caster 4K — Live switching system" },
+        "u_studio_4k": { "caption": "U-Studio 4K — Control and management platform" },
+        "u_cg": { "caption": "U-CG — Subtitle and graphics compositing system" },
+        "u_meta_v": { "caption": "U-Meta V — Virtual studio system" },
+        "u_mooc": { "caption": "U-Mooc — Online learning module" }
+      }
+    },
+    "obsbot": {
+      "name": "OBSBOT",
+      "desc": "OBSBOT focuses on AI-powered tracking cameras featuring gesture control and smart framing. Ideal for remote teaching, compact studio recording, and automated personal content creation environments.",
+      "gallery": {
+        "tiny_4k": { "caption": "OBSBOT Tiny 4K — AI tracking camera" },
+        "tiny_2": { "caption": "OBSBOT Tiny 2 — Multi-mode tracking camera" },
+        "tail_air": { "caption": "OBSBOT Tail Air — PTZ camera for live streaming" },
+        "tiny_se": { "caption": "OBSBOT Tiny SE — 1080p tracking camera" }
+      }
+    },
+    "acemic": {
+      "name": "Acemic",
+      "desc": "Acemic (Shenzhen Aishangda Electronics) specializes in wireless microphone and in-ear monitoring systems, emphasizing stable transmission and anti-interference performance. Widely used in education, stage performances, and broadcast production environments.",
+      "gallery": {
+        "wireless_8ch": { "caption": "8-channel wireless microphone system" },
+        "iem_4ch": { "caption": "4-channel in-ear monitoring system" },
+        "ad900": { "caption": "AD-900 — Antenna distribution unit" },
+        "ad600": { "caption": "AD-600 — Antenna/IEM distribution module" },
+        "g4": { "caption": "G4 Series — Wireless microphone" },
+        "em_d01": { "caption": "EM-D01 — Single-channel in-ear monitor" }
+      }
+    },
+    "yamaha": {
+      "name": "Yamaha Mixer",
+      "desc": "Yamaha offers a full range of professional analog and digital mixers, including the TF, DM, CL, QL, and RIVAGE series. Renowned for audio clarity and stability, Yamaha mixers are central to studio and live sound systems worldwide.",
+      "gallery": {
+        "tf5": { "caption": "TF5 — Digital mixing console" },
+        "dm3s": { "caption": "DM3S — Compact digital mixer" },
+        "m7cl": { "caption": "M7CL — Professional audio mixing console" },
+        "ql5": { "caption": "QL5 — Digital audio console" }
+      }
+    },
+    "mipro": {
+      "name": "MIPRO",
+      "desc": "MIPRO is a leading Taiwanese brand in wireless audio systems, featuring patented ACT (Automatic Channel Targeting) technology and reliable transmission. Commonly used in schools, events, and corporate meetings for stable and clear wireless sound capture.",
+      "gallery": {
+        "act32h": { "caption": "ACT-32H — Handheld wireless microphone" },
+        "act312": { "caption": "ACT-312 — Dual-channel receiver" },
+        "mi58": { "caption": "MI-58 — Digital in-ear monitoring system" },
+        "ad900": { "caption": "AD-900 — Antenna distribution module" }
+      }
+    },
+    "mls": {
+      "name": "MLS LED (Mulinsen)",
+      "desc": "Mulinsen specializes in high-refresh and fine-pixel LED display modules, used for broadcast video walls, stage screens, and XR virtual production environments. Aplus employs MLS products to deliver vibrant and stable visual outputs.",
+      "gallery": {
+        "p1_92": { "caption": "1.92mm LED display module" },
+        "p2_5": { "caption": "2.5mm LED display module" },
+        "wall": { "caption": "LED wall installation" },
+        "ctrl": { "caption": "LED controller/interface module" }
+      }
+    },
+    "obs": {
+      "name": "OBS",
+      "desc": "OBS Studio is an open-source software for live streaming and recording, supporting multi-source mixing, plugin extensions, and virtual camera functions. Aplus uses OBS for flexible educational recording and online event production workflows.",
+      "gallery": {
+        "ui": { "caption": "OBS Studio — Main interface" },
+        "plugin": { "caption": "OBS plugins and hotkey examples" },
+        "output": { "caption": "Streaming and recording output" },
+        "multisc": { "caption": "Multi-scene switching view" }
+      }
+    },
+    "unreal": {
+      "name": "Unreal Engine",
+      "desc": "Unreal Engine is a real-time 3D rendering platform enabling high-fidelity virtual production and immersive visuals. Aplus uses it as the core engine for virtual set integration and real-scene tracking.",
+      "gallery": {
+        "vsnap": { "caption": "Virtual studio screenshot" },
+        "viz": { "caption": "Real-time rendering visual" },
+        "graph": { "caption": "Material and node editor" },
+        "liveset": { "caption": "Virtual scene setup example" }
+      }
+    },
+    "ndi": {
+      "name": "NDI",
+      "desc": "NDI (Network Device Interface) is a low-latency IP video protocol enabling audio, video, and control signals over networks. It powers modern, flexible, and collaborative production environments across broadcast systems.",
+      "gallery": {
+        "logo": { "caption": "NDI logo" },
+        "diagram": { "caption": "NDI signal flow diagram" },
+        "mixer": { "caption": "NDI integration with switching systems" },
+        "capture": { "caption": "NDI capture and output devices" }
+      }
+    },
+    "streamdeck": {
+      "name": "StreamDeck",
+      "desc": "StreamDeck (Elgato) is a customizable macro controller that allows quick scene switching, effects, and workflow automation. Aplus integrates StreamDeck in studio and virtual production setups to enhance operation efficiency.",
+      "gallery": {
+        "sd_32": { "caption": "StreamDeck 32-Key" },
+        "sd_xl": { "caption": "StreamDeck XL — Extended version" },
+        "sd_mob": { "caption": "StreamDeck Mobile — App version" },
+        "sd_pro": { "caption": "StreamDeck Pro — Professional controller" }
+      }
+    }
+  },
+  
+  "products": {
+    "u_meta_v": {
+      "name": "U-Meta V",
+      "tagline": "Core virtual production system with Unreal Engine rendering and tracking.",
+      "desc": "U-Meta V integrates Unreal Engine real-time rendering, tracking and keying modules. It supports multi-camera hybrid shoots and fits education recording, corporate live events and broadcast studios.",
+      "badges": ["Virtual Studio", "Unreal Engine", "Tracking", "Compositing"],
+      "specs": {
+        "Engine": "Unreal Engine",
+        "Inputs": "SDI / NDI / HDMI multiple inputs",
+        "Outputs": "SDI, NDI, HDMI monitoring",
+        "Resolution": "Up to 4K 60p real-time output",
+        "Tracking": "Free-D / Visca over IP protocols",
+        "Keying": "Chroma / Luma key, real-time matte",
+        "Control": "U-Panel switcher / LAN IP",
+        "Use cases": "Education recording, corporate live, studio control"
+      },
+      "features": [
+        "Integrated real-time Unreal Engine rendering",
+        "Supports Free-D and optical tracking",
+        "Multi-scene management with animated switching",
+        "Modular NDI/SDI hybrid workflow",
+        "Works with U-Caster, U-CG, U-Studio, U-TP"
+      ]
+    },
+    "u_caster_4k": {
+      "name": "U-Caster 4K",
+      "tagline": "All-in-one workstation for switching, recording and streaming.",
+      "desc": "U-Caster 4K combines live switching, recording, streaming and multi-view compositing in one unit. With SDI/HDMI/NDI inputs, step timeline, and graphics control, it’s ideal for schools, enterprises and live events.",
+      "badges": ["Switcher", "Recorder", "Streaming", "NDI/SDI"],
+      "specs": {
+        "Channels": "Up to 6 video inputs (model dependent)",
+        "Inputs": "SDI / HDMI / NDI / IP / USB",
+        "Outputs": "SDI / HDMI / NDI / network streaming",
+        "Resolution": "Up to 4K UHD 60p",
+        "Recording": "Multi-track (ProRes / H.264)",
+        "Streaming": "RTMP / SRT / HLS",
+        "Graphics": "Works with U-CG live graphics",
+        "Control": "U-Panel / software UI / StreamDeck",
+        "Use cases": "Campus TV, corporate events, ceremonies, multicam live"
+      },
+      "features": [
+        "Switch, record and stream in one unit",
+        "Step Timeline scheduling",
+        "Multi-layer composition and scene switching",
+        "Hybrid NDI/SDI/HDMI workflows",
+        "Seamless with U-CG and U-Meta V"
+      ]
+    },
+    "u_cg": {
+      "name": "U-CG",
+      "tagline": "Live graphics and titles for professional broadcast looks.",
+      "desc": "U-CG delivers real-time titles, lower thirds and layered effects. It syncs with U-Caster and U-Meta V, suitable for news, live shows and education.",
+      "badges": ["Graphics", "Live Titles", "Broadcast", "NDI"],
+      "specs": {
+        "Inputs": "SDI / NDI / HDMI / IP / Alpha Channel",
+        "Outputs": "SDI Fill/Key, NDI, PNG seq, MOV Alpha",
+        "Resolution": "Up to 4K UHD 60p",
+        "Templates": "Built-in title and ticker templates",
+        "Control": "U-Panel or U-CG UI",
+        "Data": "Excel / TXT / RSS / Google Sheets",
+        "Effects": "In/Out animations, icons, text fades",
+        "Use cases": "News, ceremonies, live shows, education"
+      },
+      "features": [
+        "Update titles without cutting program",
+        "NDI / SDI Alpha dual-channel output",
+        "Customizable templates for quick use",
+        "Auto data binding for live updates",
+        "Integrated with U-Caster / U-Meta V"
+      ]
+    },
+    "u_hub": {
+      "name": "U-Hub",
+      "tagline": "Signal bridge and routing center connecting switcher, virtual set and recorder.",
+      "desc": "U-Hub distributes and manages SDI, NDI, HDMI and IP streams across systems. It acts as the bridge between virtual studio, switching and recording for a stable, flexible workflow.",
+      "badges": ["Signal Bridge", "NDI/SDI", "Routing", "Sync"],
+      "specs": {
+        "Inputs": "SDI / HDMI / NDI / IP Stream",
+        "Outputs": "SDI / NDI / HDMI / RTMP / SRT",
+        "Conversion": "NDI ↔ SDI / SDI ↔ IP / SDI ↔ HDMI / HDMI ↔ IP",
+        "Sync": "Genlock / Ref / Frame Sync",
+        "Protocols": "RTMP / RTSP / SRT / UDP / HTTP",
+        "Control": "U-Panel / Web UI / LAN",
+        "Use cases": "Signal distribution, virtual-set bridge, campus TV, record center"
+      },
+      "features": [
+        "Centralized multi-source I/O management",
+        "Hybrid SDI/NDI/HDMI architecture",
+        "Bridge node between virtual set and switcher",
+        "Built-in sync/frame-sync for stable output",
+        "Multi-platform streaming (RTMP/SRT)",
+        "Works with U-Caster / U-Meta V"
+      ]
+    },
+    "u_tp": {
+      "name": "U-TP Teleprompter",
+      "tagline": "Studio teleprompter with clear beam-splitter glass and intuitive control.",
+      "desc": "U-TP uses high-transmittance beam-splitter glass and a bright display for clear reading. Built-in mirror, speed and paragraph controls with hand/foot/LAN operation.",
+      "badges": ["Teleprompter", "Mirror Glass", "Remote Control", "Script"],
+      "specs": {
+        "Glass": "70/30 beam-splitter, AR coated",
+        "Display": "High-brightness, one-tap mirroring",
+        "Text control": "Font/line spacing/speed, jump to paragraph",
+        "Control": "Wireless remote, footswitch, LAN",
+        "Signal": "HDMI (standard), SDI/NDI via converters",
+        "Camera": "ENG / studio cam compatibility",
+        "Mount": "Quick-release plate, counterweight, tilt",
+        "Use cases": "Speeches, education, press, news & live"
+      },
+      "features": [
+        "High-transmittance glass: sharp text without lens flare",
+        "Simple hotkeys for speed and sections",
+        "Hand/foot/wireless controls available",
+        "Sync with U-Caster rundown/graphics timing",
+        "Modular mounting, easy setup and service"
+      ]
+    }
+  },
+  
+  "products": {
+    "bmd_studio_4k_pro_g2": {
+      "name": "Studio Camera 4K Pro G2",
+      "tagline": "Broadcast-class 4K camera for studios and live production.",
+      "desc": "Studio Camera 4K Pro G2 combines a sensitive 4K sensor with 12G-SDI and NDI/IP output. Works seamlessly with ATEM switchers for remote iris/focus/color control. Large HDR screen and rich I/O fit education, events and professional broadcasting.",
+      "badges": ["4K Camera", "Live Production", "NDI / SDI", "Remote Control"],
+      "specs": {
+        "Sensor": "4/3\" CMOS, Dual Native ISO 400 / 3200",
+        "Resolution": "UHD 4K 60p",
+        "Output I/O": "12G-SDI / HDMI / NDI / IP Streaming",
+        "Audio": "Dual XLR inputs, headphone out",
+        "Control": "SDI control / ATEM remote / USB-C expansion",
+        "Display": "7\" high-brightness touch (2000 nits)",
+        "Power": "DC 12V / PoE+",
+        "Applications": "Studios, campus TV, stage events, live streaming"
+      },
+      "features": [
+        "12G-SDI and NDI/IP for modern hybrid workflows",
+        "High-sensitivity 4K sensor for clean low-light images",
+        "Built-in 7\" HDR screen and XLR audio",
+        "Remote iris/focus/color via ATEM",
+        "PoE+ single-cable deployment"
+      ]
+    },
+    "bmd_atem_mini_extreme_iso": {
+      "name": "ATEM Mini Extreme ISO",
+      "tagline": "Multi-cam switcher with multiview and simultaneous ISO recording.",
+      "desc": "ATEM Mini Extreme ISO features 8 HDMI inputs, USB-C streaming, and records the program plus each input as separate files. With multiview, transitions and graphics, it’s ideal for classes, corporate live, and event production.",
+      "badges": ["Switcher", "Recorder", "Streaming", "HDMI I/O"],
+      "specs": {
+        "Inputs": "8× HDMI 2.0 (1080p60)",
+        "Outputs": "3× HDMI, USB-C WebCam Out, Ethernet streaming",
+        "Recording": "9-track ISO (program + 8 inputs)",
+        "Audio": "Dual 3.5mm, Fairlight processing",
+        "Vision Control": "Multiview / DVE transitions / lower thirds",
+        "Media": "Built-in still store for graphics",
+        "Control": "ATEM Software Control / panel keys / StreamDeck",
+        "Applications": "Live classes, corporate streams, event switching"
+      },
+      "features": [
+        "8 HDMI sources with multiview monitoring",
+        "ISO record all inputs for post",
+        "Direct streaming to platforms like YouTube",
+        "Remote control via ATEM app",
+        "Built-in transitions, keys, and audio mixer"
+      ]
+    },
+    "bmd_hyperdeck_studio_4k_pro": {
+      "name": "HyperDeck Studio 4K Pro",
+      "tagline": "Professional recorder/playout with multi-format 4K recording.",
+      "desc": "HyperDeck Studio 4K Pro records ProRes, DNx, H.264/H.265 with dual SD and dual SSD slots for uninterrupted capture. Perfect for studio record, backup and playout.",
+      "badges": ["Recorder", "Playout", "4K", "SDI / NDI"],
+      "specs": {
+        "Codecs": "ProRes / DNx / H.264 / H.265 / QuickTime",
+        "Inputs": "12G-SDI ×1, Timecode/Ref In",
+        "Outputs": "12G-SDI ×2, HDMI, headphone out",
+        "Storage": "Dual SD + Dual SSD (hot-swap)",
+        "Resolution": "Up to 2160p60",
+        "Audio": "16-ch embedded, XLR timecode in",
+        "Control": "Front panel / Ethernet / RS-422 / ATEM remote",
+        "Applications": "Program record, backup, playout, broadcast"
+      },
+      "features": [
+        "12G-SDI/HDMI I/O up to 4K60",
+        "Continuous recording with dual-slot cycling",
+        "Wide codec support including ProRes and H.265",
+        "Genlock and timecode for multi-cam sync",
+        "Remote automation; integrates with ATEM/U-Caster"
+      ]
+    },
+    "bmd_ursa_broadcast_g2": {
+      "name": "URSA Broadcast G2",
+      "tagline": "Broadcast-class 6K camera for studio and field work.",
+      "desc": "URSA Broadcast G2 blends cinema-quality imaging with a broadcast-oriented body. Supports B4 and EF mounts, records BRAW/ProRes, and offers 12G-SDI with genlock—ready for multi-camera production.",
+      "badges": ["Camera", "6K", "Broadcast", "SDI / NDI"],
+      "specs": {
+        "Sensor": "6K Super 35, 13 stops DR",
+        "Recording": "Blackmagic RAW / ProRes 422 / ProRes HQ",
+        "Resolution": "6144×3456 (6K), UHD 4K, 1080p",
+        "I/O": "12G-SDI ×2, XLR ×2, Timecode / Genlock",
+        "Lens Mount": "B4 (switchable EF/PL/F)",
+        "Displays": "4\" flip-touch + 2\" status",
+        "Control": "SDI remote / ATEM control / USB-C external record",
+        "Media": "CFast 2.0 ×2, SD UHS-II ×2, USB-C SSD",
+        "Applications": "Studio cam, OB van, campus TV, broadcast"
+      },
+      "features": [
+        "6K sensor with wide latitude",
+        "BRAW and ProRes internal recording",
+        "Dual SD/CFast and USB-C external recording",
+        "ATEM remote color/iris/focus support",
+        "Flexible B4/EF/PL mounts"
+      ]
+    },
+    "bmd_decklink_8k_pro": {
+      "name": "DeckLink 8K Pro",
+      "tagline": "Four-channel SDI capture/playout with 8K HDR support.",
+      "desc": "DeckLink 8K Pro provides four 12G-SDI bidirectional ports for simultaneous capture/playout in HD/4K/8K. Supports HDR, Rec.2020 and 12-bit—ideal for virtual studios, post and ingest systems.",
+      "badges": ["Capture", "Playback", "8K", "SDI"],
+      "specs": {
+        "I/O": "4× 12G-SDI (bidirectional)",
+        "Formats": "Up to 8K DCI 60p / 4K / HD",
+        "Bit Depth": "Up to 12-bit YUV 4:2:2 / RGB 4:4:4",
+        "Color": "Rec.601 / Rec.709 / Rec.2020 / HDR",
+        "Audio": "16-ch embedded SDI",
+        "Software": "DaVinci Resolve / vMix / OBS / Unreal",
+        "Interface": "PCIe 8x, Desktop Video SDK",
+        "Applications": "Virtual production, live record, post I/O"
+      },
+      "features": [
+        "Four 12G-SDI ports configurable per channel",
+        "8K/HDR/Rec.2020 and 12-bit support",
+        "Works with OBS, vMix, Resolve, Unreal",
+        "Low-latency ingest for real-time pipelines",
+        "PCIe form factor for workstation/server"
+      ]
+    }
+  },
+  
+  "products": {
+    "obsbot_tiny_2": {
+      "name": "OBSBOT Tiny 2",
+      "tagline": "AI tracking webcam designed for teaching, livestreaming and business meetings.",
+      "desc": "OBSBOT Tiny 2 features a next-gen AI tracking chip with face detection, gesture control and auto framing. With a 1/1.5\" sensor and 4K capture, it delivers natural skin tones and crisp detail in varied lighting—ideal for classes, online courses and content creation.",
+      "badges": ["AI Tracking", "PTZ", "4K", "USB-C"],
+      "specs": {
+        "Sensor": "1/1.5\" CMOS",
+        "Resolution": "4K 60fps / 1080p 60fps",
+        "Focal Length": "20mm eq. (wide)",
+        "Framing/Control": "AI Auto Framing / Gesture Control",
+        "I/O": "USB-C / HDMI (via dock)",
+        "Audio": "Dual directional mics built-in",
+        "Mounting": "Magnetic base / Tripod / Monitor clip",
+        "Use Cases": "Online teaching, meeting streams, lecture capture, content creation"
+      },
+      "features": [
+        "AI auto tracking and framing keeps the subject centered",
+        "Gesture control for switching lens, tracking and zoom",
+        "HDR, low-light gain and beautify algorithms for natural images",
+        "Works with OBS, vMix, Zoom, Teams and more",
+        "Flexible mounting to fit lecture-capture workflows"
+      ]
+    },
+    "obsbot_tail_2": {
+      "name": "OBSBOT Tail 2",
+      "tagline": "AI auto-director camera with 4K HDR, SSD recording and wireless streaming.",
+      "desc": "OBSBOT Tail 2 combines AI tracking with live auto-director capabilities. Built-in SSD recording and wireless control let it follow subjects and switch compositions, perfect for performance capture, live events and education.",
+      "badges": ["AI Tracking", "4K HDR", "Wireless", "SSD Recording"],
+      "specs": {
+        "Sensor": "1/1.8\" CMOS",
+        "Resolution": "4K 60fps / 1080p 120fps",
+        "Lens": "25.5mm eq., f/1.8 aperture",
+        "Tracking": "AI Auto Director + DeepTrack 3.0",
+        "Storage": "Built-in SSD (up to 1TB) / microSD expansion",
+        "Recording": "MP4 (H.265 / H.264)",
+        "Audio": "Omni mic built-in + 3.5mm input",
+        "I/O": "USB-C / Wi-Fi / Bluetooth / HDMI (option)",
+        "Control": "OBSBOT App / gestures / director mode",
+        "Use Cases": "Stage, sports, education capture, live events"
+      },
+      "features": [
+        "Auto-director mode for intelligent framing and scene cuts",
+        "4K HDR recording with efficient H.265 codec",
+        "Built-in SSD for long, drop-free recording",
+        "DeepTrack 3.0 for accurate subject tracking",
+        "Wireless app control for remote directing and streaming"
+      ]
+    },
+    "synco_xtalk_x": {
+      "name": "SYNCO Xtalk X",
+      "tagline": "Smart full-duplex wireless conference system for clear 4-way conversation.",
+      "desc": "SYNCO Xtalk X enables natural 4-party full-duplex talkback with AI noise reduction and auto mixing—no push-to-talk. Suited for remote meetings, online classes, corporate recording and live shows.",
+      "badges": ["Wireless Audio", "Full Duplex", "Conference", "AI Noise Cancel"],
+      "specs": {
+        "Wireless": "2.4GHz digital (full duplex)",
+        "Participants": "Up to 4 units talking simultaneously",
+        "Range": "Up to 150 m (open field)",
+        "Mic Modes": "Omni mic / 3.5mm lavalier input",
+        "Noise Reduction": "Dual-stage AI reduction",
+        "Battery Life": "≈8 hrs (up to 20 hrs with case)",
+        "I/O": "USB-C / 3.5mm TRS / Type-C digital audio",
+        "Compatibility": "Camera / phone / computer / mixer / switcher",
+        "Use Cases": "Conference recording, live shows, distance learning, OB talkback"
+      },
+      "features": [
+        "Natural 4-way full-duplex conversation",
+        "AI noise suppression tames wind and ambience",
+        "Up to 150 m range with low latency",
+        "Works with cameras, laptops and switchers",
+        "USB-C digital audio and realtime monitoring",
+        "Charging case for carry-and-charge convenience"
+      ]
+    },
+    "synco_xtalk_pro": {
+      "name": "SYNCO Xtalk Pro",
+      "tagline": "Professional full-duplex wireless intercom for studio and event coordination.",
+      "desc": "SYNCO Xtalk Pro targets control rooms, AV centers and large conferences with up to 8-party full-duplex talk and recording. AI noise reduction and long-range stability keep coordination instant for broadcast, stage and education.",
+      "badges": ["Wireless Intercom", "Full Duplex", "Broadcast", "AI Noise Cancel"],
+      "specs": {
+        "Wireless": "2.4GHz full-duplex",
+        "Participants": "Up to 8 talking / 32 paired",
+        "Range": "Up to 350 m (open)",
+        "Mic Modes": "Omni + lavalier input",
+        "Noise Reduction": "AI bi-directional NR + echo suppression",
+        "Latency": "<20 ms",
+        "Battery Life": "≈10 hrs (to 25 hrs with case)",
+        "I/O": "USB-C / 3.5mm TRRS / XLR (via module)",
+        "Compatibility": "Switchers / cameras / laptops / mixers",
+        "Use Cases": "Intercom, OB coordination, stage crew, multi-party meetings"
+      },
+      "features": [
+        "8-party full-duplex architecture",
+        "AI NR with low-latency audio",
+        "Up to 350 m wireless range",
+        "Supports lav/headset mics",
+        "Isolated track recording per channel",
+        "Durable metal construction"
+      ]
+    },
+    "synco_xtalk_xmax": {
+      "name": "SYNCO Xtalk XMax",
+      "tagline": "Flagship full-duplex system with base-station group management for pro broadcast.",
+      "desc": "SYNCO Xtalk XMax supports 16-party full-duplex with a dedicated base station for central grouping, mute and record. Designed for large events, OB trucks, EDU centers and enterprise comms.",
+      "badges": ["Full Duplex", "Base Station", "Multi-Group", "AI Noise Cancel"],
+      "specs": {
+        "Architecture": "2.4GHz + base-station management",
+        "Participants": "16 talking / 64 paired",
+        "Range": "Up to 500 m (open)",
+        "Noise System": "AI bi-directional NR + echo cancel + AGC",
+        "Group Control": "Grouping / mute / synced recording at base",
+        "Latency": "<15 ms",
+        "Battery": "Headsets ≈10 hrs; base continuous power",
+        "I/O": "USB-C / XLR / RJ45 / LAN remote",
+        "Recording": "Base-station internal recorder (WAV)",
+        "Use Cases": "Director talkback, stage crew, AV centers, enterprise comms"
+      },
+      "features": [
+        "16-party real-time intercom with multi-group",
+        "Centralized base-station control and recording",
+        "AI NR and adaptive gain for long sessions",
+        "Up to 500 m range with strong penetration",
+        "LAN integration and system scalability",
+        "Rugged metal build for field use"
+      ]
+    },
+    "synco_xtalk_link": {
+      "name": "SYNCO Xtalk Link",
+      "tagline": "Bridge hub that connects Xtalk intercom to phones/PCs and hybrid workflows.",
+      "desc": "Xtalk Link aggregates multiple Xtalk headsets/bodypacks to a phone or computer, enabling hybrid communications. Ideal for remote speakers, mobile directing and meeting/stream collaboration with grouping, mute and priority talk.",
+      "badges": ["Bridge Hub", "USB-C", "App Control", "Multi-Group"],
+      "specs": {
+        "Purpose": "Bridge for Xtalk to mobile/PC",
+        "Connectivity": "2.4GHz proprietary (Xtalk) / USB-C (host)",
+        "Compatibility": "Xtalk X / Pro / XMax",
+        "Grouping": "App/desktop grouping, mute, priority",
+        "Audio Class": "UAC for meeting/stream platforms",
+        "Power": "USB-C (power bank supported)",
+        "Control": "Mobile app / desktop app / hardware keys",
+        "Use Cases": "Remote speakers, hybrid meetings, mobile OB, campus/corporate"
+      },
+      "features": [
+        "Brings Xtalk intercom into phone/PC calls",
+        "Grouping, mute and priority for easy dispatch",
+        "USB-C plug-and-play with popular platforms",
+        "Power-bank friendly for mobile setups",
+        "Scales from small teams to large events"
+      ]
+    },
+    "synco_g4": {
+      "name": "SYNCO G4 Wireless Microphone",
+      "tagline": "Dual-channel wireless mic with Gen-4 2.4GHz link and OLED display.",
+      "desc": "SYNCO G4 delivers low-latency, stable audio with Gen-4 2.4GHz tech. On-board TX recording and an OLED screen simplify monitoring—great for classes, Vlog, corporate capture and mobile switching.",
+      "badges": ["Wireless Mic", "2.4GHz", "Dual Channel", "OLED Display"],
+      "specs": {
+        "Wireless": "2.4GHz (Gen-4)",
+        "Channels": "Dual (2TX + 1RX)",
+        "On-Device Rec": "TX up to 8GB (~22 hrs)",
+        "Range": "Up to 250 m (open)",
+        "Latency": "<20 ms",
+        "Inputs": "Built-in mic / 3.5mm lav",
+        "Outputs": "3.5mm TRS / USB-C / Type-C digital audio",
+        "Display": "OLED status display",
+        "Battery": "≈8 hrs (to 20 hrs with case)",
+        "Use Cases": "Vlog, education, corporate talks, mobile OB"
+      },
+      "features": [
+        "Robust Gen-4 2.4GHz link with strong anti-interference",
+        "TX on-board recording for backup",
+        "Clear OLED monitoring",
+        "Record two speakers at once",
+        "USB-C digital out to phones/laptops",
+        "Compact, magnetic and case-chargeable"
+      ]
+    },
+    "synco_p2s": {
+      "name": "SYNCO P2S Wireless Microphone",
+      "tagline": "Pocket-size mobile wireless mic—plug and play with clear voice pickup.",
+      "desc": "SYNCO P2S is built for phones and live platforms, featuring dual-channel pickup, Type-C/Lightning plug-and-play, active noise reduction and a charging case. Lightweight and setup-free for creators, Vlogs, courses and mobile live.",
+      "badges": ["Mobile Mic", "Plug & Play", "Noise Reduction", "Charging Case"],
+      "specs": {
+        "Wireless": "2.4GHz digital",
+        "Channels": "2TX + 1RX",
+        "Connectors": "Type-C or Lightning (model-dependent)",
+        "Range": "Up to 150 m (open)",
+        "Mic": "Built-in omni",
+        "Noise Reduction": "AI NR with monitoring",
+        "Battery": "TX ≈5 hrs; with case up to 15 hrs",
+        "Charging": "Type-C fast charge (~1.5 hrs)",
+        "Use Cases": "Mobile shoots, online classes, corporate live, interviews"
+      },
+      "features": [
+        "True plug-and-play—no pairing needed",
+        "AI noise reduction keeps speech clear",
+        "Dual-channel for two-person recording",
+        "Ultra-portable with charging case",
+        "Type-C/Lightning options for Android/iPhone",
+        "Ideal for Vlog, livestreams and courses"
+      ]
+    },
+    "synco_mmic_u3": {
+      "name": "SYNCO MMic-U3 Mobile Microphone",
+      "tagline": "Compact cardioid mic—clean mobile recording made easy.",
+      "desc": "SYNCO MMic-U3 is a cardioid on-camera/mobile mic with an aluminum body and high-sensitivity capsule to focus on voice and reduce ambience. Works via Type-C or 3.5mm TRRS for instant, battery-free recording—great for Vlogs, lessons and interviews.",
+      "badges": ["Cardioid Mic", "Plug & Play", "Noise Reduction", "Mobile Ready"],
+      "specs": {
+        "Polar Pattern": "Cardioid",
+        "Sensitivity": "-35 dB ±3 dB (1V/Pa @1kHz)",
+        "Frequency Response": "50 Hz–20 kHz",
+        "SNR": ">75 dB",
+        "I/O": "Type-C / 3.5mm TRRS (variant-dependent)",
+        "Dimensions": "Φ22 × 72 mm",
+        "Weight": "≈39 g",
+        "Build": "Aluminum body, shock mount and windscreen",
+        "Use Cases": "Mobile shooting, online lessons, Vlog, interviews"
+      },
+      "features": [
+        "Cardioid pickup reduces side/rear noise",
+        "Lightweight aluminum, durable and RF-resistant",
+        "Type-C or 3.5mm for phone and camera",
+        "No battery required—plug and record",
+        "Includes shock mount and windscreen for indoor/outdoor use"
+      ]
+    }
+  },
+  
+  "products": {
+    "acemic_g5_iem": {
+      "name": "Acemic G5 In-Ear Monitoring System",
+      "tagline": "Professional UHF IEM—stable, clear and low-latency for live use.",
+      "desc": "Acemic G5 is a professional in-ear monitoring system for live production and stage performance. Using UHF wireless transmission, it delivers strong interference resistance and ultra-low latency for stable signal and clear sound. Multiple channels can be configured simultaneously—ideal for directors, performers and educational recording/streaming.",
+      "badges": ["IEM", "UHF", "Stage Monitoring", "Low Latency"],
+      "specs": {
+        "Frequency Range": "UHF 600–700 MHz (varies by region)",
+        "Channel Count": "Up to 80 selectable frequencies",
+        "Transmission Range": "Up to 100 m (environment dependent)",
+        "Latency": "< 2 ms",
+        "Audio Response": "50 Hz – 15 kHz",
+        "Inputs": "XLR / 6.3 mm combo input",
+        "Output": "3.5 mm TRS headphone out (receiver)",
+        "Power": "TX: DC 12 V; RX: 2 × AA batteries",
+        "Chassis": "Metal housing, durable and interference-resistant",
+        "Applications": "Stage monitoring, production monitoring, houses of worship, corporate events"
+      },
+      "features": [
+        "UHF wireless link with robust anti-interference",
+        "Multiple channels operating simultaneously for teams",
+        "High dynamic range with low latency for natural sync",
+        "Metal body and pro headphone output for reliability",
+        "Great for stage, director monitoring and education"
+      ]
+    },
+    "acemic_s_series": {
+      "name": "Acemic S Series Wireless Microphone System",
+      "tagline": "Multi-channel UHF wireless mics—stable and clear for any live environment.",
+      "desc": "The Acemic S Series is designed for professional and educational use. Covering single to eight-channel models (S2 / S4 / S6 / S8), it supports handheld, headset and lavalier transmitters. Known for stability, clarity and value, it’s widely used in classrooms, corporate meetings, live broadcasts and stage events.",
+      "badges": ["Wireless Mic", "UHF", "Multi-Channel", "Professional"],
+      "specs": {
+        "Frequency Range": "UHF 520–580 MHz (varies by region)",
+        "Channel Options": "2 / 4 / 6 / 8 channels",
+        "Range": "Up to 100 m (line-of-sight)",
+        "Sensitivity": "-90 dBm",
+        "Frequency Response": "40 Hz – 18 kHz",
+        "Outputs": "XLR / 6.3 mm mixed output",
+        "Power": "Receiver: DC 12 V; Transmitter: 2 × AA batteries",
+        "Build": "Metal chassis, LCD display and IR sync",
+        "Applications": "Schools, corporate meetings, churches, stage"
+      },
+      "features": [
+        "UHF transmission with excellent stability",
+        "Multiple systems operable at once with IR auto sync",
+        "Wide dynamic range and low-latency audio",
+        "Fits handheld, headset or lavalier transmitters",
+        "Ideal for education, corporate and live events"
+      ]
+    },
+    "acemic_wireless": {
+      "name": "Acemic Wireless Microphone System",
+      "tagline": "UHF wireless mics—reliable transmission and clear sound for education and pro use.",
+      "desc": "Acemic wireless systems are popular for education, corporate events and stage. With stable UHF transmission, low latency and clear audio, they support handheld, lavalier and headset transmitters. Available in single, dual and quad-channel configurations; easy to operate and highly resistant to interference.",
+      "badges": ["Wireless Mic", "UHF", "Professional", "Dual Channel"],
+      "specs": {
+        "Frequency Range": "UHF 520–580 MHz (varies by region)",
+        "Channel Options": "Single / Dual / Quad",
+        "Frequency Response": "40 Hz – 18 kHz",
+        "Dynamic Range": "> 100 dB",
+        "Range": "Up to 100 m (line-of-sight)",
+        "I/O": "XLR / 6.3 mm mixed output",
+        "Pairing": "IR auto sync",
+        "Power": "Receiver DC 12 V / Transmitter 2 × AA",
+        "Applications": "Education, corporate presentations, stage, meeting rooms"
+      },
+      "features": [
+        "Robust UHF link with strong anti-interference",
+        "High-sensitivity pickup and wide dynamics",
+        "IR auto-pairing for quick setup",
+        "Works with handheld, lavalier and headset TX",
+        "Multi-channel operation for large events"
+      ]
+    },
+    "yamaha_mg_series": {
+      "name": "Yamaha MG Series Mixer",
+      "tagline": "Professional analog mixers combining premium preamps with rugged design.",
+      "desc": "Yamaha’s MG Series is renowned for stability and sound quality in live, recording and corporate applications. Featuring Yamaha D-PRE class-A mic preamps and SPX effects, selected XU models add a USB audio interface for easy integration into digital workflows.",
+      "badges": ["Analog Mixer", "D-PRE", "SPX Effects", "USB Interface"],
+      "specs": {
+        "Channel Count": "6 / 10 / 12 / 16 / 20 (varies by model)",
+        "Mic Preamps": "Yamaha D-PRE Class-A",
+        "EQ": "3-band EQ / High-pass filter",
+        "Effects": "SPX digital effects (X / XU models)",
+        "USB Interface": "USB Audio 2-in / 2-out (XU models)",
+        "Power": "AC Adaptor (PA-10 / PA-20)",
+        "Size/Weight": "Varies (MG10XU ≈ 2.1 kg)",
+        "Applications": "Houses of worship, studios, corporate events, music"
+      },
+      "features": [
+        "D-PRE preamps for clear, full-bodied sound",
+        "Built-in SPX effects (24 programs incl. reverb, delay)",
+        "USB audio on XU models for recording/streaming",
+        "Rugged metal chassis for touring and installs",
+        "Flexible I/O with AUX, GROUP and STEREO BUS"
+      ]
+    },
+    "mipro_act_series": {
+      "name": "MIPRO ACT Series Wireless Microphone System",
+      "tagline": "Auto-sync UHF wireless mics—professional, stable and crystal clear.",
+      "desc": "MIPRO’s ACT Series is known for Automatic Channel Targeting (ACT) IR auto-sync, allowing fast and intuitive pairing between transmitters and receivers. Covering ACT-3/5/7/8, the lineup serves education, meetings and pro performances with reliable, high-quality wireless audio.",
+      "badges": ["Wireless Mic", "UHF", "Auto Sync", "Professional"],
+      "specs": {
+        "Frequency Range": "UHF 480–934 MHz (regional variants)",
+        "Channel Options": "Single / Dual / Quad / Eight-channel",
+        "Pairing": "ACT IR auto sync",
+        "Frequency Response": "50 Hz – 18 kHz",
+        "Dynamic Range": "> 100 dB",
+        "Outputs": "XLR / 6.3 mm / AES3 digital (model-dependent)",
+        "Power": "Receiver AC / Transmitters AA or Li-ion",
+        "Chassis": "Metal with LCD and group scan",
+        "Applications": "Education, conference rooms, stage, worship, broadcast"
+      },
+      "features": [
+        "MIPRO ACT auto-sync for quick, precise pairing",
+        "Multi-channel operation for concurrent systems",
+        "Wide dynamic range and low-latency audio",
+        "Metal construction with interference resistance",
+        "Covers classrooms, churches, corporate and stage"
+      ]
+    },
+    "mipro_mi58": {
+      "name": "MIPRO MI-58 Digital IEM System",
+      "tagline": "5.8 GHz digital IEM—low latency, high fidelity and interference-free.",
+      "desc": "The MI-58 Series uses the 5.8 GHz band to deliver CD-grade audio with low-latency monitoring. With stereo output, IR sync, auto scan and multiple channels, it avoids crowded UHF bands to ensure stable monitoring for stage and production.",
+      "badges": ["Digital IEM", "5.8 GHz", "Low Latency", "Stereo"],
+      "specs": {
+        "Band": "5.725 – 5.850 GHz (license-free band)",
+        "Transmission": "24-bit / 48 kHz digital stereo",
+        "Latency": "< 2.5 ms",
+        "Frequency Response": "20 Hz – 20 kHz",
+        "Simultaneous Systems": "Up to 12",
+        "Pairing": "IR Sync auto pairing",
+        "Inputs": "XLR / TRS balanced",
+        "Receiver": "Beltpack with OLED and volume",
+        "Power": "Receiver 2 × AA / charging dock optional",
+        "Applications": "Stage, worship, corporate presentations, studio monitoring"
+      },
+      "features": [
+        "5.8 GHz band avoids crowded UHF spectrum",
+        "24-bit digital audio with near-CD quality",
+        "Ultra-low latency < 2.5 ms",
+        "IR auto sync and channel scan",
+        "Stereo / dual-mono output modes",
+        "Works with charging docks and earsets"
+      ]
+    },
+    "mls_fixed_led": {
+      "name": "MLS LED Display (Fixed Installation)",
+      "tagline": "Fine-pitch LED for studios and control rooms.",
+      "desc": "MLS fixed-install LED walls use precision modules and COB packaging to deliver high brightness, contrast and seamless visuals. Ideal for studios, control rooms, exhibitions and corporate feature walls—offering stable imagery and excellent color uniformity.",
+      "badges": ["LED Display", "COB", "SMD", "Fixed Install"],
+      "specs": {
+        "Display Tech": "COB / SMD",
+        "Pixel Pitches": "P1.25 / P1.56 / P1.875 / P2.5",
+        "Brightness": "Up to 1500 nits (indoor)",
+        "Refresh Rate": "≥ 3840 Hz",
+        "Lifetime": "> 100,000 hours",
+        "Ingress Rating": "IP31 (indoor)",
+        "Color Uniformity": "Module-level calibration, HDR10 support",
+        "Control": "Synchronous / asynchronous controllers",
+        "Mounting": "Wall-mount / recessed / curved",
+        "Applications": "Studios, control rooms, exhibitions, conference halls"
+      },
+      "features": [
+        "Fine-pitch, bezel-free seamless visuals",
+        "High refresh and accurate color reproduction",
+        "HDR10 compatible for wide dynamic range",
+        "Magnetic modular design for easy service",
+        "Long-life LEDs with low power consumption"
+      ]
+    },
+    "mls_rental_led": {
+      "name": "MLS Rental LED Panels",
+      "tagline": "Quick-lock rental LED—built for stages and events.",
+      "desc": "MLS rental LED panels feature lightweight aluminum frames and fast locks for rapid rigging. With high brightness and weather protection, they support hanging and stacking for concerts, stage design and events, and are easy to service.",
+      "badges": ["LED Display", "Rental", "Fast Lock", "Outdoor"],
+      "specs": {
+        "Display Tech": "SMD",
+        "Pixel Pitches": "P2.6 / P3.9 / P4.8 / P5.9",
+        "Brightness": "4000–6000 nits (outdoor options)",
+        "Refresh Rate": "≥ 3840 Hz",
+        "Weight": "≈ 7.5 kg per 500×500 mm panel",
+        "Ingress Rating": "IP65 (front) / IP54 (rear)",
+        "Power/Signal": "Modular quick-swap PSU and data",
+        "Structure": "Aluminum cabinet—hang, stack or curve",
+        "Applications": "Stage shows, launches, worship, commercial events"
+      },
+      "features": [
+        "2-second fast-lock assembly and teardown",
+        "High-brightness, weather-ready design",
+        "Hang or stack with optional curving",
+        "High refresh for stable, flicker-free video",
+        "Low power draw for long-hour operation"
+      ]
+    }
+  }
+
+  
+}

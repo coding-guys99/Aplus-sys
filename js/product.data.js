@@ -193,12 +193,12 @@ window.PRODUCT_DATA = {
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
   brandLogo: "./assets/brands/Blackmagicdesign.png",
-  hero: "./assets/products/bmd-studio-camera-4k-pro-g2.jpg",
+  hero: "./assets/products/BlackmagicDesign/bmd-studio-camera-4k-pro-g2.jpg",
   images: [
-    "./assets/products/bmd-studio-camera-4k-pro-g2.jpg",
-    "./assets/products/bmd-studio-camera-4k-side.jpg",
-    "./assets/products/bmd-studio-camera-4k-rear.jpg",
-    "./assets/products/bmd-studio-camera-setup.jpg"
+    "./assets/products/BlackmagicDesign/bmd-studio-camera-4k-pro-g2.jpg",
+    "./assets/products/BlackmagicDesign/bmd-studio-camera-4k-side.jpg",
+    "./assets/products/BlackmagicDesign/bmd-studio-camera-4k-rear.jpg",
+    "./assets/products/BlackmagicDesign/bmd-studio-camera-setup.jpg"
   ],
   tagline: "廣播級 4K 攝影機，專為導播棚與現場製播設計。",
   badges: ["4K Camera", "Live Production", "NDI / SDI", "Remote Control"],
@@ -229,12 +229,12 @@ window.PRODUCT_DATA = {
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
   brandLogo: "./assets/brands/Blackmagicdesign.png",
-  hero: "./assets/products/bmd-atem-mini-extreme-iso.jpg",
+  hero: "./assets/products/BlackmagicDesign/bmd-atem-mini-extreme-iso.jpg",
   images: [
-    "./assets/products/bmd-atem-mini-extreme-iso.jpg",
-    "./assets/products/bmd-atem-mini-extreme-rear.jpg",
-    "./assets/products/bmd-atem-mini-extreme-top.jpg",
-    "./assets/products/bmd-atem-mini-extreme-multiview.jpg"
+    "./assets/products/BlackmagicDesign/bmd-atem-mini-extreme-iso.jpg",
+    "./assets/products/BlackmagicDesign/bmd-atem-mini-extreme-rear.jpg",
+    "./assets/products/BlackmagicDesign/bmd-atem-mini-extreme-top.jpg",
+    "./assets/products/BlackmagicDesign/bmd-atem-mini-extreme-multiview.jpg"
   ],
   tagline: "多機位導播機，支援多畫面預覽與同步錄製。",
   badges: ["Switcher", "Recorder", "Streaming", "HDMI I/O"],
@@ -265,12 +265,12 @@ window.PRODUCT_DATA = {
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
   brandLogo: "./assets/brands/Blackmagicdesign.png",
-  hero: "./assets/products/bmd-hyperdeck-studio-4k-pro.jpg",
+  hero: "./assets/products/BlackmagicDesign/bmd-hyperdeck-studio-4k-pro.jpg",
   images: [
-    "./assets/products/bmd-hyperdeck-studio-4k-pro.jpg",
-    "./assets/products/bmd-hyperdeck-front.jpg",
-    "./assets/products/bmd-hyperdeck-rear.jpg",
-    "./assets/products/bmd-hyperdeck-setup.jpg"
+    "./assets/products/BlackmagicDesign/bmd-hyperdeck-studio-4k-pro.jpg",
+    "./assets/products/BlackmagicDesign/bmd-hyperdeck-front.jpg",
+    "./assets/products/BlackmagicDesign/bmd-hyperdeck-rear.jpg",
+    "./assets/products/BlackmagicDesign/bmd-hyperdeck-setup.jpg"
   ],
   tagline: "專業級錄播與回放機，支援多格式錄製與 4K 輸出。",
   badges: ["Recorder", "Playout", "4K", "SDI / NDI"],
@@ -301,12 +301,12 @@ window.PRODUCT_DATA = {
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
   brandLogo: "./assets/brands/Blackmagicdesign.png",
-  hero: "./assets/products/bmd-ursa-broadcast-g2.jpg",
+  hero: "./assets/products/BlackmagicDesign/bmd-ursa-broadcast-g2.jpg",
   images: [
-    "./assets/products/bmd-ursa-broadcast-g2.jpg",
-    "./assets/products/bmd-ursa-broadcast-side.jpg",
-    "./assets/products/bmd-ursa-broadcast-back.jpg",
-    "./assets/products/bmd-ursa-broadcast-setup.jpg"
+    "./assets/products/BlackmagicDesign/bmd-ursa-broadcast-g2.jpg",
+    "./assets/products/BlackmagicDesign/bmd-ursa-broadcast-side.jpg",
+    "./assets/products/BlackmagicDesign/bmd-ursa-broadcast-back.jpg",
+    "./assets/products/BlackmagicDesign/bmd-ursa-broadcast-setup.jpg"
   ],
   tagline: "廣播級 6K 攝影機，適用導播棚與現場製播。",
   badges: ["Camera", "6K", "Broadcast", "SDI / NDI"],
@@ -338,12 +338,12 @@ window.PRODUCT_DATA = {
   brand: "Blackmagic Design",
   brandKey: "blackmagic",
   brandLogo: "./assets/brands/Blackmagicdesign.png",
-  hero: "./assets/products/bmd-decklink-8k-pro.jpg",
+  hero: "./assets/products/BlackmagicDesign/bmd-decklink-8k-pro.jpg",
   images: [
-    "./assets/products/bmd-decklink-8k-pro.jpg",
-    "./assets/products/bmd-decklink-8k-pro-ports.jpg",
-    "./assets/products/bmd-decklink-8k-pro-install.jpg",
-    "./assets/products/bmd-decklink-8k-pro-system.jpg"
+    "./assets/products/BlackmagicDesign/bmd-decklink-8k-pro.jpg",
+    "./assets/products/BlackmagicDesign/bmd-decklink-8k-pro-ports.jpg",
+    "./assets/products/BlackmagicDesign/bmd-decklink-8k-pro-install.jpg",
+    "./assets/products/BlackmagicDesign/bmd-decklink-8k-pro-system.jpg"
   ],
   tagline: "四通道 SDI 擷取／輸出卡，支援 8K HDR 與多格式切換。",
   badges: ["Capture", "Playback", "8K", "SDI"],
@@ -374,12 +374,12 @@ window.PRODUCT_DATA = {
   brand: "OBSBOT",
   brandKey: "obsbot",
   brandLogo: "./assets/brands/OBSBOT.svg",
-  hero: "./assets/products/obsbot-tiny-2.jpg",
+  hero: "./assets/products/obsbot/obsbot-tiny-2.jpg",
   images: [
-    "./assets/products/obsbot-tiny-2.jpg",
-    "./assets/products/obsbot-tiny-2-side.jpg",
-    "./assets/products/obsbot-tiny-2-mount.jpg",
-    "./assets/products/obsbot-tiny-2-setup.jpg"
+    "./assets/products/obsbot/obsbot-tiny-2.jpg",
+    "./assets/products/obsbot/obsbot-tiny-2-side.jpg",
+    "./assets/products/obsbot/obsbot-tiny-2-mount.jpg",
+    "./assets/products/obsbot/obsbot-tiny-2-setup.jpg"
   ],
   tagline: "AI 智能追蹤攝影機，專為教學、直播與企業會議設計。",
   badges: ["AI Tracking", "PTZ", "4K", "USB-C"],
@@ -410,12 +410,12 @@ window.PRODUCT_DATA = {
   brand: "OBSBOT",
   brandKey: "obsbot",
   brandLogo: "./assets/brands/OBSBOT.svg",
-  hero: "./assets/products/obsbot-tail-2.jpg",
+  hero: "./assets/products/obsbot/obsbot-tail-2.jpg",
   images: [
-    "./assets/products/obsbot-tail-2.jpg",
-    "./assets/products/obsbot-tail-2-back.jpg",
-    "./assets/products/obsbot-tail-2-side.jpg",
-    "./assets/products/obsbot-tail-2-app.jpg"
+    "./assets/products/obsbot/obsbot-tail-2.jpg",
+    "./assets/products/obsbot/obsbot-tail-2-back.jpg",
+    "./assets/products/obsbot/obsbot-tail-2-side.jpg",
+    "./assets/products/obsbot/obsbot-tail-2-app.jpg"
   ],
   tagline: "AI 自動導播攝影機，4K HDR、SSD 錄製、無線直播一機完成。",
   badges: ["AI Tracking", "4K HDR", "Wireless", "SSD Recording"],
@@ -448,12 +448,12 @@ window.PRODUCT_DATA = {
   brand: "SYNCO",
   brandKey: "synco",
   brandLogo: "./assets/brands/SYNCO.svg",
-  hero: "./assets/products/synco-xtalk-x.jpg",
+  hero: "./assets/products/SYNCO/synco-xtalk-x.jpg",
   images: [
-    "./assets/products/synco-xtalk-x.jpg",
-    "./assets/products/synco-xtalk-x-case.jpg",
-    "./assets/products/synco-xtalk-x-transmitter.jpg",
-    "./assets/products/synco-xtalk-x-meeting.jpg"
+    "./assets/products/SYNCO/synco-xtalk-x.jpg",
+    "./assets/products/SYNCO/synco-xtalk-x-case.jpg",
+    "./assets/products/SYNCO/synco-xtalk-x-setup.jpg",
+    "./assets/products/SYNCO/synco-xtalk-x-meeting.jpg"
   ],
   tagline: "智能全雙工無線會議系統，4 路同時對話，清晰自然。",
   badges: ["Wireless Audio", "Full Duplex", "Conference", "AI Noise Cancel"],
@@ -488,10 +488,10 @@ window.PRODUCT_DATA = {
   brandLogo: "./assets/brands/SYNCO.svg",
   hero: "./assets/products/synco-xtalk-pro.jpg",
   images: [
-    "./assets/products/synco-xtalk-pro.jpg",
-    "./assets/products/synco-xtalk-pro-case.jpg",
-    "./assets/products/synco-xtalk-pro-transmitter.jpg",
-    "./assets/products/synco-xtalk-pro-conference.jpg"
+    "./assets/products/SYNCO/synco-xtalk-pro.jpg",
+    "./assets/products/SYNCO/synco-xtalk-pro-case.jpg",
+    "./assets/products/SYNCO/synco-xtalk-pro-transmitter.jpg",
+    "./assets/products/SYNCO/synco-xtalk-pro-conference.jpg"
   ],
   tagline: "專業級全雙工無線會議與導播通話系統，穩定清晰、即時互通。",
   badges: ["Wireless Intercom", "Full Duplex", "Broadcast", "AI Noise Cancel"],
@@ -527,10 +527,10 @@ window.PRODUCT_DATA = {
   brandLogo: "./assets/brands/SYNCO.svg",
   hero: "./assets/products/synco-xtalk-xmax.jpg",
   images: [
-    "./assets/products/synco-xtalk-xmax.jpg",
-    "./assets/products/synco-xtalk-xmax-base.jpg",
-    "./assets/products/synco-xtalk-xmax-headset.jpg",
-    "./assets/products/synco-xtalk-xmax-setup.jpg"
+    "./assets/products/SYNCO/synco-xtalk-xmax.jpg",
+    "./assets/products/SYNCO/synco-xtalk-xmax-base.jpg",
+    "./assets/products/SYNCO/synco-xtalk-xmax-headset.jpg",
+    "./assets/products/SYNCO/synco-xtalk-xmax-setup.jpg"
   ],
   tagline: "旗艦級無線全雙工通訊系統，多群組協作、基地台管理、專業導播首選。",
   badges: ["Full Duplex", "Base Station", "Multi-Group", "AI Noise Cancel"],
@@ -566,10 +566,10 @@ window.PRODUCT_DATA = {
   brandLogo: "./assets/brands/SYNCO.svg",
   hero: "./assets/products/synco-xtalk-link.jpg",
   images: [
-    "./assets/products/synco-xtalk-link.jpg",
-    "./assets/products/synco-xtalk-link-usbc.jpg",
-    "./assets/products/synco-xtalk-link-app.jpg",
-    "./assets/products/synco-xtalk-family.jpg"
+    "./assets/products/SYNCO/synco-xtalk-link.jpg",
+    "./assets/products/SYNCO/synco-xtalk-link-range.jpg",
+    "./assets/products/SYNCO/synco-xtalk-link-app.jpg",
+    "./assets/products/SYNCO/synco-xtalk-family.jpg"
   ],
   tagline: "Xtalk 全雙工通訊的橋接核心：把耳麥連到手機 / 電腦與混合製播流程。",
   badges: ["Bridge Hub", "USB-C", "App Control", "Multi-Group"],
@@ -602,10 +602,10 @@ window.PRODUCT_DATA = {
   brandLogo: "./assets/brands/SYNCO.svg",
   hero: "./assets/products/synco-g4.jpg",
   images: [
-    "./assets/products/synco-g4.jpg",
-    "./assets/products/synco-g4-kit.jpg",
-    "./assets/products/synco-g4-receiver.jpg",
-    "./assets/products/synco-g4-transmitter.jpg"
+    "./assets/products/SYNCO/synco-g4.jpg",
+    "./assets/products/SYNCO/synco-g4-kit.jpg",
+    "./assets/products/SYNCO/synco-g4-receiver.jpg",
+    "./assets/products/SYNCO/synco-g4-transmitter.jpg"
   ],
   tagline: "雙通道無線麥克風系統，4.0 無線架構、OLED 螢幕顯示、即錄即傳。",
   badges: ["Wireless Mic", "2.4GHz", "Dual Channel", "OLED Display"],
@@ -641,10 +641,10 @@ window.PRODUCT_DATA = {
   brandLogo: "./assets/brands/SYNCO.svg",
   hero: "./assets/products/synco-p2s.jpg",
   images: [
-    "./assets/products/synco-p2s.jpg",
-    "./assets/products/synco-p2s-case.jpg",
-    "./assets/products/synco-p2s-mobile.jpg",
-    "./assets/products/synco-p2s-clip.jpg"
+    "./assets/products/SYNCO/synco-p2s.jpg",
+    "./assets/products/SYNCO/synco-p2s-case.jpg",
+    "./assets/products/SYNCO/synco-p2s-mobile.jpg",
+    "./assets/products/SYNCO/synco-p2s-clip.jpg"
   ],
   tagline: "行動即錄無線麥克風，隨插即用、清晰收音、口袋大小。",
   badges: ["Mobile Mic", "Plug & Play", "Noise Reduction", "Charging Case"],
@@ -706,42 +706,6 @@ window.PRODUCT_DATA = {
     "附防震支架與防風罩，室內外錄音皆穩定"
   ]
 },
-/* ------------------ SYNCO CF5 Smoke Machine ------------------ */
-"synco-cf5": {
-  id: "synco-cf5",
-  name: "SYNCO CF5 Smoke Machine",
-  brand: "SYNCO",
-  brandKey: "synco",
-  brandLogo: "./assets/brands/SYNCO.svg",
-  hero: "./assets/products/synco-cf5.jpg",
-  images: [
-    "./assets/products/synco-cf5.jpg",
-    "./assets/products/synco-cf5-kit.jpg",
-    "./assets/products/synco-cf5-smoke.jpg"
-  ],
-  tagline: "便攜式煙霧機，為拍攝與舞台增添層次感與氛圍。",
-  badges: ["Fog Machine", "Portable", "Film Tool", "Atmosphere"],
-  desc:
-    "SYNCO CF5 是一款專為影視拍攝與舞台環境設計的迷你煙霧機。體積小巧但出霧穩定，可快速營造層次光影與空氣氛圍。採用安全無味的煙油配方，支援 USB 充電與多段出霧模式，適合影片拍攝、棚內燈光測試與展示活動使用。",
-  specs: {
-    "功率": "60W 微型加熱模組",
-    "出霧量": "約 2,000 立方英尺／分鐘",
-    "預熱時間": "約 20 秒",
-    "油箱容量": "12ml 可替換煙油瓶",
-    "控制": "按鍵／遙控／自動模式",
-    "電源": "Type-C 充電（支援行動電源）",
-    "尺寸": "約 16 × 5 × 7 cm",
-    "重量": "約 370g",
-    "應用": "影片拍攝、舞台特效、產品攝影、教學演示"
-  },
-  features: [
-    "小型輕量設計，單手即可操作",
-    "快速預熱，出霧穩定且分佈均勻",
-    "支援 Type-C 充電，可接行動電源使用",
-    "使用安全無味煙油，環保無刺激氣味",
-    "適用影片拍攝、舞台、展示與創作特效場景"
-  ]
-},
 /* ------------------ Acemic G5 IEM ------------------ */
 "acemic-g5-iem": {
   id: "acemic-g5-iem",
@@ -749,11 +713,11 @@ window.PRODUCT_DATA = {
   brand: "Acemic",
   brandKey: "acemic",
   brandLogo: "./assets/brands/ACEMIC.svg",
-  hero: "./assets/products/acemic-g5-iem.jpg",
+  hero: "./assets/products/acemic/acemic-g5-iem.jpg",
   images: [
-    "./assets/products/acemic-g5-iem.jpg",
-    "./assets/products/acemic-g5-txrx.jpg",
-    "./assets/products/acemic-g5-stage.jpg"
+    "./assets/products/acemic/acemic-g5-iem.jpg",
+    "./assets/products/acemic/acemic-g5-txrx.jpg",
+    "./assets/products/acemic/acemic-g5-stage.jpg"
   ],
   tagline: "專業級 UHF 入耳監聽系統，穩定清晰、低延遲、現場必備。",
   badges: ["IEM", "UHF", "Stage Monitoring", "Low Latency"],
@@ -786,11 +750,11 @@ window.PRODUCT_DATA = {
   brand: "Acemic",
   brandKey: "acemic",
   brandLogo: "./assets/brands/ACEMIC.svg",
-  hero: "./assets/products/acemic-s-series.jpg",
+  hero: "./assets/products/acemic/acemic-s-series.jpg",
   images: [
-    "./assets/products/acemic-s-series.jpg",
-    "./assets/products/acemic-s2-handheld.jpg",
-    "./assets/products/acemic-s8-rack.jpg"
+    "./assets/products/acemic/acemic-s-series.jpg",
+    "./assets/products/acemic/acemic-s2-handheld.jpg",
+    "./assets/products/acemic/acemic-s8-rack.jpg"
   ],
   tagline: "多通道 UHF 無線麥克風系統，穩定清晰，適用各類現場環境。",
   badges: ["Wireless Mic", "UHF", "Multi-Channel", "Professional"],
@@ -824,10 +788,10 @@ window.PRODUCT_DATA = {
   brandLogo: "./assets/brands/ACEMIC.svg",
   hero: "./assets/products/acemic-wireless-system.jpg",
   images: [
-    "./assets/products/acemic-wireless-system.jpg",
-    "./assets/products/acemic-handheld-mic.jpg",
-    "./assets/products/acemic-bodypack.jpg",
-    "./assets/products/acemic-dual-receiver.jpg"
+    "./assets/products/acemic/acemic-wireless-system.jpg",
+    "./assets/products/acemic/acemic-handheld-mic.jpg",
+    "./assets/products/acemic/acemic-bodypack.jpg",
+    "./assets/products/acemic/acemic-dual-receiver.jpg"
   ],
   tagline: "UHF 無線麥克風系統，穩定傳輸、清晰收音，專為教育與專業場域設計。",
   badges: ["Wireless Mic", "UHF", "Professional", "Dual Channel"],
@@ -859,11 +823,11 @@ window.PRODUCT_DATA = {
   brand: "Yamaha",
   brandKey: "yamaha",
   brandLogo: "./assets/brands/YAMAHA.svg",
-  hero: "./assets/products/yamaha-mg-series.jpg",
+  hero: "./assets/products/yamaha/yamaha-mg-series.jpg",
   images: [
-    "./assets/products/yamaha-mg-series.jpg",
-    "./assets/products/yamaha-mg10xu.jpg",
-    "./assets/products/yamaha-mg16xu.jpg"
+    "./assets/products/yamaha/yamaha-mg-series.jpg",
+    "./assets/products/yamaha/yamaha-mg10xu.jpg",
+    "./assets/products/yamaha/yamaha-mg16xu.jpg"
   ],
   tagline: "專業類比混音器系列，結合高音質前級與可靠設計。",
   badges: ["Analog Mixer", "D-PRE", "SPX Effects", "USB Interface"],
@@ -894,11 +858,11 @@ window.PRODUCT_DATA = {
   brand: "MIPRO",
   brandKey: "mipro",
   brandLogo: "./assets/brands/MIPRO.svg",
-  hero: "./assets/products/mipro-mi58.jpg",
+  hero: "./assets/products/mipro/mipro-mi58.jpg",
   images: [
-    "./assets/products/mipro-mi58.jpg",
-    "./assets/products/mipro-mi58t.jpg",
-    "./assets/products/mipro-mi58r.jpg"
+    "./assets/products/mipro/mipro-mi58.jpg",
+    "./assets/products/mipro/mipro-mi58t.jpg",
+    "./assets/products/mipro/mipro-mi58r.jpg"
   ],
   tagline: "5.8 GHz 數位無線入耳監聽系統，低延遲、高音質、抗干擾。",
   badges: ["Digital IEM", "5.8 GHz", "Low Latency", "Stereo"],
@@ -932,11 +896,11 @@ window.PRODUCT_DATA = {
   brand: "木林森光顯科技",
   brandKey: "mls",
   brandLogo: "./assets/brands/MLS.svg",
-  hero: "./assets/products/mls-led-fixed.jpg",
+  hero: "./assets/products/mls/mls-led-fixed.jpg",
   images: [
-    "./assets/products/mls-led-fixed.jpg",
-    "./assets/products/mls-led-studio.jpg",
-    "./assets/products/mls-led-controlroom.jpg"
+    "./assets/products/mls/mls-led-fixed.jpg",
+    "./assets/products/mls/mls-led-studio.jpg",
+    "./assets/products/mls/mls-led-controlroom.jpg"
   ],
   tagline: "高清小間距 LED 顯示屏，專為演播室與控制中心設計。",
   badges: ["LED Display", "COB", "SMD", "Fixed Install"],
@@ -969,11 +933,11 @@ window.PRODUCT_DATA = {
   brand: "木林森光顯科技",
   brandKey: "mls",
   brandLogo: "./assets/brands/MLS.svg",
-  hero: "./assets/products/mls-led-rental.jpg",
+  hero: "./assets/products/mls/mls-led-rental.jpg",
   images: [
-    "./assets/products/mls-led-rental.jpg",
-    "./assets/products/mls-led-stage.jpg",
-    "./assets/products/mls-led-event.jpg"
+    "./assets/products/mls/mls-led-rental.jpg",
+    "./assets/products/mls/mls-led-stage.jpg",
+    "./assets/products/mls/mls-led-event.jpg"
   ],
   tagline: "快拆式租賃 LED 顯示屏，舞台活動專用。",
   badges: ["LED Display", "Rental", "Fast Lock", "Outdoor"],

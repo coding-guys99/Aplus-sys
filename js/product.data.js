@@ -858,12 +858,12 @@ window.PRODUCT_DATA = {
   brand: "MIPRO",
   brandKey: "mipro",
   brandLogo: "./assets/brands/MIPRO.svg",
-  hero: "./assets/products/mipro-act-series.jpg",
+  hero: "./assets/products/mipro/mipro-act-series.jpg",
   images: [
-    "./assets/products/mipro-act-series.jpg",
-    "./assets/products/mipro-act-32h.jpg",
-    "./assets/products/mipro-act-312.jpg",
-    "./assets/products/mipro-act-5802.jpg"
+    "./assets/products/mipro/mipro-act-series.jpg",
+    "./assets/products/mipro/mipro-act-32h.jpg",
+    "./assets/products/mipro/mipro-act-312.jpg",
+    "./assets/products/mipro/mipro-act-5802.jpg"
   ],
   tagline: "自動對頻無線麥克風系統，專業穩定、收音清晰。",
   badges: ["Wireless Mic", "UHF", "Auto Sync", "Professional"],

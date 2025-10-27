@@ -569,10 +569,8 @@
         "可与 U-Caster 节奏同步",
         "模块化安装：快拆、易维护"
       ]
-    }
-  },
+    },
 
-  "products": {
     "bmd_studio_4k_pro_g2": {
       "name": "Studio Camera 4K Pro G2",
       "tagline": "广播级 4K 摄像机，面向演播室与现场制作。",
@@ -688,10 +686,8 @@
         "低延迟采集适合实时流程",
         "工作站/服务器 PCIe 形态"
       ]
-    }
-  },
+    },
   
-  "products": {
     "obsbot_tiny_2": {
       "name": "OBSBOT Tiny 2",
       "tagline": "AI 智能追踪摄像机，专为教学、直播与商务会议设计。",
@@ -914,10 +910,8 @@
         "免电池设计，即插即录",
         "含防震与防风，室内外稳定"
       ]
-    }
-  },
+    },
   
-  "products": {
     "acemic_g5_iem": {
       "name": "Acemic G5 入耳式监听系统",
       "tagline": "专业级 UHF 入耳监听，稳定清晰、低延迟，现场必备。",

@@ -451,5 +451,125 @@
         "sd_pro": { "caption": "StreamDeck Pro — Professional controller" }
       }
     }
+  },
+  
+  "products": {
+    "u_meta_v": {
+      "name": "U-Meta V",
+      "tagline": "Core virtual production system with Unreal Engine rendering and tracking.",
+      "desc": "U-Meta V integrates Unreal Engine real-time rendering, tracking and keying modules. It supports multi-camera hybrid shoots and fits education recording, corporate live events and broadcast studios.",
+      "badges": ["Virtual Studio", "Unreal Engine", "Tracking", "Compositing"],
+      "specs": {
+        "Engine": "Unreal Engine",
+        "Inputs": "SDI / NDI / HDMI multiple inputs",
+        "Outputs": "SDI, NDI, HDMI monitoring",
+        "Resolution": "Up to 4K 60p real-time output",
+        "Tracking": "Free-D / Visca over IP protocols",
+        "Keying": "Chroma / Luma key, real-time matte",
+        "Control": "U-Panel switcher / LAN IP",
+        "Use cases": "Education recording, corporate live, studio control"
+      },
+      "features": [
+        "Integrated real-time Unreal Engine rendering",
+        "Supports Free-D and optical tracking",
+        "Multi-scene management with animated switching",
+        "Modular NDI/SDI hybrid workflow",
+        "Works with U-Caster, U-CG, U-Studio, U-TP"
+      ]
+    },
+    "u_caster_4k": {
+      "name": "U-Caster 4K",
+      "tagline": "All-in-one workstation for switching, recording and streaming.",
+      "desc": "U-Caster 4K combines live switching, recording, streaming and multi-view compositing in one unit. With SDI/HDMI/NDI inputs, step timeline, and graphics control, it’s ideal for schools, enterprises and live events.",
+      "badges": ["Switcher", "Recorder", "Streaming", "NDI/SDI"],
+      "specs": {
+        "Channels": "Up to 6 video inputs (model dependent)",
+        "Inputs": "SDI / HDMI / NDI / IP / USB",
+        "Outputs": "SDI / HDMI / NDI / network streaming",
+        "Resolution": "Up to 4K UHD 60p",
+        "Recording": "Multi-track (ProRes / H.264)",
+        "Streaming": "RTMP / SRT / HLS",
+        "Graphics": "Works with U-CG live graphics",
+        "Control": "U-Panel / software UI / StreamDeck",
+        "Use cases": "Campus TV, corporate events, ceremonies, multicam live"
+      },
+      "features": [
+        "Switch, record and stream in one unit",
+        "Step Timeline scheduling",
+        "Multi-layer composition and scene switching",
+        "Hybrid NDI/SDI/HDMI workflows",
+        "Seamless with U-CG and U-Meta V"
+      ]
+    },
+    "u_cg": {
+      "name": "U-CG",
+      "tagline": "Live graphics and titles for professional broadcast looks.",
+      "desc": "U-CG delivers real-time titles, lower thirds and layered effects. It syncs with U-Caster and U-Meta V, suitable for news, live shows and education.",
+      "badges": ["Graphics", "Live Titles", "Broadcast", "NDI"],
+      "specs": {
+        "Inputs": "SDI / NDI / HDMI / IP / Alpha Channel",
+        "Outputs": "SDI Fill/Key, NDI, PNG seq, MOV Alpha",
+        "Resolution": "Up to 4K UHD 60p",
+        "Templates": "Built-in title and ticker templates",
+        "Control": "U-Panel or U-CG UI",
+        "Data": "Excel / TXT / RSS / Google Sheets",
+        "Effects": "In/Out animations, icons, text fades",
+        "Use cases": "News, ceremonies, live shows, education"
+      },
+      "features": [
+        "Update titles without cutting program",
+        "NDI / SDI Alpha dual-channel output",
+        "Customizable templates for quick use",
+        "Auto data binding for live updates",
+        "Integrated with U-Caster / U-Meta V"
+      ]
+    },
+    "u_hub": {
+      "name": "U-Hub",
+      "tagline": "Signal bridge and routing center connecting switcher, virtual set and recorder.",
+      "desc": "U-Hub distributes and manages SDI, NDI, HDMI and IP streams across systems. It acts as the bridge between virtual studio, switching and recording for a stable, flexible workflow.",
+      "badges": ["Signal Bridge", "NDI/SDI", "Routing", "Sync"],
+      "specs": {
+        "Inputs": "SDI / HDMI / NDI / IP Stream",
+        "Outputs": "SDI / NDI / HDMI / RTMP / SRT",
+        "Conversion": "NDI ↔ SDI / SDI ↔ IP / SDI ↔ HDMI / HDMI ↔ IP",
+        "Sync": "Genlock / Ref / Frame Sync",
+        "Protocols": "RTMP / RTSP / SRT / UDP / HTTP",
+        "Control": "U-Panel / Web UI / LAN",
+        "Use cases": "Signal distribution, virtual-set bridge, campus TV, record center"
+      },
+      "features": [
+        "Centralized multi-source I/O management",
+        "Hybrid SDI/NDI/HDMI architecture",
+        "Bridge node between virtual set and switcher",
+        "Built-in sync/frame-sync for stable output",
+        "Multi-platform streaming (RTMP/SRT)",
+        "Works with U-Caster / U-Meta V"
+      ]
+    },
+    "u_tp": {
+      "name": "U-TP Teleprompter",
+      "tagline": "Studio teleprompter with clear beam-splitter glass and intuitive control.",
+      "desc": "U-TP uses high-transmittance beam-splitter glass and a bright display for clear reading. Built-in mirror, speed and paragraph controls with hand/foot/LAN operation.",
+      "badges": ["Teleprompter", "Mirror Glass", "Remote Control", "Script"],
+      "specs": {
+        "Glass": "70/30 beam-splitter, AR coated",
+        "Display": "High-brightness, one-tap mirroring",
+        "Text control": "Font/line spacing/speed, jump to paragraph",
+        "Control": "Wireless remote, footswitch, LAN",
+        "Signal": "HDMI (standard), SDI/NDI via converters",
+        "Camera": "ENG / studio cam compatibility",
+        "Mount": "Quick-release plate, counterweight, tilt",
+        "Use cases": "Speeches, education, press, news & live"
+      },
+      "features": [
+        "High-transmittance glass: sharp text without lens flare",
+        "Simple hotkeys for speed and sections",
+        "Hand/foot/wireless controls available",
+        "Sync with U-Caster rundown/graphics timing",
+        "Modular mounting, easy setup and service"
+      ]
+    }
   }
+  
 }

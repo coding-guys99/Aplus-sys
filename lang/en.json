@@ -570,6 +570,125 @@
         "Modular mounting, easy setup and service"
       ]
     }
+  },
+  
+  "products": {
+    "bmd_studio_4k_pro_g2": {
+      "name": "Studio Camera 4K Pro G2",
+      "tagline": "Broadcast-class 4K camera for studios and live production.",
+      "desc": "Studio Camera 4K Pro G2 combines a sensitive 4K sensor with 12G-SDI and NDI/IP output. Works seamlessly with ATEM switchers for remote iris/focus/color control. Large HDR screen and rich I/O fit education, events and professional broadcasting.",
+      "badges": ["4K Camera", "Live Production", "NDI / SDI", "Remote Control"],
+      "specs": {
+        "Sensor": "4/3\" CMOS, Dual Native ISO 400 / 3200",
+        "Resolution": "UHD 4K 60p",
+        "Output I/O": "12G-SDI / HDMI / NDI / IP Streaming",
+        "Audio": "Dual XLR inputs, headphone out",
+        "Control": "SDI control / ATEM remote / USB-C expansion",
+        "Display": "7\" high-brightness touch (2000 nits)",
+        "Power": "DC 12V / PoE+",
+        "Applications": "Studios, campus TV, stage events, live streaming"
+      },
+      "features": [
+        "12G-SDI and NDI/IP for modern hybrid workflows",
+        "High-sensitivity 4K sensor for clean low-light images",
+        "Built-in 7\" HDR screen and XLR audio",
+        "Remote iris/focus/color via ATEM",
+        "PoE+ single-cable deployment"
+      ]
+    },
+    "bmd_atem_mini_extreme_iso": {
+      "name": "ATEM Mini Extreme ISO",
+      "tagline": "Multi-cam switcher with multiview and simultaneous ISO recording.",
+      "desc": "ATEM Mini Extreme ISO features 8 HDMI inputs, USB-C streaming, and records the program plus each input as separate files. With multiview, transitions and graphics, it’s ideal for classes, corporate live, and event production.",
+      "badges": ["Switcher", "Recorder", "Streaming", "HDMI I/O"],
+      "specs": {
+        "Inputs": "8× HDMI 2.0 (1080p60)",
+        "Outputs": "3× HDMI, USB-C WebCam Out, Ethernet streaming",
+        "Recording": "9-track ISO (program + 8 inputs)",
+        "Audio": "Dual 3.5mm, Fairlight processing",
+        "Vision Control": "Multiview / DVE transitions / lower thirds",
+        "Media": "Built-in still store for graphics",
+        "Control": "ATEM Software Control / panel keys / StreamDeck",
+        "Applications": "Live classes, corporate streams, event switching"
+      },
+      "features": [
+        "8 HDMI sources with multiview monitoring",
+        "ISO record all inputs for post",
+        "Direct streaming to platforms like YouTube",
+        "Remote control via ATEM app",
+        "Built-in transitions, keys, and audio mixer"
+      ]
+    },
+    "bmd_hyperdeck_studio_4k_pro": {
+      "name": "HyperDeck Studio 4K Pro",
+      "tagline": "Professional recorder/playout with multi-format 4K recording.",
+      "desc": "HyperDeck Studio 4K Pro records ProRes, DNx, H.264/H.265 with dual SD and dual SSD slots for uninterrupted capture. Perfect for studio record, backup and playout.",
+      "badges": ["Recorder", "Playout", "4K", "SDI / NDI"],
+      "specs": {
+        "Codecs": "ProRes / DNx / H.264 / H.265 / QuickTime",
+        "Inputs": "12G-SDI ×1, Timecode/Ref In",
+        "Outputs": "12G-SDI ×2, HDMI, headphone out",
+        "Storage": "Dual SD + Dual SSD (hot-swap)",
+        "Resolution": "Up to 2160p60",
+        "Audio": "16-ch embedded, XLR timecode in",
+        "Control": "Front panel / Ethernet / RS-422 / ATEM remote",
+        "Applications": "Program record, backup, playout, broadcast"
+      },
+      "features": [
+        "12G-SDI/HDMI I/O up to 4K60",
+        "Continuous recording with dual-slot cycling",
+        "Wide codec support including ProRes and H.265",
+        "Genlock and timecode for multi-cam sync",
+        "Remote automation; integrates with ATEM/U-Caster"
+      ]
+    },
+    "bmd_ursa_broadcast_g2": {
+      "name": "URSA Broadcast G2",
+      "tagline": "Broadcast-class 6K camera for studio and field work.",
+      "desc": "URSA Broadcast G2 blends cinema-quality imaging with a broadcast-oriented body. Supports B4 and EF mounts, records BRAW/ProRes, and offers 12G-SDI with genlock—ready for multi-camera production.",
+      "badges": ["Camera", "6K", "Broadcast", "SDI / NDI"],
+      "specs": {
+        "Sensor": "6K Super 35, 13 stops DR",
+        "Recording": "Blackmagic RAW / ProRes 422 / ProRes HQ",
+        "Resolution": "6144×3456 (6K), UHD 4K, 1080p",
+        "I/O": "12G-SDI ×2, XLR ×2, Timecode / Genlock",
+        "Lens Mount": "B4 (switchable EF/PL/F)",
+        "Displays": "4\" flip-touch + 2\" status",
+        "Control": "SDI remote / ATEM control / USB-C external record",
+        "Media": "CFast 2.0 ×2, SD UHS-II ×2, USB-C SSD",
+        "Applications": "Studio cam, OB van, campus TV, broadcast"
+      },
+      "features": [
+        "6K sensor with wide latitude",
+        "BRAW and ProRes internal recording",
+        "Dual SD/CFast and USB-C external recording",
+        "ATEM remote color/iris/focus support",
+        "Flexible B4/EF/PL mounts"
+      ]
+    },
+    "bmd_decklink_8k_pro": {
+      "name": "DeckLink 8K Pro",
+      "tagline": "Four-channel SDI capture/playout with 8K HDR support.",
+      "desc": "DeckLink 8K Pro provides four 12G-SDI bidirectional ports for simultaneous capture/playout in HD/4K/8K. Supports HDR, Rec.2020 and 12-bit—ideal for virtual studios, post and ingest systems.",
+      "badges": ["Capture", "Playback", "8K", "SDI"],
+      "specs": {
+        "I/O": "4× 12G-SDI (bidirectional)",
+        "Formats": "Up to 8K DCI 60p / 4K / HD",
+        "Bit Depth": "Up to 12-bit YUV 4:2:2 / RGB 4:4:4",
+        "Color": "Rec.601 / Rec.709 / Rec.2020 / HDR",
+        "Audio": "16-ch embedded SDI",
+        "Software": "DaVinci Resolve / vMix / OBS / Unreal",
+        "Interface": "PCIe 8x, Desktop Video SDK",
+        "Applications": "Virtual production, live record, post I/O"
+      },
+      "features": [
+        "Four 12G-SDI ports configurable per channel",
+        "8K/HDR/Rec.2020 and 12-bit support",
+        "Works with OBS, vMix, Resolve, Unreal",
+        "Low-latency ingest for real-time pipelines",
+        "PCIe form factor for workstation/server"
+      ]
+    }
   }
   
 }

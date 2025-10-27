@@ -486,7 +486,7 @@ window.PRODUCT_DATA = {
   brand: "SYNCO",
   brandKey: "synco",
   brandLogo: "./assets/brands/SYNCO.svg",
-  hero: "./assets/products/synco-xtalk-pro.jpg",
+  hero: "./assets/products/SYNCO/synco-xtalk-pro.jpg",
   images: [
     "./assets/products/SYNCO/synco-xtalk-pro.jpg",
     "./assets/products/SYNCO/synco-xtalk-pro-case.jpg",
@@ -525,7 +525,7 @@ window.PRODUCT_DATA = {
   brand: "SYNCO",
   brandKey: "synco",
   brandLogo: "./assets/brands/SYNCO.svg",
-  hero: "./assets/products/synco-xtalk-xmax.jpg",
+  hero: "./assets/products/SYNCO/synco-xtalk-xmax.jpg",
   images: [
     "./assets/products/SYNCO/synco-xtalk-xmax.jpg",
     "./assets/products/SYNCO/synco-xtalk-xmax-base.jpg",
@@ -564,7 +564,7 @@ window.PRODUCT_DATA = {
   brand: "SYNCO",
   brandKey: "synco",
   brandLogo: "./assets/brands/SYNCO.svg",
-  hero: "./assets/products/synco-xtalk-link.jpg",
+  hero: "./assets/products/SYNCO/synco-xtalk-link.jpg",
   images: [
     "./assets/products/SYNCO/synco-xtalk-link.jpg",
     "./assets/products/SYNCO/synco-xtalk-link-range.jpg",
@@ -600,7 +600,7 @@ window.PRODUCT_DATA = {
   brand: "SYNCO",
   brandKey: "synco",
   brandLogo: "./assets/brands/SYNCO.svg",
-  hero: "./assets/products/synco-g4.jpg",
+  hero: "./assets/products/SYNCO/synco-g4.jpg",
   images: [
     "./assets/products/SYNCO/synco-g4.jpg",
     "./assets/products/SYNCO/synco-g4-kit.jpg",
@@ -639,7 +639,7 @@ window.PRODUCT_DATA = {
   brand: "SYNCO",
   brandKey: "synco",
   brandLogo: "./assets/brands/SYNCO.svg",
-  hero: "./assets/products/synco-p2s.jpg",
+  hero: "./assets/products/SYNCO/synco-p2s.jpg",
   images: [
     "./assets/products/SYNCO/synco-p2s.jpg",
     "./assets/products/SYNCO/synco-p2s-case.jpg",
@@ -677,11 +677,11 @@ window.PRODUCT_DATA = {
   brand: "SYNCO",
   brandKey: "synco",
   brandLogo: "./assets/brands/SYNCO.svg",
-  hero: "./assets/products/synco-mmic-u3.jpg",
+  hero: "./assets/products/SYNCO/synco-mmic-u3.jpg",
   images: [
-    "./assets/products/synco-mmic-u3.jpg",
-    "./assets/products/synco-mmic-u3-with-phone.jpg",
-    "./assets/products/synco-mmic-u3-accessories.jpg"
+    "./assets/products/SYNCO/synco-mmic-u3.jpg",
+    "./assets/products/SYNCO/synco-mmic-u3-with-phone.jpg",
+    "./assets/products/SYNCO/synco-mmic-u3-accessories.jpg"
   ],
   tagline: "輕巧心型指向麥克風，行動拍攝與錄音的高音質解決方案。",
   badges: ["Cardioid Mic", "Plug & Play", "Noise Reduction", "Mobile Ready"],
@@ -786,7 +786,7 @@ window.PRODUCT_DATA = {
   brand: "Acemic",
   brandKey: "acemic",
   brandLogo: "./assets/brands/ACEMIC.svg",
-  hero: "./assets/products/acemic-wireless-system.jpg",
+  hero: "./assets/products/acemic/acemic-wireless-system.jpg",
   images: [
     "./assets/products/acemic/acemic-wireless-system.jpg",
     "./assets/products/acemic/acemic-handheld-mic.jpg",

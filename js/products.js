@@ -1,27 +1,57 @@
 /* ==========================================
    products.js — Products listing + filtering (i18n-ready)
    ========================================== */
-// products.js 最上方
+
+// 🔒 Lang lock + bootstrap (VERY TOP)
 (function(){
   const LS_KEY = 'app.lang';
-  const stored = localStorage.getItem(LS_KEY);
-  const fallback = (document.documentElement.getAttribute('lang') || navigator.language || 'en').slice(0,2);
-  const lang = stored || fallback;
+
+  // 1) 讀 URL ?lang
+  const url = new URL(location.href);
+  const urlLang = (url.searchParams.get('lang') || '').trim();
+
+  // 2) 讀 localStorage
+  let storeLang = null;
+  try { storeLang = localStorage.getItem(LS_KEY) || ''; } catch(e){}
+
+  // 3) fallback：<html lang> 或瀏覽器
+  const docLang = (document.documentElement.getAttribute('lang') || '').trim();
+  const navLang = (navigator.language || 'en').slice(0,2);
+
+  // 4) 決定使用語言：URL > localStorage > <html> > navigator
+  const lang = urlLang || storeLang || docLang || navLang || 'en';
+
+  // 5) 若網址沒有 ?lang，補上（不重載）
+  if (!urlLang) {
+    url.searchParams.set('lang', lang);
+    history.replaceState(null, '', url);
+  }
+
+  // 6) 同步到 localStorage 與 <html lang>
+  try { localStorage.setItem(LS_KEY, lang); } catch(e){}
   document.documentElement.lang = lang;
 
-  // 同步到 window.i18n（如果有）
+  // 7) 同步到 window.i18n（若存在）
   if (window.i18n) {
     if ('locale' in window.i18n) window.i18n.locale = lang;
     if ('lang' in window.i18n) window.i18n.lang = lang;
   }
 
+  // 8) 導出切換函式：切語言時也更新網址 ?lang
   window.setAppLang = function(next){
-    localStorage.setItem(LS_KEY, next);
+    if (!next) return;
+    try { localStorage.setItem(LS_KEY, next); } catch(e){}
     document.documentElement.lang = next;
     if (window.i18n) {
       if ('locale' in window.i18n) window.i18n.locale = next;
       if ('lang' in window.i18n) window.i18n.lang = next;
     }
+    // 同步網址參數（不重載）
+    const u = new URL(location.href);
+    u.searchParams.set('lang', next);
+    history.replaceState(null, '', u);
+
+    // 通知其他模組（你的 products.js 已經監聽 i18n:change）
     window.dispatchEvent(new Event('i18n:change'));
   };
 })();

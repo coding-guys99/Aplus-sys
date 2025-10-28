@@ -323,11 +323,25 @@ document.addEventListener('i18n:ready', ()=>{ console.log('i18n ready'); });
   }
 
   // 啟動
-  document.addEventListener('DOMContentLoaded', ()=>{
-    bindI18nRerender();
+  // 啟動（等 i18n 準備好再渲染，並設有保險超時）
+document.addEventListener('DOMContentLoaded', ()=>{
+  bindI18nRerender();
+
+  const boot = ()=>{
     waitForData().then(render).catch(err=>{
       console.warn('[products] Failed to load PRODUCT_DATA:', err);
       render({});
     });
-  });
+  };
+
+  // 若 lang.js 已經標記就緒，直接開跑
+  if (window._i18nReady) return boot();
+
+  // 否則等事件，並加超時保險
+  let started = false;
+  const startOnce = ()=>{ if (started) return; started = true; boot(); };
+
+  window.addEventListener('i18n:ready', startOnce, { once:true });
+  setTimeout(startOnce, 1500); // 超過 1.5s 還沒好就先渲染一次，避免空白
+});
 })();

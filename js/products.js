@@ -1,6 +1,31 @@
 /* ==========================================
    products.js — Products listing + filtering (i18n-ready)
    ========================================== */
+// products.js 最上方
+(function(){
+  const LS_KEY = 'app.lang';
+  const stored = localStorage.getItem(LS_KEY);
+  const fallback = (document.documentElement.getAttribute('lang') || navigator.language || 'en').slice(0,2);
+  const lang = stored || fallback;
+  document.documentElement.lang = lang;
+
+  // 同步到 window.i18n（如果有）
+  if (window.i18n) {
+    if ('locale' in window.i18n) window.i18n.locale = lang;
+    if ('lang' in window.i18n) window.i18n.lang = lang;
+  }
+
+  window.setAppLang = function(next){
+    localStorage.setItem(LS_KEY, next);
+    document.documentElement.lang = next;
+    if (window.i18n) {
+      if ('locale' in window.i18n) window.i18n.locale = next;
+      if ('lang' in window.i18n) window.i18n.lang = next;
+    }
+    window.dispatchEvent(new Event('i18n:change'));
+  };
+})();
+
 
 (function(){
   const grid     = document.getElementById('productGrid');

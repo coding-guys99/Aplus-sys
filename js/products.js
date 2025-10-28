@@ -3,6 +3,8 @@
    ========================================== */
 
 // 🔒 Lang lock + bootstrap (VERY TOP)
+// === Wait for lang.js ready before rendering ===
+document.addEventListener('i18n:ready', ()=>{ console.log('i18n ready'); });
 (function(){
   const LS_KEY = 'app.lang';
 
@@ -321,11 +323,9 @@
   }
 
   // 啟動
-  document.addEventListener('DOMContentLoaded', ()=>{
-    bindI18nRerender();
-    waitForData().then(render).catch(err=>{
-      console.warn('[products] Failed to load PRODUCT_DATA:', err);
-      render({});
-    });
+  document.addEventListener('i18n:ready', ()=>{
+  bindI18nRerender();
+  waitForData().then(render)...
+});
   });
 })();

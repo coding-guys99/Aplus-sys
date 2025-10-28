@@ -4,7 +4,7 @@
 
 (function(){
   const grid     = document.getElementById('productGrid');
-  const emptyEl  = document.getElementById('emptyState');
+  const emptyState = document.getElementById('emptyState');
   const tabsWrap = document.querySelector('.brand-tabs');
   const selectEl = document.getElementById('brandFilter');
 
@@ -13,9 +13,56 @@
     return;
   }
 
-  // ===== Helpers =====
-  function t(key, fb=''){ return (window.t ? window.t(key, fb) : (fb || key)); }
-  function waitForProductData(timeoutMs = 5000){
+  // ---------- i18n helpers ----------
+  // 取目前語言（用你現有的 i18n 套件狀態）
+  function getLocale(){
+    return (window.i18n && (window.i18n.locale || window.i18n.lang)) ||
+           document.documentElement.lang ||
+           'en';
+  }
+
+  // 翻譯函式：優先 common/products，再 fallback
+  function t(key, fallback=''){
+    const API = window.i18n && (window.i18n.t || window.i18n.translate);
+    if (typeof API === 'function') {
+      const v = API(key);
+      if (v && typeof v === 'string') return v;
+    }
+    // 允許你自家 t()
+    if (typeof window.t === 'function') {
+      const v = window.t(key);
+      if (v && typeof v === 'string') return v;
+    }
+    return fallback;
+  }
+
+  // 「全部」標籤的 key（依你前面 i18n 結構選一個有的）
+  function tAll(){
+    return t('products.all',
+          t('common.all',
+          t('ui.all','All')));
+  }
+
+  // 品牌顯示名稱：優先 brands.<brandKey>.name -> 用原 brand / brandKey
+  function tBrand(brandKey, fallbackName){
+    return t(`brands.${brandKey}.name`, fallbackName || brandKey || '');
+  }
+
+  // 產品顯示名稱/標語/描述：用 i18nKey（你已加在每個產品上）
+  function tProductName(p){
+    return p.i18nKey ? t(`${p.i18nKey}.name`, p.name || '') : (p.name || '');
+  }
+  function tProductTagline(p){
+    // 列表頁顯示簡短字串，先用 tagline，沒有就 desc
+    const byKey = p.i18nKey ? t(`${p.i18nKey}.tagline`, '') : '';
+    if (byKey) return byKey;
+    const byKeyDesc = p.i18nKey ? t(`${p.i18nKey}.desc`, '') : '';
+    if (byKeyDesc) return byKeyDesc;
+    return p.tagline || p.desc || '';
+  }
+
+  // ---------- 等待資料 ----------
+  function waitForData(timeoutMs = 3000){
     return new Promise((resolve, reject)=>{
       const start = Date.now();
       (function check(){
@@ -23,53 +70,38 @@
           return resolve(window.PRODUCT_DATA);
         }
         if (Date.now() - start > timeoutMs){
-          console.warn('[products] PRODUCT_DATA timeout — continue with empty.');
-          return resolve({});
+          return reject(new Error('PRODUCT_DATA not available within timeout'));
         }
         requestAnimationFrame(check);
       })();
     });
   }
-  // 等到 i18n 第一次就緒（你的 lang.js 在 init 時會 dispatch "i18n:changed"）
-  function waitForI18n(timeoutMs = 5000){
-    if (window.i18nDict) return Promise.resolve();
-    return new Promise((resolve)=>{
-      let done = false;
-      const onChanged = ()=>{ if(!done){ done = true; cleanup(); resolve(); } };
-      const tid = setTimeout(()=>{ if(!done){ done = true; cleanup(); resolve(); } }, timeoutMs);
-      document.addEventListener('i18n:changed', onChanged, { once:true });
-      function cleanup(){ clearTimeout(tid); document.removeEventListener('i18n:changed', onChanged); }
-    });
-  }
 
-  // 以 brandKey 取可翻譯品牌名
-  function brandNameOf(p){
-    const key = p.brandKey || '';
-    // 優先 i18n: brands.<key>.name，否則用 p.brand，再不然 key
-    return t(`brands.${key}.name`, p.brand || key || '');
-  }
-
-  // 狀態
   let LAST_DATA = null;
-  let LAST_BRAND = null;
+  let LAST_BRANDS = null;
 
   function render(DATA){
     LAST_DATA = DATA;
     const PRODUCTS = Object.values(DATA || {});
-    console.log(`[products] Loaded ${PRODUCTS.length} products.`);
+    const locale = getLocale();
+    console.log(`[products] Loaded ${PRODUCTS.length} products. locale=${locale}`);
 
-    // 聚合品牌（用翻譯名排序）
+    // 聚合品牌（顯示名稱用 i18n）
     const brandMap = new Map();
     PRODUCTS.forEach(p=>{
       if(!p || !p.brandKey) return;
       if(!brandMap.has(p.brandKey)){
-        brandMap.set(p.brandKey, { key:p.brandKey, name: brandNameOf(p) });
+        const displayName = tBrand(p.brandKey, p.brand || p.brandKey);
+        brandMap.set(p.brandKey, { key: p.brandKey, name: displayName });
       }
     });
-    const allLabel = t('ui.all', 'All');
-    const brands = [{key:'all', name: allLabel}]
-      .concat(Array.from(brandMap.values())
-      .sort((a,b)=> a.name.localeCompare(b.name)));
+
+    // 品牌陣列（含 All），依當前語言排序
+    const brands = [{key:'all', name: tAll()}].concat(
+      Array.from(brandMap.values())
+           .sort((a,b)=> a.name.localeCompare(b.name, locale, {sensitivity:'base'}))
+    );
+    LAST_BRANDS = brands;
 
     buildChips(brands);
     buildSelect(brands);
@@ -82,15 +114,10 @@
     function renderCards(list){
       grid.innerHTML = '';
       if(!list.length){
-        if (emptyEl){
-          emptyEl.querySelector('p') && (emptyEl.querySelector('p').textContent =
-            t('products.list.empty', 'No products under this brand yet.')
-          );
-          emptyEl.classList.remove('hidden');
-        }
+        if (emptyState) emptyState.classList.remove('hidden');
         return;
       }
-      emptyEl && emptyEl.classList.add('hidden');
+      if (emptyState) emptyState.classList.add('hidden');
 
       const frag = document.createDocumentFragment();
       list.forEach(p=>{
@@ -100,13 +127,18 @@
         const a = document.createElement('a');
         a.className = 'product-link';
         a.href = `product.html?id=${encodeURIComponent(p.id)}`;
-        a.setAttribute('aria-label', `${p.name || ''} — ${t('products.card.view_details','view details')}`);
+
+        const displayName  = tProductName(p);
+        const displayBrand = tBrand(p.brandKey, p.brand || p.brandKey);
+        const displayDesc  = tProductTagline(p);
+
+        a.setAttribute('aria-label', `${displayName} — ${t('products.view_details','view details')}`);
 
         const thumb = document.createElement('div');
         thumb.className = 'product-thumb';
         const img = document.createElement('img');
         img.src = p.hero || '';
-        img.alt = `${brandNameOf(p)} ${p.name || ''}`;
+        img.alt = `${displayBrand} ${displayName}`;
         img.loading = 'lazy';
         thumb.appendChild(img);
 
@@ -115,16 +147,15 @@
 
         const brand = document.createElement('div');
         brand.className = 'product-brand';
-        brand.textContent = brandNameOf(p);
+        brand.textContent = displayBrand;
 
         const name = document.createElement('div');
         name.className = 'product-name';
-        name.textContent = p.name || '';
+        name.textContent = displayName;
 
         const desc = document.createElement('div');
         desc.className = 'product-desc';
-        // 列表頁優先 tagline（通常較短），fallback desc
-        desc.textContent = p.tagline || p.desc || '';
+        desc.textContent = displayDesc;
 
         body.appendChild(brand);
         body.appendChild(name);
@@ -139,31 +170,30 @@
     }
 
     function setFilter(brandKey='all', pushHash=true){
-      LAST_BRAND = brandKey;
-
-      // Desktop chips
+      // 更新 chips
       tabsWrap.querySelectorAll('.brand-chip').forEach(ch=>{
         const isActive = ch.getAttribute('data-brand') === brandKey;
         ch.classList.toggle('is-active', isActive);
         ch.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       });
-      // Mobile select
+      // 更新 select
       if(selectEl.value !== brandKey) selectEl.value = brandKey;
 
       renderCards(filterProducts(brandKey));
 
-      // Hash
+      // 更新 hash
       if(pushHash){
         if(brandKey === 'all') history.replaceState(null,'', 'products.html');
         else history.replaceState(null,'', `products.html#${brandKey}`);
       }
 
-      // Title
+      // 更新標題（品牌名要 i18n）
       if(brandKey !== 'all'){
-        const b = brands.find(x=>x.key===brandKey);
-        document.title = `${(b && b.name) || brandKey} ${t('products.page.title_suffix','Products')} — Aplus Systems`;
+        const b = LAST_BRANDS.find(x=>x.key===brandKey);
+        const brandName = (b && b.name) || brandKey;
+        document.title = `${brandName} ${t('products.title_suffix','Products')} — Aplus Systems`;
       }else{
-        document.title = `${t('products.page.title','Products')} — Aplus Systems`;
+        document.title = `${t('products.page_title','Products')} — Aplus Systems`;
       }
     }
 
@@ -173,9 +203,9 @@
     }
 
     function buildChips(blist){
-      // 清除 All 之外的
+      // 清掉 All 之外
       tabsWrap.querySelectorAll('.brand-chip:not([data-brand="all"])').forEach(n=>n.remove());
-      // 確保 All chip 存在並更新文字
+      // 確保 All 存在，並更新文案
       let allChip = tabsWrap.querySelector('.brand-chip[data-brand="all"]');
       if(!allChip){
         allChip = document.createElement('button');
@@ -184,8 +214,8 @@
         allChip.setAttribute('aria-pressed','true');
         tabsWrap.appendChild(allChip);
       }
-      allChip.textContent = t('ui.all','All');
-      allChip.onclick = ()=> setFilter('all');
+      allChip.textContent = tAll();
+      allChip.onclick = ()=>setFilter('all');
 
       blist.slice(1).forEach(b=>{
         const btn = document.createElement('button');
@@ -200,9 +230,8 @@
     function buildSelect(blist){
       // 清空 All 之外
       [...selectEl.options].forEach((o,i)=>{ if(i>0) o.remove(); });
-      // 更新 All option 文案
-      const allOpt = selectEl.querySelector('option[value="all"]');
-      if (allOpt) allOpt.textContent = t('products.ui.all_brands','All brands');
+      // 更新第一個 option（All）的顯示
+      if (selectEl.options[0]) selectEl.options[0].textContent = tAll();
 
       blist.slice(1).forEach(b=>{
         const opt = document.createElement('option');
@@ -210,42 +239,38 @@
         opt.textContent = b.name;
         selectEl.appendChild(opt);
       });
-      selectEl.onchange = ()=> setFilter(selectEl.value);
-    }
-
-    // 初次渲染（維持原本 hash 規則）
-    setFilter(getInitialBrand(), /*pushHash*/false);
-
-    // hash 切換
-    window.addEventListener('hashchange', ()=> setFilter(getInitialBrand(), false));
-  }
-
-  // =========== Boot ===========
-  function rerenderIfReady(){
-    if (LAST_DATA){
-      // 重新產生品牌名（因品牌譯名可能改變），直接整個 render
-      render(LAST_DATA);
-      // 若之前已選過品牌，保留視圖
-      if (LAST_BRAND){
-        const keepHash = false;
-        const evt = new Event('hashchange');
-        // 直接以 LAST_BRAND 重設（避免 race）
-        const tabsActive = document.querySelector(`.brand-chip[data-brand="${LAST_BRAND}"]`);
-        if (tabsActive){
-          tabsActive.click();
-        }else{
-          window.dispatchEvent(evt);
-        }
+      // 綁 change
+      if (!selectEl._i18nBound) {
+        selectEl.addEventListener('change', ()=> setFilter(selectEl.value));
+        selectEl._i18nBound = true;
       }
     }
+
+    // 首次渲染
+    setFilter(getInitialBrand(), /*pushHash*/false);
+
+    // 監聽 hash 切換
+    if (!window._productsHashBound) {
+      window.addEventListener('hashchange', ()=> setFilter(getInitialBrand(), false));
+      window._productsHashBound = true;
+    }
   }
 
-  document.addEventListener('DOMContentLoaded', async ()=>{
-    // 等 i18n 第一次就緒 + 產品資料就緒
-    await Promise.all([ waitForI18n(), waitForProductData().then(data=> (LAST_DATA=data)) ]);
-    render(LAST_DATA);
+  // 語言切換時重新渲染（你的 i18n 系統如果有不同事件名，把 'i18n:change' 換掉即可）
+  function bindI18nRerender(){
+    if (window._productsI18nBound) return;
+    window.addEventListener('i18n:change', ()=>{
+      if (LAST_DATA) render(LAST_DATA);
+    });
+    window._productsI18nBound = true;
+  }
 
-    // 之後語言切換就重渲染
-    document.addEventListener('i18n:changed', rerenderIfReady);
+  // 啟動
+  document.addEventListener('DOMContentLoaded', ()=>{
+    bindI18nRerender();
+    waitForData().then(render).catch(err=>{
+      console.warn('[products] Failed to load PRODUCT_DATA:', err);
+      render({});
+    });
   });
 })();

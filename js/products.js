@@ -342,6 +342,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const startOnce = ()=>{ if (started) return; started = true; boot(); };
 
   window.addEventListener('i18n:ready', startOnce, { once:true });
-  setTimeout(startOnce, 1500); // 超過 1.5s 還沒好就先渲染一次，避免空白
+  setTimeout(startOnce, 500); // 超過 1.5s 還沒好就先渲染一次，避免空白
 });
 })();

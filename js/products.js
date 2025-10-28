@@ -323,9 +323,11 @@ document.addEventListener('i18n:ready', ()=>{ console.log('i18n ready'); });
   }
 
   // 啟動
-  document.addEventListener('i18n:ready', ()=>{
-  bindI18nRerender();
-  waitForData().then(render)...
-});
+  document.addEventListener('DOMContentLoaded', ()=>{
+    bindI18nRerender();
+    waitForData().then(render).catch(err=>{
+      console.warn('[products] Failed to load PRODUCT_DATA:', err);
+      render({});
+    });
   });
 })();

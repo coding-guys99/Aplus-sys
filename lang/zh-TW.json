@@ -163,7 +163,7 @@
     },
     "submit": "以 Email 寄出",
     "copy": "複製簡述",
-    "note": "此表單會開啟你的郵件 App 並預先填寫內容。或直接複製簡述寄至 <strong>aplusystem@gmail.com</strong>。",
+    "note": "此表單會開啟你的郵件 App 並預先填寫內容。或直接複製簡述寄至 <strong>aplus.sys.main@gmail.com</strong>。",
     "error": {
       "name": "請輸入你的姓名。",
       "email": "請輸入有效的 Email。",

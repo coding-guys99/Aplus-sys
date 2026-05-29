@@ -163,7 +163,7 @@
     },
     "submit": "Send via Email",
     "copy": "Copy Brief",
-    "note": "This form opens your email app with a pre-filled message. Or copy the brief and send it to <strong>aplusystem@gmail.com</strong>.",
+    "note": "This form opens your email app with a pre-filled message. Or copy the brief and send it to <strong>aplus.sys.main@gmail.com</strong>.",
     "error": {
       "name": "Please enter your name.",
       "email": "Please enter a valid email.",

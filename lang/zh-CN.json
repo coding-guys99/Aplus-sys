@@ -163,7 +163,7 @@
     },
     "submit": "通过邮箱发送",
     "copy": "复制概要",
-    "note": "此表单会打开你的邮件应用并预填内容。也可复制概要发送至 <strong>aplusystem@gmail.com</strong>。",
+    "note": "此表单会打开你的邮件应用并预填内容。也可复制概要发送至 <strong>aplus.sys.main@gmail.com</strong>。",
     "error": {
       "name": "请输入你的姓名。",
       "email": "请输入有效邮箱。",
